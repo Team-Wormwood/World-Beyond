@@ -1,0 +1,49 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "pack.name",
+        "description": "pack.description",
+        "uuid": "85230428-ac58-4853-9382-01da89a07e50",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            18,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "f30d6109-4220-43d6-835b-d12ca904f4dc",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "version": [
+                1,
+                0,
+                0
+            ],
+            "uuid": "1c40a263-e28b-4228-816b-1d67c990745f"
+        }
+    ],
+    "metadata": {
+        "authors": [
+            "yanasakana",
+            "eko",
+            "luth",
+            "vinni",
+            "rage",
+            "ciosciaa"
+        ]
+    }
+}
