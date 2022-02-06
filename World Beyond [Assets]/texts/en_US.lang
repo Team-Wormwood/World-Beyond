@@ -6,12 +6,13 @@ pack.name=§bWorld Beyond§r
 pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) new critters, and explore infinitely in this brand-new and vibrant world!
 
 ## Items
-
+item.worldbeyond:otherworld_crystal.name=§bOtherworld Crystal§r
 
 ## Entities
 
 
 ## Blocks
+tile.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 
 ## Interactions
 

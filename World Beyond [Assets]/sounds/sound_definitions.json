@@ -1,0 +1,15 @@
+{
+   "format_version" : "1.14.0",
+   "sound_definitions" : {
+      "block.worldbeyond:otherworld_crystal_mount.place_crystal": {
+         "category": "block",
+         "sounds": [
+            {
+               "name": "sounds/block/otherworld_crystal_mount/place_crystal",
+               "volume" : 2.25,
+               "load_on_low_memory" : true
+            }
+         ]
+      }
+   }
+}

@@ -1,0 +1,273 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.otherworld_crystal_mount",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "mount",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 3, 12],
+							"uv": {
+								"north": {"uv": [2, 13], "uv_size": [12, 3], "material_instance": "crystal_mount_side"},
+								"east": {"uv": [2, 13], "uv_size": [12, 3], "material_instance": "crystal_mount_side"},
+								"south": {"uv": [2, 13], "uv_size": [12, 3], "material_instance": "crystal_mount_side"},
+								"west": {"uv": [2, 13], "uv_size": [12, 3], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [14, 14], "uv_size": [-12, -12], "material_instance": "crystal_mount_top"},
+								"down": {"uv": [14, 14], "uv_size": [-12, -12], "material_instance": "crystal_mount_bottom"}
+							}
+						}
+					]
+				},
+				{
+					"name": "arms",
+					"parent": "mount",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "arm3",
+					"parent": "arms",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [5, 3, -1],
+							"size": [1, 3, 2],
+							"uv": {
+								"north": {"uv": [13, 10], "uv_size": [1, 3]},
+								"east": {"uv": [7, 11], "uv_size": [2, 3], "material_instance": "crystal_mount_side"},
+								"south": {"uv": [2, 10], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [3, 9], "uv_size": [-1, -2], "material_instance": "crystal_mount_top"}
+							}
+						},
+						{
+							"origin": [7, 2, -1],
+							"size": [1, 3, 2],
+							"uv": {
+								"north": {"uv": [15, 11], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"south": {"uv": [0, 11], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"west": {"uv": [7, 11], "uv_size": [2, 3], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [1, 9], "uv_size": [-1, -2], "material_instance": "crystal_mount_top"},
+								"down": {"uv": [1, 9], "uv_size": [-1, -2], "material_instance": "crystal_mount_bottom"}
+							}
+						},
+						{
+							"origin": [6, 1, -1],
+							"size": [1, 8, 2],
+							"uv": {
+								"north": {"uv": [14, 7], "uv_size": [1, 8], "material_instance": "crystal_mount_side"},
+								"east": {"uv": [7, 7], "uv_size": [2, 8], "material_instance": "crystal_mount_side"},
+								"south": {"uv": [1, 7], "uv_size": [1, 8], "material_instance": "crystal_mount_side"},
+								"west": {"uv": [7, 7], "uv_size": [2, 8], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [2, 9], "uv_size": [-1, -2], "material_instance": "crystal_mount_top"},
+								"down": {"uv": [2, 9], "uv_size": [-1, -2], "material_instance": "crystal_mount_bottom"}
+							}
+						}
+					]
+				},
+				{
+					"name": "arm2",
+					"parent": "arms",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-6, 3, -1],
+							"size": [1, 3, 2],
+							"uv": {
+								"north": {"uv": [2, 10], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"south": {"uv": [13, 10], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"west": {"uv": [7, 11], "uv_size": [2, 3], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [14, 9], "uv_size": [-1, -2], "material_instance": "crystal_mount_top"}
+							}
+						},
+						{
+							"origin": [-8, 2, -1],
+							"size": [1, 3, 2],
+							"uv": {
+								"north": {"uv": [0, 11], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"east": {"uv": [7, 11], "uv_size": [2, 3], "material_instance": "crystal_mount_side"},
+								"south": {"uv": [15, 11], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [16, 9], "uv_size": [-1, -2], "material_instance": "crystal_mount_top"},
+								"down": {"uv": [16, 9], "uv_size": [-1, -2], "material_instance": "crystal_mount_bottom"}
+							}
+						},
+						{
+							"origin": [-7, 1, -1],
+							"size": [1, 8, 2],
+							"uv": {
+								"north": {"uv": [1, 7], "uv_size": [1, 8], "material_instance": "crystal_mount_side"},
+								"east": {"uv": [7, 7], "uv_size": [2, 8], "material_instance": "crystal_mount_side"},
+								"south": {"uv": [14, 7], "uv_size": [1, 8], "material_instance": "crystal_mount_side"},
+								"west": {"uv": [7, 7], "uv_size": [2, 8], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [15, 9], "uv_size": [-1, -2], "material_instance": "crystal_mount_top"},
+								"down": {"uv": [15, 9], "uv_size": [-1, -2], "material_instance": "crystal_mount_bottom"}
+							}
+						}
+					]
+				},
+				{
+					"name": "arm1",
+					"parent": "arms",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-1, 3, 5],
+							"size": [2, 3, 1],
+							"uv": {
+								"north": {"uv": [7, 11], "uv_size": [2, 3], "material_instance": "crystal_mount_side"},
+								"east": {"uv": [2, 10], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"west": {"uv": [13, 10], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [9, 14], "uv_size": [-2, -1], "material_instance": "crystal_mount_top"}
+							}
+						},
+						{
+							"origin": [-1, 2, 7],
+							"size": [2, 3, 1],
+							"uv": {
+								"east": {"uv": [0, 11], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"south": {"uv": [7, 11], "uv_size": [2, 3], "material_instance": "crystal_mount_side"},
+								"west": {"uv": [15, 11], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [9, 16], "uv_size": [-2, -1], "material_instance": "crystal_mount_top"},
+								"down": {"uv": [9, 16], "uv_size": [-2, -1], "material_instance": "crystal_mount_bottom"}
+							}
+						},
+						{
+							"origin": [-1, 1, 6],
+							"size": [2, 8, 1],
+							"uv": {
+								"north": {"uv": [7, 7], "uv_size": [2, 8], "material_instance": "crystal_mount_side"},
+								"east": {"uv": [1, 7], "uv_size": [1, 8], "material_instance": "crystal_mount_side"},
+								"south": {"uv": [7, 7], "uv_size": [2, 8], "material_instance": "crystal_mount_side"},
+								"west": {"uv": [14, 7], "uv_size": [1, 8], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [9, 15], "uv_size": [-2, -1], "material_instance": "crystal_mount_top"},
+								"down": {"uv": [9, 15], "uv_size": [-2, -1], "material_instance": "crystal_mount_bottom"}
+							}
+						}
+					]
+				},
+				{
+					"name": "arm0",
+					"parent": "arms",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-1, 3, -6],
+							"size": [2, 3, 1],
+							"uv": {
+								"east": {"uv": [13, 10], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"south": {"uv": [7, 11], "uv_size": [2, 3], "material_instance": "crystal_mount_side"},
+								"west": {"uv": [2, 10], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [9, 3], "uv_size": [-2, -1], "material_instance": "crystal_mount_top"}
+							}
+						},
+						{
+							"origin": [-1, 2, -8],
+							"size": [2, 3, 1],
+							"uv": {
+								"north": {"uv": [7, 11], "uv_size": [2, 3], "material_instance": "crystal_mount_side"},
+								"east": {"uv": [15, 11], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"west": {"uv": [0, 11], "uv_size": [1, 3], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [9, 1], "uv_size": [-2, -1], "material_instance": "crystal_mount_top"},
+								"down": {"uv": [9, 1], "uv_size": [-2, -1], "material_instance": "crystal_mount_bottom"}
+							}
+						},
+						{
+							"origin": [-1, 1, -7],
+							"size": [2, 8, 1],
+							"uv": {
+								"north": {"uv": [7, 7], "uv_size": [2, 8], "material_instance": "crystal_mount_side"},
+								"east": {"uv": [14, 7], "uv_size": [1, 8], "material_instance": "crystal_mount_side"},
+								"south": {"uv": [7, 7], "uv_size": [2, 8], "material_instance": "crystal_mount_side"},
+								"west": {"uv": [1, 7], "uv_size": [1, 8], "material_instance": "crystal_mount_side"},
+								"up": {"uv": [9, 2], "uv_size": [-2, -1], "material_instance": "crystal_mount_top"},
+								"down": {"uv": [9, 2], "uv_size": [-2, -1], "material_instance": "crystal_mount_bottom"}
+							}
+						}
+					]
+				},
+				{
+					"name": "crystal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-4, 11, -4],
+							"size": [8, 1, 8],
+							"uv": {
+								"north": {"uv": [4, 4], "uv_size": [8, 1], "material_instance": "crystal_side"},
+								"east": {"uv": [4, 4], "uv_size": [8, 1], "material_instance": "crystal_side"},
+								"south": {"uv": [4, 4], "uv_size": [8, 1], "material_instance": "crystal_side"},
+								"west": {"uv": [4, 4], "uv_size": [8, 1], "material_instance": "crystal_side"},
+								"up": {"uv": [12, 12], "uv_size": [-8, -8], "material_instance": "crystal_top"}
+							}
+						},
+						{
+							"origin": [-5, 10, -5],
+							"size": [10, 1, 10],
+							"uv": {
+								"north": {"uv": [3, 5], "uv_size": [10, 1], "material_instance": "crystal_side"},
+								"east": {"uv": [3, 5], "uv_size": [10, 1], "material_instance": "crystal_side"},
+								"south": {"uv": [3, 5], "uv_size": [10, 1], "material_instance": "crystal_side"},
+								"west": {"uv": [3, 5], "uv_size": [10, 1], "material_instance": "crystal_side"},
+								"up": {"uv": [13, 13], "uv_size": [-10, -10], "material_instance": "crystal_top"},
+								"down": {"uv": [13, 13], "uv_size": [-10, -10], "material_instance": "crystal_bottom"}
+							}
+						},
+						{
+							"origin": [-4, 9, -4],
+							"size": [8, 1, 8],
+							"uv": {
+								"north": {"uv": [4, 6], "uv_size": [8, 1], "material_instance": "crystal_side"},
+								"east": {"uv": [4, 6], "uv_size": [8, 1], "material_instance": "crystal_side"},
+								"south": {"uv": [4, 6], "uv_size": [8, 1], "material_instance": "crystal_side"},
+								"west": {"uv": [4, 6], "uv_size": [8, 1], "material_instance": "crystal_side"},
+								"down": {"uv": [12, 12], "uv_size": [-8, -8], "material_instance": "crystal_bottom"}
+							}
+						},
+						{
+							"origin": [-3, 8, -3],
+							"size": [6, 1, 6],
+							"uv": {
+								"north": {"uv": [5, 7], "uv_size": [6, 1], "material_instance": "crystal_side"},
+								"east": {"uv": [5, 7], "uv_size": [6, 1], "material_instance": "crystal_side"},
+								"south": {"uv": [5, 7], "uv_size": [6, 1], "material_instance": "crystal_side"},
+								"west": {"uv": [5, 7], "uv_size": [6, 1], "material_instance": "crystal_side"},
+								"down": {"uv": [11, 11], "uv_size": [-6, -6], "material_instance": "crystal_bottom"}
+							}
+						},
+						{
+							"origin": [-2, 7, -2],
+							"size": [4, 1, 4],
+							"uv": {
+								"north": {"uv": [6, 8], "uv_size": [4, 1], "material_instance": "crystal_side"},
+								"east": {"uv": [6, 8], "uv_size": [4, 1], "material_instance": "crystal_side"},
+								"south": {"uv": [6, 8], "uv_size": [4, 1], "material_instance": "crystal_side"},
+								"west": {"uv": [6, 8], "uv_size": [4, 1], "material_instance": "crystal_side"},
+								"down": {"uv": [10, 10], "uv_size": [-4, -4], "material_instance": "crystal_bottom"}
+							}
+						},
+						{
+							"origin": [-1, 6, -1],
+							"size": [2, 1, 2],
+							"uv": {
+								"north": {"uv": [7, 9], "uv_size": [2, 1], "material_instance": "crystal_side"},
+								"east": {"uv": [7, 9], "uv_size": [2, 1], "material_instance": "crystal_side"},
+								"south": {"uv": [7, 9], "uv_size": [2, 1], "material_instance": "crystal_side"},
+								"west": {"uv": [7, 9], "uv_size": [2, 1], "material_instance": "crystal_side"},
+								"down": {"uv": [9, 9], "uv_size": [-2, -2], "material_instance": "crystal_bottom"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

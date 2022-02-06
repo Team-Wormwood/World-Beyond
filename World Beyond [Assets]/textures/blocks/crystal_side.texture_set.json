@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "crystal_side",
+        "metalness_emissive_roughness": [255,0,128],
+        "heightmap": "crystal_side_heightmap"
+    }
+}

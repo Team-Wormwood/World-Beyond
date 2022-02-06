@@ -1,0 +1,11 @@
+{
+	"resource_pack_name": "worldbeyond",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"otherworld_crystal": {
+			"textures": [
+				"textures/items/otherworld_crystal"
+			]
+		}
+	}
+}

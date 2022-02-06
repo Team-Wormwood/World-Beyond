@@ -1,0 +1,115 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "worldbeyond:otherworld_crystal_mount",
+			"is_experimental": true,
+			"properties": {
+				"otherworld_crystal_mount:has_crystal": [0,1]
+			}
+		},
+		"components": {
+			"minecraft:explosion_resistance": 1,
+			"minecraft:destroy_time": 1,
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#e4b52c",
+			"minecraft:breathability": "air",
+            "minecraft:material_instances": {
+                "*": {
+					"texture": "crystal_mount_side",
+                    "render_method": "opaque", 
+                    "face_dimming": false, 
+                    "ambient_occlusion": true 
+                },
+                "crystal_mount_side": {
+                    "texture": "crystal_mount_side",
+					"face_dimming": false, 
+                    "ambient_occlusion": true
+                },
+				"crystal_mount_top": {
+                    "texture": "crystal_mount_top",
+					"face_dimming": false, 
+                    "ambient_occlusion": true
+                },
+				"crystal_mount_bottom": {
+                    "texture": "crystal_mount_bottom",
+					"face_dimming": false, 
+                    "ambient_occlusion": true
+                },
+                "crystal_side": {
+                    "texture": "crystal_side",
+					"face_dimming": false, 
+                    "ambient_occlusion": true
+                },
+				"crystal_top": {
+                    "texture": "crystal_top",
+					"face_dimming": false, 
+                    "ambient_occlusion": true
+                },
+				"crystal_bottom": {
+                    "texture": "crystal_bottom",
+					"face_dimming": false, 
+                    "ambient_occlusion": true
+                }
+            },
+            "minecraft:geometry": "geometry.otherworld_crystal_mount",
+            "minecraft:pick_collision": {
+				"origin": [-8,0,-8],
+				"size": [16,16,16]
+			},
+			"minecraft:entity_collision": {
+				"origin": [-7,0,-7],
+				"size": [14,3,14]
+			},
+			"minecraft:on_interact": {
+				"condition": "query.get_equipped_item_name('main_hand') == 'otherworld_crystal' && query.block_property('otherworld_crystal_mount:has_crystal') == false",
+				"event": "otherworld_crystal_mount:place_crystal"
+			},
+			"minecraft:part_visibility": {
+				"rules": {
+					"crystal": "query.block_property('otherworld_crystal_mount:has_crystal') == true"
+				}
+			},
+			"minecraft:block_light_absorption": 0,
+			"minecraft:ticking": {
+				"range": [0,0.2],
+				"on_tick": {
+					"condition": "query.block_property('otherworld_crystal_mount:has_crystal') == true",
+					"event": "otherworld_crystal_mount:emit_particle"
+				}
+			}
+        },
+		"permutations": [
+			{
+				"condition": "query.block_property('otherworld_crystal_mount:has_crystal') == true",
+				"components": {
+					"minecraft:entity_collision": {
+						"origin": [-7,0,-7],
+						"size": [14,12,14]
+					},
+					"minecraft:map_color": "#e8b7dd"
+				}
+			}
+		],
+		"events": {
+			"otherworld_crystal_mount:place_crystal": {
+				"set_block_property": {
+					"otherworld_crystal_mount:has_crystal": true
+				},
+				"run_command": {
+					"command": [
+						"playsound block.worldbeyond:otherworld_crystal_mount.place_crystal @a ~~~"
+					]
+				},
+				"decrement_stack": {}
+			},
+			"otherworld_crystal_mount:emit_particle": {
+				"run_command": {
+					"command": [
+						"particle worldbeyond:crystal_mount_levitating ~~-0.3~"
+					]
+				}
+			}
+		}
+	}
+}
