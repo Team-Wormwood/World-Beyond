@@ -2,7 +2,8 @@
 	"format_version": "1.17.40",
 	"minecraft:item": {
 		"description": {
-			"identifier": "worldbeyond:otherworld_crystal"
+			"identifier": "worldbeyond:otherworld_crystal",
+			"category": "items"
 		},
 		"components": {
 			"minecraft:icon": {

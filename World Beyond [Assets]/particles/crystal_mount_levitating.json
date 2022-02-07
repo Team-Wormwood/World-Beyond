@@ -16,7 +16,7 @@
         "active_time": 1
       },
       "minecraft:emitter_shape_disc": {
-        "radius": 0.29,
+        "radius": 0.28,
         "direction": [ 0.0, 1.0, 0.0 ]
       },
       "minecraft:particle_initial_speed": 0.0,
@@ -43,7 +43,7 @@
         }
       },
       "minecraft:particle_appearance_tinting": {
-        "color": [ "math.pow(2.0, variable.emitter_random_1)*0.453", "math.pow(1.5, variable.emitter_random_1)*0.114", "math.pow(3.0, variable.emitter_random_1)*0.153", "1.0-(math.pow(variable.particle_age / variable.particle_lifetime, 10))" ]
+        "color": [ "math.pow(2.0, variable.emitter_random_1)*0.453", "math.pow(1.5, variable.emitter_random_2)*0.114", "math.pow(3.0, variable.emitter_random_3)*0.153", "1.0-(math.pow(variable.particle_age / variable.particle_lifetime, 10))" ]
       },
       "minecraft:particle_appearance_lighting": {}
     }

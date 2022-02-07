@@ -1,0 +1,68 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "worldbeyond:otherworld_crystal_entity",
+			"runtime_identifier": {},
+			"is_summonable": true,
+			"is_spawnable": false
+		},
+		"component_groups": {
+		},
+		"components": {
+			/*"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"filters": {
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							}
+						},
+						"deals_damage": false
+					}
+				]
+			},*/
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:custom_hit_test": {
+    			"hitboxes": [
+        			{
+            			"pivot": [0,0,0],
+            			"width": 1.5,
+            			"height": 1.5
+        			}
+    			]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 99999
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:boss": {
+				"hud_range": 100,
+				"name": "§bOtherworld Crystal§r",
+				"should_darken_sky": true
+			},
+			"minecraft:health": {
+				"max": 500,
+				"value": 500
+			}
+		},
+		"events": {
+			"otherworld_crystal_entity:destroy_crystal": {
+				"run_command": {
+					"command": [
+						"say BOOM!",
+						"setblock ~~~ worldbeyond:otherworld_crystal_mount"
+					]
+				}
+			}
+		}
+	}
+}

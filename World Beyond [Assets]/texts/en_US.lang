@@ -7,6 +7,8 @@ pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) 
 
 ## Items
 item.worldbeyond:otherworld_crystal.name=§bOtherworld Crystal§r
+item.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
+item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
 
 ## Entities
 

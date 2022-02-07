@@ -6,6 +6,16 @@
 			"textures": [
 				"textures/items/otherworld_crystal"
 			]
+		},
+		"otherworld_crystal_mount": {
+			"textures": [
+				"textures/items/otherworld_crystal_mount"
+			]
+		},
+		"solar_medallion": {
+			"textures": [
+				"textures/items/solar_medallion"
+			]
 		}
 	}
 }

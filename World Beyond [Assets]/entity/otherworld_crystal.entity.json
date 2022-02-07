@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldbeyond:otherworld_crystal_entity",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/otherworld_crystal_hitbox"
+      },
+      "geometry": {
+        "default": "geometry.otherworld_crystal_entity"
+      },
+      "render_controllers": [
+        "controller.render.otherworld_crystal"
+      ]
+    }
+  }
+}

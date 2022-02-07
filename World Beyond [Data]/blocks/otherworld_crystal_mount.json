@@ -18,37 +18,37 @@
                 "*": {
 					"texture": "crystal_mount_side",
                     "render_method": "opaque", 
-                    "face_dimming": false, 
+                    "face_dimming": true, 
                     "ambient_occlusion": true 
                 },
                 "crystal_mount_side": {
                     "texture": "crystal_mount_side",
-					"face_dimming": false, 
+					"face_dimming": true, 
                     "ambient_occlusion": true
                 },
 				"crystal_mount_top": {
                     "texture": "crystal_mount_top",
-					"face_dimming": false, 
+					"face_dimming": true, 
                     "ambient_occlusion": true
                 },
 				"crystal_mount_bottom": {
                     "texture": "crystal_mount_bottom",
-					"face_dimming": false, 
+					"face_dimming": true, 
                     "ambient_occlusion": true
                 },
                 "crystal_side": {
                     "texture": "crystal_side",
-					"face_dimming": false, 
+					"face_dimming": true, 
                     "ambient_occlusion": true
                 },
 				"crystal_top": {
                     "texture": "crystal_top",
-					"face_dimming": false, 
+					"face_dimming": true, 
                     "ambient_occlusion": true
                 },
 				"crystal_bottom": {
                     "texture": "crystal_bottom",
-					"face_dimming": false, 
+					"face_dimming": true, 
                     "ambient_occlusion": true
                 }
             },
@@ -77,6 +77,9 @@
 					"condition": "query.block_property('otherworld_crystal_mount:has_crystal') == true",
 					"event": "otherworld_crystal_mount:emit_particle"
 				}
+			},
+			"minecraft:on_placed": {
+				"event": "otherworld_crystal_mount:placed"
 			}
         },
 		"permutations": [
@@ -92,13 +95,21 @@
 			}
 		],
 		"events": {
+			"otherworld_crystal_mount:placed": {
+				"run_command": {
+					"command": [
+						"playsound dig.netherite @a ~~~" 
+					]
+				}
+			},
 			"otherworld_crystal_mount:place_crystal": {
 				"set_block_property": {
 					"otherworld_crystal_mount:has_crystal": true
 				},
 				"run_command": {
 					"command": [
-						"playsound block.worldbeyond:otherworld_crystal_mount.place_crystal @a ~~~"
+						"playsound block.worldbeyond:otherworld_crystal_mount.place_crystal @a ~~~",
+						"summon worldbeyond:otherworld_crystal_entity"
 					]
 				},
 				"decrement_stack": {}
