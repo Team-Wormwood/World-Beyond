@@ -11,7 +11,7 @@ item.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
 
 ## Entities
-
+entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
 
 ## Blocks
 tile.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r

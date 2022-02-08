@@ -8,11 +8,29 @@
 			"is_spawnable": false
 		},
 		"component_groups": {
+			"otherworld_crystal_entity:death": {
+                "minecraft:timer": {
+                    "looping": true,
+                    "time": [
+                        1,
+                        1
+                    ],
+                    "time_down_event": {
+                        "event": "otherworld_crystal_entity:despawn"
+                    }
+                }
+            },
+            "otherworld_crystal_entity:despawn": {
+                "minecraft:instant_despawn": {
+                    
+                }
+            }
 		},
 		"components": {
-			/*"minecraft:damage_sensor": {
+			"minecraft:damage_sensor": {
 				"triggers": [
-					{
+					//commented out for testing purposes
+					/*{
 						"on_damage": {
 							"filters": {
 								"test": "is_family",
@@ -21,12 +39,22 @@
 							}
 						},
 						"deals_damage": false
+					},*/
+					{
+						"on_damage": {
+							"filters": {
+								"test": "has_damage",
+                                "value": "fatal"
+							},
+							"event": "otherworld_crystal_entity:death"
+						},
+						"deals_damage": false
 					}
 				]
-			},*/
+			},
 			"minecraft:collision_box": {
-				"width": 0.1,
-				"height": 0.1
+				"width": 0,
+				"height": 0
 			},
 			"minecraft:custom_hit_test": {
     			"hitboxes": [
@@ -55,11 +83,24 @@
 			}
 		},
 		"events": {
-			"otherworld_crystal_entity:destroy_crystal": {
+			"otherworld_crystal_entity:death": {
 				"run_command": {
 					"command": [
-						"say BOOM!",
-						"setblock ~~~ worldbeyond:otherworld_crystal_mount"
+						"particle minecraft:dragon_death_explosion_emitter ~~~",
+						"setblock ~~~ worldbeyond:otherworld_crystal_mount",
+						"playsound block.worldbeyond:otherworld_crystal_mount.break_crystal @a ~~~"
+					]
+				},
+				"add": {
+                    "component_groups": [
+                        "otherworld_crystal_entity:death"
+                    ]
+                }
+			},
+			"otherworld_crystal_entity:despawn":{
+				"add": {
+					"component_groups": [
+						"otherworld_crystal_entity:despawn"
 					]
 				}
 			}

@@ -54,8 +54,8 @@
             },
             "minecraft:geometry": "geometry.otherworld_crystal_mount",
             "minecraft:pick_collision": {
-				"origin": [-8,0,-8],
-				"size": [16,16,16]
+				"origin": [-7,0,-7],
+				"size": [14,10,14]
 			},
 			"minecraft:entity_collision": {
 				"origin": [-7,0,-7],
@@ -70,7 +70,7 @@
 					"crystal": "query.block_property('otherworld_crystal_mount:has_crystal') == true"
 				}
 			},
-			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_filter": 0,
 			"minecraft:ticking": {
 				"range": [0,0.2],
 				"on_tick": {
@@ -86,6 +86,10 @@
 			{
 				"condition": "query.block_property('otherworld_crystal_mount:has_crystal') == true",
 				"components": {
+					"minecraft:pick_collision": {
+						"origin": [-7,0,-7],
+						"size": [14,13,14]
+					},
 					"minecraft:entity_collision": {
 						"origin": [-7,0,-7],
 						"size": [14,12,14]

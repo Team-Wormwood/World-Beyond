@@ -10,6 +10,16 @@
                "load_on_low_memory" : true
             }
          ]
+      },
+      "block.worldbeyond:otherworld_crystal_mount.break_crystal": {
+         "category": "block",
+         "sounds": [
+            {
+               "name": "sounds/block/otherworld_crystal_mount/break_crystal",
+               "volume" : 1.25,
+               "load_on_low_memory" : true
+            }
+         ]
       }
    }
 }
