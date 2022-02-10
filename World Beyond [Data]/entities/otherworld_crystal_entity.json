@@ -5,10 +5,23 @@
 			"identifier": "worldbeyond:otherworld_crystal_entity",
 			"runtime_identifier": {},
 			"is_summonable": true,
-			"is_spawnable": false
+			"is_spawnable": false,
+			"scripts": {	 
+			  "animate": [
+				"health"
+			  ]
+			},
+			"animations": {
+			  "health": "controller.animation.crystal_health"
+			}
 		},
 		"component_groups": {
 			"otherworld_crystal_entity:death": {
+				"minecraft:type_family": {
+					"family": [
+						"dying"
+					]
+				},
                 "minecraft:timer": {
                     "looping": true,
                     "time": [
@@ -27,6 +40,11 @@
             }
 		},
 		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"crystal"
+				]
+			},
 			"minecraft:damage_sensor": {
 				"triggers": [
 					//commented out for testing purposes
@@ -87,8 +105,9 @@
 				"run_command": {
 					"command": [
 						"particle minecraft:dragon_death_explosion_emitter ~~~",
-						"setblock ~~~ worldbeyond:otherworld_crystal_mount",
-						"playsound block.worldbeyond:otherworld_crystal_mount.break_crystal @a ~~~"
+						"structure load mystructure:crystal_mount_3 ~~~",
+						"playsound block.worldbeyond:otherworld_crystal_mount.break_crystal @a ~~~",
+						"fill ~-50 -64 ~-50 ~50 -64 ~50 minecraft:bedrock"
 					]
 				},
 				"add": {

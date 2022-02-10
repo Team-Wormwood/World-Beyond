@@ -19,6 +19,18 @@
 		},
 		"crystal_bottom": {
 			"textures": "textures/blocks/crystal_bottom"
+		},
+		"crystal_top_cracked": {
+			"textures": "textures/blocks/crystal_top_cracked"
+		},
+		"crystal_top_cracked_2": {
+			"textures": "textures/blocks/crystal_top_cracked_2"
+		},
+		"crystal_side_cracked": {
+			"textures": "textures/blocks/crystal_side_cracked"
+		},
+		"crystal_side_cracked_2": {
+			"textures": "textures/blocks/crystal_side_cracked_2"
 		}
 	}
 }

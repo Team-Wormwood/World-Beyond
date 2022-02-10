@@ -1,25 +1,29 @@
 {
     "format_version": "1.10.0",
     "animation_controllers": {
-        "controller.animation.solar_medallion": {
+        "controller.animation.crystal_health": {
 			"initial_state" : "default",
             "states": {
                 "default": {
                     "transitions": [
 						{
-							"effect": "query.get_equipped_item_name('off_hand') == 'solar_medallion' && query.time_of_day > 0.25 && query.time_of_day < 0.75"
+							"1": "query.health <= 2*(query.max_health/3)"
 						}
                     ]
                 },
-				"effect": {
+				"1": {
 					"transitions": [
 						{
-							"default": "1.0"
+							"2": "query.health <= (query.max_health/3)"
 						}
 					],
 					"on_entry": [
-						"/effect @s strength 3 12 true",
-						"/effect @s resistance 3 12 true"	
+						"/structure load mystructure:crystal_mount_1 ~~~"
+					]
+				},
+				"2": {
+					"on_entry": [
+						"/structure load mystructure:crystal_mount_2 ~~~"
 					]
 				}
             }

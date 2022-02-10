@@ -5,7 +5,9 @@
 			"identifier": "worldbeyond:otherworld_crystal_mount",
 			"is_experimental": true,
 			"properties": {
-				"otherworld_crystal_mount:has_crystal": [0,1]
+				"otherworld_crystal_mount:has_crystal": [0,1],
+				"otherworld_crystal_mount:health": [0,1,2],
+				"otherworld_crystal_mount:drops_crystal": [0,1]
 			}
 		},
 		"components": {
@@ -70,6 +72,7 @@
 					"crystal": "query.block_property('otherworld_crystal_mount:has_crystal') == true"
 				}
 			},
+			"minecraft:loot": "loot_tables/blocks/otherworld_crystal_mount.json",
 			"minecraft:block_light_filter": 0,
 			"minecraft:ticking": {
 				"range": [0,0.2],
@@ -84,6 +87,17 @@
         },
 		"permutations": [
 			{
+				"condition": "query.block_property('otherworld_crystal_mount:drops_crystal') == true",
+				"components": {
+					"minecraft:ticking": {
+						"range": [0,0],
+						"on_tick": {
+							"event": "otherworld_crystal_mount:drop_crystal"
+						}
+					}
+				}
+			},
+			{
 				"condition": "query.block_property('otherworld_crystal_mount:has_crystal') == true",
 				"components": {
 					"minecraft:pick_collision": {
@@ -96,13 +110,107 @@
 					},
 					"minecraft:map_color": "#e8b7dd"
 				}
+			},
+			{
+				"condition": "query.block_property('otherworld_crystal_mount:health') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "crystal_mount_side",
+							"render_method": "opaque", 
+							"face_dimming": true, 
+							"ambient_occlusion": true 
+						},
+						"crystal_mount_side": {
+							"texture": "crystal_mount_side",
+							"face_dimming": true, 
+							"ambient_occlusion": true
+						},
+						"crystal_mount_top": {
+							"texture": "crystal_mount_top",
+							"face_dimming": true, 
+							"ambient_occlusion": true
+						},
+						"crystal_mount_bottom": {
+							"texture": "crystal_mount_bottom",
+							"face_dimming": true, 
+							"ambient_occlusion": true
+						},
+						"crystal_side": {
+							"texture": "crystal_side_cracked",
+							"face_dimming": true, 
+							"ambient_occlusion": true
+						},
+						"crystal_top": {
+							"texture": "crystal_top_cracked",
+							"face_dimming": true, 
+							"ambient_occlusion": true
+						},
+						"crystal_bottom": {
+							"texture": "crystal_bottom",
+							"face_dimming": true, 
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('otherworld_crystal_mount:health') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "crystal_mount_side",
+							"render_method": "opaque", 
+							"face_dimming": true, 
+							"ambient_occlusion": true 
+						},
+						"crystal_mount_side": {
+							"texture": "crystal_mount_side",
+							"face_dimming": true, 
+							"ambient_occlusion": true
+						},
+						"crystal_mount_top": {
+							"texture": "crystal_mount_top",
+							"face_dimming": true, 
+							"ambient_occlusion": true
+						},
+						"crystal_mount_bottom": {
+							"texture": "crystal_mount_bottom",
+							"face_dimming": true, 
+							"ambient_occlusion": true
+						},
+						"crystal_side": {
+							"texture": "crystal_side_cracked_2",
+							"face_dimming": true, 
+							"ambient_occlusion": true
+						},
+						"crystal_top": {
+							"texture": "crystal_top_cracked_2",
+							"face_dimming": true, 
+							"ambient_occlusion": true
+						},
+						"crystal_bottom": {
+							"texture": "crystal_bottom",
+							"face_dimming": true, 
+							"ambient_occlusion": true
+						}
+					}
+				}
 			}
 		],
 		"events": {
+			"otherworld_crystal_mount:drop_crystal": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/otherworld_crystal.json"
+				},
+				"set_block_property": {
+					"otherworld_crystal_mount:drops_crystal": false
+				}
+			},
 			"otherworld_crystal_mount:placed": {
 				"run_command": {
 					"command": [
-						"playsound dig.netherite @a ~~~" 
+						"playsound dig.netherite @a ~~~"
 					]
 				}
 			},
@@ -113,7 +221,13 @@
 				"run_command": {
 					"command": [
 						"playsound block.worldbeyond:otherworld_crystal_mount.place_crystal @a ~~~",
-						"summon worldbeyond:otherworld_crystal_entity"
+						"fill ~3 ~ ~3 ~1 ~ ~-3 air 0 destroy",
+						"fill ~-3 ~ ~-3 ~-1 ~ ~3 air 0 destroy",
+						"fill ~-3 ~ ~3 ~3 ~ ~1 air 0 destroy",
+						"fill ~-3 ~ ~-3 ~3 ~ ~-1 air 0 destroy",
+						"fill ~-3 ~1 ~-3 ~2 ~3 ~3 air 0 destroy",
+						"summon worldbeyond:otherworld_crystal_entity",
+						"fill ~50 -64 ~50 ~-50 -64 ~-50 deny"
 					]
 				},
 				"decrement_stack": {}
