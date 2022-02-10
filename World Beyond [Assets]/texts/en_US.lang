@@ -6,10 +6,16 @@ pack.name=§bWorld Beyond§r
 pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) new critters, and explore infinitely in this brand-new and vibrant world!
 
 ## Items
+item.spawn_egg.entity.worldbeyond:tiger.name=Spawn Tiger
+item.worldbeyond:colourful_feather=Colourful Feather
 
+item.worldbeyond:wooden_spear=Wooden Spear
+item.worldbeyond:stone_spear=Stone Spear
+item.worldbeyond:iron_spear=Iron Spear
+item.worldbeyond:tiger_claw_spear=§6Tiger Claw Spear
 
 ## Entities
-
+entity.worldbeyond:tiger.name=Tiger
 
 ## Blocks
 

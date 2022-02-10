@@ -1,0 +1,28 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        // Materials
+        "colourful_feather": {
+            "textures": "textures/items/colourful_feather"
+        },
+        // Tools & Weapons
+        // TODO: Spear Wielding Animations
+        "wooden_spear": {
+            "textures": "textures/items/wooden_spear"
+        },
+        "stone_spear": {
+            "textures": "textures/items/stone_spear"
+        },
+        "iron_spear": {
+            "textures": "textures/items/iron_spear"
+        },
+        "tiger_claw_spear": {
+            "textures": "textures/items/tiger_claw_spear"
+        },
+        // Spawn Eggs
+        "tiger_spawn_egg": {
+            "textures": "textures/items/tiger_spawn_egg"
+        }
+    },
+    "texture_name": "atlas.items"
+}

@@ -1,0 +1,32 @@
+{
+    "entity_sounds": {
+        "defaults": {},
+        "entities": {
+            "worldbeyond:tiger": {
+                "events": {
+                    "ambient": {
+                        "pitch": 0.6,
+                        "sound": "mob.ravager.ambient",
+                        "volume": 0.6
+                    },
+                    "death": {
+                        "pitch": 0.6,
+                        "sound": "mob.cat.hit",
+                        "volume": 0.6
+                    },
+                    "eat": "mob.cat.eat",
+                    "hurt": {
+                        "sound": "mob.polarbear.hurt",
+                        "pitch": 0.76,
+                        "volume": 0.5
+                    }
+                },
+                "pitch": [
+                    0.80,
+                    1.20
+                ],
+                "volume": 1.0
+            }
+        }
+    }
+}
