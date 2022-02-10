@@ -1,21 +1,45 @@
 {
-	"resource_pack_name": "worldbeyond",
-	"texture_name": "atlas.items",
-	"texture_data": {
-		"otherworld_crystal": {
-			"textures": [
-				"textures/items/otherworld_crystal"
-			]
-		},
-		"otherworld_crystal_mount": {
+    "resource_pack_name": "worldbeyond",
+    "texture_data": {
+        // Blocks
+        "otherworld_crystal_mount": {
 			"textures": [
 				"textures/items/otherworld_crystal_mount"
 			]
 		},
-		"solar_medallion": {
+        // Items
+        "otherworld_crystal": {
+			"textures": [
+				"textures/items/otherworld_crystal"
+			]
+		},
+        "solar_medallion": {
 			"textures": [
 				"textures/items/solar_medallion"
 			]
-		}
-	}
+		},
+        // Materials
+        "colourful_feather": {
+            "textures": "textures/items/colourful_feather"
+        },
+        // Tools & Weapons
+        // TODO: Spear Wielding Animations
+        "wooden_spear": {
+            "textures": "textures/items/wooden_spear"
+        },
+        "stone_spear": {
+            "textures": "textures/items/stone_spear"
+        },
+        "iron_spear": {
+            "textures": "textures/items/iron_spear"
+        },
+        "tiger_claw_spear": {
+            "textures": "textures/items/tiger_claw_spear"
+        },
+        // Spawn Eggs
+        "tiger_spawn_egg": {
+            "textures": "textures/items/tiger_spawn_egg"
+        }
+    },
+    "texture_name": "atlas.items"
 }
