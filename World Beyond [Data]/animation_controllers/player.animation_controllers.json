@@ -18,8 +18,8 @@
 						}
 					],
 					"on_entry": [
-						"/effect @s strength 3 12 true",
-						"/effect @s resistance 3 12 true"	
+						"/effect @s strength 3 8 true",
+						"/effect @s resistance 3 8 true"	
 					]
 				}
             }

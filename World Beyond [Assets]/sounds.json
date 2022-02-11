@@ -35,7 +35,8 @@
                    },
                    "hurt" : {
                       "sound": "block.worldbeyond:otherworld_crystal_mount.hurt_crystal",
-                      "pitch": [0.9, 1.1]
+                      "pitch": [0.9, 1.1],
+                      "volume": 0.4
                    }
                 },
                 "pitch" : 1.0,
