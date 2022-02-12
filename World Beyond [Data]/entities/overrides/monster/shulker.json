@@ -110,7 +110,9 @@
 				"total_supply": 15,
 				"suffocate_time": 0
 			},
-			"minecraft:nameable": {},
+			"minecraft:nameable": {
+				"always_show": true
+			},
 			"minecraft:conditional_bandwidth_optimization": {
 				"default_values": {
 					"max_optimized_distance": 80.0,

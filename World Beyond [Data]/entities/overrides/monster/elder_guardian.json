@@ -16,7 +16,9 @@
 				"width": 1.99,
 				"height": 1.99
 			},
-			"minecraft:nameable": {},
+			"minecraft:nameable": {
+				"always_show": true
+			},
 			"minecraft:loot": {
 				"table": "loot_tables/entities/elder_guardian.json"
 			},

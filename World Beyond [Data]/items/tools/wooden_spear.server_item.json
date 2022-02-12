@@ -9,6 +9,7 @@
             "minecraft:hand_equipped": true,
             "minecraft:max_stack_size": 1,
             "minecraft:damage": 4,
+            "minecraft:can_destroy_in_creative": false,
             "minecraft:fuel": {
                 "duration": 1
             },

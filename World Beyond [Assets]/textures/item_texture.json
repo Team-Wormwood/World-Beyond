@@ -1,12 +1,7 @@
 {
     "resource_pack_name": "vanilla",
     "texture_data": {
-        // Materials
-        "colourful_feather": {
-            "textures": "textures/items/colourful_feather"
-        },
         // Tools & Weapons
-        // TODO: Spear Wielding Animations
         "wooden_spear": {
             "textures": "textures/items/wooden_spear"
         },
@@ -19,9 +14,26 @@
         "tiger_claw_spear": {
             "textures": "textures/items/tiger_claw_spear"
         },
+        // Materials
+        "boar_tusk": {
+            "textures": "textures/items/boar_tusk"
+        },
+        "colourful_feather": {
+            "textures": "textures/items/colourful_feather"
+        },
+        "tiger_claws": {
+            "textures": "textures/items/tiger_claws"
+        },
         // Spawn Eggs
         "tiger_spawn_egg": {
             "textures": "textures/items/tiger_spawn_egg"
+        },
+        "toucan_spawn_egg": {
+            "textures": "textures/items/toucan_spawn_egg"
+        },
+        // Texture Meshes
+        "mesh.tiger_claw_spear": {
+            "textures": "textures/attachables/tiger_claw_spear"
         }
     },
     "texture_name": "atlas.items"

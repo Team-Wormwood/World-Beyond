@@ -61,7 +61,9 @@
 				"total_supply": 15,
 				"suffocate_time": 0
 			},
-			"minecraft:nameable": {},
+			"minecraft:nameable": {
+				"always_show": true
+			},
 			"minecraft:loot": {
 				"table": "loot_tables/entities/witch.json"
 			},

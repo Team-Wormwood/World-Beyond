@@ -277,7 +277,9 @@
 		},
 		"components": {
 			"minecraft:is_hidden_when_invisible": {},
-			"minecraft:nameable": {},
+			"minecraft:nameable": {
+				"always_show": true
+			},
 			"minecraft:health": {
 				"value": 40,
 				"max": 40

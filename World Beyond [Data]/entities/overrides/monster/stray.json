@@ -100,7 +100,9 @@
                 "height": 1.9
             },
             "minecraft:burns_in_daylight": {},
-            "minecraft:nameable": {},
+            "minecraft:nameable": {
+				"always_show": true
+			},
             "minecraft:health": {
                 "value": 20,
                 "max": 20

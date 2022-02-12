@@ -26,6 +26,30 @@
                     1.20
                 ],
                 "volume": 1.0
+            },
+            "worldbeyond:toucan": {
+                "events": {
+                    "ambient": {
+                        "pitch": 0.75,
+                        "sound": "mob.parrot.idle",
+                        "volume": 0.6
+                    },
+                    "death": {
+                        "pitch": 0.75,
+                        "sound": "mob.parrot.death",
+                        "volume": 0.6
+                    },
+                    "hurt": {
+                        "sound": "mob.parrot.hurt",
+                        "pitch": 0.76,
+                        "volume": 0.5
+                    }
+                },
+                "pitch": [
+                    0.80,
+                    1.20
+                ],
+                "volume": 1.0
             }
         }
     }

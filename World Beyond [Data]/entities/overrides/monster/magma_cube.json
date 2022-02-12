@@ -96,7 +96,9 @@
 				"suffocate_time": 0,
 				"breathes_lava": true
 			},
-			"minecraft:nameable": {},
+			"minecraft:nameable": {
+				"always_show": true
+			},
 			"minecraft:fire_immune": {},
 			"minecraft:burns_in_daylight": false,
 			"minecraft:damage_sensor": {
