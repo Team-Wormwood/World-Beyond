@@ -24,6 +24,9 @@
         "long_stick": {
             "textures": "textures/items/long_stick"
         },
+        "ruby": {
+            "textures": "textures/items/ruby"
+        },
         "tiger_claws": {
             "textures": "textures/items/tiger_claws"
         },
