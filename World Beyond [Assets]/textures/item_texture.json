@@ -40,7 +40,17 @@
         // Texture Meshes
         "mesh.tiger_claw_spear": {
             "textures": "textures/attachables/tiger_claw_spear"
-        }
+        },
+		"crimson_boat": {
+			"textures": [
+				"textures/items/boat_crimson"
+			]
+		},
+		"warped_boat": {
+			"textures": [
+				"textures/items/boat_warped"
+			]
+		}
     },
     "texture_name": "atlas.items"
 }
