@@ -15,6 +15,9 @@
                     "transitions": [
                         {
                             "pounce": "variable.has_target && !query.is_on_ground"
+                        },
+                        {
+                            "sleep": "query.is_sleeping"
                         }
                     ]
                 },
@@ -29,6 +32,23 @@
                     "transitions": [
                         {
                             "default": "query.is_on_ground"
+                        }
+                    ]
+                },
+                "sleep": {
+                    "animations": [
+                        "sleeping"
+                    ],
+                    "particle_effects": [
+                        {
+                            "effect": "sleeping",
+                            "locator": "head"
+                        }
+                    ],
+                    "blend_transition": 0.2,
+                    "transitions": [
+                        {
+                            "default": "!query.is_sleeping"
                         }
                     ]
                 }
