@@ -1,0 +1,263 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.toucan.pose": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [-15, 0, 0]
+				},
+				"neck": {
+					"rotation": [9.85108, -1.72794, 9.85108],
+					"position": [0, -1, 0]
+				},
+				"beakTop": {
+					"rotation": [-2.5, 0, 0]
+				},
+				"beakBottom": {
+					"rotation": [15, 0, 0]
+				},
+				"leftWing": {
+					"rotation": [13.96536, 34.04743, -15.06352]
+				},
+				"rightWing": {
+					"rotation": [35.29284, -7.13136, 34.3569]
+				},
+				"leftLeg": {
+					"rotation": [14.33501, 4.46375, -16.93839]
+				},
+				"rightLeg": {
+					"rotation": [-0.86728, -5.07855, 19.37006]
+				},
+				"head": {
+					"rotation": [0, 0, 7.5]
+				}
+			}
+		},
+		"animation.toucan.flying": {
+			"loop": true,
+			"animation_length": 0.68,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2": [7.5, 0, 0],
+						"0.68": [0, 0, 0]
+					},
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.12": {
+							"post": [0, -1, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.32": {
+							"post": [0, 2, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.68": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"neck": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.28": {
+							"post": [5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.64": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"leftWing": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.12": {
+							"post": [0, 0, -70],
+							"lerp_mode": "catmullrom"
+						},
+						"0.32": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.48": {
+							"post": [0, 0, -70],
+							"lerp_mode": "catmullrom"
+						},
+						"0.64": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": [-0.75, 0, 0]
+				},
+				"rightWing": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.12": {
+							"post": [0, 0, 70],
+							"lerp_mode": "catmullrom"
+						},
+						"0.32": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.48": {
+							"post": [0, 0, 70],
+							"lerp_mode": "catmullrom"
+						},
+						"0.64": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": [0.75, 0, 0]
+				},
+				"leftLeg": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2": {
+							"post": [14.43152, 1.87925, -7.26205],
+							"lerp_mode": "catmullrom"
+						},
+						"0.32": {
+							"post": [20, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.64": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"rightLeg": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2": {
+							"post": [34.76905, -4.29357, 6.15518],
+							"lerp_mode": "catmullrom"
+						},
+						"0.64": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.24": {
+							"post": [-25, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.64": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.toucan.dance": {
+			"loop": true,
+			"animation_length": 0.64,
+			"bones": {
+				"root": {
+					"rotation": [-10, 0, 0]
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, -25],
+						"0.16": [0, 0, 0],
+						"0.32": [0, 0, -25],
+						"0.48": [0, 0, 0],
+						"0.64": [0, 0, -25]
+					}
+				},
+				"leftWing": {
+					"rotation": [0, 0, -30]
+				},
+				"rightWing": {
+					"rotation": [0, 0, 30]
+				},
+				"leftLeg": {
+					"rotation": [12.25002, 2.99318, -9.54589]
+				},
+				"rightLeg": {
+					"rotation": [12.25002, -2.99318, 9.54589]
+				},
+				"body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.32": ["math.Random(0, 33)", 0, 0],
+						"0.64": ["math.Random(0, 33)", 0, 0]
+					},
+					"position": {
+						"0.0": [0.5, 0, 0],
+						"0.16": [-0.5, 0, 0],
+						"0.32": [0.5, 0, 0],
+						"0.48": [-0.5, 0, 0],
+						"0.64": [0.5, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.toucan.moving": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leftLeg": {
+					"rotation": ["-math.Cos(query.anim_time * 40) * 60.0", 0, 0]
+				},
+				"rightLeg": {
+					"rotation": ["math.Cos(query.anim_time * 40) * 60.0", 0, 0]
+				}
+			}
+		},
+		"animation.toucan.flying2": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["-math.Cos(query.anim_time * 220.0) * 10", 0, 0],
+					"position": [0, "math.Cos(query.anim_time * 220.0) - 2", 0]
+				},
+				"neck": {
+					"rotation": ["math.Cos(query.anim_time * 150) * 5", 0, 0]
+				},
+				"leftWing": {
+					"rotation": [0, 0, "-math.Cos(query.anim_time * 600.0) * 45 - 55"],
+					"position": [-1, -1, 0]
+				},
+				"rightWing": {
+					"rotation": [0, 0, "math.Cos(query.anim_time * 600.0) * 45 + 55"],
+					"position": [1, -1, 0]
+				},
+				"leftLeg": {
+					"rotation": ["math.Cos(query.anim_time * 80.0) * 45", 0, 0]
+				},
+				"rightLeg": {
+					"rotation": ["-math.Cos(query.anim_time * 70.0) * 40", 0, 0]
+				}
+			}
+		}
+	}
+}

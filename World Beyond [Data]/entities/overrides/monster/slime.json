@@ -126,7 +126,9 @@
 				"event": "minecraft:become_calm",
 				"target": "self"
 			},
-			"minecraft:nameable": {},
+			"minecraft:nameable": {
+				"always_show": true
+			},
 			"minecraft:despawn": {
 				"despawn_from_distance": {}
 			},

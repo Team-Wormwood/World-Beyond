@@ -301,7 +301,9 @@
 			},
 			"minecraft:movement.basic": {},
 			"minecraft:jump.static": {},
-			"minecraft:nameable": {},
+			"minecraft:nameable": {
+				"always_show": true
+			},
 			"minecraft:equipment": {
 				"table": "loot_tables/entities/pillager_gear.json"
 			},

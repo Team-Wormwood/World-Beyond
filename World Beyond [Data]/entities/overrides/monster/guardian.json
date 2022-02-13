@@ -89,7 +89,9 @@
 			"minecraft:experience_reward": {
 				"on_death": "query.last_hit_by_player ? 10 : 0"
 			},
-			"minecraft:nameable": {},
+			"minecraft:nameable": {
+				"always_show": true
+			},
 			"minecraft:collision_box": {
 				"width": 0.85,
 				"height": 0.85

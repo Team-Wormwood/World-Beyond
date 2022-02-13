@@ -17,7 +17,9 @@
 				"suffocate_time": 0
 			},
 			"minecraft:fire_immune": {},
-			"minecraft:nameable": {},
+			"minecraft:nameable": {
+				"always_show": true
+			},
 			"minecraft:health": {
 				"value": 10,
 				"max": 10

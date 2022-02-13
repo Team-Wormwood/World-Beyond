@@ -7,7 +7,12 @@ pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) 
 
 ## Items
 item.spawn_egg.entity.worldbeyond:tiger.name=Spawn Tiger
+item.spawn_egg.entity.worldbeyond:toucan.name=Spawn Toucan
+
 item.worldbeyond:colourful_feather=Colourful Feather
+item.worldbeyond:tiger_claws=Tiger Claws
+item.worldbeyond:boar_tusk=Boar Tusk
+
 item.worldbeyond:wooden_spear=Wooden Spear
 item.worldbeyond:stone_spear=Stone Spear
 item.worldbeyond:iron_spear=Iron Spear
@@ -18,6 +23,7 @@ item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
 
 ## Entities
 entity.worldbeyond:tiger.name=Tiger
+entity.worldbeyond:toucan.name=Toucan
 entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
 
 ## Blocks

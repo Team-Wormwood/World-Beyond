@@ -108,7 +108,9 @@
 			}
 		},
 		"components": {
-			"minecraft:nameable": {},
+			"minecraft:nameable": {
+				"always_show": true
+			},
 			// Zombie Components
 			"minecraft:type_family": {
 				"family": [
