@@ -26,8 +26,8 @@
                 "minecraft:timer": {
                     "looping": true,
                     "time": [
-                        3,
-                        3
+                        3.65,
+                        3.65
                     ],
                     "time_down_event": {
                         "event": "otherworld_crystal_entity:despawn"
