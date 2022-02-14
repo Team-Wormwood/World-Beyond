@@ -26,6 +26,7 @@ item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
 ## Entities
 entity.worldbeyond:tiger.name=Tiger
 entity.worldbeyond:toucan.name=Toucan
+entity.worldbeyond:jungle_zombie.name=Verdant
 entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
 
 ## Blocks

@@ -51,6 +51,23 @@
                 ],
                 "volume": 1.0
             },
+            "worldbeyond:jungle_zombie": {
+                "volume": 1.0,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "ambient": "mob.jungle_zombie.say",
+                    "death": "mob.jungle_zombie.death",
+                    "hurt": "mob.jungle_zombie.hurt",
+                    "step": {
+                        "pitch": 1.0,
+                        "sound": "mob.jungle_zombie.step",
+                        "volume": 0.450
+                    }
+                }
+            },
             "worldbeyond:otherworld_crystal_entity" : {
                 "events" : {
                    "ambient" : {
