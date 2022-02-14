@@ -9,11 +9,14 @@ pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) 
 item.spawn_egg.entity.worldbeyond:tiger.name=Spawn Tiger
 item.spawn_egg.entity.worldbeyond:toucan.name=Spawn Toucan
 
-item.worldbeyond:colourful_feather=Colourful Feather
+item.worldbeyond:colourful_feather=Colorful Feather
 item.worldbeyond:tiger_claws=Tiger Claws
 item.worldbeyond:boar_tusk=Boar Tusk
 item.worldbeyond:ruby=Ruby
 item.worldbeyond:long_stick=Long Stick
+
+item.worldbeyond:adventure_hat=§6Hat of the Adventurer
+item.worldbeyond:colourful_adventure_hat=§dColorful Hat of the Adventurer
 
 item.worldbeyond:wooden_spear=Wooden Spear
 item.worldbeyond:stone_spear=Stone Spear

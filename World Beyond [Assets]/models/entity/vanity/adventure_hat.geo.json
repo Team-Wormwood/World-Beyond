@@ -1,9 +1,9 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.16.0",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.adventurers_hat",
+				"identifier": "geometry.adventure_hat",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,
@@ -13,11 +13,12 @@
 			"bones": [
 				{
 					"name": "hat",
-					"pivot": [0, 8, -7],
+					"pivot": [0, 24, 1.5],
 					"rotation": [-5, 0, 0],
+					"binding": "context.item_slot == 'head' ? 'head' : query.item_slot_to_bone_name(context.item_slot)",
 					"cubes": [
 						{
-							"origin": [-6.57213, 7.85, -7.58526],
+							"origin": [-6.57213, 7.85, -6.08526],
 							"size": [12, 0, 15],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [12, 0]},
@@ -28,9 +29,9 @@
 							}
 						},
 						{
-							"origin": [5.42787, 7.851, -6.58526],
+							"origin": [5.42787, 7.851, -5.08526],
 							"size": [3, 0, 13],
-							"pivot": [5.42787, 7.851, -1.33526],
+							"pivot": [5.42787, 7.851, 0.16474],
 							"rotation": [0, 0, -45],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [3, 0]},
@@ -41,7 +42,7 @@
 							}
 						},
 						{
-							"origin": [-4.67213, 1.9, -3.93526],
+							"origin": [-4.67213, 1.9, -2.43526],
 							"size": [8.2, 7.2, 8.2],
 							"uv": {
 								"north": {"uv": [8, 24], "uv_size": [8, 7]},
@@ -53,7 +54,7 @@
 							}
 						},
 						{
-							"origin": [-4.72213, 7.85, -4.48526],
+							"origin": [-4.72213, 7.85, -2.98526],
 							"size": [8.3, 3.3, 9.3],
 							"uv": {
 								"north": {"uv": [35, 3], "uv_size": [8, 3]},
@@ -64,9 +65,9 @@
 							}
 						},
 						{
-							"origin": [-4.77213, 6, -4.33526],
+							"origin": [-4.77213, 6, -2.83526],
 							"size": [0, 3, 9],
-							"pivot": [3.42787, 9, -4.33526],
+							"pivot": [3.42787, 9, -2.83526],
 							"rotation": [45, 0, 0],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [0, 3]},
@@ -77,7 +78,7 @@
 							}
 						},
 						{
-							"origin": [-4.82213, 8, -4.58526],
+							"origin": [-4.82213, 8, -3.08526],
 							"size": [8.5, 1.5, 9.5],
 							"uv": {
 								"north": {"uv": [35, 11], "uv_size": [8, 1]},

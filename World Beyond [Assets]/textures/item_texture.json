@@ -47,6 +47,13 @@
         "tiger_claws": {
             "textures": "textures/items/tiger_claws"
         },
+        // Attachables
+        "adventure_hat": {
+            "textures": "textures/items/adventure_hat"
+        },
+        "colourful_adventure_hat": {
+            "textures": "textures/items/colourful_adventure_hat"
+        },
         // Spawn Eggs
         "tiger_spawn_egg": {
             "textures": "textures/items/tiger_spawn_egg"
