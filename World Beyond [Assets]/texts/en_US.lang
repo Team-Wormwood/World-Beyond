@@ -26,6 +26,7 @@ item.worldbeyond:tiger_claw_spear=§6Tiger Claw Spear
 ## Entities
 entity.worldbeyond:tiger.name=Tiger
 entity.worldbeyond:toucan.name=Toucan
+entity.worldbeyond:jungle_zombie.name=Verdant
 
 ## Blocks
 
