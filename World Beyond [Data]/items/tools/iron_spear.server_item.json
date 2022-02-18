@@ -17,7 +17,7 @@
             },
             "minecraft:on_use": {
                 "on_use": {
-                    "condition": "query.is_in_water && !query.is_sneaking",
+                    "condition": "query.is_in_water && query.is_sneaking",
                     "event": "spear:fishingInit"
                 }
             },
