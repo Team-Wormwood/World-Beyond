@@ -1,0 +1,172 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "worldbeyond:limestone_bricks_slab",
+            "properties": {
+                "worldbeyond:slab_type": [
+                    "down",
+                    "up",
+                    "double"
+                ]
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/cobbled/limestone_bricks_slab.json",
+            "tag:stone": {},
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#918F87",
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:destroy_time": 2.0,
+            "minecraft:explosion_resistance": 6.0,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "limestone_bricks",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:block_light_absorption": 0,
+            "minecraft:on_player_placing": {
+                "condition": "query.target_x_rotation <= 0",
+                "event": "up"
+            },
+            "minecraft:creative_category": {
+                "group": "itemGroup.name.slab",
+                "category": "construction"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('worldbeyond:slab_type') == 'double'",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/cobbled/limestone_bricks_slab_two.json",
+                    "minecraft:block_light_absorption": 1,
+                    "minecraft:unit_cube": {},
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('worldbeyond:slab_type') == 'down'",
+                "components": {
+                    "minecraft:geometry": "geometry.custom_slab_lower",
+                    "minecraft:block_light_absorption": 0,
+                    "minecraft:on_interact": {
+                        "condition": "query.get_equipped_item_name =='limestone_bricks_slab' && query.block_property('worldbeyond:slab_type') != 'double' && q.block_face == 1",
+                        "event": "double"
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('worldbeyond:slab_type') == 'up'",
+                "components": {
+                    "minecraft:geometry": "geometry.custom_slab_upper",
+                    "minecraft:block_light_absorption": 0,
+                    "minecraft:on_interact": {
+                        "condition": "query.get_equipped_item_name =='limestone_bricks_slab' && query.block_property('worldbeyond:slab_type') != 'double' && q.block_face == 0",
+                        "event": "double"
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            }
+        ],
+        "events": {
+            "double": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "worldbeyond:slab_type": "'double'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "playsound use.deepslate @a[r=5] ~ ~ ~ 0.4 1.0"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "down": {
+                "set_block_property": {
+                    "worldbeyond:slab_type": "'down'"
+                }
+            },
+            "up": {
+                "set_block_property": {
+                    "worldbeyond:slab_type": "'up'"
+                }
+            }
+        }
+    }
+}
