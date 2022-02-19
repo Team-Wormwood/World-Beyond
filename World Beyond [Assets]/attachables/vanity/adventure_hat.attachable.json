@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "worldbeyond:adventure_hat",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "textures": {
+                "default": "textures/attachables/adventure_hat",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "default": "geometry.adventure_hat"
+            },
+            "scripts": {
+                "scale": "context.is_first_person ? 0.0 : 1.0",
+                "animate": [
+                    "head_position"
+                ]
+            },
+            "animations": {
+                "head_position": "animation.attachable.adventure_hat.head_position"
+            },
+            "render_controllers": [
+                "controller.render.item_default"
+            ]
+        }
+    }
+}

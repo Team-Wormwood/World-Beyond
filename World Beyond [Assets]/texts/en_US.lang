@@ -9,24 +9,44 @@ pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) 
 item.spawn_egg.entity.worldbeyond:tiger.name=Spawn Tiger
 item.spawn_egg.entity.worldbeyond:toucan.name=Spawn Toucan
 
-item.worldbeyond:colourful_feather=Colourful Feather
+item.worldbeyond:colourful_feather=Colorful Feather
 item.worldbeyond:tiger_claws=Tiger Claws
 item.worldbeyond:boar_tusk=Boar Tusk
 item.worldbeyond:ruby=Ruby
 item.worldbeyond:long_stick=Long Stick
 
+item.worldbeyond:adventure_hat=§6Hat of the Adventurer
+item.worldbeyond:colourful_adventure_hat=§dColorful Hat of the Adventurer
+
 item.worldbeyond:wooden_spear=Wooden Spear
 item.worldbeyond:stone_spear=Stone Spear
 item.worldbeyond:iron_spear=Iron Spear
-item.worldbeyond:tiger_claw_spear=§6Tiger Claw Spear
+item.worldbeyond:tiger_claw_spear=§6Tiger Claw Spear§r
+item.worldbeyond:otherworld_crystal.name=§bOtherworld Crystal§r
+item.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
+item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
 
 ## Entities
 entity.worldbeyond:tiger.name=Tiger
 entity.worldbeyond:toucan.name=Toucan
+entity.worldbeyond:jungle_zombie.name=Verdant
+entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
 
 ## Blocks
+tile.worldbeyond:limestone.name=Limestone
+tile.worldbeyond:polished_limestone.name=Polished Limestone
+tile.worldbeyond:polished_limestone_slab.name=Polished Limestone Slab
+tile.worldbeyond:limestone_bricks.name=Limestone Bricks
+tile.worldbeyond:mossy_limestone_bricks.name=Mossy Limestone Bricks
+tile.worldbeyond:cobbled_limestone.name=Cobbled Limestone
+tile.worldbeyond:mossy_cobbled_limestone.name=Mossy Cobbled Limestone
+tile.worldbeyond:chiseled_limestone.name=Chiseled Limestone
+tile.worldbeyond:cracked_limestone.name=Cracked Limestone
+tile.worldbeyond:limestone_pillar.name=Limestone Pillar
+tile.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 
 ## Interactions
 
 
 ## Miscellaneous
+

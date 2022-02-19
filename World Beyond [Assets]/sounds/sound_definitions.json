@@ -1,0 +1,101 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"block.worldbeyond:otherworld_crystal_mount.place_crystal": {
+			"category": "block",
+			"sounds": [
+				{
+					"name": "sounds/block/otherworld_crystal_mount/place_crystal",
+					"volume": 2.25,
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"block.worldbeyond:otherworld_crystal_mount.break_crystal": {
+			"category": "block",
+			"sounds": [
+				{
+					"name": "sounds/block/otherworld_crystal_mount/break_crystal",
+					"volume": 1.25,
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"block.worldbeyond:otherworld_crystal_mount.crystal_ambient": {
+			"category": "block",
+			"sounds": [
+				{
+					"name": "sounds/block/otherworld_crystal_mount/crystal_ambient",
+					"volume": 1.5,
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"block.worldbeyond:otherworld_crystal_mount.hurt_crystal": {
+			"category": "block",
+			"sounds": [
+				{
+					"name": "sounds/block/otherworld_crystal_mount/hurt_crystal",
+					"volume": 1.5,
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mob.jungle_zombie.death": {
+			"__use_legacy_max_distance": "true",
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/jungle_zombie/death1",
+				"sounds/mob/jungle_zombie/death2",
+				"sounds/mob/jungle_zombie/death3"
+			]
+		},
+		"mob.jungle_zombie.hurt": {
+			"__use_legacy_max_distance": "true",
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/jungle_zombie/hurt1",
+				"sounds/mob/jungle_zombie/hurt2",
+				"sounds/mob/jungle_zombie/hurt3",
+				"sounds/mob/jungle_zombie/hurt4"
+			]
+		},
+		"mob.jungle_zombie.attack": {
+			"__use_legacy_max_distance": "true",
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/jungle_zombie/attack1",
+				"sounds/mob/jungle_zombie/attack2",
+				"sounds/mob/jungle_zombie/attack3",
+				"sounds/mob/jungle_zombie/attack4",
+				"sounds/mob/jungle_zombie/attack5",
+				"sounds/mob/jungle_zombie/attack6",
+				"sounds/mob/jungle_zombie/attack7"
+			]
+		},
+		"mob.jungle_zombie.say": {
+			"__use_legacy_max_distance": "true",
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/jungle_zombie/say1",
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/mob/jungle_zombie/say2"
+				},
+				"sounds/mob/jungle_zombie/say3"
+			]
+		},
+		"mob.jungle_zombie.step": {
+			"__use_legacy_max_distance": "true",
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/jungle_zombie/step1",
+				"sounds/mob/jungle_zombie/step2",
+				"sounds/mob/jungle_zombie/step3",
+				"sounds/mob/jungle_zombie/step4",
+				"sounds/mob/jungle_zombie/step5"
+			]
+		}
+	}
+}
+// File edited by MADLAD3718

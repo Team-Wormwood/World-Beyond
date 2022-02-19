@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "worldbeyond:special_diamond"
+		},
+		"tags": [
+			"mineral_upgrades"
+		],
+		"pattern": [
+			" # ",
+			"#X#",
+			" # "
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:lapis_lazuli"
+			},
+			"X": {
+				"item": "minecraft:diamond"
+			}
+		},
+		"result": {
+			"item": "worldbeyond_diamond:netherite_ingot"
+		}
+	}
+}

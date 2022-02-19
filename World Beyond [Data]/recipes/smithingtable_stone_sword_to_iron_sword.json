@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "minecraft:smithingtable_stone_sword_to_iron_sword"
+    },
+
+
+    "tags": [ "smithing_table" ],
+    "priority": 2,
+    "ingredients": [
+      {
+        "item": "minecraft:stone_sword"
+      },
+      {
+        "item": "worldbeyond_iron:netherite_ingot"
+      }
+    ],
+    "result": {
+      "item": "minecraft:iron_sword",
+      "count": 1
+    }
+  }
+  
+}

@@ -1,0 +1,13 @@
+// File created by MADLAD3718
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.otherworld_crystal": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ],
+      "is_hurt_color": {},
+			"on_fire_color": {}
+    }
+  }
+}

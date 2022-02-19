@@ -1,0 +1,14 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "worldbeyond:furnace_netherite_leggings"
+		},
+		"tags": [
+			"furnace",
+			"blast_furnace"
+		],
+		"input": "minecraft:netherite_leggings",
+		"output": "minecraft:netherite_scrap"
+	}
+}
