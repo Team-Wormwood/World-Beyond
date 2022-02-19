@@ -12,7 +12,7 @@
 				"default": "textures/entity/steve",
 				"cape": "textures/entity/cape_invisible",
 				// Advancements
-				"advancement.feet_wet": "textures/ui/advancements/arctic_peaks_discovered"
+				"advancement.feet_wet": "textures/ui/advancements/feet_wet"
 			},
 			"geometry": {
 				"default": "geometry.humanoid.custom",
