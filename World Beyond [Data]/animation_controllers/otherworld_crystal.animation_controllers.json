@@ -1,0 +1,33 @@
+// File created by MADLAD3718
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.crystal_health": {
+			"initial_state" : "default",
+            "states": {
+                "default": {
+                    "transitions": [
+						{
+							"1": "query.health <= 2*(query.max_health/3)"
+						}
+                    ]
+                },
+				"1": {
+					"transitions": [
+						{
+							"2": "query.health <= (query.max_health/3)"
+						}
+					],
+					"on_entry": [
+						"/structure load mystructure:crystal_mount_1 ~~~"
+					]
+				},
+				"2": {
+					"on_entry": [
+						"/structure load mystructure:crystal_mount_2 ~~~"
+					]
+				}
+            }
+        }
+	}
+}

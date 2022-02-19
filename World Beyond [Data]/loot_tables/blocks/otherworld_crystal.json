@@ -1,0 +1,15 @@
+// File created by MADLAD3718
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "worldbeyond:otherworld_crystal",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

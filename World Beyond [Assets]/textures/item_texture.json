@@ -1,6 +1,23 @@
 {
-    "resource_pack_name": "vanilla",
+    "resource_pack_name": "worldbeyond",
     "texture_data": {
+        // Blocks
+        "otherworld_crystal_mount": {
+			"textures": [
+				"textures/items/otherworld_crystal_mount"
+			]
+		},
+        // Items
+        "otherworld_crystal": {
+			"textures": [
+				"textures/items/otherworld_crystal"
+			]
+		},
+        "solar_medallion": {
+			"textures": [
+				"textures/items/solar_medallion"
+			]
+		},
         // Tools & Weapons
         "wooden_spear": {
             "textures": "textures/items/wooden_spear"
@@ -13,6 +30,17 @@
         },
         "tiger_claw_spear": {
             "textures": "textures/items/tiger_claw_spear"
+        },
+        // UI Exclusive 
+        "crimson_boat": {
+            "textures": [
+                "textures/items/boat_crimson"
+            ]
+        },
+        "warped_boat": {
+            "textures": [
+                "textures/items/boat_warped"
+            ]
         },
         // Materials
         "boar_tusk": {
@@ -47,17 +75,8 @@
         // Texture Meshes
         "mesh.tiger_claw_spear": {
             "textures": "textures/attachables/tiger_claw_spear"
-        },
-		"crimson_boat": {
-			"textures": [
-				"textures/items/boat_crimson"
-			]
-		},
-		"warped_boat": {
-			"textures": [
-				"textures/items/boat_warped"
-			]
-		}
+        }
     },
     "texture_name": "atlas.items"
 }
+// File edited by MADLAD3718

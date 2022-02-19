@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "crystal_mount_top",
+        "metalness_emissive_roughness": "crystal_mount_top_mer",
+        "heightmap": "crystal_mount_top_heightmap"
+    }
+}

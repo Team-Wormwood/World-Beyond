@@ -5,7 +5,15 @@
 			"identifier": "minecraft:player",
 			"is_spawnable": false,
 			"is_summonable": false,
-			"is_experimental": false
+			"is_experimental": false,
+			"scripts": {	 
+			  "animate": [
+				"solar_medallion"
+			  ]
+			},
+			"animations": {
+			  "solar_medallion": "controller.animation.solar_medallion"
+			}
 		},
 		"component_groups": {
 			"minecraft:add_bad_omen": {
@@ -206,3 +214,4 @@
 		}
 	}
 }
+// File edited by MADLAD3718
