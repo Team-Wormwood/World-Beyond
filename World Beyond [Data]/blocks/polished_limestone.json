@@ -9,8 +9,8 @@
         "components": {
             "minecraft:destroy_time": 2.0,
 			"minecraft:creative_category": {
-				"group": "itemGroup.name.stoneBrick",
-				"category": "construction"
+				"group": "itemGroup.name.stone",
+				"category": "nature"
 			},
             "minecraft:explosion_resistance": 6.0,
 			"minecraft:material_instances": {
