@@ -1,6 +1,23 @@
 {
-    "resource_pack_name": "vanilla",
+    "resource_pack_name": "worldbeyond",
     "texture_data": {
+        // Blocks
+        "otherworld_crystal_mount": {
+			"textures": [
+				"textures/items/otherworld_crystal_mount"
+			]
+		},
+        // Items
+        "otherworld_crystal": {
+			"textures": [
+				"textures/items/otherworld_crystal"
+			]
+		},
+        "solar_medallion": {
+			"textures": [
+				"textures/items/solar_medallion"
+			]
+		},
         // Tools & Weapons
         "wooden_spear": {
             "textures": "textures/items/wooden_spear"
@@ -62,3 +79,4 @@
     },
     "texture_name": "atlas.items"
 }
+// File edited by MADLAD3718

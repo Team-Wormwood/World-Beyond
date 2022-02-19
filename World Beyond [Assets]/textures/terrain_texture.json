@@ -1,0 +1,37 @@
+// File created by MADLAD3718
+{
+	"resource_pack_name": "worldbeyond",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"crystal_mount_side": {
+			"textures": "textures/blocks/crystal_mount_side"
+		},
+		"crystal_mount_top": {
+			"textures": "textures/blocks/crystal_mount_top"
+		},
+		"crystal_mount_bottom": {
+			"textures": "textures/blocks/crystal_mount_bottom"
+		},
+		"crystal_side": {
+			"textures": "textures/blocks/crystal_side"
+		},
+		"crystal_top": {
+			"textures": "textures/blocks/crystal_top"
+		},
+		"crystal_bottom": {
+			"textures": "textures/blocks/crystal_bottom"
+		},
+		"crystal_top_cracked": {
+			"textures": "textures/blocks/crystal_top_cracked"
+		},
+		"crystal_top_cracked_2": {
+			"textures": "textures/blocks/crystal_top_cracked_2"
+		},
+		"crystal_side_cracked": {
+			"textures": "textures/blocks/crystal_side_cracked"
+		},
+		"crystal_side_cracked_2": {
+			"textures": "textures/blocks/crystal_side_cracked_2"
+		}
+	}
+}
