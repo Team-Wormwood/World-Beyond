@@ -1,8 +1,17 @@
-// File created by MADLAD3718
+
 {
-	"resource_pack_name": "worldbeyond",
-	"texture_name": "atlas.terrain",
-	"texture_data": {
+   "resource_pack_name" : "vanilla",
+     "texture_name" : "atlas.terrain",
+   "texture_data" : {
+      "special_bottom" : {
+         "textures" : "textures/blocks/infusement_table_bottom"
+      },
+      "special_side" : {
+         "textures" : "textures/blocks/infusement_table_side"
+      },
+      "special_top" : {
+         "textures" : "textures/blocks/infusement_table_top"
+      },
 		"crystal_mount_side": {
 			"textures": "textures/blocks/crystal_mount_side"
 		},

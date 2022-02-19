@@ -1,6 +1,17 @@
-// File created by MADLAD3718
 {
-	"format_version": [1,1,0],
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"worldbeyond:special_table": {
+      "sound" : "wood",
+      "textures" : {
+         "down" : "special_bottom",
+         "side" : "special_side",
+         "up" : "special_top"
+      }
+  }
 	"worldbeyond:otherworld_crystal_mount": {
 		"sound": "netherite"
 	}
