@@ -1,0 +1,22 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "worldbeyond:mossy_limestone"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "worldbeyond:cobbled_limestone"
+            },
+            {
+                "item": "minecraft:vine"
+            }
+        ],
+        "result": {
+            "item": "worldbeyond:mossy_cobbled_limestone"
+        }
+    }
+}

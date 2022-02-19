@@ -4,6 +4,54 @@
 		1,
 		0
 	],
+	"worldbeyond:limestone": {
+		"textures": "limestone",
+		"sound": "deepslate"
+	},
+	"worldbeyond:limestone_bricks": {
+		"textures": "limestone_bricks",
+		"sound": "deepslate"
+	},
+	"worldbeyond:mossy_limestone_bricks": {
+		"textures": "mossy_limestone_bricks",
+		"sound": "deepslate"
+	},
+	"worldbeyond:polished_limestone": {
+		"textures": "polished_limestone",
+		"sound": "deepslate"
+	},
+	"worldbeyond:polished_limestone_slab": {
+		"textures": {
+			"side": "polished_limestone_slab",
+			"down": "polished_limestone",
+			"up": "polished_limestone"
+		},
+		"sound": "deepslate"
+	},
+	"worldbeyond:cobbled_limestone": {
+		"textures": "cobbled_limestone",
+		"sound": "deepslate"
+	},
+	"worldbeyond:mossy_cobbled_limestone": {
+		"textures": "mossy_cobbled_limestone",
+		"sound": "deepslate"
+	},
+	"worldbeyond:chiseled_limestone": {
+		"textures": "chiseled_limestone",
+		"sound": "deepslate"
+	},
+	"worldbeyond:cracked_limestone": {
+		"textures": "cracked_limestone",
+		"sound": "deepslate"
+	},
+	"worldbeyond:limestone_pillar": {
+		"textures": {
+			"up": "limestone_pillar_top",
+			"down": "limestone_pillar_top",
+			"side": "limestone_pillar_side"
+		},
+		"sound": "deepslate"
+	},
 	"worldbeyond:special_table": {
 		"sound": "wood",
 		"textures": {

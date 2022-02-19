@@ -33,12 +33,19 @@ entity.worldbeyond:jungle_zombie.name=Verdant
 entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
 
 ## Blocks
+tile.worldbeyond:limestone.name=Limestone
+tile.worldbeyond:polished_limestone.name=Polished Limestone
+tile.worldbeyond:polished_limestone_slab.name=Polished Limestone Slab
+tile.worldbeyond:limestone_bricks.name=Limestone Bricks
+tile.worldbeyond:mossy_limestone_bricks.name=Mossy Limestone Bricks
+tile.worldbeyond:cobbled_limestone.name=Cobbled Limestone
+tile.worldbeyond:mossy_cobbled_limestone.name=Mossy Cobbled Limestone
+tile.worldbeyond:chiseled_limestone.name=Chiseled Limestone
+tile.worldbeyond:cracked_limestone.name=Cracked Limestone
+tile.worldbeyond:limestone_pillar.name=Limestone Pillar
 tile.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 
 ## Interactions
 
 
 ## Miscellaneous
-
-
-## File edited by MADLAD3718
