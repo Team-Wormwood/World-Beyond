@@ -1,0 +1,17 @@
+{
+   "num_mip_levels" : 4,
+   "padding" : 8,
+   "resource_pack_name" : "vanilla",
+   "texture_data" : {
+      "special_bottom" : {
+         "textures" : "textures/blocks/infusement_table_bottom"
+      },
+      "special_side" : {
+         "textures" : "textures/blocks/infusement_table_side"
+      },
+      "special_top" : {
+         "textures" : "textures/blocks/infusement_table_top"
+      }
+   },
+   "texture_name" : "atlas.terrain"
+}
