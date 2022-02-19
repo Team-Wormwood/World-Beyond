@@ -31,6 +31,17 @@
         "tiger_claw_spear": {
             "textures": "textures/items/tiger_claw_spear"
         },
+        // UI Exclusive 
+        "crimson_boat": {
+            "textures": [
+                "textures/items/boat_crimson"
+            ]
+        },
+        "warped_boat": {
+            "textures": [
+                "textures/items/boat_warped"
+            ]
+        },
         // Materials
         "boar_tusk": {
             "textures": "textures/items/boar_tusk"
@@ -64,17 +75,7 @@
         // Texture Meshes
         "mesh.tiger_claw_spear": {
             "textures": "textures/attachables/tiger_claw_spear"
-        },
-		"crimson_boat": {
-			"textures": [
-				"textures/items/boat_crimson"
-			]
-		},
-		"warped_boat": {
-			"textures": [
-				"textures/items/boat_warped"
-			]
-		}
+        }
     },
     "texture_name": "atlas.items"
 }
