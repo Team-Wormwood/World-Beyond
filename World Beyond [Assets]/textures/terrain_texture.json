@@ -1,0 +1,80 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "limestone_pillar_side": {
+            "textures": "textures/blocks/stones/limestone/limestone_pillar"
+        },
+        "limestone_pillar_top": {
+            "textures": "textures/blocks/stones/limestone/limestone_pillar_top"
+        },
+        "limestone": {
+            "textures": "textures/blocks/stones/limestone/limestone"
+        },
+        "chiseled_limestone": {
+            "textures": "textures/blocks/stones/limestone/chiseled_limestone"
+        },
+        "cobbled_limestone": {
+            "textures": "textures/blocks/stones/limestone/cobbled_limestone"
+        },
+        "cracked_limestone": {
+            "textures": "textures/blocks/stones/limestone/cracked_limestone"
+        },
+        "polished_limestone": {
+            "textures": "textures/blocks/stones/limestone/polished_limestone"
+        },
+        "limestone_bricks": {
+            "textures": "textures/blocks/stones/limestone/limestone_bricks"
+        },
+        "mossy_cobbled_limestone": {
+            "textures": "textures/blocks/stones/limestone/mossy_cobbled_limestone"
+        },
+        "polished_limestone_slab": {
+            "textures": "textures/blocks/stones/limestone/polished_limestone_slab"
+        },
+        "mossy_limestone_bricks": {
+            "textures": "textures/blocks/stones/limestone/mossy_limestone_bricks"
+        },
+        "special_bottom": {
+            "textures": "textures/blocks/infusement_table_bottom"
+        },
+        "special_side": {
+            "textures": "textures/blocks/infusement_table_side"
+        },
+        "special_top": {
+            "textures": "textures/blocks/infusement_table_top"
+        },
+        "crystal_mount_side": {
+            "textures": "textures/blocks/crystal_mount_side"
+        },
+        "crystal_mount_top": {
+            "textures": "textures/blocks/crystal_mount_top"
+        },
+        "crystal_mount_bottom": {
+            "textures": "textures/blocks/crystal_mount_bottom"
+        },
+        "crystal_side": {
+            "textures": "textures/blocks/crystal_side"
+        },
+        "crystal_top": {
+            "textures": "textures/blocks/crystal_top"
+        },
+        "crystal_bottom": {
+            "textures": "textures/blocks/crystal_bottom"
+        },
+        "crystal_top_cracked": {
+            "textures": "textures/blocks/crystal_top_cracked"
+        },
+        "crystal_top_cracked_2": {
+            "textures": "textures/blocks/crystal_top_cracked_2"
+        },
+        "crystal_side_cracked": {
+            "textures": "textures/blocks/crystal_side_cracked"
+        },
+        "crystal_side_cracked_2": {
+            "textures": "textures/blocks/crystal_side_cracked_2"
+        }
+    }
+}
