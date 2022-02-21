@@ -1,3 +1,4 @@
+// File created by Sumi
 {
     "format_version": "1.16.100",
     "minecraft:item": {
@@ -16,11 +17,29 @@
             "minecraft:armor": {
                 "protection": 2
             },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "adventure_hat:equip"
+                }
+            },
             "minecraft:wearable": {
                 "dispensable": true,
                 "slot": "slot.armor.head"
             }
         },
-        "events": {}
+        "events": {
+            "adventure_hat:equip": {
+                "sequence": [
+                    {
+                        "condition": "!query.is_item_name_any('slot.armor.head', 0, 'worldbeyond:adventure_hat', 'worldbeyond:colourful_adventure_hat')",
+                        "run_command": {
+                            "command": [
+                                "playsound armor.equip_leather"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
     }
 }

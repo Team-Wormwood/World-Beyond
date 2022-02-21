@@ -18,8 +18,9 @@
             "arrays": {
                 "textures": {
                     "array.advancements": [
-                        "texture.advancement.feet_wet", // Array Padding
-                        "texture.advancement.feet_wet" // Feet Wet Advancement
+                        "texture.advancement.adventuring_journey", // Array Padding
+                        "texture.advancement.feet_wet",
+                        "texture.advancement.adventuring_journey"
                     ]
                 }
             }

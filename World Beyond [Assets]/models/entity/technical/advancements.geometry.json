@@ -4,8 +4,8 @@
         {
             "description": {
                 "identifier": "geometry.advancements_ui",
-                "texture_width": 363,
-                "texture_height": 87,
+                "texture_width": 128,
+                "texture_height": 33,
                 "visible_bounds_width": 24,
                 "visible_bounds_height": 7,
                 "visible_bounds_offset": [
@@ -30,8 +30,8 @@
                                 0
                             ],
                             "size": [
-                                363,
-                                87,
+                                128,
+                                33,
                                 0
                             ],
                             "uv": {
@@ -41,8 +41,8 @@
                                         0
                                     ],
                                     "uv_size": [
-                                        363,
-                                        87
+                                        128,
+                                        33
                                     ]
                                 }
                             }

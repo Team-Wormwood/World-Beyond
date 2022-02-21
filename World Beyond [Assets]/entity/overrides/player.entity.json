@@ -12,20 +12,25 @@
 				"default": "textures/entity/steve",
 				"cape": "textures/entity/cape_invisible",
 				// Advancements
-				"advancement.feet_wet": "textures/ui/advancements/feet_wet"
+				"advancement.feet_wet": "textures/ui/advancements/feet_wet",
+				"advancement.adventuring_journey": "textures/ui/advancements/adventuring_journey",
+				// Developers
+				"sumiyumi": "textures/entity/yumi"
 			},
 			"geometry": {
 				"default": "geometry.humanoid.custom",
 				"cape": "geometry.cape",
 				// Advancements
-				"advancements_ui": "geometry.advancements_ui"
+				"advancements_ui": "geometry.advancements_ui",
+				// Developers
+				"sumiyumi": "geometry.yumi"
 			},
 			"scripts": {
 				"scale": "0.9375",
 				"initialize": [
 					// Advancements
 					"variable.should_render_in_hud = 0.0;",
-					"variable.interpolated_advancements_fade_dist = 0.0;",
+					"variable.advancements_fade_motion = 0.0;",
 					// Defaults
 					"variable.is_holding_right = 0.0;",
 					"variable.is_blinking = 0.0;",
@@ -46,7 +51,7 @@
 					"variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;",
 					// Advancements
 					"variable.should_render_in_hud = !query.is_riding && !query.is_gliding && query.is_alive && query.is_in_ui && !variable.map_face_icon;",
-					"temp.dist = (query.mark_variant > 0) ? 0 : 500; temp.fade_pct = 0.65; temp.fade_time = 0.5; temp.delta_time = variable.is_first_person ? query.delta_time : query.last_frame_time; variable.interpolated_advancements_fade_dist = variable.interpolated_advancements_fade_dist + (temp.dist - variable.interpolated_advancements_fade_dist) * (1 - math.pow((1 - temp.fade_pct), temp.delta_time / temp.fade_time));"
+					"temp.distance = ( query.mark_variant > 0 ) ? 0 : 500; temp.fade_speed = 0.33; temp.fade_amount = 0.5; temp.delta_time = variable.is_first_person ? query.delta_time : query.last_frame_time; variable.advancements_fade_motion = variable.advancements_fade_motion + ( temp.distance - variable.advancements_fade_motion ) * ( 1 - math.pow( temp.fade_speed , temp.delta_time / temp.fade_amount ) );"
 				],
 				"animate": [
 					"root",
@@ -111,7 +116,7 @@
 			"render_controllers": [
 				// Advancements
 				{
-					"controller.render.player.advancements_ui": "variable.should_render_in_hud && variable.interpolated_advancements_fade_dist < 499.0f"
+					"controller.render.player.advancements_ui": "variable.should_render_in_hud && variable.advancements_fade_motion < 649.0f"
 				},
 				// Defaults
 				{

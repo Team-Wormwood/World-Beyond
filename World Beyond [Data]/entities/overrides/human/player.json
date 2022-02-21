@@ -9,13 +9,16 @@
 			"scripts": {
 				"animate": [
 					"advancements",
-					"feet_wet",
+					"advancement.feet_wet",
+					"advancement.adventuring_journey",
+					// Equipment
 					"solar_medallion"
 				]
 			},
 			"animations": {
 				"advancements": "controller.animation.server.player_advancements.general",
-				"feet_wet": "controller.animation.server.player_advancements.feet_wet",
+				"advancement.feet_wet": "controller.animation.server.player_advancements.feet_wet",
+				"advancement.adventuring_journey": "controller.animation.server.player_advancements.adventuring_journey",
 				"solar_medallion": "controller.animation.solar_medallion"
 			}
 		},
@@ -29,6 +32,11 @@
 			"worldbeyond:advancement.feet_wet": {
 				"minecraft:mark_variant": {
 					"value": 1
+				}
+			},
+			"worldbeyond:advancement.adventuring_journey": {
+				"minecraft:mark_variant": {
+					"value": 2
 				}
 			},
 			// Defaults
@@ -206,6 +214,13 @@
 				"add": {
 					"component_groups": [
 						"worldbeyond:advancement.feet_wet"
+					]
+				}
+			},
+			"player:advancement_get.adventuring_journey": {
+				"add": {
+					"component_groups": [
+						"worldbeyond:advancement.adventuring_journey"
 					]
 				}
 			},

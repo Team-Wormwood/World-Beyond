@@ -6,11 +6,11 @@
 			"bones": {
 				"advancements_ui": {
 					"position": [
-						"variable.interpolated_advancements_fade_dist",
-						"(query.is_swimming ? -18.35) - 900",
+						"150 + variable.advancements_fade_motion",
+						"((query.is_swimming ? -18.35) - 900)",
 						0.0
 					],
-					"scale": 0.45
+					"scale": 1.45
 				}
 			}
 		}
