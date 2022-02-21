@@ -15,7 +15,8 @@
 				"advancement.feet_wet": "textures/ui/advancements/feet_wet",
 				"advancement.adventuring_journey": "textures/ui/advancements/adventuring_journey",
 				// Developers
-				"sumiyumi": "textures/entity/yumi"
+				"sumiyumi": "textures/entity/yumi",
+				"luth": "textures/entity/luth"
 			},
 			"geometry": {
 				"default": "geometry.humanoid.custom",
@@ -23,7 +24,8 @@
 				// Advancements
 				"advancements_ui": "geometry.advancements_ui",
 				// Developers
-				"sumiyumi": "geometry.yumi"
+				"sumiyumi": "geometry.yumi",
+				"luth": "geometry.luth"
 			},
 			"scripts": {
 				"scale": "0.9375",
