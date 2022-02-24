@@ -14,6 +14,8 @@ item.worldbeyond:tiger_claws=Tiger Claws
 item.worldbeyond:boar_tusk=Boar Tusk
 item.worldbeyond:ruby=Ruby
 item.worldbeyond:long_stick=Long Stick
+item.worldbeyond_iron:netherite_iingot=Iron Ingot
+item.worldbeyond_diamond:netherite_iingot=Diamond
 
 item.worldbeyond:adventure_hat=§6Hat of the Adventurer
 item.worldbeyond:colourful_adventure_hat=§dColorful Hat of the Adventurer
