@@ -45,7 +45,6 @@
         "invisible": {
             "textures": "textures/invisible"
         },
-<<<<<<< HEAD
         "limestone": {
             "textures": "textures/blocks/stones/limestone/limestone"
         },
@@ -79,10 +78,6 @@
         "special_top": {
             "textures": "textures/blocks/infusement_table_top"
         }
-    },
-    "texture_name": "atlas.terrain"
-}
-=======
         "crystal_side_cracked_2": {
             "textures": "textures/blocks/crystal_side_cracked_2"
         },
@@ -97,4 +92,3 @@
 		}
     }
 }
->>>>>>> b2173dcfb20926523af3dab20ba352a4b2746e48
