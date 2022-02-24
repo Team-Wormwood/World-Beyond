@@ -2,9 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:limestone",
-            "is_experimental": false,
-            "register_to_creative_menu": true
+            "identifier": "worldbeyond:limestone"
         },
         "components": {
             "minecraft:destroy_time": 1.4,

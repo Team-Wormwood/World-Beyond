@@ -8,18 +8,22 @@
 			"is_experimental": false,
 			"scripts": {
 				"animate": [
+					// Advancements
 					"advancements",
 					"advancement.feet_wet",
 					"advancement.adventuring_journey",
 					// Equipment
-					"solar_medallion"
+					"solar_medallion",
+					// Block Fixes
+					"flag_items"
 				]
 			},
 			"animations": {
 				"advancements": "controller.animation.server.player_advancements.general",
 				"advancement.feet_wet": "controller.animation.server.player_advancements.feet_wet",
 				"advancement.adventuring_journey": "controller.animation.server.player_advancements.adventuring_journey",
-				"solar_medallion": "controller.animation.solar_medallion"
+				"solar_medallion": "controller.animation.solar_medallion",
+				"flag_items": "controller.animation.flag_items"
 			}
 		},
 		"component_groups": {
