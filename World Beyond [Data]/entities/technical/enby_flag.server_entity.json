@@ -19,6 +19,7 @@
         "components": {
             "minecraft:type_family": {
                 "family": [
+                    "flag",
                     "inanimate"
                 ]
             },
@@ -156,10 +157,59 @@
                                 "worldbeyond:flag.weatherThunder"
                             ]
                         }
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirNull"
+                            ]
+                        }
                     }
                 ]
             },
+            "flag:rotate.to_east": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.flag.rotate_east",
+                        "tag @s remove dirNull",
+                        "tag @s remove dirNorth",
+                        "tag @s  adddirEast"
+                    ]
+                }
+            },
+            "flag:rotate.to_south": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.flag.rotate_south",
+                        "tag @s remove dirEast",
+                        "tag @s add dirSouth"
+                    ]
+                }
+            },
+            "flag:rotate.to_west": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.flag.rotate_west",
+                        "tag @s remove dirSouth",
+                        "tag @s add dirWest"
+                    ]
+                }
+            },
+            "flag:rotate.to_north": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.flag.rotate_north",
+                        "tag @s remove dirWest",
+                        "tag @s add dirNorth"
+                    ]
+                }
+            },
             "flag:despawn": {
+                "run_command": {
+                    "command": [
+                        "particle worldbeyond:custom_block_particle ~ ~ ~"
+                    ]
+                },
                 "add": {
                     "component_groups": [
                         "worldbeyond:instant_despawn"

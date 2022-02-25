@@ -1,0 +1,1 @@
+event entity @s[tag=dirNull] flag:rotate.to_east 

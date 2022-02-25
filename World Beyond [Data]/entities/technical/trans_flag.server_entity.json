@@ -1,6 +1,6 @@
 // File created by Sumi
 {
-    "format_version": "1.16.0",
+    "format_version": "1.17.0",
     "minecraft:entity": {
         "description": {
             "identifier": "worldbeyond:trans_flag_entity",
@@ -16,9 +16,30 @@
                 "solid_detection": "controller.animation.flag_detection"
             }
         },
+        "component_groups": {
+            "worldbeyond:instant_despawn": {
+                "minecraft:instant_despawn": {}
+            },
+            "worldbeyond:flag.weatherClear": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "worldbeyond:flag.weatherRain": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "worldbeyond:flag.weatherThunder": {
+                "minecraft:mark_variant": {
+                    "value": 2
+                }
+            }
+        },
         "components": {
             "minecraft:type_family": {
                 "family": [
+                    "flag",
                     "inanimate"
                 ]
             },
@@ -26,7 +47,7 @@
                 "min": 0,
                 "value": 1
             },
-            "minecraft:persistent": {},
+            // "minecraft:persistent": {},
             "minecraft:collision_box": {
                 "height": 0,
                 "width": 0
@@ -95,26 +116,6 @@
                 ]
             }
         },
-        "component_groups": {
-            "worldbeyond:instant_despawn": {
-                "minecraft:instant_despawn": {}
-            },
-            "worldbeyond:flag.weatherClear": {
-                "minecraft:mark_variant": {
-                    "value": 0
-                }
-            },
-            "worldbeyond:flag.weatherRain": {
-                "minecraft:mark_variant": {
-                    "value": 1
-                }
-            },
-            "worldbeyond:flag.weatherThunder": {
-                "minecraft:mark_variant": {
-                    "value": 2
-                }
-            }
-        },
         "events": {
             "minecraft:entity_spawned": {
                 "sequence": [
@@ -156,8 +157,56 @@
                                 "worldbeyond:flag.weatherThunder"
                             ]
                         }
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirNull"
+                            ]
+                        }
                     }
                 ]
+            },
+            "flag:rotate.to_east": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.flag.rotate_east",
+                        "say animation.flag.rotate_east",
+                        "tag @s remove dirNull",
+                        "tag @s remove dirNorth",
+                        "tag @s add dirEast"
+                    ]
+                }
+            },
+            "flag:rotate.to_south": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.flag.rotate_south",
+                        "say animation.flag.rotate_south",
+                        "tag @s remove dirEast",
+                        "tag @s add dirSouth"
+                    ]
+                }
+            },
+            "flag:rotate.to_west": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.flag.rotate_west",
+                        "say animation.flag.rotate_west",
+                        "tag @s remove dirSouth",
+                        "tag @s add dirWest"
+                    ]
+                }
+            },
+            "flag:rotate.to_north": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.flag.rotate_north",
+                        "say animation.flag.rotate_north",
+                        "tag @s remove dirWest",
+                        "tag @s add dirNorth"
+                    ]
+                }
             },
             "flag:despawn": {
                 "run_command": {

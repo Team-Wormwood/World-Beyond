@@ -21,6 +21,9 @@
                     "render_method": "alpha_test"
                 }
             },
+            "minecraft:on_interact": {
+                "event": "flagBlock:block_rotate"
+            },
             "minecraft:pick_collision": {
                 "origin": [
                     -2,
@@ -51,6 +54,13 @@
                 "run_command": {
                     "command": [
                         "summon worldbeyond:enby_flag_entity ~ ~ ~"
+                    ]
+                }
+            },
+            "flagBlock:block_rotate": {
+                "run_command": {
+                    "command": [
+                        "execute @e[family=flag, r=1] ~ ~ ~ function blockFunctions/interactionRotation"
                     ]
                 }
             }
