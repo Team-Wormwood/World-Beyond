@@ -1,1 +1,0 @@
-event entity @s flag:rotate

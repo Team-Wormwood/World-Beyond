@@ -33,42 +33,6 @@
 					"rotation": [0, "math.Cos(query.anim_time * 124) * 33", 0]
 				}
 			}
-		},
-		"animation.flag.rotate_north": {
-			"override_previous_animation": true,
-			"loop": true,
-			"bones": {
-				"root": {
-					"rotation": [0, 0, 0]
-				}
-			}
-		},
-		"animation.flag.rotate_east": {
-			"override_previous_animation": true,
-			"loop": true,
-			"bones": {
-				"root": {
-					"rotation": [0, -90, 0]
-				}
-			}
-		},
-		"animation.flag.rotate_south": {
-			"override_previous_animation": true,
-			"loop": true,
-			"bones": {
-				"root": {
-					"rotation": [0, 180, 0]
-				}
-			}
-		},
-		"animation.flag.rotate_west": {
-			"override_previous_animation": true,
-			"loop": true,
-			"bones": {
-				"root": {
-					"rotation": [0, 90, 0]
-				}
-			}
 		}
 	}
 }

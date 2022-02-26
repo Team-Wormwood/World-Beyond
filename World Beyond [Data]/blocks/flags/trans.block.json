@@ -60,7 +60,7 @@
             "flagBlock:block_rotate": {
                 "run_command": {
                     "command": [
-                        "execute @e[family=flag, r=1] ~ ~ ~ function blockFunctions/interactionRotation"
+                        "event entity @e[family=flag, r=0.1] flag:rotate"
                     ]
                 }
             }
