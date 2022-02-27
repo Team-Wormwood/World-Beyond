@@ -3,21 +3,22 @@
     "texture_data": {
         // Blocks
         "otherworld_crystal_mount": {
-			"textures": [
-				"textures/items/otherworld_crystal_mount"
-			]
-		},
+            "textures": [
+                "textures/items/otherworld_crystal_mount"
+            ]
+        },
+        "flag.enby": {
+            "textures": "textures/items/enby_flag"
+        },
+        "flag.trans": {
+            "textures": "textures/items/trans_flag"
+        },
         // Items
         "otherworld_crystal": {
-			"textures": [
-				"textures/items/otherworld_crystal"
-			]
-		},
-        "solar_medallion": {
-			"textures": [
-				"textures/items/solar_medallion"
-			]
-		},
+            "textures": [
+                "textures/items/otherworld_crystal"
+            ]
+        },
         // Tools & Weapons
         "wooden_spear": {
             "textures": "textures/items/wooden_spear"
@@ -30,6 +31,11 @@
         },
         "tiger_claw_spear": {
             "textures": "textures/items/tiger_claw_spear"
+        },
+        "solar_medallion": {
+            "textures": [
+                "textures/items/solar_medallion"
+            ]
         },
         // UI Exclusive 
         "crimson_boat": {

@@ -2,9 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:cobbled_limestone",
-            "is_experimental": false,
-            "register_to_creative_menu": false
+            "identifier": "worldbeyond:cobbled_limestone"
         },
         "components": {
             "minecraft:destroy_time": 2.0,

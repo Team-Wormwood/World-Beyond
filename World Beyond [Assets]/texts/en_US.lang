@@ -14,6 +14,8 @@ item.worldbeyond:tiger_claws=Tiger Claws
 item.worldbeyond:boar_tusk=Boar Tusk
 item.worldbeyond:ruby=Ruby
 item.worldbeyond:long_stick=Long Stick
+item.worldbeyond_iron:netherite_iingot=Iron Ingot
+item.worldbeyond_diamond:netherite_iingot=Diamond
 
 item.worldbeyond:adventure_hat=§6Hat of the Adventurer
 item.worldbeyond:colourful_adventure_hat=§dColorful Hat of the Adventurer
@@ -22,15 +24,21 @@ item.worldbeyond:wooden_spear=Wooden Spear
 item.worldbeyond:stone_spear=Stone Spear
 item.worldbeyond:iron_spear=Iron Spear
 item.worldbeyond:tiger_claw_spear=§6Tiger Claw Spear§r
+item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
+
+item.worldbeyond:enby_flag_item=Non-Binary Flag
+item.worldbeyond:trans_flag_item=Transgender Flag
 item.worldbeyond:otherworld_crystal.name=§bOtherworld Crystal§r
 item.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
-item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
 
 ## Entities
 entity.worldbeyond:tiger.name=Tiger
 entity.worldbeyond:toucan.name=Toucan
 entity.worldbeyond:jungle_zombie.name=Verdant
 entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
+
+entity.worldbeyond:enby_flag_entity.name=Non-Binary Flag
+entity.worldbeyond:trans_flag_entity.name=Transgender Flag
 
 ## Blocks
 tile.worldbeyond:limestone.name=Limestone
@@ -48,6 +56,8 @@ tile.worldbeyond:mossy_cobbled_limestone.name=Mossy Cobbled Limestone
 tile.worldbeyond:chiseled_limestone.name=Chiseled Limestone
 tile.worldbeyond:cracked_limestone.name=Cracked Limestone
 tile.worldbeyond:limestone_pillar.name=Limestone Pillar
+tile.worldbeyond:enby_flag.name=Non-Binary Flag
+tile.worldbeyond:trans_flag.name=Transgender Flag
 tile.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 
 ## Interactions

@@ -1,66 +1,74 @@
 {
-	"format_version": [
-		1,
-		1,
-		0
-	],
-	"worldbeyond:limestone": {
-		"textures": "limestone",
-		"sound": "deepslate"
-	},
-	"worldbeyond:limestone_bricks": {
-		"textures": "limestone_bricks",
-		"sound": "deepslate"
-	},
-	"worldbeyond:mossy_limestone_bricks": {
-		"textures": "mossy_limestone_bricks",
-		"sound": "deepslate"
-	},
-	"worldbeyond:polished_limestone": {
-		"textures": "polished_limestone",
-		"sound": "deepslate"
-	},
-	"worldbeyond:polished_limestone_slab": {
-		"textures": {
-			"side": "polished_limestone_slab",
-			"down": "polished_limestone",
-			"up": "polished_limestone"
-		},
-		"sound": "deepslate"
-	},
-	"worldbeyond:cobbled_limestone": {
-		"textures": "cobbled_limestone",
-		"sound": "deepslate"
-	},
-	"worldbeyond:mossy_cobbled_limestone": {
-		"textures": "mossy_cobbled_limestone",
-		"sound": "deepslate"
-	},
-	"worldbeyond:chiseled_limestone": {
-		"textures": "chiseled_limestone",
-		"sound": "deepslate"
-	},
-	"worldbeyond:cracked_limestone": {
-		"textures": "cracked_limestone",
-		"sound": "deepslate"
-	},
-	"worldbeyond:limestone_pillar": {
-		"textures": {
-			"up": "limestone_pillar_top",
-			"down": "limestone_pillar_top",
-			"side": "limestone_pillar_side"
-		},
-		"sound": "deepslate"
-	},
-	"worldbeyond:special_table": {
-		"sound": "wood",
-		"textures": {
-			"down": "special_bottom",
-			"side": "special_side",
-			"up": "special_top"
-		}
-	},
-	"worldbeyond:otherworld_crystal_mount": {
-		"sound": "netherite"
-	}
+    "format_version": [
+        1,
+        1,
+        0
+    ],
+    "worldbeyond:chiseled_limestone": {
+        "sound": "deepslate",
+        "textures": "chiseled_limestone"
+    },
+    "worldbeyond:cobbled_limestone": {
+        "sound": "deepslate",
+        "textures": "cobbled_limestone"
+    },
+    "worldbeyond:cracked_limestone": {
+        "sound": "deepslate",
+        "textures": "cracked_limestone"
+    },
+    "worldbeyond:enby_flag": {
+        "sound": "wood",
+        "textures": "invisible"
+    },
+    "worldbeyond:trans_flag": {
+        "sound": "wood",
+        "textures": "invisible"
+    },
+    "worldbeyond:limestone": {
+        "sound": "deepslate",
+        "textures": "limestone"
+    },
+    "worldbeyond:limestone_bricks": {
+        "sound": "deepslate",
+        "textures": "limestone_bricks"
+    },
+    "worldbeyond:limestone_pillar": {
+        "sound": "deepslate",
+        "textures": {
+            "down": "limestone_pillar_top",
+            "side": "limestone_pillar_side",
+            "up": "limestone_pillar_top"
+        }
+    },
+    "worldbeyond:mossy_cobbled_limestone": {
+        "sound": "deepslate",
+        "textures": "mossy_cobbled_limestone"
+    },
+    "worldbeyond:mossy_limestone_bricks": {
+        "sound": "deepslate",
+        "textures": "mossy_limestone_bricks"
+    },
+    "worldbeyond:otherworld_crystal_mount": {
+        "sound": "netherite"
+    },
+    "worldbeyond:polished_limestone": {
+        "sound": "deepslate",
+        "textures": "polished_limestone"
+    },
+    "worldbeyond:polished_limestone_slab": {
+        "sound": "deepslate",
+        "textures": {
+            "down": "polished_limestone",
+            "side": "polished_limestone_slab",
+            "up": "polished_limestone"
+        }
+    },
+    "worldbeyond:special_table": {
+        "sound": "wood",
+        "textures": {
+            "down": "special_bottom",
+            "side": "special_side",
+            "up": "special_top"
+        }
+    }
 }

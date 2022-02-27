@@ -2,9 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:limestone_bricks",
-            "is_experimental": false,
-            "register_to_creative_menu": true
+            "identifier": "worldbeyond:mossy_limestone_bricks"
         },
         "components": {
             "minecraft:destroy_time": 2.0,
@@ -15,13 +13,13 @@
             "minecraft:explosion_resistance": 6.0,
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "limestone_bricks",
+					"texture": "mossy_limestone_bricks",
 					"render_method": "opaque"
 				}
 			},
             "tag:stone": {},
             "minecraft:friction": 0.6,
-            "minecraft:map_color": "#918F87",
+            "minecraft:map_color": "#70922D",
             "minecraft:block_light_emission": 0.0
         }
     }

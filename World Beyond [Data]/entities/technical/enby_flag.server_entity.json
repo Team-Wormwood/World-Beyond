@@ -1,0 +1,260 @@
+// File created by Sumi
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "worldbeyond:enby_flag_entity",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "solid_detection"
+                ]
+            },
+            "animations": {
+                "solid_detection": "controller.animation.flag_detection"
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "flag",
+                    "inanimate"
+                ]
+            },
+            "minecraft:health": {
+                "min": 0,
+                "value": 1
+            },
+            "minecraft:persistent": {},
+            "minecraft:collision_box": {
+                "height": 0,
+                "width": 0
+            },
+            "minecraft:knockback_resistance": {
+                "max": 1,
+                "value": 1
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "subject": "self",
+                                    "test": "weather_at_position",
+                                    "operator": "==",
+                                    "value": "clear"
+                                }
+                            ]
+                        },
+                        "event": "flag:weather_clear"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "subject": "self",
+                                    "test": "weather_at_position",
+                                    "operator": "==",
+                                    "value": "precipitation"
+                                }
+                            ]
+                        },
+                        "event": "flag:weather_rain"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "subject": "self",
+                                    "test": "weather_at_position",
+                                    "operator": "==",
+                                    "value": "thunder"
+                                }
+                            ]
+                        },
+                        "event": "flag:weather_thunder"
+                    }
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "all",
+                    "deals_damage": false
+                }
+            },
+            "minecraft:inside_block_notifier": {
+                "block_list": [
+                    {
+                        "block": "worldbeyond:enby_flag",
+                        "exited_block_event": {
+                            "event": "flag:despawn"
+                        }
+                    }
+                ]
+            }
+        },
+        "component_groups": {
+            "worldbeyond:instant_despawn": {
+                "minecraft:instant_despawn": {}
+            },
+            "worldbeyond:flag.weatherClear": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "worldbeyond:flag.weatherRain": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "worldbeyond:flag.weatherThunder": {
+                "minecraft:mark_variant": {
+                    "value": 2
+                }
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "sequence": [
+                    {
+                        "filters": {
+                            "subject": "self",
+                            "test": "weather_at_position",
+                            "operator": "==",
+                            "value": "clear"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "worldbeyond:flag.weatherClear"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "subject": "self",
+                            "test": "weather_at_position",
+                            "operator": "==",
+                            "value": "precipitation"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "worldbeyond:flag.weatherRain"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "subject": "self",
+                            "test": "weather_at_position",
+                            "operator": "==",
+                            "value": "thunder"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "worldbeyond:flag.weatherThunder"
+                            ]
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirNull"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "flag:rotate.to_east": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.flag.rotate_east",
+                        "tag @s remove dirNull",
+                        "tag @s remove dirNorth",
+                        "tag @s  adddirEast"
+                    ]
+                }
+            },
+            "flag:rotate.to_south": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.flag.rotate_south",
+                        "tag @s remove dirEast",
+                        "tag @s add dirSouth"
+                    ]
+                }
+            },
+            "flag:rotate.to_west": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.flag.rotate_west",
+                        "tag @s remove dirSouth",
+                        "tag @s add dirWest"
+                    ]
+                }
+            },
+            "flag:rotate.to_north": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.flag.rotate_north",
+                        "tag @s remove dirWest",
+                        "tag @s add dirNorth"
+                    ]
+                }
+            },
+            "flag:despawn": {
+                "run_command": {
+                    "command": [
+                        "particle worldbeyond:custom_block_particle ~ ~ ~"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "worldbeyond:instant_despawn"
+                    ]
+                }
+            },
+            "flag:weather_clear": {
+                "add": {
+                    "component_groups": [
+                        "worldbeyond:flag.weatherClear"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "worldbeyond:flag.weatherRain",
+                        "worldbeyond:flag.weatherThunder"
+                    ]
+                }
+            },
+            "flag:weather_rain": {
+                "add": {
+                    "component_groups": [
+                        "worldbeyond:flag.weatherRain"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "worldbeyond:flag.weatherClear",
+                        "worldbeyond:flag.weatherThunder"
+                    ]
+                }
+            },
+            "flag:weather_thunder": {
+                "add": {
+                    "component_groups": [
+                        "worldbeyond:flag.weatherThunder"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "worldbeyond:flag.weatherClear",
+                        "worldbeyond:flag.weatherRain"
+                    ]
+                }
+            }
+        }
+    }
+}
