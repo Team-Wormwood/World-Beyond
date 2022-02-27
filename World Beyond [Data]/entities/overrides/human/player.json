@@ -43,6 +43,19 @@
 					"value": 2
 				}
 			},
+			// Sneaking
+			"worldbeyond:sneaking": {
+				"minecraft:collision_box": {
+					"width": 0.6,
+					"height": 1.5
+				}
+			},
+			"worldbeyond:vanilla_hitbox": {
+				"minecraft:collision_box": {
+					"width": 0.6,
+					"height": 1.8
+				}
+			},
 			// Defaults
 			"minecraft:add_bad_omen": {
 				"minecraft:spell_effects": {
@@ -186,23 +199,49 @@
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:block_climber": {},
 			"minecraft:environment_sensor": {
-				"triggers": {
-					"filters": {
-						"all_of": [
-							{
-								"test": "has_mob_effect",
-								"subject": "self",
-								"value": "bad_omen"
-							},
-							{
-								"test": "is_in_village",
-								"subject": "self",
-								"value": true
-							}
-						]
+				"triggers": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_mob_effect",
+									"subject": "self",
+									"value": "bad_omen"
+								},
+								{
+									"test": "is_in_village",
+									"subject": "self",
+									"value": true
+								}
+							]
+						},
+						"event": "minecraft:trigger_raid"
 					},
-					"event": "minecraft:trigger_raid"
-				}
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_sneaking",
+									"subject": "self",
+									"value": true
+								}
+							]
+						},
+						"event": "worldbeyond:sneak"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_sneaking",
+									"subject": "self",
+									"value": false
+								}
+							]
+						},
+						"event": "worldbeyond:unsneak"
+					}
+				]
 			}
 		},
 		"events": {
@@ -225,6 +264,21 @@
 				"add": {
 					"component_groups": [
 						"worldbeyond:advancement.adventuring_journey"
+					]
+				}
+			},
+			//Sneaks
+			"worldbeyond:sneak": {
+				"add": {
+					"component_groups": [
+						"worldbeyond:sneaking"
+					]
+				}
+			},
+			"worldbeyond:unsneak": {
+				"add": {
+					"component_groups": [
+						"worldbeyond:vanilla_hitbox"
 					]
 				}
 			},
