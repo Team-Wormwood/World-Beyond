@@ -3,7 +3,12 @@
 ## Miscellaneous
 execute @s ~ ~ ~ detect ~ ~-1 ~ air -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ bamboo_sapling -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ bamboo -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ bed -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ beetroot -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ brewing_stand -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ brown_mushroom -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ campfire -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ carpet -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ cave_vines -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ cave_vines_body_with_berries -1 setblock ~ ~ ~ air 0 destroy
@@ -11,20 +16,34 @@ execute @s ~ ~ ~ detect ~ ~-1 ~ cave_vines_head_with_berries -1 setblock ~ ~ ~ a
 execute @s ~ ~ ~ detect ~ ~-1 ~ deadbush -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ detector_rail -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ double_plant -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ end_portal_frame -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ fire -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ frame -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ glow_frame -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ glow_lichen -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ golden_rail -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ lava -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ ladder -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ lantern -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ melon_stem -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ moss_carpet -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ nether_wart -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ pointed_dripstone -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ pumpkin_stem -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ red_mushroom -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ redstone_torch -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ redstone_wire -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ sapling -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ seagrass -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ sea_pickle -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ skull -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ soul_campfire -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ soul_lantern -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ soul_torch -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ small_dripleaf_block -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ snow_layer -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ spore_blossom -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stonecutter_block -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ tallgrass -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ torch -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ twisting_vines -1 setblock ~ ~ ~ air 0 destroy
@@ -32,6 +51,7 @@ execute @s ~ ~ ~ detect ~ ~-1 ~ vine -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ waterlily -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ weeping_vines -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ web -1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ wheat -1 setblock ~ ~ ~ air 0 destroy
 
 
 ## Amethyst
@@ -139,6 +159,54 @@ execute @s ~ ~ ~ detect ~ ~-1 ~ wooden_pressure_plate -1 setblock ~ ~ ~ air 0 de
 execute @s ~ ~ ~ detect ~ ~-1 ~ crimson_roots -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ hanging_roots -1 setblock ~ ~ ~ air 0 destroy
 execute @s ~ ~ ~ detect ~ ~-1 ~ warped_roots -1 setblock ~ ~ ~ air 0 destroy
+
+
+## Slabs
+### Stone Slab 1
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab 1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab 2 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab 3 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab 4 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab 5 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab 6 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab 7 setblock ~ ~ ~ air 0 destroy
+### Stone Slab 2
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab2 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab2 1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab2 2 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab2 3 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab2 4 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab2 5 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab2 6 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab2 7 setblock ~ ~ ~ air 0 destroy
+### Stone Slab 3
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab3 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab3 1 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab3 2 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab3 3 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab3 4 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab3 5 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab3 6 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ stone_slab3 7 setblock ~ ~ ~ air 0 destroy
+### Individuals
+execute @s ~ ~ ~ detect ~ ~-1 ~ blackstone_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ cobbled_deepslate_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ crimson_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ cut_copper_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ deepslate_brick_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ deepslate_tile_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ exposed_cut_copper_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ oxidized_cut_copper_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ polished_blackstone_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ polished_deepslate_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ polished_blackstone_brick_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ warped_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ waxed_cut_copper_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ waxed_exposed_cut_copper_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ waxed_oxidized_cut_copper_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ waxed_weathered_cut_copper_slab 0 setblock ~ ~ ~ air 0 destroy
+execute @s ~ ~ ~ detect ~ ~-1 ~ weathered_cut_copper_slab 0 setblock ~ ~ ~ air 0 destroy
 
 
 ## Standing Signs
