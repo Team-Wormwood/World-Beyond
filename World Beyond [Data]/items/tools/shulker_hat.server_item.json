@@ -1,0 +1,26 @@
+// File created by Luth
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "worldbeyond:shulker_hat",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:icon": {
+                "texture": "shulker_shell"
+            },
+            "minecraft:display_name": {
+                "value": "Placeholder"
+            },
+            "minecraft:wearable": {
+                "dispensable": true,
+                "slot": "slot.armor.head"
+            }
+        }
+    }
+}
