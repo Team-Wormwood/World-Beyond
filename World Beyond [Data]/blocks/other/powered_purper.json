@@ -1,0 +1,24 @@
+// File created by Luth
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "worldbeyond:powered_purpur"
+		},
+		"components": {
+			"minecraft:destroy_time": 1.0,
+			"minecraft:block_light_absorption": 1.0,
+			"minecraft:block_light_emission": 1.0,
+			"minecraft:entity_collision": true,
+			"minecraft:unit_cube": {},
+			"minecraft:material_instances": {
+				"*": {
+					"ambient_occlusion": true,
+					"face_dimming": true,
+					"texture": "purper_on",
+					"render_method": "opaque"
+				}
+			}
+		}
+	}
+}
