@@ -15,7 +15,7 @@
 				"*": {
 					"ambient_occlusion": true,
 					"face_dimming": true,
-					"texture": "purper_on",
+					"texture": "purpur_on",
 					"render_method": "opaque"
 				}
 			}
