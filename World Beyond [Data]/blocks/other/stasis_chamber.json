@@ -45,6 +45,9 @@
 							"target": "self",
 							"command": "tp @e[type=worldbeyond:stasis_test, r=2] ~ ~ ~"
 						}
+					},
+					{
+						"decrement_stack": {}
 					}
 				]
 			}
