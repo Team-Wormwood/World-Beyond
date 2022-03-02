@@ -1,0 +1,2 @@
+execute @s[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~-5 ~-5 ~-5 ~5 ~5 ~5 worldbeyond:powered_purpur -1 replace purpur_block -1
+execute @s[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~ ~-1 ~ ~ ~1 ~ worldbeyond:stasis_on -1 replace worldbeyond:stasis_chamber -1

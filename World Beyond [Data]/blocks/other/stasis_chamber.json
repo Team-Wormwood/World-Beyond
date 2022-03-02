@@ -1,0 +1,56 @@
+// File created by Luth
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "worldbeyond:stasis_chamber",
+			"properties": {
+				"worldbeyond:stasis_charge": [
+					0,
+					1
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 0.3,
+			"minecraft:breathability": "air",
+			"minecraft:block_light_absorption": 0.0,
+			"minecraft:block_light_emission": 0.0,
+			"minecraft:entity_collision": true,
+			"minecraft:geometry": "geometry.stasis_chamber",
+			"minecraft:material_instances": {
+				"*": {
+					"ambient_occlusion": true,
+					"face_dimming": true,
+					"texture": "stasis_off",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:on_interact": {
+				"condition": "query.get_equipped_item_name('main_hand') == 'ender_eye'",
+				"event": "stasis:charge"
+			}
+		},
+		"events": {
+			"stasis:charge": {
+				"sequence": [
+					{
+						"run_command": {
+							"target": "self",
+							"command": "summon worldbeyond:stasis_test ~ ~-1 ~"
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": "tp @e[type=worldbeyond:stasis_test, r=2] ~ ~ ~"
+						}
+					},
+					{
+						"decrement_stack": {}
+					}
+				]
+			}
+		}
+	}
+}
