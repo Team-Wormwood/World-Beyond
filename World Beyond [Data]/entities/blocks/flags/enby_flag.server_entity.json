@@ -13,7 +13,7 @@
                 ]
             },
             "animations": {
-                "solid_detection": "controller.animation.flag_detection"
+                "solid_detection": "controller.animation.flag.solid_block_detection"
             }
         },
         "component_groups": {

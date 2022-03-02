@@ -1,0 +1,57 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.flag.solid_block_detection": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/function blockFunctions/solid_detection.entity",
+                        "/function blockFunctions/solid_detection.block"
+                    ],
+                    "transitions": [
+                        {
+                            "loop": "1.0"
+                        }
+                    ]
+                },
+                "loop": {
+                    "on_entry": [
+                        "/function blockFunctions/solid_detection.entity",
+                        "/function blockFunctions/solid_detection.block"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "1.0"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.lantern.solid_block_detection": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/function blockFunctions/solid_detection.lantern.entity",
+                        "/function blockFunctions/solid_detection.lantern.block"
+                    ],
+                    "transitions": [
+                        {
+                            "loop": "1.0"
+                        }
+                    ]
+                },
+                "loop": {
+                    "on_entry": [
+                        "/function blockFunctions/solid_detection.lantern.entity",
+                        "/function blockFunctions/solid_detection.lantern.block"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "1.0"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

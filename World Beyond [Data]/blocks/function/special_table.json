@@ -12,16 +12,18 @@
             "minecraft:crafting_table": {
                 "custom_description": "container.special_table",
                 "grid_size": 3,
-                "crafting_tags": ["mineral_upgrades"]
+                "crafting_tags": [
+                    "mineral_upgrades"
+                ]
             },
-	"minecraft:material_instances": {
-		"*": {
-			"texture": "blast_vent",
-			"ambient_occlusion": true,
-			"face_dimming": true,
-			"render_method": "opaque"
-		}
-	}
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "blast_vent",
+                    "ambient_occlusion": true,
+                    "face_dimming": true,
+                    "render_method": "opaque"
+                }
+            }
         }
     }
 }

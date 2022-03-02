@@ -1,0 +1,157 @@
+// File created by Sumi
+{
+    "format_version": "1.17.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "worldbeyond:small_paper_lantern_entity",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "solid_detection"
+                ]
+            },
+            "animations": {
+                "solid_detection": "controller.animation.lantern_detection"
+            }
+        },
+        "component_groups": {
+            "worldbeyond:instant_despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "lantern",
+                    "inanimate"
+                ]
+            },
+            "minecraft:health": {
+                "min": 0,
+                "value": 1
+            },
+            // "minecraft:persistent": {},
+            "minecraft:collision_box": {
+                "height": 0,
+                "width": 0
+            },
+            "minecraft:knockback_resistance": {
+                "max": 1,
+                "value": 1
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "all",
+                    "deals_damage": false
+                }
+            },
+            "minecraft:inside_block_notifier": {
+                "block_list": [
+                    {
+                        "block": "worldbeyond:small_paper_lantern",
+                        "exited_block_event": {
+                            "event": "lantern:despawn"
+                        }
+                    }
+                ]
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "run_command": {
+                    "command": [
+                        "tag @s add dirNull"
+                    ]
+                }
+            },
+            "lantern:rotate": {
+                "sequence": [
+                    {
+                        "filters": {
+                            "test": "has_tag",
+                            "value": "dirNull"
+                        },
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirEast",
+                                "tag @s remove dirNull",
+                                "tp @s ~ ~ ~ 90 0",
+                                "tell @a[tag=dev] §bdirNull§r §a->§r §bdirEast§br"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_tag",
+                            "value": "dirNorth"
+                        },
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirEast",
+                                "tag @s remove dirNorth",
+                                "tp @s ~ ~ ~ 90 0",
+                                "tell @a[tag=dev] §bdirNorth§r §a->§r §bdirEast§br"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_tag",
+                            "value": "dirEast"
+                        },
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirSouth",
+                                "tag @s remove dirEast",
+                                "tp @s ~ ~ ~ 180 0",
+                                "tell @a[tag=dev] §bdirEast§r §a->§r §bdirSouth§br"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_tag",
+                            "value": "dirSouth"
+                        },
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirWest",
+                                "tag @s remove dirSouth",
+                                "tp @s ~ ~ ~ 270 0",
+                                "tell @a[tag=dev] §bdirSouth§r §a->§r §bdirWest§br"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_tag",
+                            "value": "dirWest"
+                        },
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirNorth",
+                                "tag @s remove dirWest",
+                                "tp @s ~ ~ ~ 360 0",
+                                "tell @a[tag=dev] §bdirWest§r §a->§r §bdirNorth§br"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "lantern:despawn": {
+                "run_command": {
+                    "command": [
+                        "particle worldbeyond:custom_block_particle.lantern ~ ~ ~"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "worldbeyond:instant_despawn"
+                    ]
+                }
+            }
+        }
+    }
+}
