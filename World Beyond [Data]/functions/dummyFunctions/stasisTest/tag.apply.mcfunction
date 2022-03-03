@@ -1,0 +1,9 @@
+execute @s ~ ~ ~ detect ~ ~ ~ purpur_block -1 tag @s add one
+execute @s ~ ~ ~ detect ~ ~ ~1 purpur_block -1 tag @s add two
+execute @s ~ ~ ~ detect ~ ~ ~-1 purpur_block -1 tag @s add three
+execute @s ~ ~ ~ detect ~1 ~ ~ purpur_block -1 tag @s add four
+execute @s ~ ~ ~ detect ~1 ~ ~1 purpur_block -1 tag @s add five
+execute @s ~ ~ ~ detect ~1 ~ ~-1 purpur_block -1 tag @s add six
+execute @s ~ ~ ~ detect ~-1 ~ ~ purpur_block -1 tag @s add seven
+execute @s ~ ~ ~ detect ~-1 ~ ~1 purpur_block -1 tag @s add eight
+execute @s ~ ~ ~ detect ~-1 ~ ~-1 purpur_block -1 tag @s add nine

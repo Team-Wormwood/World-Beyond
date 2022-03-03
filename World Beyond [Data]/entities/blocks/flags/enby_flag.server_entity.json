@@ -3,7 +3,7 @@
     "format_version": "1.17.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "worldbeyond:trans_flag_entity",
+            "identifier": "worldbeyond:enby_flag_entity",
             "is_spawnable": false,
             "is_summonable": true,
             "is_experimental": false,
@@ -13,7 +13,7 @@
                 ]
             },
             "animations": {
-                "solid_detection": "controller.animation.flag_detection"
+                "solid_detection": "controller.animation.flag.solid_block_detection"
             }
         },
         "component_groups": {
@@ -108,7 +108,7 @@
             "minecraft:inside_block_notifier": {
                 "block_list": [
                     {
-                        "block": "worldbeyond:trans_flag",
+                        "block": "worldbeyond:enby_flag",
                         "exited_block_event": {
                             "event": "flag:despawn"
                         }
@@ -167,46 +167,79 @@
                     }
                 ]
             },
-            "flag:rotate.to_east": {
-                "run_command": {
-                    "command": [
-                        "playanimation @s animation.flag.rotate_east",
-                        "say animation.flag.rotate_east",
-                        "tag @s remove dirNull",
-                        "tag @s remove dirNorth",
-                        "tag @s add dirEast"
-                    ]
-                }
-            },
-            "flag:rotate.to_south": {
-                "run_command": {
-                    "command": [
-                        "playanimation @s animation.flag.rotate_south",
-                        "say animation.flag.rotate_south",
-                        "tag @s remove dirEast",
-                        "tag @s add dirSouth"
-                    ]
-                }
-            },
-            "flag:rotate.to_west": {
-                "run_command": {
-                    "command": [
-                        "playanimation @s animation.flag.rotate_west",
-                        "say animation.flag.rotate_west",
-                        "tag @s remove dirSouth",
-                        "tag @s add dirWest"
-                    ]
-                }
-            },
-            "flag:rotate.to_north": {
-                "run_command": {
-                    "command": [
-                        "playanimation @s animation.flag.rotate_north",
-                        "say animation.flag.rotate_north",
-                        "tag @s remove dirWest",
-                        "tag @s add dirNorth"
-                    ]
-                }
+            "flag:rotate": {
+                "sequence": [
+                    {
+                        "filters": {
+                            "test": "has_tag",
+                            "value": "dirNull"
+                        },
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirEast",
+                                "tag @s remove dirNull",
+                                "tp @s ~ ~ ~ 90 0",
+                                "tell @a[tag=dev] §bdirNull§r §a->§r §bdirEast§br"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_tag",
+                            "value": "dirNorth"
+                        },
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirEast",
+                                "tag @s remove dirNorth",
+                                "tp @s ~ ~ ~ 90 0",
+                                "tell @a[tag=dev] §bdirNorth§r §a->§r §bdirEast§br"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_tag",
+                            "value": "dirEast"
+                        },
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirSouth",
+                                "tag @s remove dirEast",
+                                "tp @s ~ ~ ~ 180 0",
+                                "tell @a[tag=dev] §bdirEast§r §a->§r §bdirSouth§br"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_tag",
+                            "value": "dirSouth"
+                        },
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirWest",
+                                "tag @s remove dirSouth",
+                                "tp @s ~ ~ ~ 270 0",
+                                "tell @a[tag=dev] §bdirSouth§r §a->§r §bdirWest§br"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_tag",
+                            "value": "dirWest"
+                        },
+                        "run_command": {
+                            "command": [
+                                "tag @s add dirNorth",
+                                "tag @s remove dirWest",
+                                "tp @s ~ ~ ~ 360 0",
+                                "tell @a[tag=dev] §bdirWest§r §a->§r §bdirNorth§br"
+                            ]
+                        }
+                    }
+                ]
             },
             "flag:despawn": {
                 "run_command": {

@@ -20,10 +20,6 @@
         "sound": "wood",
         "textures": "invisible"
     },
-    "worldbeyond:trans_flag": {
-        "sound": "wood",
-        "textures": "invisible"
-    },
     "worldbeyond:limestone": {
         "sound": "deepslate",
         "textures": "limestone"
@@ -70,5 +66,9 @@
             "side": "special_side",
             "up": "special_top"
         }
+    },
+    "worldbeyond:trans_flag": {
+        "sound": "wood",
+        "textures": "invisible"
     }
 }

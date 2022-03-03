@@ -69,6 +69,9 @@
         "polished_limestone_slab": {
             "textures": "textures/blocks/stones/limestone/polished_limestone_slab"
         },
+        "purpur_on": {
+            "textures": "textures/blocks/placeholder3"
+        },
         "special_bottom": {
             "textures": "textures/blocks/infusement_table_bottom"
         },
@@ -79,13 +82,10 @@
             "textures": "textures/blocks/infusement_table_top"
         },
         "stasis_off": {
-			"textures": "textures/blocks/placeholder"
-		},
-		"stasis_on": {
-			"textures": "textures/blocks/placeholder_active"
-		},
-		"purpur_on": {
-			"textures": "textures/blocks/placeholder3"
-		}
+            "textures": "textures/blocks/placeholder"
+        },
+        "stasis_on": {
+            "textures": "textures/blocks/placeholder_active"
+        }
     }
 }

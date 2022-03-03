@@ -2,19 +2,19 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "worldbeyond:enby_flag_item",
+            "identifier": "worldbeyond:small_paper_lantern_item",
             "category": "construction"
         },
         "components": {
-            "minecraft:max_stack_size": 1,
+            "minecraft:max_stack_size": 4,
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.construction"
             },
             "minecraft:icon": {
-                "texture": "flag.enby"
+                "texture": "small_paper_lantern.default"
             },
             "minecraft:block_placer": {
-                "block": "worldbeyond:enby_flag",
+                "block": "worldbeyond:small_paper_lantern",
                 "use_on": [
                     "minecraft:amethyst_block",
                     "minecraft:amethyst_cluster",

@@ -26,6 +26,18 @@
             ]
         }
     ],
+    "subpacks": [
+        {
+            "folder_name": "default",
+            "name": "§sDeveloper Skins - Disabled§r",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "dev_skins",
+            "name": "§cDeveloper Skins - Enabled§r",
+            "memory_tier": 2
+        }
+    ],
     "metadata": {
         "license": "CC-BY-NC-SA-4.0",
         "authors": [
