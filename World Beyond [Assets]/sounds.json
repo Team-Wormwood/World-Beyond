@@ -1,3 +1,5 @@
+// File Created by Sumi
+// File Edited by MADLAD3718
 {
     "entity_sounds": {
         "defaults": {},
@@ -68,22 +70,24 @@
                     }
                 }
             },
-            "worldbeyond:otherworld_crystal_entity" : {
-                "events" : {
-                   "ambient" : {
-                      "sound": "block.worldbeyond:otherworld_crystal_mount.crystal_ambient",
-                      "volume": 0.75
-                   },
-                   "hurt" : {
-                      "sound": "block.worldbeyond:otherworld_crystal_mount.hurt_crystal",
-                      "pitch": [0.9, 1.1],
-                      "volume": 0.4
-                   }
+            "worldbeyond:otherworld_crystal_entity": {
+                "events": {
+                    "ambient": {
+                        "sound": "block.worldbeyond:otherworld_crystal_mount.crystal_ambient",
+                        "volume": 0.75
+                    },
+                    "hurt": {
+                        "sound": "block.worldbeyond:otherworld_crystal_mount.hurt_crystal",
+                        "pitch": [
+                            0.9,
+                            1.1
+                        ],
+                        "volume": 0.4
+                    }
                 },
-                "pitch" : 1.0,
-                "volume" : 1.0
+                "pitch": 1.0,
+                "volume": 1.0
             }
         }
     }
 }
-// File edited by MADLAD3718

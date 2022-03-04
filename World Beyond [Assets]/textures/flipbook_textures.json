@@ -1,7 +1,7 @@
 [
-  {
-    "flipbook_texture": "textures/blocks/placeholder3",
-    "atlas_tile": "purpur_on",
-    "ticks_per_frame": 1000
-  }
+	{
+		"flipbook_texture": "textures/blocks/placeholder3",
+		"atlas_tile": "purpur_on",
+		"ticks_per_frame": 1000
+	}
 ]

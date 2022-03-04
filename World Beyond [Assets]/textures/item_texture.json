@@ -1,19 +1,36 @@
+// File Created by Sumi
+// File edited by MADLAD3718
 {
     "resource_pack_name": "worldbeyond",
     "texture_data": {
-        // Blocks
-        "otherworld_crystal_mount": {
-            "textures": [
-                "textures/items/otherworld_crystal_mount"
-            ]
+        // Materials
+        "boar_tusk": {
+            "textures": "textures/items/boar_tusk"
         },
+        "colourful_feather": {
+            "textures": "textures/items/colourful_feather"
+        },
+        "long_stick": {
+            "textures": "textures/items/long_stick"
+        },
+        "ruby": {
+            "textures": "textures/items/ruby"
+        },
+        "tiger_claws": {
+            "textures": "textures/items/tiger_claws"
+        },
+        // Blocks
         "flag.enby": {
             "textures": "textures/items/enby_flag"
         },
         "flag.trans": {
             "textures": "textures/items/trans_flag"
         },
-        // Items
+        "otherworld_crystal_mount": {
+            "textures": [
+                "textures/items/otherworld_crystal_mount"
+            ]
+        },
         "otherworld_crystal": {
             "textures": [
                 "textures/items/otherworld_crystal"
@@ -48,22 +65,6 @@
                 "textures/items/boat_warped"
             ]
         },
-        // Materials
-        "boar_tusk": {
-            "textures": "textures/items/boar_tusk"
-        },
-        "colourful_feather": {
-            "textures": "textures/items/colourful_feather"
-        },
-        "long_stick": {
-            "textures": "textures/items/long_stick"
-        },
-        "ruby": {
-            "textures": "textures/items/ruby"
-        },
-        "tiger_claws": {
-            "textures": "textures/items/tiger_claws"
-        },
         // Attachables
         "adventure_hat": {
             "textures": "textures/items/adventure_hat"
@@ -77,12 +78,7 @@
         },
         "toucan_spawn_egg": {
             "textures": "textures/items/toucan_spawn_egg"
-        },
-        // Texture Meshes
-        "mesh.tiger_claw_spear": {
-            "textures": "textures/attachables/tiger_claw_spear"
         }
     },
     "texture_name": "atlas.items"
 }
-// File edited by MADLAD3718
