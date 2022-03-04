@@ -18,7 +18,6 @@
             },
             "minecraft:material_instances": {
                 "*": {
-                    "texture": "blast_vent",
                     "ambient_occlusion": true,
                     "face_dimming": true,
                     "render_method": "opaque"
