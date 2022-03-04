@@ -242,6 +242,29 @@
 						"event": "worldbeyond:unsneak"
 					}
 				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"on_damage": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_damage",
+									"value": "fatal"
+								},
+								{
+									"test": "has_equipment",
+									"domain": "head",
+									"value": "worldbeyond:shulker_hat"
+								}
+							]
+						},
+						"target": "self",
+						"event": "player:stasis_chamber.lethal_damage",
+						"deals_damage": false,
+						"cause": "fatal"
+					}
+				}
 			}
 		},
 		"events": {
@@ -279,6 +302,21 @@
 				"add": {
 					"component_groups": [
 						"worldbeyond:vanilla_hitbox"
+					]
+				}
+			},
+			//Stasis Chamber
+			"player:stasis_chamber.lethal_damage": {
+				"run_command": {
+					"target": "self",
+					"command": [
+						"effect @s resistance 1 255",
+						"effect @s absorption 8 255",
+						"effect @s instant_health 1 255",
+						"effect @s regeneration 8 5",
+						"effect @s fire_resistance 8 255",
+						"replaceitem entity @s slot.armor.head -1 air",
+						"tp @s @e[type=worldbeyond:stasis_eye]"
 					]
 				}
 			},

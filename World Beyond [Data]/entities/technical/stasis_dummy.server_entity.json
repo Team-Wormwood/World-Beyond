@@ -1,0 +1,83 @@
+// File created by Luth
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "worldbeyond:stasis_test",
+      "runtime_identifier": "minecraft:snowball",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "activate"
+        ]
+      },
+      "animations": {
+        "activate": "animation.stasis.activate"
+      }
+    },
+    "component_groups": {
+      "stasis.dummy:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "stasis",
+          "dummy"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/empty.jsom"
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:health": {
+        "value": 6,
+        "max": 6
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "run_command": {
+          "target": "self",
+          "command": "function dummyFunctions/stasisTest/tag.apply"
+        }
+      },
+      "stasis:despawn": {
+        "add": {
+          "component_groups": [
+            "stasis.dummy:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

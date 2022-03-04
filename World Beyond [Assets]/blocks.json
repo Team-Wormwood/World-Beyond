@@ -70,5 +70,14 @@
     "worldbeyond:trans_flag": {
         "sound": "wood",
         "textures": "invisible"
-    }
+    },
+
+//Section Created by Eko-byte
+
+	"worldbeyond:sconce": {
+		"sound": "lantern"
+	},
+	"worldbeyond:soul_sconce": {
+		"sound": "lantern"
+	}
 }

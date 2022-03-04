@@ -60,6 +60,11 @@ tile.worldbeyond:enby_flag.name=Non-Binary Flag
 tile.worldbeyond:trans_flag.name=Transgender Flag
 tile.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 
+## Section Created by Eko-byte
+
+tile.worldbeyond:sconce.name=Sconce
+tile.worldbeyond:soul_sconce.name=Soul Sconce
+
 ## Interactions
 
 

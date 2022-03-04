@@ -1,0 +1,47 @@
+// File created by Luth
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "worldbeyond:stasis_eye_visual",
+      "runtime_identifier": "minecraft:arrow",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "stasis",
+          "dummy"
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/empty.jsom"
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:health": {
+        "value": 60000,
+        "max": 60000
+      },
+      "minecraft:fire_immune": {
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    }
+  }
+}
