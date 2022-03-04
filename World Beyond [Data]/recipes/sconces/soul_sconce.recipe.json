@@ -1,0 +1,26 @@
+// File Created by Eko-byte
+
+{
+	"format_version": "1.17",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "worldbeyond:soul_sconce"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:soul_torch"
+			},
+			{
+				"item": "minecraft:iron_nugget"
+			}
+		],
+		"result": {
+			"item": "worldbeyond:soul_sconce",
+			"count": 1
+		},
+		"priority": 2
+	}
+}
