@@ -1,0 +1,136 @@
+// File created by Sumi
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "worldbeyond:stone_spear",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:hand_equipped": true,
+            "minecraft:max_stack_size": 1,
+            "minecraft:damage": 5,
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:weapon": {
+                "on_hurt_entity": {
+                    "event": "spear:durabilityUpdateFixed"
+                }
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "condition": "query.is_in_water && query.is_sneaking",
+                    "event": "spear:fishingInit"
+                }
+            },
+            "minecraft:cooldown": {
+                "duration": 2.0,
+                "category": "spear"
+            },
+            "minecraft:durability": {
+                "max_durability": 250
+            },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:icon": {
+                "texture": "stone_spear"
+            }
+        },
+        "events": {
+            "spear:durabilityUpdateFixed": {
+                "damage": {
+                    "target": "self",
+                    "type": "durability",
+                    "amount": 1
+                }
+            },
+            "spear:durabilityUpdateRandom": {
+                "randomize": [
+                    {
+                        "weight": 6,
+                        "damage": {
+                            "target": "self",
+                            "type": "durability",
+                            "amount": 4
+                        }
+                    },
+                    {
+                        "weight": 3,
+                        "damage": {
+                            "target": "self",
+                            "type": "durability",
+                            "amount": 3
+                        }
+                    },
+                    {
+                        "weight": 2,
+                        "damage": {
+                            "target": "self",
+                            "type": "durability",
+                            "amount": 10
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "damage": {
+                            "target": "self",
+                            "type": "durability",
+                            "amount": 14
+                        }
+                    }
+                ]
+            },
+            "spear:fishingInit": {
+                "sequence": [
+                    {
+                        "condition": "query.remaining_durability >= 175",
+                        "trigger": {
+                            "event": "spear:fishingExecuteHigh"
+                        }
+                    },
+                    {
+                        "condition": "query.remaining_durability >= 75 && query.remaining_durability < 175",
+                        "trigger": {
+                            "event": "spear:fishingExecuteMid"
+                        }
+                    },
+                    {
+                        "condition": "query.remaining_durability < 75",
+                        "trigger": {
+                            "event": "spear:fishingExecuteLow"
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "spear:durabilityUpdateRandom"
+                        }
+                    }
+                ]
+            },
+            "spear:fishingExecuteLow": {
+                "swing": {},
+                "run_command": {
+                    "command": [
+                        "function itemFunctions/SpearFishing/low"
+                    ]
+                }
+            },
+            "spear:fishingExecuteMid": {
+                "swing": {},
+                "run_command": {
+                    "command": [
+                        "function itemFunctions/SpearFishing/mid"
+                    ]
+                }
+            },
+            "spear:fishingExecuteHigh": {
+                "swing": {},
+                "run_command": {
+                    "command": [
+                        "function itemFunctions/SpearFishing/high"
+                    ]
+                }
+            }
+        }
+    }
+}

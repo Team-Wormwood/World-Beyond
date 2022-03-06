@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.toucan.movement": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"blend_transition": 0.1,
+					"animations": [
+						{
+							"moving": "query.modified_move_speed"
+						}
+					],
+					"transitions": [
+						{
+							"flying": "!query.is_on_ground"
+						}
+					]
+				},
+				"flying": {
+					"blend_transition": 0.25,
+					"animations": [
+						{
+							"moving": "query.modified_move_speed"
+						},
+						"flying"
+					],
+					"transitions": [
+						{
+							"default": "query.is_on_ground"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.toucan.setup": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target"
+					]
+				}
+			}
+		}
+	}
+}

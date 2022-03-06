@@ -1,0 +1,45 @@
+// File created by Sumi
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "worldbeyond:adventure_hat",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:icon": {
+                "texture": "adventure_hat"
+            },
+            "minecraft:armor": {
+                "protection": 2
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "adventure_hat:equip"
+                }
+            },
+            "minecraft:wearable": {
+                "dispensable": true,
+                "slot": "slot.armor.head"
+            }
+        },
+        "events": {
+            "adventure_hat:equip": {
+                "sequence": [
+                    {
+                        "condition": "!query.is_item_name_any('slot.armor.head', 0, 'worldbeyond:adventure_hat', 'worldbeyond:colourful_adventure_hat')",
+                        "run_command": {
+                            "command": [
+                                "playsound armor.equip_leather"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

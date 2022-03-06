@@ -1,0 +1,165 @@
+// File Created by Eko-byte
+
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "worldbeyond:sconce",
+			"properties": {
+				"sconce:direction": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('sconce:direction') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.sconce_wall",
+					"minecraft:rotation": [
+						0,
+						-180,
+						0
+					],
+					"minecraft:pick_collision": {
+						"origin": [
+							-3,
+							0,
+							-8
+						],
+						"size": [
+							6,
+							13,
+							6
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('sconce:direction') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.sconce_wall",
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					],
+					"minecraft:pick_collision": {
+						"origin": [
+							-3,
+							0,
+							-8
+						],
+						"size": [
+							6,
+							13,
+							6
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('sconce:direction') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.sconce_wall",
+					"minecraft:rotation": [
+						0,
+						-90,
+						0
+					],
+					"minecraft:pick_collision": {
+						"origin": [
+							-3,
+							0,
+							-8
+						],
+						"size": [
+							6,
+							13,
+							6
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('sconce:direction') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.sconce_wall",
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					],
+					"minecraft:pick_collision": {
+						"origin": [
+							-3,
+							0,
+							-8
+						],
+						"size": [
+							6,
+							13,
+							6
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up",
+							"side"
+						]
+					}
+				]
+			},
+			"minecraft:geometry": "geometry.sconce",
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "alpha_test",
+					"texture": "sconce",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:entity_collision": false,
+			"minecraft:pick_collision": {
+				"origin": [
+					-2,
+					0,
+					-2
+				],
+				"size": [
+					4,
+					16,
+					4
+				]
+			},
+			"minecraft:block_light_emission": 0.7,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:destroy_time": 0,
+			"minecraft:creative_category":{
+				"group": "itemGroup.name.none",
+				"category": "items"
+			},
+			"minecraft:on_player_placing": {
+				"event": "sconce:direction"
+			}
+		},
+		"events": {
+			"sconce:direction": {
+				"set_block_property": {
+					"sconce:direction": "query.cardinal_block_face_placed_on"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+// File Created by Sumi
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "worldbeyond:enby_flag_item"
+                }
+            ]
+        }
+    ]
+}

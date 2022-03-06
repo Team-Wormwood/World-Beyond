@@ -1,0 +1,20 @@
+// File created by MADLAD3718
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "worldbeyond:solar_medallion",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "solar_medallion"
+			},
+			"minecraft:display_name": {
+				"value": "item.worldbeyond:solar_medallion.name"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:allow_off_hand": true
+		}
+	}
+}

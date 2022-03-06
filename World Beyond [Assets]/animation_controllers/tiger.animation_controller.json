@@ -1,0 +1,58 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.tiger.movement": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        "look_at_target",
+                        {
+                            "walk": "query.modified_move_speed"
+                        }
+                    ],
+                    "blend_transition": 0.1,
+                    "transitions": [
+                        {
+                            "pounce": "variable.has_target && !query.is_on_ground"
+                        },
+                        {
+                            "sleep": "query.is_sleeping"
+                        }
+                    ]
+                },
+                "pounce": {
+                    "animations": [
+                        "look_at_target",
+                        "pounce",
+                        {
+                            "walk": "query.modified_move_speed"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.is_on_ground"
+                        }
+                    ]
+                },
+                "sleep": {
+                    "animations": [
+                        "sleeping"
+                    ],
+                    "particle_effects": [
+                        {
+                            "effect": "sleeping",
+                            "locator": "head"
+                        }
+                    ],
+                    "blend_transition": 0.2,
+                    "transitions": [
+                        {
+                            "default": "!query.is_sleeping"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

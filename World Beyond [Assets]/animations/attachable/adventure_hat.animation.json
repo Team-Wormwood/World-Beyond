@@ -1,0 +1,18 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.attachable.adventure_hat.head_position": {
+            "loop": true,
+            "bones": {
+                "hat": {
+                    "scale": 1.150,
+                    "position": [
+                        0.5,
+                        23.5,
+                        0.0
+                    ]
+                }
+            }
+        }
+    }
+}
