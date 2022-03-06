@@ -17,6 +17,9 @@
         "tiger_claws": {
             "textures": "textures/items/tiger_claws"
         },
+        "peacock_feather": {
+            "textures": "textures/items/peacock_feather"
+        },
         // Blocks
         "flag.enby": {
             "textures": "textures/items/enby_flag"
@@ -76,6 +79,9 @@
         },
         "toucan_spawn_egg": {
             "textures": "textures/items/toucan_spawn_egg"
+        },
+        "peacock_spawn_egg": {
+            "textures": "textures/items/peacock_spawn_egg"
         }
     },
     "texture_name": "atlas.items"
