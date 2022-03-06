@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "crystal_side_cracked",
-        "metalness_emissive_roughness": [255,0,128],
-        "heightmap": "crystal_side_cracked_heightmap"
-    }
-}
