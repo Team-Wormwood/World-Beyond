@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "worldbeyond:sodalite"
+        },
+        "components": {
+            "minecraft:friction": 0.6,
+            "minecraft:destroy_time": 1.4,
+            "minecraft:explosion_resistance": 6.0,
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:map_color": "#67C3D8",
+            "minecraft:creative_category": {
+                "group": "itemGroup.name.stone",
+                "category": "nature"
+            },
+            "minecraft:loot": "loot_tables/blocks/cobbled/sodalite.json",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "sodalite",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:stone": {}
+        }
+    }
+}

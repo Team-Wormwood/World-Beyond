@@ -1,0 +1,13 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "worldbeyond:sodalite_furnace"
+        },
+        "input": "worldbeyond:cobbled_sodalite",
+        "output": "worldbeyond:sodalite",
+        "tags": [
+            "furnace"
+        ]
+    }
+}

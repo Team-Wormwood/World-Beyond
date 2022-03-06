@@ -1,0 +1,16 @@
+// File Created by Xorkent
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "worldbeyond:bauxite_tiles_slab",
+                    "weight": 1,
+                    "count": 2
+                }
+            ]
+        }
+    ]
+}

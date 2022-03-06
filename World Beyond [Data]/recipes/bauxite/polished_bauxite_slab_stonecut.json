@@ -1,0 +1,22 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "worldbeyond:polished_bauxite_slab_stonecut"
+        },
+        "ingredients": [
+            {
+                "item": "worldbeyond:polished_bauxite"
+            }
+        ],
+        "priority": 0,
+        "result": {
+            "count": 2,
+            "data": 0,
+            "item": "worldbeyond:polished_bauxite_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ]
+    }
+}

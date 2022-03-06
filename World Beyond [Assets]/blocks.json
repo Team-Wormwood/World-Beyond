@@ -1,66 +1,390 @@
 {
-	"format_version": [
-		1,
-		1,
-		0
-	],
-	"worldbeyond:limestone": {
-		"textures": "limestone",
-		"sound": "deepslate"
-	},
-	"worldbeyond:limestone_bricks": {
-		"textures": "limestone_bricks",
-		"sound": "deepslate"
-	},
-	"worldbeyond:mossy_limestone_bricks": {
-		"textures": "mossy_limestone_bricks",
-		"sound": "deepslate"
-	},
-	"worldbeyond:polished_limestone": {
-		"textures": "polished_limestone",
-		"sound": "deepslate"
-	},
-	"worldbeyond:polished_limestone_slab": {
-		"textures": {
-			"side": "polished_limestone_slab",
-			"down": "polished_limestone",
-			"up": "polished_limestone"
-		},
-		"sound": "deepslate"
-	},
-	"worldbeyond:cobbled_limestone": {
-		"textures": "cobbled_limestone",
-		"sound": "deepslate"
-	},
-	"worldbeyond:mossy_cobbled_limestone": {
-		"textures": "mossy_cobbled_limestone",
-		"sound": "deepslate"
-	},
-	"worldbeyond:chiseled_limestone": {
-		"textures": "chiseled_limestone",
-		"sound": "deepslate"
-	},
-	"worldbeyond:cracked_limestone": {
-		"textures": "cracked_limestone",
-		"sound": "deepslate"
-	},
-	"worldbeyond:limestone_pillar": {
-		"textures": {
-			"up": "limestone_pillar_top",
-			"down": "limestone_pillar_top",
-			"side": "limestone_pillar_side"
-		},
-		"sound": "deepslate"
-	},
-	"worldbeyond:special_table": {
-		"sound": "wood",
-		"textures": {
-			"down": "special_bottom",
-			"side": "special_side",
-			"up": "special_top"
-		}
-	},
-	"worldbeyond:otherworld_crystal_mount": {
-		"sound": "netherite"
-	}
+    "format_version": [
+        1,
+        1,
+        0
+    ],
+    "worldbeyond:bauxite": {
+        "sound": "deepslate",
+        "textures": "bauxite"
+    },
+    "worldbeyond:bauxite_bricks": {
+        "sound": "deepslate",
+        "textures": "bauxite_bricks"
+    },
+    "worldbeyond:bauxite_tiles": {
+        "sound": "deepslate",
+        "textures": "bauxite_tiles"
+    },
+    "worldbeyond:chiseled_bauxite": {
+        "sound": "deepslate",
+        "textures": "chiseled_bauxite"
+    },
+    "worldbeyond:chiseled_darkstone": {
+        "sound": "deepslate",
+        "textures": "chiseled_darkstone"
+    },
+    "worldbeyond:chiseled_limestone": {
+        "sound": "deepslate",
+        "textures": "chiseled_limestone"
+    },
+    "worldbeyond:chiseled_sodalite": {
+        "sound": "deepslate",
+        "textures": "chiseled_sodalite"
+    },
+    "worldbeyond:cobbled_bauxite": {
+        "sound": "deepslate",
+        "textures": "cobbled_bauxite"
+    },
+    "worldbeyond:cobbled_darkstone": {
+        "sound": "deepslate",
+        "textures": "cobbled_darkstone"
+    },
+    "worldbeyond:cobbled_limestone": {
+        "sound": "deepslate",
+        "textures": "cobbled_limestone"
+    },
+    "worldbeyond:cobbled_sodalite": {
+        "sound": "deepslate",
+        "textures": "cobbled_sodalite"
+    },
+    "worldbeyond:cracked_bauxite": {
+        "sound": "deepslate",
+        "textures": "cracked_bauxite"
+    },
+    "worldbeyond:cracked_bauxite_tiles": {
+        "sound": "deepslate",
+        "textures": "cracked_bauxite_tiles"
+    },
+    "worldbeyond:cracked_darkstone": {
+        "sound": "deepslate",
+        "textures": "cracked_darkstone"
+    },
+    "worldbeyond:cracked_darkstone_tiles": {
+        "sound": "deepslate",
+        "textures": "cracked_darkstone_tiles"
+    },
+    "worldbeyond:cracked_limestone": {
+        "sound": "deepslate",
+        "textures": "cracked_limestone"
+    },
+    "worldbeyond:cracked_sodalite": {
+        "sound": "deepslate",
+        "textures": "cracked_sodalite"
+    },
+    "worldbeyond:cracked_sodalite_tiles": {
+        "sound": "deepslate",
+        "textures": "cracked_sodalite_tiles"
+    },
+    "worldbeyond:darkstone": {
+        "sound": "deepslate",
+        "textures": "darkstone"
+    },
+    "worldbeyond:darkstone_bricks": {
+        "sound": "deepslate",
+        "textures": "darkstone_bricks"
+    },
+    "worldbeyond:darkstone_tiles": {
+        "sound": "deepslate",
+        "textures": "darkstone_tiles"
+    },
+    "worldbeyond:enby_flag": {
+        "sound": "wood",
+        "textures": "invisible"
+    },
+    "worldbeyond:limestone": {
+        "sound": "deepslate",
+        "textures": "limestone"
+    },
+    "worldbeyond:limestone_bricks": {
+        "sound": "deepslate",
+        "textures": "limestone_bricks"
+    },
+    "worldbeyond:limestone_pillar": {
+        "sound": "deepslate",
+        "textures": {
+            "down": "limestone_pillar_top",
+            "side": "limestone_pillar_side",
+            "up": "limestone_pillar_top"
+        }
+    },
+    "worldbeyond:mossy_cobbled_darkstone": {
+        "sound": "deepslate",
+        "textures": "mossy_cobbled_darkstone"
+    },
+    "worldbeyond:mossy_darkstone_bricks": {
+        "sound": "deepslate",
+        "textures": "mossy_darkstone_bricks"
+    },
+    "worldbeyond:mossy_darkstone_tiles": {
+        "sound": "deepslate",
+        "textures": "mossy_darkstone_tiles"
+    },
+    "worldbeyond:mossy_cobbled_limestone": {
+        "sound": "deepslate",
+        "textures": "mossy_cobbled_limestone"
+    },
+    "worldbeyond:mossy_limestone_bricks": {
+        "sound": "deepslate",
+        "textures": "mossy_limestone_bricks"
+    },
+    "worldbeyond:otherworld_crystal_mount": {
+        "sound": "netherite"
+    },
+    "worldbeyond:polished_bauxite": {
+        "sound": "deepslate",
+        "textures": "polished_bauxite"
+    },
+    "worldbeyond:polished_bauxite_slab": {
+        "sound": "deepslate",
+        "textures": {
+            "down": "polished_bauxite",
+            "side": "polished_bauxite_slab",
+            "up": "polished_bauxite"
+        }
+    },
+    "worldbeyond:polished_darkstone": {
+        "sound": "deepslate",
+        "textures": "polished_darkstone"
+    },
+    "worldbeyond:polished_darkstone_slab": {
+        "sound": "deepslate",
+        "textures": {
+            "down": "polished_darkstone",
+            "side": "polished_darkstone_slab",
+            "up": "polished_darkstone"
+        }
+    },
+    "worldbeyond:polished_limestone": {
+        "sound": "deepslate",
+        "textures": "polished_limestone"
+    },
+    "worldbeyond:polished_limestone_slab": {
+        "sound": "deepslate",
+        "textures": {
+            "down": "polished_limestone",
+            "side": "polished_limestone_slab",
+            "up": "polished_limestone"
+        }
+    },
+    "worldbeyond:polished_sodalite": {
+        "sound": "deepslate",
+        "textures": "polished_sodalite"
+    },
+    "worldbeyond:polished_sodalite_slab": {
+        "sound": "deepslate",
+        "textures": {
+            "down": "polished_sodalite",
+            "side": "polished_sodalite_slab",
+            "up": "polished_sodalite"
+        }
+    },
+    "worldbeyond:sconce": {
+        "sound": "lantern"
+    },
+    "worldbeyond:snowy_cobbled_sodalite": {
+        "sound": "deepslate",
+        "textures": "snowy_cobbled_sodalite"
+    },
+    "worldbeyond:snowy_sodalite_bricks": {
+        "sound": "deepslate",
+        "textures": "snowy_sodalite_bricks"
+    },
+    "worldbeyond:snowy_sodalite_tiles": {
+        "sound": "deepslate",
+        "textures": "snowy_sodalite_tiles"
+    },
+    "worldbeyond:sodalite": {
+        "sound": "deepslate",
+        "textures": "sodalite"
+    },
+    "worldbeyond:sodalite_bricks": {
+        "sound": "deepslate",
+        "textures": "sodalite_bricks"
+    },
+    "worldbeyond:sodalite_tiles": {
+        "sound": "deepslate",
+        "textures": "sodalite_tiles"
+    },
+    "worldbeyond:soul_sconce": {
+        "sound": "lantern"
+    },
+    "worldbeyond:special_table": {
+        "sound": "wood",
+        "textures": {
+            "down": "special_bottom",
+            "side": "special_side",
+            "up": "special_top"
+        }
+    },
+    "worldbeyond:trans_flag": {
+        "sound": "wood",
+        "textures": "invisible"
+    },
+    //Vanilla
+    "polished_blackstone_double_slab": {
+        "textures": {
+            "down": "polished_blackston",
+            "side": "polished_blackstone_slab",
+            "up": "polished_blackstone"
+        }
+    },
+    "polished_blackstone_slab": {
+        "sound": "stone",
+        "textures": {
+            "down": "polished_blackstone",
+            "side": "polished_blackstone_slab",
+            "up": "polished_blackstone"
+        }
+    },
+    "polished_deepslate_double_slab": {
+        "textures": {
+            "down": "polished_deepslate",
+            "side": "polished_deepslate_slab",
+            "up": "polished_deepslate"
+        }
+    },
+    "polished_deepslate_slab": {
+        "textures": {
+            "down": "polished_deepslate",
+            "side": "polished_deepslate_slab",
+            "up": "polished_deepslate"
+        }
+    },
+    "mob_spawner": {
+        "textures": {
+            "down": "mob_spawner_top",
+            "side": "mob_spawner",
+            "up": "mob_spawner_top"
+        }
+    },
+    "chiseled_deepslate": {
+        "textures": {
+            "down": "chiseled_deepslate_top",
+            "side": "chiseled_deepslate",
+            "up": "chiseled_deepslate_top"
+        }
+    },
+    "chiseled_polished_blackstone": {
+        "textures": {
+            "down": "chiseled_polished_blackstone_top",
+            "side": "chiseled_polished_blackstone",
+            "up": "chiseled_polished_blackstone_top"
+        }
+    },
+    "chiseled_nether_bricks": {
+        "sound": "nether_brick",
+        "textures": {
+            "down": "chiseled_nether_bricks_top",
+            "side": "chiseled_nether_bricks",
+            "up": "chiseled_nether_bricks_top"
+        }
+    },
+    "stonebrick": {
+        "textures": {
+            "down": "stonebrick_top",
+            "side": "stonebrick",
+            "up": "stonebrick_top"
+        }
+    },
+    "blast_furnace": {
+        "textures": {
+            "down": "blast_furnace_bottom",
+            "east": "blast_furnace_side",
+            "north": "blast_furnace_side",
+            "south": "blast_furnace_front_off",
+            "up": "blast_furnace_top",
+            "west": "blast_furnace_side"
+        }
+    },
+    "furnace": {
+        "textures": {
+            "down": "furnace_bottom",
+            "east": "furnace_side",
+            "north": "furnace_side",
+            "south": "furnace_front_off",
+            "up": "furnace_top",
+            "west": "furnace_side"
+        }
+    },
+    "prismarine": {
+        "textures": {
+            "down": "prismarine_bottom",
+            "side": "prismarine",
+            "up": "prismarine_top"
+        }
+    },
+    "deepslate_coal_ore": {
+        "textures": {
+            "down": "deepslate_coal_ore_top",
+            "side": "deepslate_coal_ore",
+            "up": "deepslate_coal_ore_top"
+        }
+    },
+    "deepslate_copper_ore": {
+        "textures": {
+            "down": "deepslate_copper_ore_top",
+            "side": "deepslate_copper_ore",
+            "up": "deepslate_copper_ore_top"
+        }
+    },
+    "deepslate_diamond_ore": {
+        "textures": {
+            "down": "deepslate_diamond_ore_top",
+            "side": "deepslate_diamond_ore",
+            "up": "deepslate_diamond_ore_top"
+        }
+    },
+    "deepslate_emerald_ore": {
+        "textures": {
+            "down": "deepslate_emerald_ore_top",
+            "side": "deepslate_emerald_ore",
+            "up": "deepslate_emerald_ore_top"
+        }
+    },
+    "deepslate_gold_ore": {
+        "textures": {
+            "down": "deepslate_gold_ore_top",
+            "side": "deepslate_gold_ore",
+            "up": "deepslate_gold_ore_top"
+        }
+    },
+    "deepslate_iron_ore": {
+        "textures": {
+            "down": "deepslate_iron_ore_top",
+            "side": "deepslate_iron_ore",
+            "up": "deepslate_iron_ore_top"
+        }
+    },
+    "deepslate_lapis_ore": {
+        "textures": {
+            "down": "deepslate_lapis_ore_top",
+            "side": "deepslate_lapis_ore",
+            "up": "deepslate_lapis_ore_top"
+        }
+    },
+    "deepslate_redstone_ore": {
+        "textures": {
+            "down": "deepslate_redstone_ore_top",
+            "side": "deepslate_redstone_ore",
+            "up": "deepslate_redstone_ore_top"
+        }
+    },
+    "lit_deepslate_redstone_ore": {
+        "textures": {
+            "down": "deepslate_redstone_ore_top",
+            "side": "deepslate_redstone_ore",
+            "up": "deepslate_redstone_ore_top"
+        }
+    },
+    "gilded_blackstone": {
+        "textures": {
+            "down": "gilded_blackstone_top",
+            "side": "gilded_blackstone",
+            "up": "gilded_blackstone_top"
+        }
+    },
+    "cracked_nether_bricks": {
+        "sound": "nether_brick"
+    }
 }

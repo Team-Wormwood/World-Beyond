@@ -6,14 +6,12 @@
         },
         "ingredients": [
             {
-                "data": 0,
                 "item": "worldbeyond:limestone"
             }
         ],
         "priority": 0,
         "result": {
             "count": 2,
-            "data": 0,
             "item": "worldbeyond:limestone_slab"
         },
         "tags": [
