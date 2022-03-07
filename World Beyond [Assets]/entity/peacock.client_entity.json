@@ -1,0 +1,43 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "worldbeyond:peacock",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "blue": "textures/entity/peacock/blue_peacock",
+                "green": "textures/entity/peacock/green_peacock",
+                "albino": "textures/entity/peacock/albino_peacock"
+            },
+            "geometry": {
+                "default": "geometry.peacock"
+            },
+            "scripts": {
+                "animate": [
+                    "movement_controller",
+                    {
+                        "baby_transform": "query.is_baby"
+                    }
+                ]
+            },
+/*            
+            "animations": {
+                "walk": "animation.peacock.walk",
+                "movement_controller": "controller.animation.peacock.movement",
+                "look_at_target": "animation.common.look_at_target",
+                "pounce": "animation.peacock.pounce",
+                "sleeping": "animation.peacock.sleeping",
+                "baby_transform": "animation.peacock.baby_transform"
+            },
+*/
+            "render_controllers": [
+                "controller.render.peacock"
+            ],
+           "spawn_egg": {
+               "texture": "peacock_spawn_egg"
+           }
+        }
+    }
+}

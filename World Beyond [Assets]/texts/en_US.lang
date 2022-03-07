@@ -8,10 +8,12 @@ pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) 
 ## Items
 item.spawn_egg.entity.worldbeyond:tiger.name=Spawn Tiger
 item.spawn_egg.entity.worldbeyond:toucan.name=Spawn Toucan
+item.spawn_egg.entity.worldbeyond:peacock.name=Spawn Peacock
 item.spawn_egg.entity.worldbeyond:jungle_zombie.name=Spawn Verdant
 item.spawn_egg.entity.worldbeyond:frozen_zombie.name=Spawn Frostbitten
 
 item.worldbeyond:colourful_feather=Colorful Feather
+item.worldbeyond:peacock_feather=Peacock Feather
 item.worldbeyond:tiger_claws=Tiger Claws
 item.worldbeyond:boar_tusk=Boar Tusk
 
@@ -38,6 +40,7 @@ item.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 ## Entities
 entity.worldbeyond:tiger.name=Tiger
 entity.worldbeyond:toucan.name=Toucan
+entity.worldbeyond:peacock.name=Peacock
 entity.worldbeyond:jungle_zombie.name=Verdant
 entity.worldbeyond:frozen_zombie.name=Frostbitten
 entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox

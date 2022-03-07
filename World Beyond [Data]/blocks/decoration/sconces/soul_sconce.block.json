@@ -29,7 +29,7 @@
 					"minecraft:pick_collision": {
 						"origin": [
 							-3,
-							4,
+							0,
 							-8
 						],
 						"size": [
@@ -52,7 +52,7 @@
 					"minecraft:pick_collision": {
 						"origin": [
 							-3,
-							4,
+							0,
 							-8
 						],
 						"size": [
@@ -75,7 +75,7 @@
 					"minecraft:pick_collision": {
 						"origin": [
 							-3,
-							4,
+							0,
 							-8
 						],
 						"size": [
@@ -98,7 +98,7 @@
 					"minecraft:pick_collision": {
 						"origin": [
 							-3,
-							4,
+							0,
 							-8
 						],
 						"size": [

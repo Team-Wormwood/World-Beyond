@@ -1,0 +1,420 @@
+//File Created by Eko-byte
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "worldbeyond:peacock",
+      // pee cock
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+			//Variant Components
+			"peacock:blueVariant":{
+				"minecraft:mark_variant":{
+					"value": 0
+				}
+			},
+			"peacock:greenVariant":{
+				"minecraft:mark_variant":{
+					"value": 1
+				}
+			},
+			"peacock:albinoVariant":{
+				"minecraft:mark_variant":{
+					"value": 2
+				}
+			},
+			//Age Components
+      "peacock:baby": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.5
+        },
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            "wheat_seeds",
+            "beetroot_seeds",
+            "melon_seeds",
+            "pumpkin_seeds"
+          ],
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.follow_parent": {
+          "priority": 5,
+          "speed_multiplier": 1.1
+        }
+      },
+      "peacock:adult": {
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,9)",
+          "on_death": "query.last_hit_by_player ? Math.Random(1,10) : 0"
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/peacock.loot_tables.json"
+        },
+        "minecraft:breedable": {
+          "require_tame": false,
+          "breeds_with": {
+            "mate_type": "worldbeyond:peacock",
+            "baby_type": "worldbeyond:peacock",
+            "breed_event": {
+              "event": "minecraft:entity_born",
+              "target": "baby"
+            }
+          },
+          "breed_items": [
+            "wheat_seeds",
+            "beetroot_seeds",
+            "melon_seeds",
+            "pumpkin_seeds"
+          ]
+        },
+        "minecraft:behavior.breed": {
+          "priority": 3,
+          "speed_multiplier": 1.0
+        }
+      },
+			//Feather Components
+      "peacock:featherUp": {
+        //Feather Up
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "randomInterval": true,
+          "time": [60, 90],
+          "time_down_event": {
+            "event": "peacock:featherDown"
+          }
+        }
+      },
+      "peacock:featherDown": {
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "randomInterval": true,
+          "time": [60, 90],
+          "time_down_event": {
+            "event": "peacock:featherUp"
+          }
+        }
+      },
+      //When Fleeing The Peacock Will Fly
+      "peacock:flee": {
+        "minecraft:movement.fly": {},
+        "minecraft:flying_speed": 0.6,
+        "minecraft:can_fly": {},
+        "minecraft:navigation.fly": {
+          "can_path_from_air": true
+        },
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:timer": {
+          "randomInterval": true,
+          "looping": true,
+          "time": [60, 90],
+          "time_down_event": {
+            "event": "peacock:walk",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "zombie"
+                  }
+                ]
+              },
+              "max_dist": 30,
+              "walk_speed_multiplier": 4,
+              "sprint_speed_multiplier": 4
+            }
+          ]
+        }
+      },
+      //Changes Naviagation to Walking
+      "peacock:walk": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": {
+                "test": "is_avoiding_mobs",
+                "operator": "==",
+                "value": true
+              },
+              "event": "peacock:flee"
+            }
+          ]
+        },
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "zombie"
+                  }
+                ]
+              },
+              "max_dist": 40,
+              "walk_speed_multiplier": 2,
+              "sprint_speed_multiplier": 2
+            }
+          ]
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:navigation.walk": {
+          "can_path_over_water": true,
+          "avoid_damage_blocks": true
+        }
+      }
+    },
+    "components": {
+      // General Attribute Components
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": {},
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": ["bird", "mob"]
+      },
+      "minecraft:health": {
+        "value": 15,
+        "max": 15
+      },
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 1.3
+      },
+      "minecraft:movement": {
+        "value": 0.5
+      },
+      "minecraft:variant": {
+        "value": 0
+      },
+      "minecraft:balloonable": {
+        "mass": 0.5
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 15
+          }
+        ]
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      // Behavioural Components
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 1.5
+      },
+      "minecraft:behavior.mount_pathing": {
+        "priority": 2,
+        "speed_multiplier": 1.5,
+        "target_dist": 0.0,
+        "track_target": true
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 4,
+        "speed_multiplier": 1.0,
+        "items": [
+          "wheat_seeds",
+          "beetroot_seeds",
+          "melon_seeds",
+          "pumpkin_seeds"
+        ]
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.5
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      }
+      // Navigational Components
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 95,
+                "remove": {},
+                "add": {
+                  "component_groups": ["peacock:adult"]
+                }
+              },
+              {
+                "weight": 5,
+                "remove": {},
+                "add": {
+                  "component_groups": ["peacock:baby"]
+                }
+              }
+            ]
+          },
+          {
+            "add": {
+              "component_groups": ["peacock:walk", "peacock:featherDown"]
+            }
+          },
+          {
+            "randomize": [
+              {
+                "weight": 30,
+                "remove": {},
+                "add": {
+                  "component_groups": ["peacock:greenVariant"]
+                }
+              },
+              {
+                "weight": 1,
+                "remove": {},
+                "add": {
+                  "component_groups": ["peacock:albinoVariant"]
+                }
+              },
+              {
+                "weight": 69,
+                "remove": {},
+                "add": {
+                  "component_groups": ["peacock:blueVariant"]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      //Toggles Feathers Up or Down
+      "peacock:featherUp": {
+        "sequence": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_avoiding_mobs",
+                  "operator": "==",
+                  "value": false
+                },
+                {
+                  "test": "is_daytime",
+                  "operator": "==",
+                  "value": true
+                },
+                {
+                  "test": "weather_at_position",
+                  "operator": "==",
+                  "value": "clear"
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "==",
+                  "value": 1
+                }
+              ]
+            },
+            "remove": {
+              "component_groups": ["peacock:featherDown"]
+            },
+            "add": {
+              "component_groups": ["peacock:featherUp"]
+            }
+          }
+        ]
+      },
+      "peacock:featherDown": {
+        "remove": {
+          "component_groups": ["peacock:featherUp"]
+        },
+        "add": {
+          "component_groups": ["peacock:featherDown"]
+        }
+      },
+      //Toggles Fleeing From Zombies
+      "peacock:flee": {
+        "remove": {
+          "component_groups": ["peacock:walk"]
+        },
+        "add": {
+          "component_groups": ["peacock:flee"]
+        }
+      },
+      "peacock:walk": {
+        "remove": {
+          "component_groups": ["peacock:flee"]
+        },
+        "add": {
+          "component_groups": ["peacock:walk"]
+        }
+      },
+      "minecraft:entity_born": {
+        "remove": {},
+        "add": {
+          "component_groups": ["peacock:baby"]
+        }
+      },
+      "minecraft:ageable_grow_up": {
+        "remove": {
+          "component_groups": ["peacock:baby"]
+        },
+        "add": {
+          "component_groups": ["peacock:adult"]
+        }
+      }
+    }
+  }
+}
