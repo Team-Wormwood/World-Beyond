@@ -14,8 +14,6 @@ item.worldbeyond:tiger_claws=Tiger Claws
 item.worldbeyond:boar_tusk=Boar Tusk
 item.worldbeyond:ruby=Ruby
 item.worldbeyond:long_stick=Long Stick
-item.worldbeyond_iron:netherite_iingot=Iron Ingot
-item.worldbeyond_diamond:netherite_iingot=Diamond
 
 item.worldbeyond:adventure_hat=§6Hat of the Adventurer
 item.worldbeyond:colourful_adventure_hat=§dColorful Hat of the Adventurer
@@ -24,21 +22,15 @@ item.worldbeyond:wooden_spear=Wooden Spear
 item.worldbeyond:stone_spear=Stone Spear
 item.worldbeyond:iron_spear=Iron Spear
 item.worldbeyond:tiger_claw_spear=§6Tiger Claw Spear§r
-item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
-
-item.worldbeyond:enby_flag_item=Non-Binary Flag
-item.worldbeyond:trans_flag_item=Transgender Flag
 item.worldbeyond:otherworld_crystal.name=§bOtherworld Crystal§r
 item.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
+item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
 
 ## Entities
 entity.worldbeyond:tiger.name=Tiger
 entity.worldbeyond:toucan.name=Toucan
 entity.worldbeyond:jungle_zombie.name=Verdant
 entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
-
-entity.worldbeyond:enby_flag_entity.name=Non-Binary Flag
-entity.worldbeyond:trans_flag_entity.name=Transgender Flag
 
 ## Blocks
 tile.worldbeyond:limestone.name=Limestone
@@ -54,75 +46,9 @@ tile.worldbeyond:mossy_limestone_bricks_slab.name=Mossy Limestone Bricks Slab
 tile.worldbeyond:cobbled_limestone.name=Cobbled Limestone
 tile.worldbeyond:mossy_cobbled_limestone.name=Mossy Cobbled Limestone
 tile.worldbeyond:chiseled_limestone.name=Chiseled Limestone
-tile.worldbeyond:cracked_limestone.name=Cracked Limestone Bricks
-tile.worldbeyond:cracked_limestone_slab.name=Cracked Limestone Bricks Slab
+tile.worldbeyond:cracked_limestone.name=Cracked Limestone
 tile.worldbeyond:limestone_pillar.name=Limestone Pillar
-tile.worldbeyond:bauxite.name=Bauxite
-tile.worldbeyond:bauxite_slab.name=Bauxite Slab
-tile.worldbeyond:bauxite_bricks.name=Bauxite Bricks
-tile.worldbeyond:bauxite_bricks_slab.name=Bauxite Bricks Slab
-tile.worldbeyond:bauxite_tiles.name=Bauxite Tiles
-tile.worldbeyond:bauxite_tiles_slab.name=Bauxite Tiles Slab
-tile.worldbeyond:cobbled_bauxite.name=Cobbled Bauxite
-tile.worldbeyond:cobbled_bauxite_slab.name=Cobbled Bauxite Slab
-tile.worldbeyond:chiseled_bauxite.name=Chiseled Bauxite
-tile.worldbeyond:cracked_bauxite_tiles.name=Cracked Bauxite Tiles
-tile.worldbeyond:cracked_bauxite_tiles_slab.name=Cracked Bauxite Tiles Slabs
-tile.worldbeyond:cracked_bauxite.name=Cracked Bauxite Bricks
-tile.worldbeyond:cracked_bauxite_slab.name=Cracked Bauxite Bricks Slab
-tile.worldbeyond:polished_bauxite.name=Polished Bauxite
-tile.worldbeyond:polished_bauxite_slab.name=Polished Bauxite Slab
-tile.worldbeyond:sodalite.name=Sodalite
-tile.worldbeyond:sodalite_slab.name=Sodalite Slab
-tile.worldbeyond:sodalite_bricks.name=Sodalite Bricks
-tile.worldbeyond:sodalite_bricks_slab.name=Sodalite Bricks Slab
-tile.worldbeyond:sodalite_tiles.name=Sodalite Tiles
-tile.worldbeyond:sodalite_tiles_slab.name=Sodalite Tiles Slab
-tile.worldbeyond:polished_sodalite.name=Polished Sodalite
-tile.worldbeyond:polished_sodalite_slab.name=Polished Sodalite Slab
-tile.worldbeyond:chiseled_sodalite.name=Chiseled Sodalite
-tile.worldbeyond:cobbled_sodalite.name=Cobbled Sodalite
-tile.worldbeyond:cobbled_sodalite_slab.name=Cobbled Sodalite Slab
-tile.worldbeyond:snowy_cobbled_sodalite.name=Snowy Cobbled Sodalite
-tile.worldbeyond:snowy_cobbled_sodalite_slab.name=Snowy Cobbled Sodalite Slab
-tile.worldbeyond:snowy_sodalite_bricks.name=Snowy Sodalite Bricks
-tile.worldbeyond:snowy_sodalite_bricks_slab.name=Snowy Sodalite Bricks Slab
-tile.worldbeyond:snowy_sodalite_tiles.name=Snowy Sodalite Tiles
-tile.worldbeyond:snowy_sodalite_tiles_slab.name=Snowy Sodalite Tiles Slab
-tile.worldbeyond:cracked_sodalite.name=Cracked Sodalite Bricks
-tile.worldbeyond:cracked_sodalite_slab.name=Cracked Sodalite Bricks Slab
-tile.worldbeyond:cracked_sodalite_tiles.name=Cracked Sodalite Tiles
-tile.worldbeyond:cracked_sodalite_tiles_slab.name=Cracked Sodalite Tiles Slab
-tile.worldbeyond:darkstone.name=Darkstone
-tile.worldbeyond:darkstone_slab.name=Darkstone Slab
-tile.worldbeyond:darkstone_bricks.name=Darkstone Bricks
-tile.worldbeyond:darkstone_bricks_slab.name=Darkstone Bricks Slab
-tile.worldbeyond:darkstone_tiles.name=Darkstone Tiles
-tile.worldbeyond:darkstone_tiles_slab.name=Darkstone Tiles Slab
-tile.worldbeyond:chiseled_darkstone.name=Chiseled Darkstone
-tile.worldbeyond:cobbled_darkstone.name=Cobbled Darkstone
-tile.worldbeyond:cobbled_darkstone_slab.name=Cobbled Darkstone Slab
-tile.worldbeyond:cracked_darkstone.name=Cracked Darkstone Bricks
-tile.worldbeyond:cracked_darkstone_slab.name=Cracked Darkstone Bricks Slab
-tile.worldbeyond:cracked_darkstone_tiles.name=Cracked Darkstone Tiles
-tile.worldbeyond:cracked_darkstone_tiles_slab.name=Cracked Darkstone Tiles Slab
-tile.worldbeyond:polished_darkstone.name=Polished Darkstone
-tile.worldbeyond:polished_darkstone_slab.name=Polished Darkstone Slab
-tile.worldbeyond:mossy_cobbled_darkstone.name=Mossy Cobbled Darkstone
-tile.worldbeyond:mossy_cobbled_darkstone_slab.name=Mossy Cobbled Darkstone Slab
-tile.worldbeyond:mossy_darkstone_bricks.name=Mossy Darkstone Bricks
-tile.worldbeyond:mossy_darkstone_bricks_slab.name=Mossy Darkstone Bricks Slab
-tile.worldbeyond:mossy_darkstone_tiles.name=Mossy Darkstone Tiles
-tile.worldbeyond:mossy_darkstone_tiles_slab.name=Mossy Darkstone Tiles Slab
-
-tile.worldbeyond:enby_flag.name=Non-Binary Flag
-tile.worldbeyond:trans_flag.name=Transgender Flag
 tile.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
-
-## Section Created by Eko-byte
-
-tile.worldbeyond:sconce.name=Sconce
-tile.worldbeyond:soul_sconce.name=Soul Sconce
 
 ## Interactions
 

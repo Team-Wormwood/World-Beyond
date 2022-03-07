@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "worldbeyond:mossy_cobbled_limestone",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:destroy_time": 2.0,
+			"minecraft:creative_category": {
+				"group": "lol",
+				"category": "construction"
+			},
+            "minecraft:explosion_resistance": 6.0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "mossy_cobbled_limestone",
+					"render_method": "opaque"
+				}
+			},
+            "tag:stone": {},
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#70922D",
+            "minecraft:block_light_emission": 0.0
+        }
+    }
+}

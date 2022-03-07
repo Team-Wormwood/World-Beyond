@@ -1,146 +1,105 @@
 // File created by MADLAD3718
-// File edited by Sumi
 {
-	"namespace": "hud",
-	//---------------------------------------------------------------------------
-	// Hud Screen
-	//---------------------------------------------------------------------------
-	//implement otherworld crystal bar
-	"boss_health_panel": {
-		"type": "panel",
-		"size": [
-			182,
-			20
-		],
-		"anchor_from": "top_middle",
-		"anchor_to": "top_middle",
-		"$progress_bar_collection": "boss_bars",
-		"controls": [
-			{
-				"boss_name@boss_name_panel": {}
-			},
-			{
-				"progress_bar_for_collections@common.progress_bar_for_collections": {
-					"offset": [
-						0,
-						10
-					]
-				}
-			},
-			{
-				"otherworld_crystal_health@otherworld_crystal_health": {
-					"offset": [
-						0,
-						"10px"
-					],
-					"layer": 2
-				}
-			}
-		],
-		"bindings": [
-			{
-				"binding_name": "#bar_visible",
-				"binding_type": "collection",
-				"binding_collection_name": "boss_bars",
-				"binding_name_override": "#visible"
-			}
-		]
-	},
-	//define empty otherworld crystal bar
-	"empty_otherworld_crystal_health": {
-		"type": "image",
-		"texture": "textures/ui/otherworld_crystal_bossbar_empty"
-	},
-	//define filled otherworld crystal bar
-	"filled_otherworld_crystal_health": {
-		"type": "image",
-		"texture": "textures/ui/otherworld_crystal_bossbar_filled",
-		"offset": [
-			0,
-			0
-		],
-		"clip_direction": "left",
-		"bindings": [
-			{
-				"binding_name": "#progress_percentage",
-				"binding_name_override": "#clip_ratio"
-			}
-		]
-	},
-	//add bindings to otherworld crystal bar
-	"otherworld_crystal@filled_otherworld_crystal_health": {
-		"clip_pixelperfect": false,
-		"bindings": [
-			{
-				"binding_name": "#progress_percentage",
-				"binding_name_override": "#clip_ratio",
-				"binding_type": "collection",
-				"binding_collection_name": "$progress_bar_collection"
-			}
-		]
-	},
-	//define otherworld crystal bar
-	"otherworld_crystal_health": {
-		"type": "panel",
-		"anchor_from": "top_middle",
-		"anchor_to": "top_middle",
-		"offset": [
-			0,
-			0
-		],
-		"size": [
-			182,
-			5
-		],
-		"controls": [
-			{
-				"empty_otherworld_crystal_health@empty_otherworld_crystal_health": {
-					"layer": 3
-				}
-			},
-			{
-				"otherworld_crystal@otherworld_crystal": {
-					"layer": 4,
-					"size": [
-						182,
-						5
-					]
-				}
-			}
-		],
-		"bindings": [
-			{
-				"binding_name": "(#bossName = '§bOtherworld Crystal§r')",
-				"binding_type": "collection",
-				"binding_collection_name": "boss_bars",
-				"binding_name_override": "#visible"
-			}
-		]
-	},
-	"root_panel": {
-		"modifications": [
-			{
-				"array_name": "controls",
-				"operation": "insert_front",
-				"value": {
-					"advancements_popup@hud.advancements_popup": {}
-				}
-			}
-		]
-	},
-	"advancements_popup": {
-		"renderer": "live_player_renderer",
-		"size": [
-			18.75,
-			18.75
-		],
-		"anchor_from": "top_right",
-		"anchor_to": "top_right",
-		"layer": 2,
-		"type": "custom",
-		"offset": [
-			-84,
-			-1000
-		]
-	}
+  "namespace": "hud",
+
+  //---------------------------------------------------------------------------
+  // Hud Screen
+  //---------------------------------------------------------------------------
+
+  //implement otherworld crystal bar
+  "boss_health_panel": {
+    "type": "panel",
+    "size": [ 182, 20 ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "$progress_bar_collection": "boss_bars",
+    "controls": [
+      {
+        "boss_name@boss_name_panel": {}
+      },
+      {
+        "progress_bar_for_collections@common.progress_bar_for_collections": {
+          "offset": [ 0, 10 ]
+        }
+      },
+      {
+        "otherworld_crystal_health@otherworld_crystal_health": {
+          "offset": [0,"10px"],
+          "layer": 2
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#bar_visible",
+        "binding_type": "collection",
+        "binding_collection_name": "boss_bars",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  //define empty otherworld crystal bar
+  "empty_otherworld_crystal_health": {
+    "type": "image",
+    "texture": "textures/ui/otherworld_crystal_bossbar_empty"
+  },
+
+  //define filled otherworld crystal bar
+  "filled_otherworld_crystal_health": {
+    "type": "image",
+    "texture": "textures/ui/otherworld_crystal_bossbar_filled",
+    "offset": [0,0],
+    "clip_direction": "left",
+    "bindings": [
+      {
+        "binding_name": "#progress_percentage",
+        "binding_name_override": "#clip_ratio"
+      }
+    ]
+  },
+
+  //add bindings to otherworld crystal bar
+  "otherworld_crystal@filled_otherworld_crystal_health": {
+    "clip_pixelperfect": false,
+    "bindings": [
+      {
+        "binding_name": "#progress_percentage",
+        "binding_name_override": "#clip_ratio",
+        "binding_type": "collection",
+        "binding_collection_name": "$progress_bar_collection"
+      }
+    ]
+  },
+
+  //define otherworld crystal bar
+  "otherworld_crystal_health": {
+    "type": "panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "offset": [0,0],
+    "size": [182,5],
+    "controls": [
+      {
+        "empty_otherworld_crystal_health@empty_otherworld_crystal_health": {
+          "layer": 3
+        }
+      },
+      {
+        "otherworld_crystal@otherworld_crystal": {
+          "layer": 4,
+          "size": [182,5]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "(#bossName = '§bOtherworld Crystal§r')",
+        "binding_type": "collection",
+        "binding_collection_name": "boss_bars",
+        "binding_name_override": "#visible"
+      }
+    ]
+  }
+
 }

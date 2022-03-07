@@ -11,8 +11,8 @@
         ],
         "min_engine_version": [
             1,
-            18,
-            10
+            13,
+            0
         ]
     },
     "modules": [
@@ -27,7 +27,6 @@
         }
     ],
     "metadata": {
-        "license": "CC-BY-NC-SA-4.0",
         "authors": [
             "yanasakana",
             "eko",

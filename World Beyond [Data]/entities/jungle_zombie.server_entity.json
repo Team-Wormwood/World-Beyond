@@ -64,7 +64,7 @@
         },
         "minecraft:is_shaking": {}
       },
-      "verdant:loseVines": {
+      "worldbeyond:lose_vines": {
         "minecraft:variant": {
           "value": 1
         },
@@ -139,7 +139,7 @@
         "triggers": {
           "deals_damage": true,
           "on_damage": {
-            "event": "verdant:transform"
+            "event": "worldbeyond:transform"
           }
         }
       },
@@ -642,12 +642,12 @@
           }
         ]
       },
-      "verdant:transform": {
+      "worldbeyond:transform": {
         "sequence": [
           {
             "add": {
               "component_groups": [
-                "verdant:loseVines"
+                "worldbeyond:lose_vines"
               ]
             }
           }

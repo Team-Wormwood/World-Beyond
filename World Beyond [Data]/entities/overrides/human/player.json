@@ -1,62 +1,21 @@
 {
-	"format_version": "1.16.0",
+	"format_version": "1.18.10",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "minecraft:player",
 			"is_spawnable": false,
 			"is_summonable": false,
 			"is_experimental": false,
-			"scripts": {
-				"animate": [
-					// Advancements
-					"advancements",
-					"advancement.feet_wet",
-					"advancement.adventuring_journey",
-					// Equipment
-					"solar_medallion",
-					// Block Fixes
-					"flag_items"
-				]
+			"scripts": {	 
+			  "animate": [
+				"solar_medallion"
+			  ]
 			},
 			"animations": {
-				"advancements": "controller.animation.server.player_advancements.general",
-				"advancement.feet_wet": "controller.animation.server.player_advancements.feet_wet",
-				"advancement.adventuring_journey": "controller.animation.server.player_advancements.adventuring_journey",
-				"solar_medallion": "controller.animation.solar_medallion",
-				"flag_items": "controller.animation.flag_items"
+			  "solar_medallion": "controller.animation.solar_medallion"
 			}
 		},
 		"component_groups": {
-			// Advancements
-			"worldbeyond:advancement.general": {
-				"minecraft:mark_variant": {
-					"value": 0
-				}
-			},
-			"worldbeyond:advancement.feet_wet": {
-				"minecraft:mark_variant": {
-					"value": 1
-				}
-			},
-			"worldbeyond:advancement.adventuring_journey": {
-				"minecraft:mark_variant": {
-					"value": 2
-				}
-			},
-			// Sneaking
-			"worldbeyond:sneaking": {
-				"minecraft:collision_box": {
-					"width": 0.6,
-					"height": 1.5
-				}
-			},
-			"worldbeyond:vanilla_hitbox": {
-				"minecraft:collision_box": {
-					"width": 0.6,
-					"height": 1.8
-				}
-			},
-			// Defaults
 			"minecraft:add_bad_omen": {
 				"minecraft:spell_effects": {
 					"add_effects": [
@@ -199,128 +158,26 @@
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:block_climber": {},
 			"minecraft:environment_sensor": {
-				"triggers": [
-					{
-						"filters": {
-							"all_of": [
-								{
-									"test": "has_mob_effect",
-									"subject": "self",
-									"value": "bad_omen"
-								},
-								{
-									"test": "is_in_village",
-									"subject": "self",
-									"value": true
-								}
-							]
-						},
-						"event": "minecraft:trigger_raid"
-					},
-					{
-						"filters": {
-							"all_of": [
-								{
-									"test": "is_sneaking",
-									"subject": "self",
-									"value": true
-								}
-							]
-						},
-						"event": "worldbeyond:sneak"
-					},
-					{
-						"filters": {
-							"all_of": [
-								{
-									"test": "is_sneaking",
-									"subject": "self",
-									"value": false
-								}
-							]
-						},
-						"event": "worldbeyond:unsneak"
-					}
-				]
-			},
-			"minecraft:damage_sensor": {
 				"triggers": {
-					"on_damage": {
-						"filters": {
-							"all_of": [
-								{
-									"test": "has_damage",
-									"value": "fatal"
-								},
-								{
-									"test": "has_equipment",
-									"domain": "head",
-									"value": "worldbeyond:shulker_hat"
-								}
-							]
-						},
-						"target": "self",
-						"event": "player:stasis_chamber.lethal_damage",
-						"deals_damage": false,
-						"cause": "fatal"
-					}
+					"filters": {
+						"all_of": [
+							{
+								"test": "has_mob_effect",
+								"subject": "self",
+								"value": "bad_omen"
+							},
+							{
+								"test": "is_in_village",
+								"subject": "self",
+								"value": true
+							}
+						]
+					},
+					"event": "minecraft:trigger_raid"
 				}
 			}
 		},
 		"events": {
-			// Advancements
-			"player:advancement.clear_cooldown": {
-				"add": {
-					"component_groups": [
-						"worldbeyond:advancement.general"
-					]
-				}
-			},
-			"player:advancement_get.feet_wet": {
-				"add": {
-					"component_groups": [
-						"worldbeyond:advancement.feet_wet"
-					]
-				}
-			},
-			"player:advancement_get.adventuring_journey": {
-				"add": {
-					"component_groups": [
-						"worldbeyond:advancement.adventuring_journey"
-					]
-				}
-			},
-			//Sneaks
-			"worldbeyond:sneak": {
-				"add": {
-					"component_groups": [
-						"worldbeyond:sneaking"
-					]
-				}
-			},
-			"worldbeyond:unsneak": {
-				"add": {
-					"component_groups": [
-						"worldbeyond:vanilla_hitbox"
-					]
-				}
-			},
-			//Stasis Chamber
-			"player:stasis_chamber.lethal_damage": {
-				"run_command": {
-					"target": "self",
-					"command": [
-						"effect @s resistance 1 255",
-						"effect @s absorption 8 255",
-						"effect @s instant_health 1 255",
-						"effect @s regeneration 8 5",
-						"effect @s fire_resistance 8 255",
-						"replaceitem entity @s slot.armor.head -1 air",
-						"tp @s @e[type=worldbeyond:stasis_eye]"
-					]
-				}
-			},
-			// Defaults
 			"minecraft:gain_bad_omen": {
 				"add": {
 					"component_groups": [
@@ -357,3 +214,4 @@
 		}
 	}
 }
+// File edited by MADLAD3718

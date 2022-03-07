@@ -1,0 +1,29 @@
+// File created by MADLAD3718
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.solar_medallion": {
+			"initial_state" : "default",
+            "states": {
+                "default": {
+                    "transitions": [
+						{
+							"effect": "query.get_equipped_item_name('off_hand') == 'solar_medallion' && query.time_of_day > 0.25 && query.time_of_day < 0.75"
+						}
+                    ]
+                },
+				"effect": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/effect @s strength 3 8 true",
+						"/effect @s resistance 3 8 true"	
+					]
+				}
+            }
+        }
+	}
+}
