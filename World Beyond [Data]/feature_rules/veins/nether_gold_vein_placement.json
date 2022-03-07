@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13",
+	
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "worldbeyond:nether_gold_vein_placement",
+			"places_feature": "worldbeyond:nether_gold_vein/area"
+		},
+		
+		"conditions": {
+			"placement_pass": "before_underground_pass",
+			
+			"minecraft:biome_filter": {
+				"any_of": [
+					{
+						"test": "has_biome_tag",
+						"value": "nether_wastes"
+					},
+					{
+						"test": "has_biome_tag",
+						"value": "basalt_deltas"
+					}
+				]
+			}
+		},
+		
+		"distribution": {
+			"iterations": "t.vein_iterations = 2; t.vein_height = 6; t.vein_selection_threshold = 0.125; t.vein_selection_smoothness = 64; t.vein_altitude_smoothness = 64; t.vein_volume_altitude_target = 32; t.vein_volume_altitude_span = 32; t.vein_volume_height = 16; t.vein_volume_radius = 24; t.vein_volume_clippingratio_minimum = 0.75; t.vein_volume_clippingratio_maximum = 1; t.tile_size = 8; t.tile_origin_x = (16 * t.tile_size) * math.floor(v.originx / (16 * t.tile_size)); t.tile_origin_z = (16 * t.tile_size) * math.floor(v.originz / (16 * t.tile_size)); t.tile_currentchunk_x = math.mod(math.floor(v.originx / 16), t.tile_size); t.tile_currentchunk_x < 0 ? {t.tile_currentchunk_x = t.tile_currentchunk_x + t.tile_size;}; t.tile_currentchunk_z = math.mod(math.floor(v.originz / 16), t.tile_size); t.tile_currentchunk_z < 0 ? {t.tile_currentchunk_z = t.tile_currentchunk_z + t.tile_size;}; t.tile_targetchunk_x = math.floor((t.tile_size / 2) + (t.tile_size / 2) * query.noise(t.tile_origin_x - 12, t.tile_origin_z - 12)); t.tile_targetchunk_z = math.floor((t.tile_size / 2) + (t.tile_size / 2) * query.noise(t.tile_origin_x + 12, t.tile_origin_z + 12)); t.tile_currentchunk_x == t.tile_targetchunk_x && t.tile_currentchunk_z == t.tile_targetchunk_z ? {t.vein_center_x = v.originx + 8; t.vein_center_z = v.originz + 8; return 1;};",
+			
+			"x": -16,
+			"z": -16,
+			"y": "math.random_integer(t.vein_volume_altitude_target - t.vein_volume_altitude_span, t.vein_volume_altitude_target + t.vein_volume_altitude_span)"
+		}
+	}
+}
