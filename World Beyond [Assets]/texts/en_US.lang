@@ -8,14 +8,18 @@ pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) 
 ## Items
 item.spawn_egg.entity.worldbeyond:tiger.name=Spawn Tiger
 item.spawn_egg.entity.worldbeyond:toucan.name=Spawn Toucan
+item.spawn_egg.entity.worldbeyond:jungle_zombie.name=Spawn Verdant
+item.spawn_egg.entity.worldbeyond:frozen_zombie.name=Spawn Frostbitten
 
 item.worldbeyond:colourful_feather=Colorful Feather
 item.worldbeyond:tiger_claws=Tiger Claws
 item.worldbeyond:boar_tusk=Boar Tusk
-item.worldbeyond:ruby=Ruby
+
 item.worldbeyond:long_stick=Long Stick
-item.worldbeyond_iron:netherite_iingot=Iron Ingot
-item.worldbeyond_diamond:netherite_iingot=Diamond
+item.worldbeyond:ruby=Ruby
+
+item.worldbeyond_iron:netherite_ingot=Iron Ingot
+item.worldbeyond_diamond:netherite_ingot=Diamond
 
 item.worldbeyond:adventure_hat=§6Hat of the Adventurer
 item.worldbeyond:colourful_adventure_hat=§dColorful Hat of the Adventurer
@@ -35,6 +39,7 @@ item.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 entity.worldbeyond:tiger.name=Tiger
 entity.worldbeyond:toucan.name=Toucan
 entity.worldbeyond:jungle_zombie.name=Verdant
+entity.worldbeyond:frozen_zombie.name=Frostbitten
 entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
 
 entity.worldbeyond:enby_flag_entity.name=Non-Binary Flag

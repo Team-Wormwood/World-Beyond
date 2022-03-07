@@ -52,7 +52,7 @@
                 "volume": 1.0
             },
             "worldbeyond:jungle_zombie": {
-                "volume": 1.0,
+                "volume": 0.8,
                 "pitch": [
                     0.8,
                     1.2
@@ -65,6 +65,23 @@
                         "pitch": 1.0,
                         "sound": "mob.jungle_zombie.step",
                         "volume": 0.450
+                    }
+                }
+            },
+            "worldbeyond:frozen_zombie": {
+                "volume": 1.2,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "ambient": "mob.frozen_zombie.say",
+                    "death": "mob.frozen_zombie.death",
+                    "hurt": "mob.frozen_zombie.hurt",
+                    "step": {
+                        "pitch": 0.8,
+                        "sound": "mob.zombie.step",
+                        "volume": 0.45
                     }
                 }
             },
