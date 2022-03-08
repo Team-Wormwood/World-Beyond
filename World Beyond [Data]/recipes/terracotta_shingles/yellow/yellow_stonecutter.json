@@ -1,0 +1,23 @@
+
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "worldbeyond:stonecutter_yellow_terracotta_shingles"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"priority": 2,
+		"ingredients": [
+			{
+				"item": "minecraft:stained_hardened_clay",
+				"data": 4
+			}
+		],
+		"result": {
+			"item": "worldbeyond:yellow_terracotta_shingles",
+			"count": 1
+		}
+	}
+}

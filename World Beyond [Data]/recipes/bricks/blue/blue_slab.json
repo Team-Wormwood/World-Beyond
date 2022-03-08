@@ -1,0 +1,24 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldbeyond:blue_bricks_slab"
+    },
+    "tags": [ 
+      "crafting_table" 
+    ],
+    "group": "stone_slab",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "worldbeyond:blue_bricks"
+      }
+    },
+    "result": {
+      "item": "worldbeyond:blue_brick_slab",
+      "count": 6
+    }
+  }
+}

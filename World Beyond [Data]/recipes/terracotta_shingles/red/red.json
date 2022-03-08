@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldbeyond:red_terracotta_shingles"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "group": "stone",
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stained_hardened_clay",
+        "data": 14
+      }
+    },
+    "result": {
+      "item": "worldbeyond:red_terracotta_shingles",
+      "count": 4
+    }
+  }
+}

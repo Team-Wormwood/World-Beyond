@@ -1,0 +1,16 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "worldbeyond:red_bricks"
+		},
+		"components": {
+			"tag:stone":{},
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.none",
+				"category": "construction"
+			},
+			"minecraft:destroy_time": 1
+		}
+	}
+}

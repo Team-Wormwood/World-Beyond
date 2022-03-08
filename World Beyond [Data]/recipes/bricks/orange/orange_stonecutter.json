@@ -1,0 +1,23 @@
+
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "worldbeyond:stonecutter_orange_bricks"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"priority": 2,
+		"ingredients": [
+			{
+				"item": "minecraft:stained_hardened_clay",
+				"data": 1
+			}
+		],
+		"result": {
+			"item": "worldbeyond:orange_bricks",
+			"count": 1
+		}
+	}
+}

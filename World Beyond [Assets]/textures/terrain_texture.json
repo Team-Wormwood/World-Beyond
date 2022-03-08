@@ -4,6 +4,111 @@
     "resource_pack_name": "vanilla",
     "texture_data": {
         //WorldBeyond
+
+
+		"terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/terracotta_shingles"
+		},
+		"red_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/red_terracotta_shingles"
+		},
+		"orange_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/orange_terracotta_shingles"
+		},
+		"yellow_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/yellow_terracotta_shingles"
+		},
+		"lime_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/lime_terracotta_shingles"
+		},
+		"green_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/green_terracotta_shingles"
+		},
+		"cyan_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/cyan_terracotta_shingles"
+		},
+		"light_blue_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/light_blue_terracotta_shingles"
+		},
+		"blue_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/blue_terracotta_shingles"
+		},
+		"purple_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/purple_terracotta_shingles"
+		},
+		"magenta_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/magenta_terracotta_shingles"
+		},
+		"pink_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/pink_terracotta_shingles"
+		},
+		"white_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/white_terracotta_shingles"
+		},
+		"light_gray_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/light_gray_terracotta_shingles"
+		},
+		"gray_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/gray_terracotta_shingles"
+		},
+		"black_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/black_terracotta_shingles"
+		},
+		"brown_terracotta_shingles": {
+			"textures": "textures/blocks/terracotta_shingles/brown_terracotta_shingles"
+		},
+
+
+        "red_bricks": {
+			"textures": "textures/blocks/bricks/red_bricks"
+		},
+		"orange_bricks": {
+			"textures": "textures/blocks/bricks/orange_bricks"
+		},
+		"yellow_bricks": {
+			"textures": "textures/blocks/bricks/yellow_bricks"
+		},
+		"lime_bricks": {
+			"textures": "textures/blocks/bricks/lime_bricks"
+		},
+		"green_bricks": {
+			"textures": "textures/blocks/bricks/green_bricks"
+		},
+		"cyan_bricks": {
+			"textures": "textures/blocks/bricks/cyan_bricks"
+		},
+		"light_blue_bricks": {
+			"textures": "textures/blocks/bricks/light_blue_bricks"
+		},
+		"blue_bricks": {
+			"textures": "textures/blocks/bricks/blue_bricks"
+		},
+		"purple_bricks": {
+			"textures": "textures/blocks/bricks/purple_bricks"
+		},
+		"magenta_bricks": {
+			"textures": "textures/blocks/bricks/magenta_bricks"
+		},
+		"pink_bricks": {
+			"textures": "textures/blocks/bricks/pink_bricks"
+		},
+		"white_bricks": {
+			"textures": "textures/blocks/bricks/white_bricks"
+		},
+		"light_gray_bricks": {
+			"textures": "textures/blocks/bricks/light_gray_bricks"
+		},
+		"gray_bricks": {
+			"textures": "textures/blocks/bricks/gray_bricks"
+		},
+		"black_bricks": {
+			"textures": "textures/blocks/bricks/black_bricks"
+		},
+		"brown_bricks": {
+			"textures": "textures/blocks/bricks/brown_bricks"
+		},
+
+
         "chiseled_limestone": {
             "textures": "textures/blocks/stones/limestone/chiseled_limestone"
         },

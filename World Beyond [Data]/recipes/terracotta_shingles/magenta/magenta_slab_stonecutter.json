@@ -1,0 +1,22 @@
+
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "worldbeyond:stonecutter_magenta_terracotta_shingle_slab"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"priority": 2,
+		"ingredients": [
+			{
+				"item": "worldbeyond:magenta_terracotta_shingles"
+			}
+		],
+		"result": {
+			"item": "worldbeyond:magenta_terracotta_shingle_slab",
+			"count": 2
+		}
+	}
+}
