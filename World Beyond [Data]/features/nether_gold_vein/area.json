@@ -1,0 +1,23 @@
+{
+	"format_version": "1.13",
+
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "worldbeyond:nether_gold_vein/area"
+		},
+
+		"places_feature": "worldbeyond:nether_gold_vein/column/iterator",
+
+		"iterations": 2304,
+
+		"x": {
+			"distribution": "fixed_grid",
+			"extent": [0, 47]
+		},
+		"z": {
+			"distribution": "fixed_grid",
+			"extent": [0, 47]
+		},
+		"y": 0
+	}
+}
