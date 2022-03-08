@@ -3,7 +3,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "worldbeyond:blue_terracotta_shingles"
+			"identifier": "worldbeyond:blue_terracotta_shinglesfrom_shingles"
 		},
 		"tags": [
 			"crafting_table"
