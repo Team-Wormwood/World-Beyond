@@ -1,0 +1,32 @@
+
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "worldbeyond:brown_bricks"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"#x#",
+			"###"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:brick_block"
+			},
+			"x": {
+				"item": "minecraft:dye",
+				"data": 17
+			}
+		},
+		"result": [
+			{
+				"item": "worldbeyond:brown_bricks",
+				"count": 8
+			}
+		]
+	}
+}

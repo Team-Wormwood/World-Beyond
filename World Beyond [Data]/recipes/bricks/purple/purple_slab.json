@@ -1,0 +1,24 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldbeyond:purple_bricks_slab"
+    },
+    "tags": [ 
+      "crafting_table" 
+    ],
+    "group": "stone_slab",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "worldbeyond:purple_bricks"
+      }
+    },
+    "result": {
+      "item": "worldbeyond:purple_brick_slab",
+      "count": 6
+    }
+  }
+}

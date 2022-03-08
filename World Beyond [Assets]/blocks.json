@@ -5,6 +5,279 @@
         0
     ],
     //WorldBeyond
+
+
+    "worldbeyond:red_brick_slab": {
+        "sound": "stone",
+        "textures": "red_bricks"
+    },
+    "worldbeyond:orange_brick_slab": {
+        "sound": "stone",
+        "textures": "orange_bricks"
+    },
+    "worldbeyond:yellow_brick_slab": {
+        "sound": "stone",
+        "textures": "yellow_bricks"
+    },
+    "worldbeyond:lime_brick_slab": {
+        "sound": "stone",
+        "textures": "lime_bricks"
+    },
+    "worldbeyond:green_brick_slab": {
+        "sound": "stone",
+        "textures": "green_bricks"
+    },
+    "worldbeyond:cyan_brick_slab": {
+        "sound": "stone",
+        "textures": "cyan_bricks"
+    },
+    "worldbeyond:light_blue_brick_slab": {
+        "sound": "stone",
+        "textures": "light_blue_bricks"
+    },
+    "worldbeyond:blue_brick_slab": {
+        "sound": "stone",
+        "textures": "blue_bricks"
+    },
+    "worldbeyond:purple_brick_slab": {
+        "sound": "stone",
+        "textures": "purple_bricks"
+    },
+    "worldbeyond:magenta_brick_slab": {
+        "sound": "stone",
+        "textures": "magenta_bricks"
+    },
+    "worldbeyond:pink_brick_slab": {
+        "sound": "stone",
+        "textures": "pink_bricks"
+    },
+    "worldbeyond:white_brick_slab": {
+        "sound": "stone",
+        "textures": "white_bricks"
+    },
+    "worldbeyond:light_gray_brick_slab": {
+        "sound": "stone",
+        "textures": "light_gray_bricks"
+    },
+    "worldbeyond:gray_brick_slab": {
+        "sound": "stone",
+        "textures": "gray_bricks"
+    },
+    "worldbeyond:black_brick_slab": {
+        "sound": "stone",
+        "textures": "black_bricks"
+    },
+    "worldbeyond:brown_brick_slab": {
+        "sound": "stone",
+        "textures": "brown_bricks"
+    },
+
+
+    "worldbeyond:red_bricks": {
+        "sound": "stone",
+        "textures": "red_bricks"
+    },
+    "worldbeyond:orange_bricks": {
+        "sound": "stone",
+        "textures": "orange_bricks"
+    },
+    "worldbeyond:yellow_bricks": {
+        "sound": "stone",
+        "textures": "yellow_bricks"
+    },
+    "worldbeyond:lime_bricks": {
+        "sound": "stone",
+        "textures": "lime_bricks"
+    },
+    "worldbeyond:green_bricks": {
+        "sound": "stone",
+        "textures": "green_bricks"
+    },
+    "worldbeyond:cyan_bricks": {
+        "sound": "stone",
+        "textures": "cyan_bricks"
+    },
+    "worldbeyond:light_blue_bricks": {
+        "sound": "stone",
+        "textures": "light_blue_bricks"
+    },
+    "worldbeyond:blue_bricks": {
+        "sound": "stone",
+        "textures": "blue_bricks"
+    },
+    "worldbeyond:purple_bricks": {
+        "sound": "stone",
+        "textures": "purple_bricks"
+    },
+    "worldbeyond:magenta_bricks": {
+        "sound": "stone",
+        "textures": "magenta_bricks"
+    },
+    "worldbeyond:pink_bricks": {
+        "sound": "stone",
+        "textures": "pink_bricks"
+    },
+    "worldbeyond:white_bricks": {
+        "sound": "stone",
+        "textures": "white_bricks"
+    },
+    "worldbeyond:light_gray_bricks": {
+        "sound": "stone",
+        "textures": "light_gray_bricks"
+    },
+    "worldbeyond:gray_bricks": {
+        "sound": "stone",
+        "textures": "gray_bricks"
+    },
+    "worldbeyond:black_bricks": {
+        "sound": "stone",
+        "textures": "black_bricks"
+    },
+    "worldbeyond:brown_bricks": {
+        "sound": "stone",
+        "textures": "brown_bricks"
+    },
+
+    "worldbeyond:terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "terracotta_shingles"
+    },
+    "worldbeyond:red_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "red_terracotta_shingles"
+    },
+    "worldbeyond:orange_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "orange_terracotta_shingles"
+    },
+    "worldbeyond:yellow_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "yellow_terracotta_shingles"
+    },
+    "worldbeyond:lime_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "lime_terracotta_shingles"
+    },
+    "worldbeyond:green_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "green_terracotta_shingles"
+    },
+    "worldbeyond:cyan_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "cyan_terracotta_shingles"
+    },
+    "worldbeyond:light_blue_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "light_blue_terracotta_shingles"
+    },
+    "worldbeyond:blue_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "blue_terracotta_shingles"
+    },
+    "worldbeyond:purple_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "purple_terracotta_shingles"
+    },
+    "worldbeyond:magenta_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "magenta_terracotta_shingles"
+    },
+    "worldbeyond:pink_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "pink_terracotta_shingles"
+    },
+    "worldbeyond:white_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "white_terracotta_shingles"
+    },
+    "worldbeyond:light_gray_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "light_gray_terracotta_shingles"
+    },
+    "worldbeyond:gray_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "gray_terracotta_shingles"
+    },
+    "worldbeyond:black_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "black_terracotta_shingles"
+    },
+    "worldbeyond:brown_terracotta_shingle_slab": {
+        "sound": "stone",
+        "textures": "brown_terracotta_shingles"
+    },
+
+
+    "worldbeyond:terracotta_shingles": {
+        "sound": "stone",
+        "textures": "terracotta_shingles"
+    },
+    "worldbeyond:red_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "red_terracotta_shingles"
+    },
+    "worldbeyond:orange_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "orange_terracotta_shingles"
+    },
+    "worldbeyond:yellow_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "yellow_terracotta_shingles"
+    },
+    "worldbeyond:lime_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "lime_terracotta_shingles"
+    },
+    "worldbeyond:green_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "green_terracotta_shingles"
+    },
+    "worldbeyond:cyan_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "cyan_terracotta_shingles"
+    },
+    "worldbeyond:light_blue_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "light_blue_terracotta_shingles"
+    },
+    "worldbeyond:blue_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "blue_terracotta_shingles"
+    },
+    "worldbeyond:purple_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "purple_terracotta_shingles"
+    },
+    "worldbeyond:magenta_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "magenta_terracotta_shingles"
+    },
+    "worldbeyond:pink_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "pink_terracotta_shingles"
+    },
+    "worldbeyond:white_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "white_terracotta_shingles"
+    },
+    "worldbeyond:light_gray_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "light_gray_terracotta_shingles"
+    },
+    "worldbeyond:gray_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "gray_terracotta_shingles"
+    },
+    "worldbeyond:black_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "black_terracotta_shingles"
+    },
+    "worldbeyond:brown_terracotta_shingles": {
+        "sound": "stone",
+        "textures": "brown_terracotta_shingles"
+    },
+
+
     "worldbeyond:chiseled_limestone": {
         "sound": "deepslate",
         "textures": "chiseled_limestone"

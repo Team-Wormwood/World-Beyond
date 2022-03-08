@@ -1,0 +1,22 @@
+
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "worldbeyond:stonecutter_lime_brick_slab"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"priority": 2,
+		"ingredients": [
+			{
+				"item": "worldbeyond:lime_bricks"
+			}
+		],
+		"result": {
+			"item": "worldbeyond:lime_brick_slab",
+			"count": 2
+		}
+	}
+}

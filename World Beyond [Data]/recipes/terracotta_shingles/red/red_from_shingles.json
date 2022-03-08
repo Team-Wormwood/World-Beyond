@@ -1,0 +1,32 @@
+
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "worldbeyond:red_terracotta_shingles_from_shingles"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"#x#",
+			"###"
+		],
+		"key": {
+			"#": {
+				"item": "worldbeyond:terracotta_shingles"
+			},
+			"x": {
+				"item": "minecraft:dye",
+				"data": 1
+			}
+		},
+		"result": [
+			{
+				"item": "worldbeyond:red_terracotta_shingles",
+				"count": 8
+			}
+		]
+	}
+}

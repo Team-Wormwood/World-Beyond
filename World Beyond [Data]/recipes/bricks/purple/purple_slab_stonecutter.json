@@ -1,0 +1,22 @@
+
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "worldbeyond:stonecutter_purple_brick_slab"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"priority": 2,
+		"ingredients": [
+			{
+				"item": "worldbeyond:purple_bricks"
+			}
+		],
+		"result": {
+			"item": "worldbeyond:purple_brick_slab",
+			"count": 2
+		}
+	}
+}

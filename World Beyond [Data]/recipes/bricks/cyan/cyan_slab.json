@@ -1,0 +1,24 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldbeyond:cyan_bricks_slab"
+    },
+    "tags": [ 
+      "crafting_table" 
+    ],
+    "group": "stone_slab",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "worldbeyond:cyan_bricks"
+      }
+    },
+    "result": {
+      "item": "worldbeyond:cyan_brick_slab",
+      "count": 6
+    }
+  }
+}
