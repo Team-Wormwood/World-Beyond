@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.flag_items": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"enby_flag": "query.is_item_name_any('slot.weapon.mainhand', 0, 'worldbeyond:enby_flag')"
+						},
+						{
+							"trans_flag": "query.is_item_name_any('slot.weapon.mainhand', 0, 'worldbeyond:trans_flag')"
+						}
+					]
+				},
+				"enby_flag": {
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 worldbeyond:enby_flag_item"
+					],
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					]
+				},
+				"trans_flag": {
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 worldbeyond:trans_flag_item"
+					],
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

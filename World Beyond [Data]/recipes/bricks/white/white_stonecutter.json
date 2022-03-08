@@ -1,0 +1,23 @@
+
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "worldbeyond:stonecutter_white_bricks"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"priority": 2,
+		"ingredients": [
+			{
+				"item": "minecraft:stained_hardened_clay",
+				"data": 0
+			}
+		],
+		"result": {
+			"item": "worldbeyond:white_bricks",
+			"count": 1
+		}
+	}
+}

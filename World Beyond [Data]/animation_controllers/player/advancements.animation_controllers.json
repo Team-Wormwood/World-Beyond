@@ -1,0 +1,92 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.server.player_advancements.general": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"new_advancement": "query.mark_variant > 0"
+						}
+					]
+				},
+				"new_advancement": {
+					"on_entry": [
+						"variable.advancement_time = query.life_time; variable.current_mark_variant = query.mark_variant;"
+					],
+					"transitions": [
+						{
+							"add_time": "query.mark_variant > 0 && query.mark_variant != variable.current_mark_variant"
+						},
+						{
+							"clear_time": "query.mark_variant > 0 && (query.life_time - variable.advancement_time) >= 5.45"
+						}
+					]
+				},
+				"add_time": {
+					"transitions": [
+						{
+							"new_advancement": "1.0"
+						}
+					]
+				},
+				"clear_time": {
+					"on_entry": [
+						"@s player:advancement.clear_cooldown"
+					],
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.server.player_advancements.feet_wet": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"advancement_tag.feet_wet": "1.0"
+						}
+					]
+				},
+				"advancement_tag.feet_wet": {
+					"on_entry": [
+						"/execute @s[tag=!advancement.feet_wet] ~ ~ ~ detect ~ ~-1 ~ minecraft:bedrock 0 function advancements/feet_wet"
+					],
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.server.player_advancements.adventuring_journey": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"advancement_tag.adventuring_journey": "query.is_item_name_any('slot.armor.head', 0, 'worldbeyond:adventure_hat', 'worldbeyond:colourful_adventure_hat')"
+						}
+					]
+				},
+				"advancement_tag.adventuring_journey": {
+					"on_entry": [
+						"/execute @s[tag=!advancement.adventuring_journey] ~ ~ ~ function advancements/adventuring_journey",
+						"/execute @s[tag=!advancement.adventuring_journey] ~ ~ ~ function development/sounds.test1"
+					],
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

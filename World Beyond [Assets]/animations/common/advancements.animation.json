@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.advancements_offsets": {
+			"loop": true,
+			"bones": {
+				"advancements_ui": {
+					"position": [
+						"150 + variable.advancements_fade_motion",
+						"((query.is_swimming ? -18.35) - 900)",
+						0.0
+					],
+					"scale": 1.45
+				}
+			}
+		}
+	}
+}

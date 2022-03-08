@@ -1,0 +1,113 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "worldbeyond:black_terracotta_shingle_slab",
+      "properties": {
+        "shingle:slabType": [ "down", "up", "double" ]
+      }
+    },
+    "components": {
+      "tag:stone":{},
+      "minecraft:destroy_time": 1,
+      "minecraft:material_instances" : {
+        "*" : {
+          "texture": "black_terracotta_shingles",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:block_light_absorption": 0,
+      "minecraft:on_player_placing": {
+        "condition": "query.target_x_rotation <= 0",
+        "event": "up"
+      }, 
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.slab",
+				"category": "construction"
+			}
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('shingle:slabType') == 'double'",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/terracotta_shingle_slabs/black_double.json",
+          "minecraft:block_light_absorption": 1,
+          "minecraft:unit_cube":{},
+          "minecraft:entity_collision": {
+            "origin": [-8,0,-8],
+            "size": [16,16,16]
+          },
+          "minecraft:pick_collision": {
+            "origin": [-8,0,-8],
+            "size": [16,16,16]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('shingle:slabType') == 'down'",
+        "components": {
+          "minecraft:geometry": "geometry.custom_slab_lower",
+          "minecraft:on_interact": {
+            "condition": "query.get_equipped_item_name =='black_terracotta_shingle_slab' && query.block_property('shingle:slabType') != 'double' && q.block_face == 1",
+            "event": "double"
+          },
+          "minecraft:entity_collision": {
+            "origin": [-8,0,-8],
+            "size": [16,8,16]
+          },
+          "minecraft:pick_collision": {
+            "origin": [-8,0,-8],
+            "size": [16,8,16]
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('shingle:slabType') == 'up'",
+        "components": {
+          "minecraft:geometry": "geometry.custom_slab_upper",
+          "minecraft:on_interact": {
+            "condition": "query.get_equipped_item_name =='black_terracotta_shingle_slab' && query.block_property('shingle:slabType') != 'double' && q.block_face == 0",
+            "event": "double"
+          },
+          "minecraft:entity_collision": {
+            "origin": [-8,8,-8],
+            "size": [16,8,16]
+          },
+          "minecraft:pick_collision": {
+            "origin": [-8,8,-8],
+            "size": [16,8,16]
+          }
+        }
+      }
+    ],
+    "events": {
+      "double": {
+        "sequence":[
+          {
+        "set_block_property": {
+          "shingle:slabType": "'double'"
+        },
+        "decrement_stack": {}
+      },
+      {
+        "run_command": {
+          "command": [
+            "playsound use.stone @a[r=5] ~ ~ ~ 0.4 1.0"
+          ]
+        }
+      }
+      ]
+      },
+      "down": {
+        "set_block_property": {
+          "shingle:slabType": "'down'"
+        }
+      },
+      "up": {
+        "set_block_property": {
+          "shingle:slabType": "'up'"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "worldbeyond:enby_flag_entity",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "geometry": {
+                "default": "geometry.flags"
+            },
+            "textures": {
+                "default": "textures/entity/flags/non_binary"
+            },
+            "scripts": {
+                "animate": [
+                    "default"
+                ]
+            },
+            "animations": {
+                "default": "animation.flag_sway.default",
+                "rain": "animation.flag_sway.rain",
+                "thunder": "animation.flag_sway.thunder"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

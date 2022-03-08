@@ -1,0 +1,18 @@
+{
+	"format_version": "1.13",
+
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "worldbeyond:nether_gold_vein/column/block/condition"
+		},
+
+		"places_feature": "worldbeyond:nether_gold_vein/column/block/selection",
+
+		"iterations": 1,
+		"scatter_chance": 50,
+
+		"x": 0,
+		"z": 0,
+		"y": 0
+	}
+}

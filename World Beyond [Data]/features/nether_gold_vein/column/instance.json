@@ -1,0 +1,20 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "worldbeyond:nether_gold_vein/column/instance"
+		},
+
+		"places_feature": "worldbeyond:nether_gold_vein/column/block/condition",
+
+		"iterations": "t.vein_column_height",
+
+		"x": 0,
+		"z": 0,
+		"y": {
+			"distribution": "fixed_grid",
+			"extent": [0, "t.vein_column_height - 1"]
+		}
+	}
+}
