@@ -179,7 +179,7 @@
 					"value": 0.35
 				},
 				"minecraft:barter": {
-					"barter_table": "loot_tables/entities/piglin_barter.json",
+					"barter_table": "loot_tables/bartering/piglin_barter_low.json",
 					"cooldown_after_being_attacked": 20
 				},
 				"minecraft:experience_reward": {
@@ -258,6 +258,180 @@
 							"use_item": true,
 							"cooldown_after_being_attacked": 20,
 							"interact_text": "action.interact.barter"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "gold_block"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "raw_gold_block"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "golden_horse_armor"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_component",
+											"subject": "self",
+											"operator": "!=",
+											"value": "minecraft:is_baby"
+										}
+									]
+								},
+								"event": "piglin:bribe_high",
+								"target": "self"
+							},
+							"barter": false,
+							"admire": true,
+							"use_item": true,
+							"cooldown_after_being_attacked": 20,
+							"interact_text": "action.interact.bribe"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "gold_ore"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "deepslate_gold_ore"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "nether_gold_ore"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "raw_gold"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "golden_rail"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "gilded_blackstone"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "bell"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "clock"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "clock"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "light_weighted_pressure_plate"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_component",
+											"subject": "self",
+											"operator": "!=",
+											"value": "minecraft:is_baby"
+										}
+									]
+								},
+								"event": "piglin:bribe_mid",
+								"target": "self"
+							},
+							"barter": false,
+							"admire": true,
+							"use_item": true,
+							"cooldown_after_being_attacked": 20,
+							"interact_text": "action.interact.bribe"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "gold_nugget"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_component",
+											"subject": "self",
+											"operator": "!=",
+											"value": "minecraft:is_baby"
+										}
+									]
+								},
+								"event": "piglin:bribe_low",
+								"target": "self"
+							},
+							"barter": false,
+							"admire": true,
+							"use_item": true,
+							"cooldown_after_being_attacked": 20,
+							"interact_text": "action.interact.bribe"
 						}
 					]
 				}
@@ -444,6 +618,25 @@
 					"within_radius": 16,
 					"start_delay": 15,
 					"max_failed_attempts": 20
+				}
+			},
+			//WorldBeyond
+			"piglin:barter_mid": {
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:barter": {
+					"barter_table": "loot_tables/bartering/piglin_barter_mid.json",
+					"cooldown_after_being_attacked": 20
+				}
+			},
+			"piglin:barter_high": {
+				"minecraft:variant": {
+					"value": 2
+				},
+				"minecraft:barter": {
+					"barter_table": "loot_tables/bartering/piglin_barter_high.json",
+					"cooldown_after_being_attacked": 20
 				}
 			}
 		},
@@ -1198,6 +1391,237 @@
 						"interactable_piglin"
 					]
 				}
+			},
+			//WorldBeyond
+			"piglin:bribe_low": {
+				"randomize": [
+					{
+						"weight": 95,
+						"filters": {
+							"test": "is_variant",
+							"operator": "==",
+							"value": 2
+						},
+						"run_command": {
+							"command": [
+								"playanimation @s animation.piglin.celebrate_hunt_special animation.piglin.move 8"
+							]
+						}
+					},
+					{
+						"weight": 5,
+						"sequence": [
+							{
+								"filters": {
+									"test": "is_variant",
+									"operator": "==",
+									"value": 2
+								},
+								"run_command": {
+									"command": [
+										"playanimation @s animation.piglin.celebrate_hunt_special animation.piglin.move 8"
+									]
+								}
+							},
+							{
+								"filters": {
+									"test": "is_variant",
+									"operator": "==",
+									"value": 1
+								},
+								"add": {
+									"component_groups": [
+										"piglin:barter_high"
+									]
+								}
+							},
+							{
+								"filters": {
+									"test": "is_variant",
+									"operator": "==",
+									"value": 0
+								},
+								"add": {
+									"component_groups": [
+										"piglin:barter_mid"
+									]
+								}
+							},
+							{
+								"run_command": {
+									"command": [
+										"particle minecraft:heart_particle ~ ~2 ~"
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"piglin:bribe_mid": {
+				"randomize": [
+					{
+						"weight": 50,
+						"filters": {
+							"test": "is_variant",
+							"operator": "==",
+							"value": 2
+						},
+						"run_command": {
+							"command": [
+								"playanimation @s animation.piglin.celebrate_hunt_special animation.piglin.move 8"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"sequence": [
+							{
+								"filters": {
+									"test": "is_variant",
+									"operator": "==",
+									"value": 2
+								},
+								"run_command": {
+									"command": [
+										"playanimation @s animation.piglin.celebrate_hunt_special animation.piglin.move 8"
+									]
+								}
+							},
+							{
+								"filters": {
+									"test": "is_variant",
+									"operator": "==",
+									"value": 1
+								},
+								"add": {
+									"component_groups": [
+										"piglin:barter_high"
+									]
+								}
+							},
+							{
+								"filters": {
+									"test": "is_variant",
+									"operator": "==",
+									"value": 0
+								},
+								"add": {
+									"component_groups": [
+										"piglin:barter_mid"
+									]
+								}
+							},
+							{
+								"run_command": {
+									"command": [
+										"particle minecraft:heart_particle ~ ~2 ~"
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"piglin:bribe_high": {
+				"randomize": [
+					{
+						"weight": 15,
+						"sequence": [
+							{
+								"filters": {
+									"test": "is_variant",
+									"operator": "==",
+									"value": 2
+								},
+								"run_command": {
+									"command": [
+										"playanimation @s animation.piglin.celebrate_hunt_special animation.piglin.move 8"
+									]
+								}
+							},
+							{
+								"filters": {
+									"test": "is_variant",
+									"operator": "==",
+									"value": 1
+								},
+								"add": {
+									"component_groups": [
+										"piglin:barter_high"
+									]
+								}
+							},
+							{
+								"filters": {
+									"test": "is_variant",
+									"operator": "==",
+									"value": 0
+								},
+								"add": {
+									"component_groups": [
+										"piglin:barter_high"
+									]
+								}
+							},
+							{
+								"run_command": {
+									"command": [
+										"particle minecraft:heart_particle ~ ~2 ~"
+									]
+								}
+							}
+						]
+					},
+					{
+						"weight": 85,
+						"sequence": [
+							{
+								"filters": {
+									"test": "is_variant",
+									"operator": "==",
+									"value": 2
+								},
+								"run_command": {
+									"command": [
+										"playanimation @s animation.piglin.celebrate_hunt_special animation.piglin.move 8"
+									]
+								}
+							},
+							{
+								"filters": {
+									"test": "is_variant",
+									"operator": "==",
+									"value": 1
+								},
+								"add": {
+									"component_groups": [
+										"piglin:barter_high"
+									]
+								}
+							},
+							{
+								"filters": {
+									"test": "is_variant",
+									"operator": "==",
+									"value": 0
+								},
+								"add": {
+									"component_groups": [
+										"piglin:barter_mid"
+									]
+								}
+							},
+							{
+								"run_command": {
+									"command": [
+										"particle minecraft:heart_particle ~ ~2 ~"
+									]
+								}
+							}
+						]
+					}
+				]
 			}
 		}
 	}

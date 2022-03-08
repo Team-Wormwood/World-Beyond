@@ -81,7 +81,7 @@
     //Vanilla
     "polished_blackstone_double_slab": {
         "textures": {
-            "down": "polished_blackston",
+            "down": "polished_blackstone",
             "side": "polished_blackstone_slab",
             "up": "polished_blackstone"
         }

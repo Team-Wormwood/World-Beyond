@@ -1,0 +1,17 @@
+{
+	"format_version": "1.13",
+
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "worldbeyond:nether_gold_vein/column/offset"
+		},
+
+		"places_feature": "worldbeyond:nether_gold_vein/column/instance",
+
+		"iterations": "t.vein_noise_offset = t.vein_noise_offset + 256; t.vein_placement_noise = (7 * query.noise(v.originx / t.vein_selection_smoothness + t.vein_noise_offset, v.originz / t.vein_selection_smoothness + t.vein_noise_offset) + query.noise(v.originx / t.vein_selection_smoothness * 4 + t.vein_noise_offset - 4096, v.originz / t.vein_selection_smoothness * 4 + t.vein_noise_offset - 4096)) / 8; math.abs(t.vein_placement_noise) < t.vein_selection_threshold ? {t.vein_column_height = math.floor(t.vein_height * math.pow(1 - math.pow(t.vein_placement_noise / t.vein_selection_threshold, 2), 0.5) * math.clamp((t.vein_volume_radius * t.vein_volume_clippingratio_maximum - math.sqrt(math.pow(v.originx - t.vein_center_x, 2) + math.pow(v.originz - t.vein_center_z, 2))) / (t.vein_volume_radius * (t.vein_volume_clippingratio_maximum - t.vein_volume_clippingratio_minimum)), 0, 1)); return 1;};",
+
+		"x": 0,
+		"z": 0,
+		"y": "math.floor(t.vein_volume_height * (7 * query.noise(v.originx / t.vein_altitude_smoothness - t.vein_noise_offset - 4096, v.originz / t.vein_altitude_smoothness - t.vein_noise_offset + 4096) + query.noise(v.originx / t.vein_altitude_smoothness * 4 - t.vein_noise_offset + 4096, v.originz / t.vein_altitude_smoothness * 4 - t.vein_noise_offset + 4096)) / 16 - t.vein_height / 2)"
+	}
+}

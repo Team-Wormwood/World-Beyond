@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13",
+
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "worldbeyond:nether_gold_vein/column/block/options/debris"
+		},
+
+		"places_block": "minecraft:ancient_debris",
+		"enforce_placement_rules": false,
+		"enforce_survivability_rules": false,
+		"may_replace": ["minecraft:netherrack"]
+	}
+}
