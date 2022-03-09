@@ -1,0 +1,13 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "worldbeyond:cracked_sodalite_tiles_furnace"
+        },
+        "input": "worldbeyond:sodalite_tiles",
+        "output": "worldbeyond:cracked_sodalite_tiles",
+        "tags": [
+            "furnace"
+        ]
+    }
+}

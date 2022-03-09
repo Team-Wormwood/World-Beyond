@@ -5,6 +5,7 @@
 			"identifier": "minecraft:player",
 			"materials": {
 				"default": "entity_alphatest",
+				"xorkent": "entity_emissive_alpha",
 				"cape": "entity_alphatest",
 				"animated": "player_animated"
 			},
@@ -16,7 +17,24 @@
 				"advancement.adventuring_journey": "textures/ui/advancements/adventuring_journey",
 				// Developers
 				"sumiyumi": "textures/entity/yumi",
-				"luth": "textures/entity/luth"
+				"luth": "textures/entity/luth",
+				"xorkent_glow0": "textures/entity/xorkent/glow0",
+				"xorkent_glow1": "textures/entity/xorkent/glow1",
+				"xorkent_glow2": "textures/entity/xorkent/glow2",
+				"xorkent_glow3": "textures/entity/xorkent/glow3",
+				"xorkent_glow4": "textures/entity/xorkent/glow4",
+				"xorkent_glow5": "textures/entity/xorkent/glow5",
+				"xorkent_glow6": "textures/entity/xorkent/glow6",
+				"xorkent_glow7": "textures/entity/xorkent/glow7",
+				"xorkent_glow8": "textures/entity/xorkent/glow8",
+				"xorkent_glow9": "textures/entity/xorkent/glow9",
+				"xorkent_glow10": "textures/entity/xorkent/glow10",
+				"xorkent_glow11": "textures/entity/xorkent/glow11",
+				"xorkent_glow12": "textures/entity/xorkent/glow12",
+				"xorkent_glow13": "textures/entity/xorkent/glow13",
+				"xorkent_glow14": "textures/entity/xorkent/glow14",
+				"xorkent_glow15": "textures/entity/xorkent/glow15",
+				"xorkent_glow16": "textures/entity/xorkent/glow16"
 			},
 			"geometry": {
 				"default": "geometry.humanoid.custom",
@@ -25,7 +43,8 @@
 				"advancements_ui": "geometry.advancements_ui",
 				// Developers
 				"sumiyumi": "geometry.yumi",
-				"luth": "geometry.luth"
+				"luth": "geometry.luth",
+				"xorkent": "geometry.xorkent"
 			},
 			"scripts": {
 				"scale": "0.9375",

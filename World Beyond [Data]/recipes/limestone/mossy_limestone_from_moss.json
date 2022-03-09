@@ -9,16 +9,14 @@
         ],
         "ingredients": [
             {
-                "item": "worldbeyond:cobbled_limestone",
-                "data": 0
+                "item": "worldbeyond:cobbled_limestone"
             },
             {
                 "item": "minecraft:moss_block"
             }
         ],
         "result": {
-            "item": "worldbeyond:mossy_cobbled_limestone",
-            "data": 1
+            "item": "worldbeyond:mossy_cobbled_limestone"
         }
     }
 }

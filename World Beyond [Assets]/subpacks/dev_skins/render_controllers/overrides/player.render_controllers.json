@@ -2,14 +2,14 @@
     "format_version": "1.8.0",
     "render_controllers": {
         "controller.render.player.first_person": {
-            "geometry": "query.get_name == 'yanasakana' ? Geometry.sumiyumi : query.get_name == 'luthtwo' ? Geometry.luth : Geometry.default",
+            "geometry": "query.get_name == 'yanasakana' ? Geometry.sumiyumi : query.get_name == 'luthtwo' ? Geometry.luth : query.get_name == 'Xorkent 2' ? Geometry.xorkent : Geometry.default",
             "materials": [
                 {
-                    "*": "Material.default"
+                    "*": "query.get_name == 'Xorkent 2' ? Material.xorkent : Material.default"
                 }
             ],
             "textures": [
-                "query.get_name == 'yanasakana' ? Texture.sumiyumi : query.get_name == 'luthtwo' ? Texture.luth : Texture.default"
+                "query.get_name == 'yanasakana' ? Texture.sumiyumi : query.get_name == 'luthtwo' ? Texture.luth : query.get_name == 'Xorkent 2' ? array.xorkent[20*Math.sin(query.life_time/(0.02-((0.018/19)*(query.max_health-query.health)))) + 20] : Texture.default"
             ],
             "part_visibility": [
                 {
@@ -34,6 +34,48 @@
                         "Texture.default",
                         "Texture.sumiyumi",
                         "Texture.luth"
+                    ],
+                    "array.xorkent": [
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow1",
+                      "texture.xorkent_glow2",
+                      "texture.xorkent_glow3",
+                      "texture.xorkent_glow4",
+                      "texture.xorkent_glow5",
+                      "texture.xorkent_glow6",
+                      "texture.xorkent_glow7",
+                      "texture.xorkent_glow8",
+                      "texture.xorkent_glow9",
+                      "texture.xorkent_glow10",
+                      "texture.xorkent_glow11",
+                      "texture.xorkent_glow12",
+                      "texture.xorkent_glow13",
+                      "texture.xorkent_glow14",
+                      "texture.xorkent_glow15",
+                      "texture.xorkent_glow16"
                     ]
                 },
                 "geometries": {
@@ -46,14 +88,14 @@
             }
         },
         "controller.render.player.third_person": {
-            "geometry": "query.get_name == 'yanasakana' ? Geometry.sumiyumi : query.get_name == 'luthtwo' ? Geometry.luth : Geometry.default",
+            "geometry": "query.get_name == 'yanasakana' ? Geometry.sumiyumi : query.get_name == 'luthtwo' ? Geometry.luth : query.get_name == 'Xorkent 2' ? Geometry.xorkent : Geometry.default",
             "materials": [
                 {
-                    "*": "Material.default"
+                    "*": "query.get_name == 'Xorkent 2' ? Material.xorkent : Material.default"
                 }
             ],
             "textures": [
-                "query.get_name == 'yanasakana' ? Texture.sumiyumi : query.get_name == 'luthtwo' ? Texture.luth : Texture.default"
+                "query.get_name == 'yanasakana' ? Texture.sumiyumi : query.get_name == 'luthtwo' ? Texture.luth : query.get_name == 'Xorkent 2' ? array.xorkent[20*Math.sin(query.life_time/(0.02-((0.018/19)*(query.max_health-query.health)))) + 20] : Texture.default"
             ],
             "part_visibility": [
                 {
@@ -99,6 +141,48 @@
                         "Texture.default",
                         "Texture.sumiyumi",
                         "Texture.luth"
+                    ],
+                    "array.xorkent": [
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow0",
+                      "texture.xorkent_glow1",
+                      "texture.xorkent_glow2",
+                      "texture.xorkent_glow3",
+                      "texture.xorkent_glow4",
+                      "texture.xorkent_glow5",
+                      "texture.xorkent_glow6",
+                      "texture.xorkent_glow7",
+                      "texture.xorkent_glow8",
+                      "texture.xorkent_glow9",
+                      "texture.xorkent_glow10",
+                      "texture.xorkent_glow11",
+                      "texture.xorkent_glow12",
+                      "texture.xorkent_glow13",
+                      "texture.xorkent_glow14",
+                      "texture.xorkent_glow15",
+                      "texture.xorkent_glow16"
                     ]
                 },
                 "geometries": {

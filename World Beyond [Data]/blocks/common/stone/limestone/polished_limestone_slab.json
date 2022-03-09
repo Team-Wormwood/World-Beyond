@@ -12,13 +12,13 @@
             }
         },
         "components": {
-            "minecraft:loot": "loot_tables/blocks/cobbled/polished_limestone_slab.json",
-            "tag:stone": {},
             "minecraft:friction": 0.6,
-            "minecraft:map_color": "#918F87",
-            "minecraft:block_light_emission": 0.0,
             "minecraft:destroy_time": 2.0,
             "minecraft:explosion_resistance": 6.0,
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:loot": "loot_tables/blocks/slabs/polished_limestone_slab.json",
+            "minecraft:map_color": "#918F87",
             "minecraft:material_instances": {
                 "side": {
                     "texture": "polished_limestone_slab",
@@ -37,7 +37,6 @@
 				"west": "side",
 				"east": "side"
             },
-            "minecraft:block_light_absorption": 0,
             "minecraft:on_player_placing": {
                 "condition": "query.target_x_rotation <= 0",
                 "event": "up"
@@ -45,13 +44,43 @@
             "minecraft:creative_category": {
                 "group": "itemGroup.name.slab",
                 "category": "construction"
+            },
+            "tag:stone": {}
+        },
+        "events": {
+            "double": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "worldbeyond:slab_type": "'double'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "playsound use.deepslate @a[r=5] ~ ~ ~ 0.4 1.0"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "down": {
+                "set_block_property": {
+                    "worldbeyond:slab_type": "'down'"
+                }
+            },
+            "up": {
+                "set_block_property": {
+                    "worldbeyond:slab_type": "'up'"
+                }
             }
         },
         "permutations": [
             {
                 "condition": "query.block_property('worldbeyond:slab_type') == 'double'",
                 "components": {
-                    "minecraft:loot": "loot_tables/blocks/cobbled/polished_limestone_slab_two.json",
+                    "minecraft:loot": "loot_tables/blocks/slabs/polished_limestone_slab_two.json",
                     "minecraft:block_light_absorption": 1,
                     "minecraft:unit_cube": {},
                     "minecraft:entity_collision": {
@@ -150,35 +179,6 @@
                     }
                 }
             }
-        ],
-        "events": {
-            "double": {
-                "sequence": [
-                    {
-                        "set_block_property": {
-                            "worldbeyond:slab_type": "'double'"
-                        },
-                        "decrement_stack": {}
-                    },
-                    {
-                        "run_command": {
-                            "command": [
-                                "playsound use.deepslate @a[r=5] ~ ~ ~ 0.4 1.0"
-                            ]
-                        }
-                    }
-                ]
-            },
-            "down": {
-                "set_block_property": {
-                    "worldbeyond:slab_type": "'down'"
-                }
-            },
-            "up": {
-                "set_block_property": {
-                    "worldbeyond:slab_type": "'up'"
-                }
-            }
-        }
+        ]
     }
 }

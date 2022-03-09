@@ -1,0 +1,16 @@
+// File Created by Xorkent
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "worldbeyond:snowy_sodalite_tiles_slab",
+                    "weight": 1,
+                    "count": 1
+                }
+            ]
+        }
+    ]
+}

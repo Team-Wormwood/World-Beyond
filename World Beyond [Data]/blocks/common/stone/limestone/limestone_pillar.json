@@ -11,6 +11,46 @@
 				]
 			}
 		},
+		"components": {
+			"minecraft:friction": 0.6,
+			"minecraft:destroy_time": 2.0,
+            "minecraft:explosion_resistance": 6.0,
+			"minecraft:map_color": "#7D7B71",
+			"minecraft:unit_cube": {},
+			"minecraft:material_instances": {
+				"up": {
+					"texture": "limestone_pillar_top",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "limestone_pillar_top",
+					"render_method": "opaque"
+				},
+				"side": {
+					"texture": "limestone_pillar_side",
+					"render_method": "opaque"
+				},
+				"north": "side",
+				"south": "side",
+				"west": "side",
+				"east": "side"
+			},
+			"minecraft:on_player_placing": {
+				"event": "update_facing_direction"
+			},
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.stoneBrick",
+				"category": "construction"
+			},
+            "tag:stone": {}
+		},
+		"events": {
+			"update_facing_direction": {
+				"set_block_property": {
+					"worldbeyond:facing_direction": "math.floor(query.cardinal_block_face_placed_on / 2.0)"
+				}
+			}
+		},
 		"permutations": [
 			{
 				"condition": "query.block_property('worldbeyond:facing_direction') == 0",
@@ -42,45 +82,6 @@
 					]
 				}
 			}
-		],
-		"components": {
-			"minecraft:unit_cube": {},
-            "tag:stone": {},
-			"minecraft:destroy_time": 2.0,
-			"minecraft:map_color": "#7D7B71",
-            "minecraft:explosion_resistance": 6.0,
-			"minecraft:material_instances": {
-				"up": {
-					"texture": "limestone_pillar_top",
-					"render_method": "opaque"
-				},
-				"down": {
-					"texture": "limestone_pillar_top",
-					"render_method": "opaque"
-				},
-				"side": {
-					"texture": "limestone_pillar_side",
-					"render_method": "opaque"
-				},
-				"north": "side",
-				"south": "side",
-				"west": "side",
-				"east": "side"
-			},
-			"minecraft:on_player_placing": {
-				"event": "update_facing_direction"
-			},
-			"minecraft:creative_category": {
-				"group": "itemGroup.name.stoneBrick",
-				"category": "construction"
-			}
-		},
-		"events": {
-			"update_facing_direction": {
-				"set_block_property": {
-					"worldbeyond:facing_direction": "math.floor(query.cardinal_block_face_placed_on / 2.0)"
-				}
-			}
-		}
+		]
 	}
 }

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "worldbeyond:polished_darkstone_slab_stonecut"
+        },
+        "ingredients": [
+            {
+                "item": "worldbeyond:polished_darkstone"
+            }
+        ],
+        "priority": 0,
+        "result": {
+            "count": 2,
+            "item": "worldbeyond:polished_darkstone_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ]
+    }
+}

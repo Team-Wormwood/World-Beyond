@@ -1,0 +1,24 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "worldbeyond:cracked_limestone_slab"
+        },
+        "key": {
+            "#": {
+                "item": "worldbeyond:cracked_limestone"
+            }
+        },
+        "pattern": [
+            "###"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 6,
+            "item": "worldbeyond:cracked_limestone_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}
