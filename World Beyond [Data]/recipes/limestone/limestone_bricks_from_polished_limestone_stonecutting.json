@@ -6,14 +6,12 @@
         },
         "ingredients": [
             {
-                "data": 0,
                 "item": "worldbeyond:polished_limestone"
             }
         ],
         "priority": 0,
         "result": {
             "count": 1,
-            "data": 0,
             "item": "worldbeyond:limestone_bricks"
         },
         "tags": [

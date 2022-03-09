@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "worldbeyond:sodalite_tiles_from_polished_sodalite_stonecutting"
+        },
+        "ingredients": [
+            {
+                "item": "worldbeyond:polished_sodalite"
+            }
+        ],
+        "priority": 0,
+        "result": {
+            "count": 1,
+            "item": "worldbeyond:sodalite_tiles"
+        },
+        "tags": [
+            "stonecutter"
+        ]
+    }
+}

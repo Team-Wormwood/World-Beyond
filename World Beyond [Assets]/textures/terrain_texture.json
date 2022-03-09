@@ -109,14 +109,59 @@
 		},
 
 
+        "bauxite": {
+            "textures": "textures/blocks/stones/bauxite/bauxite"
+        },
+        "bauxite_bricks": {
+            "textures": "textures/blocks/stones/bauxite/bauxite_bricks"
+        },
+        "bauxite_tiles": {
+            "textures": "textures/blocks/stones/bauxite/bauxite_tiles"
+        },
+        "chiseled_bauxite": {
+            "textures": "textures/blocks/stones/bauxite/chiseled_bauxite"
+        },
+        "chiseled_darkstone": {
+            "textures": "textures/blocks/stones/darkstone/chiseled_darkstone"
+        },
         "chiseled_limestone": {
             "textures": "textures/blocks/stones/limestone/chiseled_limestone"
+        },
+        "chiseled_sodalite": {
+            "textures": "textures/blocks/stones/sodalite/chiseled_sodalite"
+        },
+        "cobbled_bauxite": {
+            "textures": "textures/blocks/stones/bauxite/cobbled_bauxite"
+        },
+        "cobbled_darkstone": {
+            "textures": "textures/blocks/stones/darkstone/cobbled_darkstone"
         },
         "cobbled_limestone": {
             "textures": "textures/blocks/stones/limestone/cobbled_limestone"
         },
+        "cobbled_sodalite": {
+            "textures": "textures/blocks/stones/sodalite/cobbled_sodalite"
+        },
+        "cracked_bauxite": {
+            "textures": "textures/blocks/stones/bauxite/cracked_bauxite"
+        },
+        "cracked_bauxite_tiles": {
+            "textures": "textures/blocks/stones/bauxite/cracked_bauxite_tiles"
+        },
+        "cracked_darkstone": {
+            "textures": "textures/blocks/stones/darkstone/cracked_darkstone_bricks"
+        },
+        "cracked_darkstone_tiles": {
+            "textures": "textures/blocks/stones/darkstone/cracked_darkstone_tiles"
+        },
         "cracked_limestone": {
             "textures": "textures/blocks/stones/limestone/cracked_limestone"
+        },
+        "cracked_sodalite": {
+            "textures": "textures/blocks/stones/sodalite/cracked_sodalite_bricks"
+        },
+        "cracked_sodalite_tiles": {
+            "textures": "textures/blocks/stones/bauxite/cracked_sodalite_tiles"
         },
         "crystal_bottom": {
             "textures": "textures/blocks/crystal_bottom"
@@ -148,6 +193,15 @@
         "crystal_top_cracked_2": {
             "textures": "textures/blocks/crystal_top_cracked_2"
         },
+        "darkstone": {
+            "textures": "textures/blocks/stones/darkstone/darkstone"
+        },
+        "darkstone_bricks": {
+            "textures": "textures/blocks/stones/darkstone/darkstone_bricks"
+        },
+        "darkstone_tiles": {
+            "textures": "textures/blocks/stones/darkstone/darkstone_tiles"
+        },
         "invisible": {
             "textures": "textures/invisible"
         },
@@ -163,11 +217,32 @@
         "limestone_pillar_top": {
             "textures": "textures/blocks/stones/limestone/limestone_pillar_top"
         },
+        "mossy_cobbled_darkstone": {
+            "textures": "textures/blocks/stones/darkstone/mossy_cobbled_darkstone"
+        },
+        "mossy_darkstone_bricks": {
+            "textures": "textures/blocks/stones/darkstone/mossy_darkstone_bricks"
+        },
+        "mossy_darkstone_tiles": {
+            "textures": "textures/blocks/stones/darkstone/mossy_darkstone_tiles"
+        },
         "mossy_cobbled_limestone": {
             "textures": "textures/blocks/stones/limestone/mossy_cobbled_limestone"
         },
         "mossy_limestone_bricks": {
             "textures": "textures/blocks/stones/limestone/mossy_limestone_bricks"
+        },
+        "polished_bauxite": {
+            "textures": "textures/blocks/stones/bauxite/polished_bauxite"
+        },
+        "polished_bauxite_slab": {
+            "textures": "textures/blocks/stones/bauxite/polished_bauxite_slab"
+        },
+        "polished_darkstone": {
+            "textures": "textures/blocks/stones/darkstone/polished_darkstone"
+        },
+        "polished_darkstone_slab": {
+            "textures": "textures/blocks/stones/darkstone/polished_darkstone_slab"
         },
         "polished_limestone": {
             "textures": "textures/blocks/stones/limestone/polished_limestone"
@@ -175,8 +250,32 @@
         "polished_limestone_slab": {
             "textures": "textures/blocks/stones/limestone/polished_limestone_slab"
         },
+        "polished_sodalite": {
+            "textures": "textures/blocks/stones/sodalite/polished_sodalite"
+        },
+        "polished_sodalite_slab": {
+            "textures": "textures/blocks/stones/sodalite/polished_sodalite_slab"
+        },
         "purpur_on": {
             "textures": "textures/blocks/placeholder3"
+        },
+        "snowy_cobbled_sodalite": {
+            "textures": "textures/blocks/stones/sodalite/snowy_cobbled_sodalite"
+        },
+        "snowy_sodalite_bricks": {
+            "textures": "textures/blocks/stones/sodalite/snowy_sodalite_bricks"
+        },
+        "snowy_sodalite_tiles": {
+            "textures": "textures/blocks/stones/sodalite/snowy_sodalite_tiles"
+        },
+        "sodalite": {
+            "textures": "textures/blocks/stones/sodalite/sodalite"
+        },
+        "sodalite_bricks": {
+            "textures": "textures/blocks/stones/sodalite/sodalite_bricks"
+        },
+        "sodalite_tiles": {
+            "textures": "textures/blocks/stones/sodalite/sodalite_tiles"
         },
         "special_bottom": {
             "textures": "textures/blocks/infusement_table_bottom"

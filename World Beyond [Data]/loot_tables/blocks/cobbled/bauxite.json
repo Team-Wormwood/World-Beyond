@@ -1,0 +1,15 @@
+// File Created by Xorkent
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "worldbeyond:cobbled_bauxite",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

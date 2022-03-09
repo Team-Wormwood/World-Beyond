@@ -5,22 +5,22 @@
             "identifier": "worldbeyond:cobbled_limestone"
         },
         "components": {
+            "minecraft:friction": 0.6,
             "minecraft:destroy_time": 2.0,
+            "minecraft:explosion_resistance": 6.0,
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:map_color": "#706E6A",
 			"minecraft:creative_category": {
 				"group": "lol",
 				"category": "construction"
 			},
-            "minecraft:explosion_resistance": 6.0,
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "cobbled_limestone",
 					"render_method": "opaque"
 				}
 			},
-            "tag:stone": {},
-            "minecraft:friction": 0.6,
-            "minecraft:map_color": "#706E6A",
-            "minecraft:block_light_emission": 0.0
+            "tag:stone": {}
         }
     }
 }

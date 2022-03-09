@@ -10,8 +10,7 @@
         "priority": 1,
         "ingredients": [
             {
-                "item": "worldbeyond:cobbled_limestone",
-                "data": 0
+                "item": "worldbeyond:cobbled_limestone"
             }
         ],
         "result": {
