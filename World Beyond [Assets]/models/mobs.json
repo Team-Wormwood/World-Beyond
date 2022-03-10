@@ -357,7 +357,7 @@
         "name": "rightItem",
         "pivot": [ -6, 15, 1 ],
         "locators": {
-          "lead_hold": [ -6, 15, 1 ]
+          "lead_hold": [ -6, 14.5, 1 ]
         },
         "parent": "rightArm"
       },

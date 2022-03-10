@@ -161,7 +161,7 @@
             "textures": "textures/blocks/stones/sodalite/cracked_sodalite_bricks"
         },
         "cracked_sodalite_tiles": {
-            "textures": "textures/blocks/stones/bauxite/cracked_sodalite_tiles"
+            "textures": "textures/blocks/stones/sodalite/cracked_sodalite_tiles"
         },
         "crystal_bottom": {
             "textures": "textures/blocks/crystal_bottom"
