@@ -1,0 +1,26 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:vegetation_patch_feature": {
+    "description": {
+      "identifier": "worldbeyond:crimson_forest/ceiling/nether_wart_ceiling_feature"
+    },
+    "replaceable_blocks": [
+      "minecraft:nether_wart_block",
+      "minecraft:netherrack"
+    ],
+    "ground_block": "minecraft:nether_wart_block",
+    "vegetation_feature": "worldbeyond:crimson_forest/ceiling/crimson_tumour_geode_feature",
+    "surface": "ceiling",
+    "depth": {
+      "range_min": 2,
+      "range_max": 4
+    },
+    "vertical_range": 5,
+    "vegetation_chance": 0,
+    "horizontal_radius": {
+      "range_min": 0,
+      "range_max": 2
+    },
+    "extra_edge_column_chance": 0.2
+  }
+}

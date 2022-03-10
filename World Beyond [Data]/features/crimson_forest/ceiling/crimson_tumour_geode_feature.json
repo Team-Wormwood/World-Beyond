@@ -1,0 +1,42 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:geode_feature": {
+    "description": {
+      "identifier": "worldbeyond:crimson_forest/ceiling/crimson_tumour_geode_feature"
+    },
+    "filler": "minecraft:shroomlight",
+    "inner_layer": "minecraft:shroomlight",
+    "alternate_inner_layer": "minecraft:shroomlight",
+    "middle_layer": "minecraft:nether_wart_block",
+    "outer_layer": "minecraft:nether_wart_block",
+    "inner_placements": [
+      {
+        "name": "minecraft:nether_wart_block"
+      },
+      {
+        "name": "minecraft:shroomlight"
+      },
+      {
+        "name": "minecraft:nether_wart_block"
+      },
+      {
+        "name": "minecraft:shroomlight"
+      }
+    ],
+    "min_outer_wall_distance": 1,
+    "max_outer_wall_distance": 1,
+    "min_distribution_points": 1,
+    "max_distribution_points": 2,
+    "min_point_offset": 1,
+    "max_point_offset": 1,
+    "max_radius": 2,
+    "crack_point_offset": 0,
+    "generate_crack_chance": 0,
+    "base_crack_size": 0,
+    "noise_multiplier": 0.03,
+    "use_potential_placements_chance": 1,
+    "use_alternate_layer0_chance": 0,
+    "placements_require_layer0_alternate": true,
+    "invalid_blocks_threshold": 0
+  }
+}

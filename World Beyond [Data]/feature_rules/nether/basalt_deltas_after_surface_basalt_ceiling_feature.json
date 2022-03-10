@@ -1,0 +1,36 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "worldbeyond:basalt_deltas_after_surface_basalt_ceiling_feature",
+      "places_feature": "worldbeyond:basalt_deltas/ceiling/basalt_ceiling_snap_to_ceiling_feature"
+    },
+    "conditions": {
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag", "operator": "==", "value": "basalt_deltas"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 4,
+      "scatter_chance": {
+        "numerator": 5,
+        "denominator": 6
+      },
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [ 80, 112 ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:growing_plant_feature": {
+    "description": {
+      "identifier": "worldbeyond:basalt_deltas/ceiling/basalt_ceiling_spike_small_feature"
+    },
+    "height_distribution":  [
+      [{"range_min": 1, "range_max": 1}, 3],
+      [{"range_min": 1, "range_max": 2}, 3],
+      [{"range_min": 2, "range_max": 4}, 2]
+    ],
+    "growth_direction": "DOWN",
+    "body_blocks": [
+      ["minecraft:basalt", 1]
+    ],
+    "head_blocks": [
+      ["minecraft:basalt", 1]
+    ]
+  }
+}
