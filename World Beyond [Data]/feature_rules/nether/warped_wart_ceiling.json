@@ -1,0 +1,33 @@
+{
+	"format_version": "1.13",
+	
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "worldbeyond:warped_wart_ceiling",
+			"places_feature": "worldbeyond:nether/warped_wart_grid"
+		},
+		"conditions": {
+			"placement_pass": "first_pass",
+			"minecraft:biome_filter": {
+				"any_of": [
+					{
+						"test": "has_biome_tag",
+						"value": "warped_forest"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 256,
+			"x": {
+				"distribution": "fixed_grid",
+				"extent": [0, 15]
+			},
+			"z": {
+				"distribution": "fixed_grid",
+				"extent": [0, 15]
+			},
+			"y": 88
+		}
+	}
+}

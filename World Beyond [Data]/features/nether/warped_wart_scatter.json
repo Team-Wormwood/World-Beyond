@@ -1,0 +1,13 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "worldbeyond:nether/warped_wart_scatter"
+		},
+		"places_feature": "worldbeyond:nether/warped_wart",
+		"iterations": "(t.big_noise > -0.3 && t.big_noise < 0.15) || (t.small_noise > -0.035 && t.small_noise < 0.035)",
+		"x": 0,
+		"z": 0,
+		"y": 0
+	}
+}

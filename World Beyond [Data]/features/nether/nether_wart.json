@@ -1,0 +1,20 @@
+{
+	"format_version": "1.13",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "worldbeyond:nether/nether_wart"
+		},
+		"places_block": "minecraft:nether_wart_block",
+		"enforce_placement_rules": false,
+		"enforce_survivability_rules": false,
+		"may_replace": [
+			"minecraft:netherrack",
+			"minecraft:quartz_ore",
+			"minecraft:nether_gold_ore",
+			"minecraft:blackstone"
+		],
+		"may_attach_to": {
+			"bottom": "minecraft:air"
+		}
+	}
+}
