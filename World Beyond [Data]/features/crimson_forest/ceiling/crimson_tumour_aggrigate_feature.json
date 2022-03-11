@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:sequence_feature": {
+    "description": {
+      "identifier": "worldbeyond:crimson_forest/ceiling/crimson_tumour_aggrigate_feature"
+    },
+    "features": [
+      "worldbeyond:crimson_forest/ceiling/crimson_tumour_geode_feature",
+      "worldbeyond:crimson_forest/ceiling/nether_wart_ceiling_feature"
+    ]
+  }
+}
