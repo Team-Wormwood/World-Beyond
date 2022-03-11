@@ -5,18 +5,6 @@
       "identifier": "worldbeyond:basalt_deltas/ceiling/basalt_ceiling_small_feature"
     },
     "replaceable_blocks": [
-      "minecraft:dirt",
-      "minecraft:podzol",
-      "minecraft:dirt_with_roots",
-      "minecraft:grass",
-      "minecraft:mycelium",
-      "minecraft:stone",
-      "minecraft:deepslate",
-      "minecraft:tuff",
-      "minecraft:moss_block",
-      "minecraft:cave_vines",
-      "minecraft:cave_vines_body_with_berries",
-      "minecraft:cave_vines_head_with_berries",
       "minecraft:netherrack",
       "minecraft:blackstone",
       "minecraft:basalt",
