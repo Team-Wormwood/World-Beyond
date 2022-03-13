@@ -1,0 +1,28 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:vegetation_patch_feature": {
+    "description": {
+      "identifier": "worldbeyond:basalt_deltas/ceiling/basalt_ceiling_feature"
+    },
+    "replaceable_blocks": [
+      "minecraft:netherrack",
+      "minecraft:blackstone",
+      "minecraft:basalt",
+      "minecraft:lava"
+    ],
+    "ground_block": "minecraft:basalt",
+    "vegetation_feature": "worldbeyond:basalt_deltas/ceiling/basalt_ceiling_spike_feature",
+    "surface": "ceiling",
+    "depth": {
+      "range_min": 2,
+      "range_max": 5
+    },
+    "vertical_range": 3,
+    "vegetation_chance": 0.35,
+    "horizontal_radius": {
+      "range_min": 8,
+      "range_max": 4
+    },
+    "extra_edge_column_chance": 0.15
+  }
+}

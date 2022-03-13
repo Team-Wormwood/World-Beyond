@@ -1,0 +1,20 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:growing_plant_feature": {
+    "description": {
+      "identifier": "worldbeyond:crimson_forest/ceiling/vein_weeping_vines_feature"
+    },
+    "height_distribution":  [
+      [{"range_min": 1, "range_max": 3}, 4],
+      [{"range_min": 2, "range_max": 6}, 3],
+      [{"range_min": 5, "range_max": 12}, 1]
+    ],
+    "growth_direction": "DOWN",
+    "body_blocks": [
+      ["minecraft:weeping_vines", 1]
+    ],
+    "head_blocks": [
+      ["minecraft:weeping_vines", 1]
+    ]
+  }
+}

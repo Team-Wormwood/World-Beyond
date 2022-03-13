@@ -130,6 +130,11 @@ tile.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 ## Interactions
 action.interact.bribe=Bribe
 
+## Loading Messages
+tips.game.worldbeyond.1=World Beyond . . . Minecraft, with more Mine and Craft!
+tips.game.worldbeyond.2=Braught to you by [NAME UNDECIDED]
+tips.game.worldbeyond.3=More text soon!
+
 ## Section Created by Eko-byte
 
 tile.worldbeyond:sconce.name=Sconce
