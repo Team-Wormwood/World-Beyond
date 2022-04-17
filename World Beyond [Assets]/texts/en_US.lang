@@ -49,6 +49,9 @@ entity.worldbeyond:enby_flag_entity.name=Non-Binary Flag
 entity.worldbeyond:trans_flag_entity.name=Transgender Flag
 
 ## Blocks
+tile.worldbeyond:large_stonebrick.name=Large Stone Bricks
+tile.worldbeyond:large_stonebrick_mossy.name=Mossy Large Stone Bricks
+tile.worldbeyond:large_stonebrick_cracked.name=Cracked Large Stone Bricks
 tile.worldbeyond:limestone.name=Limestone
 tile.worldbeyond:polished_limestone.name=Polished Limestone
 tile.worldbeyond:polished_limestone_slab.name=Polished Limestone Slab
@@ -122,24 +125,6 @@ tile.worldbeyond:mossy_darkstone_bricks.name=Mossy Darkstone Bricks
 tile.worldbeyond:mossy_darkstone_bricks_slab.name=Mossy Darkstone Bricks Slab
 tile.worldbeyond:mossy_darkstone_tiles.name=Mossy Darkstone Tiles
 tile.worldbeyond:mossy_darkstone_tiles_slab.name=Mossy Darkstone Tiles Slab
-
-tile.worldbeyond:enby_flag.name=Non-Binary Flag
-tile.worldbeyond:trans_flag.name=Transgender Flag
-tile.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
-
-## Interactions
-action.interact.bribe=Bribe
-
-## Loading Messages
-tips.game.worldbeyond.1=World Beyond . . . Minecraft, with more Mine and Craft!
-tips.game.worldbeyond.2=Braught to you by [NAME UNDECIDED]
-tips.game.worldbeyond.3=More text soon!
-
-## Section Created by Eko-byte
-
-tile.worldbeyond:sconce.name=Sconce
-tile.worldbeyond:soul_sconce.name=Soul Sconce
-
 tile.worldbeyond:terracotta_shingles.name=Terracotta Shingles
 tile.worldbeyond:terracotta_shingle_slab.name=Terracotta Shingle Slab
 tile.worldbeyond:red_terracotta_shingles.name=Red Terracotta Shingles
@@ -174,7 +159,6 @@ tile.worldbeyond:black_terracotta_shingles.name=Black Terracotta Shingles
 tile.worldbeyond:black_terracotta_shingle_slab.name=Black Terracotta Shingle Slab
 tile.worldbeyond:brown_terracotta_shingles.name=Brown Terracotta Shingles
 tile.worldbeyond:brown_terracotta_shingle_slab.name=Brown Terracotta Shingle Slab
-
 tile.worldbeyond:red_bricks.name=Red Bricks
 tile.worldbeyond:red_brick_slab.name=Red Brick Slab
 tile.worldbeyond:orange_bricks.name=Orange Bricks
@@ -207,8 +191,19 @@ tile.worldbeyond:black_bricks.name=Black Bricks
 tile.worldbeyond:black_brick_slab.name=Black Brick Slab
 tile.worldbeyond:brown_bricks.name=Brown Bricks
 tile.worldbeyond:brown_brick_slab.name=Brown Brick Slab
+tile.worldbeyond:sconce.name=Sconce
+tile.worldbeyond:soul_sconce.name=Soul Sconce
+tile.worldbeyond:enby_flag.name=Non-Binary Flag
+tile.worldbeyond:trans_flag.name=Transgender Flag
+tile.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 
 ## Interactions
+action.interact.bribe=Bribe
+
+## Loading Messages
+tips.game.worldbeyond.1=World Beyond . . . Minecraft, with more Mine and Craft!
+tips.game.worldbeyond.2=Braught to you by [NAME UNDECIDED]
+tips.game.worldbeyond.3=More text soon!
 
 
 ## Miscellaneous
