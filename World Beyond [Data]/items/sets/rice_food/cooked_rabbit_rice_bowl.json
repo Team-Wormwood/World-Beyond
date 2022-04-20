@@ -1,0 +1,24 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "worldbeyond:cooked_rabbit_rice_bowl",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:food": {
+        "nutrition": 9,
+        "saturation_modifier": "good",
+        "using_converts_to": "bowl"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:use_duration": 32,
+      "minecraft:item_storage": {
+        "capacity": 4
+      },
+      "minecraft:icon": {
+        "texture": "cooked_rabbit_rice_bowl"
+      }
+    }
+  }
+}

@@ -82,6 +82,28 @@
         },
         "peacock_spawn_egg": {
             "textures": "textures/items/peacock_spawn_egg"
+        },
+        // Cooked Rice foods—found in [External Data]/generated/RiceFoods_item_texture.json
+        "cooked_beef_rice_bowl": {
+          "textures": "textures/items/cooked_beef_rice_bowl"
+        },
+        "cooked_porkchop_rice_bowl": {
+          "textures": "textures/items/cooked_porkchop_rice_bowl"
+        },
+        "cooked_mutton_rice_bowl": {
+          "textures": "textures/items/cooked_mutton_rice_bowl"
+        },
+        "cooked_salmon_rice_bowl": {
+          "textures": "textures/items/cooked_salmon_rice_bowl"
+        },
+        "cooked_rabbit_rice_bowl": {
+          "textures": "textures/items/cooked_rabbit_rice_bowl"
+        },
+        "cooked_chicken_rice_bowl": {
+          "textures": "textures/items/cooked_chicken_rice_bowl"
+        },
+        "cooked_cod_rice_bowl": {
+          "textures": "textures/items/cooked_cod_rice_bowl"
         }
     },
     "texture_name": "atlas.items"
