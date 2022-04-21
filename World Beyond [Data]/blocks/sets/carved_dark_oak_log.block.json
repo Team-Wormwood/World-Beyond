@@ -1,0 +1,21 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "worldbeyond:carved_dark_oak_log"
+        },
+        "components": {
+            "tag:wood": {},
+            "tag:log": {},
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:map_color": "#30271a",
+            "minecraft:destroy_time": 1.0,
+            "minecraft:explosion_resistance": 2.5,
+            "minecraft:creative_category": {
+                "category": "Construction"
+            }
+        },
+        "events": {}
+    }
+}
