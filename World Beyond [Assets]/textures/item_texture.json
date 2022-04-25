@@ -74,6 +74,12 @@
             "textures": "textures/items/colourful_adventure_hat"
         },
         // Spawn Eggs
+        "coyote_spawn_egg": {
+            "textures": "textures/items/coyote_spawn_egg"
+        },
+        "cross_fox_spawn_egg": {
+            "textures": "textures/items/cross_fox_spawn_egg"
+        },
         "tiger_spawn_egg": {
             "textures": "textures/items/tiger_spawn_egg"
         },

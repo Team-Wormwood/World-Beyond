@@ -1,108 +1,157 @@
 {
-    "entity_sounds": {
-        "defaults": {},
-        "entities": {
-            "worldbeyond:tiger": {
-                "events": {
-                    "ambient": {
-                        "pitch": 0.6,
-                        "sound": "mob.ravager.ambient",
-                        "volume": 0.6
-                    },
-                    "death": {
-                        "pitch": 0.6,
-                        "sound": "mob.cat.hit",
-                        "volume": 0.6
-                    },
-                    "eat": "mob.cat.eat",
-                    "hurt": {
-                        "sound": "mob.polarbear.hurt",
-                        "pitch": 0.76,
-                        "volume": 0.5
-                    }
-                },
-                "pitch": [
-                    0.80,
-                    1.20
-                ],
-                "volume": 1.0
-            },
-            "worldbeyond:toucan": {
-                "events": {
-                    "ambient": {
-                        "pitch": 0.75,
-                        "sound": "mob.parrot.idle",
-                        "volume": 0.6
-                    },
-                    "death": {
-                        "pitch": 0.75,
-                        "sound": "mob.parrot.death",
-                        "volume": 0.6
-                    },
-                    "hurt": {
-                        "sound": "mob.parrot.hurt",
-                        "pitch": 0.76,
-                        "volume": 0.5
-                    }
-                },
-                "pitch": [
-                    0.80,
-                    1.20
-                ],
-                "volume": 1.0
-            },
-            "worldbeyond:jungle_zombie": {
-                "volume": 0.8,
-                "pitch": [
-                    0.8,
-                    1.2
-                ],
-                "events": {
-                    "ambient": "mob.jungle_zombie.say",
-                    "death": "mob.jungle_zombie.death",
-                    "hurt": "mob.jungle_zombie.hurt",
-                    "step": {
-                        "pitch": 1.0,
-                        "sound": "mob.jungle_zombie.step",
-                        "volume": 0.450
-                    }
-                }
-            },
-            "worldbeyond:frozen_zombie": {
-                "volume": 1.2,
-                "pitch": [
-                    0.8,
-                    1.2
-                ],
-                "events": {
-                    "ambient": "mob.frozen_zombie.say",
-                    "death": "mob.frozen_zombie.death",
-                    "hurt": "mob.frozen_zombie.hurt",
-                    "step": {
-                        "pitch": 0.8,
-                        "sound": "mob.zombie.step",
-                        "volume": 0.45
-                    }
-                }
-            },
-            "worldbeyond:otherworld_crystal_entity": {
-                "events": {
-                    "ambient": {
-                        "sound": "block.worldbeyond:otherworld_crystal_mount.crystal_ambient",
-                        "volume": 0.75
-                    },
-                    "hurt": {
-                        "sound": "block.worldbeyond:otherworld_crystal_mount.hurt_crystal",
-                        "pitch": [
-                            0.9,
-                            1.1
-                        ],
-                        "volume": 0.4
-                    }
-                },
-                "pitch": 1.0,
-                "volume": 1.0
-            }
-        }
-    }
+	"entity_sounds": {
+		"defaults": {},
+		"entities": {
+			"worldbeyond:coyote": {
+				"events": {
+					"ambient": "mob.wolf.bark",
+					"death": "mob.wolf.death",
+					"growl": "mob.wolf.growl",
+					"hurt": "mob.wolf.hurt",
+					"pant": "mob.wolf.panting",
+					"shake": {
+						"pitch": [
+							0.80,
+							1.20
+						],
+						"sound": "mob.wolf.shake"
+					},
+					"step": {
+						"pitch": 1.0,
+						"sound": "mob.wolf.step",
+						"volume": 0.650
+					},
+					"whine": "mob.wolf.whine"
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"worldbeyond:cross_fox": {
+				"events": {
+					"ambient": "mob.fox.ambient",
+					"attack": "mob.fox.bite",
+					"death": "mob.fox.death",
+					"eat": "mob.fox.eat",
+					"hurt": "mob.fox.hurt",
+					"mad": "mob.fox.aggro",
+					"screech": {
+						"sound": "mob.fox.screech",
+						"volume": 2
+					},
+					"sleep": "mob.fox.sleep",
+					"sniff": "mob.fox.sniff",
+					"spit": "mob.fox.spit"
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"worldbeyond:tiger": {
+				"events": {
+					"ambient": {
+						"pitch": 0.6,
+						"sound": "mob.ravager.ambient",
+						"volume": 0.6
+					},
+					"death": {
+						"pitch": 0.6,
+						"sound": "mob.cat.hit",
+						"volume": 0.6
+					},
+					"eat": "mob.cat.eat",
+					"hurt": {
+						"sound": "mob.polarbear.hurt",
+						"pitch": 0.76,
+						"volume": 0.5
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"worldbeyond:toucan": {
+				"events": {
+					"ambient": {
+						"pitch": 0.75,
+						"sound": "mob.parrot.idle",
+						"volume": 0.6
+					},
+					"death": {
+						"pitch": 0.75,
+						"sound": "mob.parrot.death",
+						"volume": 0.6
+					},
+					"hurt": {
+						"sound": "mob.parrot.hurt",
+						"pitch": 0.76,
+						"volume": 0.5
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"worldbeyond:jungle_zombie": {
+				"volume": 0.8,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.jungle_zombie.say",
+					"death": "mob.jungle_zombie.death",
+					"hurt": "mob.jungle_zombie.hurt",
+					"step": {
+						"pitch": 1.0,
+						"sound": "mob.jungle_zombie.step",
+						"volume": 0.450
+					}
+				}
+			},
+			"worldbeyond:frozen_zombie": {
+				"volume": 1.2,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.frozen_zombie.say",
+					"death": "mob.frozen_zombie.death",
+					"hurt": "mob.frozen_zombie.hurt",
+					"step": {
+						"pitch": 0.8,
+						"sound": "mob.zombie.step",
+						"volume": 0.45
+					}
+				}
+			},
+			"worldbeyond:otherworld_crystal_entity": {
+				"events": {
+					"ambient": {
+						"sound": "block.worldbeyond:otherworld_crystal_mount.crystal_ambient",
+						"volume": 0.75
+					},
+					"hurt": {
+						"sound": "block.worldbeyond:otherworld_crystal_mount.hurt_crystal",
+						"pitch": [
+							0.9,
+							1.1
+						],
+						"volume": 0.4
+					}
+				},
+				"pitch": 1.0,
+				"volume": 1.0
+			}
+		}
+	}
 }

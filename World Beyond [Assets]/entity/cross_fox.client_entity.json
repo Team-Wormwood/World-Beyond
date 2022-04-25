@@ -1,0 +1,51 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "worldbeyond:cross_fox",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/cross_fox/cross_fox",
+                "sleeping": "textures/entity/cross_fox/cross_fox_sleeping"
+            },
+            "geometry": {
+                "default": "geometry.cross_fox"
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "baby_transform": "query.is_baby"
+                    },
+                    "movement_controller",
+                    "setup"
+                ]
+            },
+            "particle_effects": {
+                "sleeping": "worldbeyond:sleeping_particles"
+            },
+            "animations": {
+                // Controllers
+                "movement_controller": "controller.animation.cross_fox.movement",
+                // Animations
+                "walk": "animation.quadruped.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "baby_transform": "animation.cross_fox.baby_transform",
+                "crouch": "animation.cross_fox.crouch",
+                "sleep": "animation.cross_fox.sleep",
+                "setup": "animation.cross_fox.setup",
+                "sit": "animation.cross_fox.sit",
+                "wiggle": "animation.cross_fox.wiggle",
+                "stuck": "animation.cross_fox.stuck",
+                "pounce": "animation.cross_fox.pounce"
+            },
+            "render_controllers": [
+                "controller.render.cross_fox"
+            ],
+            "spawn_egg": {
+                "texture": "cross_fox_spawn_egg"
+            }
+        }
+    }
+}

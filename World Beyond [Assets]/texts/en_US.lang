@@ -6,6 +6,8 @@ pack.name=§bWorld Beyond§r
 pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) new critters, and explore infinitely in this brand-new and vibrant world!
 
 ## Items
+item.spawn_egg.entity.worldbeyond:coyote.name=Spawn Coyote
+item.spawn_egg.entity.worldbeyond:cross_fox.name=Spawn Cross Fox
 item.spawn_egg.entity.worldbeyond:tiger.name=Spawn Tiger
 item.spawn_egg.entity.worldbeyond:toucan.name=Spawn Toucan
 item.spawn_egg.entity.worldbeyond:peacock.name=Spawn Peacock
@@ -32,6 +34,8 @@ item.worldbeyond:otherworld_crystal.name=§bOtherworld Crystal§r
 item.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 
 ## Entities
+entity.worldbeyond:coyote.name=Coyote
+entity.worldbeyond:cross_fox.name=Cross Fox
 entity.worldbeyond:tiger.name=Tiger
 entity.worldbeyond:toucan.name=Toucan
 entity.worldbeyond:peacock.name=Peacock

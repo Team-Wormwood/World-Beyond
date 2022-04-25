@@ -9,7 +9,7 @@
             "is_experimental": false
         },
         "component_groups": {
-            "worldbeyond:tiger_thunderstorm": {
+            "wormwood:tiger_thunderstorm": {
                 "minecraft:environment_sensor": {
                     "triggers": [
                         {
@@ -52,7 +52,7 @@
                     "cooldown_time": 0.0
                 }
             },
-            "worldbeyond:tiger_day": {
+            "wormwood:tiger_day": {
                 "minecraft:environment_sensor": {
                     "triggers": [
                         {
@@ -72,7 +72,7 @@
                     ]
                 }
             },
-            "worldbeyond:tiger_night": {
+            "wormwood:tiger_night": {
                 "minecraft:environment_sensor": {
                     "triggers": [
                         {
@@ -137,7 +137,7 @@
                     }
                 }
             },
-            "worldbeyond:tiger_baby": {
+            "wormwood:tiger_baby": {
                 "minecraft:is_baby": {},
                 "minecraft:scale": {
                     "value": 0.5
@@ -170,7 +170,7 @@
                     "speed_multiplier": 1.1
                 }
             },
-            "worldbeyond:tiger_adult": {
+            "wormwood:tiger_adult": {
                 "minecraft:experience_reward": {
                     "on_death": "query.last_hit_by_player ? 10 : 0"
                 },
@@ -362,7 +362,7 @@
                         "remove": {},
                         "add": {
                             "component_groups": [
-                                "worldbeyond:tiger_adult"
+                                "wormwood:tiger_adult"
                             ]
                         }
                     },
@@ -371,7 +371,7 @@
                         "remove": {},
                         "add": {
                             "component_groups": [
-                                "worldbeyond:tiger_baby"
+                                "wormwood:tiger_baby"
                             ]
                         }
                     }
@@ -381,70 +381,70 @@
                 "remove": {},
                 "add": {
                     "component_groups": [
-                        "worldbeyond:tiger_baby"
+                        "wormwood:tiger_baby"
                     ]
                 }
             },
             "tiger:configureThunderstorm": {
                 "remove": {
                     "component_groups": [
-                        "worldbeyond:tiger_night",
-                        "worldbeyond:tiger_day"
+                        "wormwood:tiger_night",
+                        "wormwood:tiger_day"
                     ]
                 },
                 "add": {
                     "component_groups": [
-                        "worldbeyond:tiger_thunderstorm"
+                        "wormwood:tiger_thunderstorm"
                     ]
                 }
             },
             "tiger:configureDay": {
                 "remove": {
                     "component_groups": [
-                        "worldbeyond:tiger_night",
-                        "worldbeyond:tiger_thunderstorm"
+                        "wormwood:tiger_night",
+                        "wormwood:tiger_thunderstorm"
                     ]
                 },
                 "add": {
                     "component_groups": [
-                        "worldbeyond:tiger_day"
+                        "wormwood:tiger_day"
                     ]
                 }
             },
             "tiger:configureNight": {
                 "remove": {
                     "component_groups": [
-                        "worldbeyond:tiger_day",
-                        "worldbeyond:tiger_thunderstorm"
+                        "wormwood:tiger_day",
+                        "wormwood:tiger_thunderstorm"
                     ]
                 },
                 "add": {
                     "component_groups": [
-                        "worldbeyond:tiger_night"
+                        "wormwood:tiger_night"
                     ]
                 }
             },
             "minecraft:ageable_grow_up": {
                 "remove": {
                     "component_groups": [
-                        "worldbeyond:tiger_baby"
+                        "wormwood:tiger_baby"
                     ]
                 },
                 "add": {
                     "component_groups": [
-                        "worldbeyond:tiger_adult"
+                        "wormwood:tiger_adult"
                     ]
                 }
             },
             "minecraft:ageable_set_baby": {
                 "remove": {
                     "component_groups": [
-                        "worldbeyond:tiger_adult"
+                        "wormwood:tiger_adult"
                     ]
                 },
                 "add": {
                     "component_groups": [
-                        "worldbeyond:tiger_baby"
+                        "wormwood:tiger_baby"
                     ]
                 }
             }
