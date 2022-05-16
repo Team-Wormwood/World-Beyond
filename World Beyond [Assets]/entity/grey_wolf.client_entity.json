@@ -2,17 +2,18 @@
     "format_version": "1.10.0",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "worldbeyond:tiger",
+            "identifier": "worldbeyond:grey_wolf",
             "materials": {
                 "default": "entity_alphatest"
             },
             "textures": {
-                "default": "textures/entity/tiger/tiger"
+                "default": "textures/entity/wolf/grey_wolf"
             },
             "geometry": {
-                "default": "geometry.tiger"
+                "default": "geometry.grey_wolf"
             },
             "scripts": {
+                "scale": "1.1",
                 "animate": [
                     "movement_controller",
                     {
@@ -20,23 +21,20 @@
                     }
                 ]
             },
-            "particle_effects": {
-                "sleeping": "worldbeyond:sleeping_particles"
-            },
             "animations": {
-                "walk": "animation.tiger.walk",
-                "idle": "animation.tiger.idle",
-                "movement_controller": "controller.animation.tiger.movement",
+                // Controllers
+                "movement_controller": "controller.animation.wormwood.wolf.movement",
+                // Animations
+                "walk": "animation.wormwood.wolf.walk",
+                "idle": "animation.wormwood.wolf.idle",
                 "look_at_target": "animation.common.look_at_target",
-                "pounce": "animation.tiger.pounce",
-                "sleeping": "animation.tiger.sleeping",
-                "baby_transform": "animation.tiger.baby_transform"
+                "baby_transform": "animation.wormwood.wolf.baby_transform"
             },
             "render_controllers": [
-                "controller.render.tiger"
+                "controller.render.grey_wolf"
             ],
             "spawn_egg": {
-                "texture": "tiger_spawn_egg"
+                "texture": "grey_wolf_spawn_egg"
             }
         }
     }

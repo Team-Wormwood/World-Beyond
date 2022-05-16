@@ -288,9 +288,7 @@
                 "target_dist": 0.0,
                 "track_target": true
             },
-            "minecraft:navigation.climb": {
-                "can_path_over_water": true
-            },
+            "minecraft:navigation.generic": {},
             "minecraft:movement.basic": {},
             "minecraft:jump.static": {},
             // Behavioural Components

@@ -8,34 +8,36 @@ pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) 
 ## Items
 item.spawn_egg.entity.worldbeyond:coyote.name=Spawn Coyote
 item.spawn_egg.entity.worldbeyond:cross_fox.name=Spawn Cross Fox
+item.spawn_egg.entity.worldbeyond:grey_wolf.name=Spawn Grey Wolf
 item.spawn_egg.entity.worldbeyond:tiger.name=Spawn Tiger
 item.spawn_egg.entity.worldbeyond:toucan.name=Spawn Toucan
 item.spawn_egg.entity.worldbeyond:peacock.name=Spawn Peacock
 item.spawn_egg.entity.worldbeyond:jungle_zombie.name=Spawn Verdant
 item.spawn_egg.entity.worldbeyond:frozen_zombie.name=Spawn Frostbitten
-item.worldbeyond:colourful_feather=Colorful Feather
-item.worldbeyond:peacock_feather=Peacock Feather
-item.worldbeyond:tiger_claws=Tiger Claws
 item.worldbeyond:boar_tusk=Boar Tusk
-item.worldbeyond:long_stick=Long Stick
-item.worldbeyond:ruby=Ruby
-item.worldbeyond_iron:netherite_ingot=Iron Ingot
+item.worldbeyond:colourful_feather=Colorful Feather
+item.worldbeyond:colourful_adventure_hat=§dColorful Hat of the Adventurer§r
 item.worldbeyond_diamond:netherite_ingot=Diamond
-item.worldbeyond:adventure_hat=§6Hat of the Adventurer
-item.worldbeyond:colourful_adventure_hat=§dColorful Hat of the Adventurer
-item.worldbeyond:wooden_spear=Wooden Spear
-item.worldbeyond:stone_spear=Stone Spear
+item.worldbeyond:adventure_hat=§6Hat of the Adventurer§r
+item.worldbeyond_iron:netherite_ingot=Iron Ingot
 item.worldbeyond:iron_spear=Iron Spear
-item.worldbeyond:tiger_claw_spear=§6Tiger Claw Spear§r
-item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
+item.worldbeyond:long_stick=Long Stick
 item.worldbeyond:enby_flag_item=Non-Binary Flag
-item.worldbeyond:trans_flag_item=Transgender Flag
 item.worldbeyond:otherworld_crystal.name=§bOtherworld Crystal§r
 item.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
+item.worldbeyond:peacock_feather=Peacock Feather
+item.worldbeyond:ruby=Ruby
+item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
+item.worldbeyond:stone_spear=Stone Spear
+item.worldbeyond:tiger_claws=Tiger Claws
+item.worldbeyond:trans_flag_item=Transgender Flag
+item.worldbeyond:tiger_claw_spear=§6Tiger Claw Spear§r
+item.worldbeyond:wooden_spear=Wooden Spear
 
 ## Entities
 entity.worldbeyond:coyote.name=Coyote
 entity.worldbeyond:cross_fox.name=Cross Fox
+entity.worldbeyond:grey_wolf.name=Grey Wolf
 entity.worldbeyond:tiger.name=Tiger
 entity.worldbeyond:toucan.name=Toucan
 entity.worldbeyond:peacock.name=Peacock
@@ -43,10 +45,11 @@ entity.worldbeyond:jungle_zombie.name=Verdant
 entity.worldbeyond:frozen_zombie.name=Frostbitten
 entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
 
+## Tile Entities
 entity.worldbeyond:enby_flag_entity.name=Non-Binary Flag
 entity.worldbeyond:trans_flag_entity.name=Transgender Flag
 
-## Blocks
+## Tiles
 tile.worldbeyond:carved_dark_oak_log.name=Carved Dark Oak Log
 tile.worldbeyond:large_stonebrick.name=Large Stone Bricks
 tile.worldbeyond:large_stonebrick_mossy.name=Mossy Large Stone Bricks
@@ -61,6 +64,5 @@ action.interact.bribe=Bribe
 tips.game.worldbeyond.1=World Beyond . . . Minecraft, with more Mine and Craft!
 tips.game.worldbeyond.2=Braught to you by [NAME UNDECIDED]
 tips.game.worldbeyond.3=More text soon!
-
 
 ## Miscellaneous

@@ -83,6 +83,9 @@
         "tiger_spawn_egg": {
             "textures": "textures/items/tiger_spawn_egg"
         },
+        "grey_wolf_spawn_egg": {
+            "textures": "textures/items/grey_wolf_spawn_egg"
+        },
         "toucan_spawn_egg": {
             "textures": "textures/items/toucan_spawn_egg"
         },

@@ -1,6 +1,6 @@
 // File Created by Sumi
 {
-    "format_version": "1.16.0",
+    "format_version": "1.18.30",
     "minecraft:entity": {
         "description": {
             "identifier": "worldbeyond:cross_fox",
@@ -55,6 +55,78 @@
                             "target": "baby"
                         }
                     }
+                },
+                "minecraft:behavior.nearest_prioritized_attackable_target": {
+                    "priority": 6,
+                    "attack_interval": 2,
+                    "reselect_targets": true,
+                    "target_search_height": 5,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "rabbit"
+                            },
+                            "max_dist": 12,
+                            "priority": 0
+                        },
+                        {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "chicken"
+                            },
+                            "max_dist": 12,
+                            "priority": 0
+                        },
+                        {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "cod"
+                            },
+                            "max_dist": 12,
+                            "priority": 1
+                        },
+                        {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "salmon"
+                            },
+                            "max_dist": 12,
+                            "priority": 1
+                        },
+                        {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "tropicalfish"
+                            },
+                            "max_dist": 12,
+                            "priority": 1
+                        },
+                        {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "baby_turtle"
+                                    },
+                                    {
+                                        "test": "in_water",
+                                        "subject": "other",
+                                        "operator": "!=",
+                                        "value": true
+                                    }
+                                ]
+                            },
+                            "max_dist": 12,
+                            "priority": 0
+                        }
+                    ]
                 }
             },
             "wormwood:cross_fox_item_equipped": {
@@ -141,81 +213,7 @@
                     ]
                 }
             },
-            "wormwood:cross_fox_targetting": {
-                "minecraft:behavior.nearest_prioritized_attackable_target": {
-                    "priority": 6,
-                    "attack_interval": 2,
-                    "reselect_targets": true,
-                    "target_search_height": 5,
-                    "entity_types": [
-                        {
-                            "filters": {
-                                "test": "is_family",
-                                "subject": "other",
-                                "value": "rabbit"
-                            },
-                            "max_dist": 12,
-                            "priority": 0
-                        },
-                        {
-                            "filters": {
-                                "test": "is_family",
-                                "subject": "other",
-                                "value": "chicken"
-                            },
-                            "max_dist": 12,
-                            "priority": 0
-                        },
-                        {
-                            "filters": {
-                                "test": "is_family",
-                                "subject": "other",
-                                "value": "cod"
-                            },
-                            "max_dist": 12,
-                            "priority": 1
-                        },
-                        {
-                            "filters": {
-                                "test": "is_family",
-                                "subject": "other",
-                                "value": "salmon"
-                            },
-                            "max_dist": 12,
-                            "priority": 1
-                        },
-                        {
-                            "filters": {
-                                "test": "is_family",
-                                "subject": "other",
-                                "value": "tropicalfish"
-                            },
-                            "max_dist": 12,
-                            "priority": 1
-                        },
-                        {
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "test": "is_family",
-                                        "subject": "other",
-                                        "value": "baby_turtle"
-                                    },
-                                    {
-                                        "test": "in_water",
-                                        "subject": "other",
-                                        "operator": "!=",
-                                        "value": true
-                                    }
-                                ]
-                            },
-                            "max_dist": 12,
-                            "priority": 0
-                        }
-                    ]
-                }
-            },
-            "wormwood:fox_thunderstorm": {
+            "wormwood:cross_fox_thunderstorm": {
                 "minecraft:environment_sensor": {
                     "triggers": [
                         {
@@ -722,6 +720,7 @@
                 ]
             },
             // Behavioural Components
+            "minecraft:behavior.hurt_by_target": {},
             "minecraft:behavior.float": {
                 "priority": 0
             },
@@ -864,7 +863,6 @@
                                     "component_groups": [
                                         "wormwood:cross_fox_adult",
                                         "wormwood:cross_fox_item_equipped",
-                                        "wormwood:cross_fox_targetting",
                                         "wormwood:cross_fox_docile"
                                     ]
                                 }
@@ -899,8 +897,7 @@
                 },
                 "add": {
                     "component_groups": [
-                        "wormwood:cross_fox_adult",
-                        "wormwood:cross_fox_targetting"
+                        "wormwood:cross_fox_adult"
                     ]
                 }
             },

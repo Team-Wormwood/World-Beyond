@@ -73,7 +73,6 @@
 				}
 			},
 			"wormwood:coyote_angry": {
-				"minecraft:on_target_acquired": {},
 				"minecraft:angry": {
 					"duration": 25,
 					"broadcast_anger": true,
@@ -173,11 +172,6 @@
 										"test": "is_family",
 										"subject": "other",
 										"value": "rabbit"
-									},
-									{
-										"test": "is_family",
-										"subject": "other",
-										"value": "fox"
 									},
 									{
 										"test": "is_family",
@@ -382,7 +376,7 @@
 				"can_path_over_water": true,
 				"avoid_damage_blocks": true
 			},
-			// Behavioural Componetns
+			// Behavioural Components
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
@@ -392,7 +386,7 @@
 				"target_dist": 0,
 				"track_target": true
 			},
-			"minecraft:behavior.stay_while_sitting": {
+			"minecraft:behavior.hurt_by_target": {
 				"priority": 3
 			},
 			"minecraft:behavior.leap_at_target": {
@@ -402,14 +396,14 @@
 			"minecraft:behavior.melee_attack": {
 				"priority": 5
 			},
-			"minecraft:behavior.random_stroll": {
-				"priority": 8,
-				"speed_multiplier": 1.0
-			},
 			"minecraft:behavior.look_at_player": {
 				"priority": 6,
 				"target_distance": 6.0,
 				"probability": 0.02
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 8,
+				"speed_multiplier": 1.0
 			},
 			"minecraft:behavior.beg": {
 				"priority": 9,
@@ -433,8 +427,8 @@
 					"cooked_rabbit"
 				]
 			},
-			"minecraft:behavior.hurt_by_target": {
-				"priority": 3
+			"minecraft:behavior.random_look_around": {
+				"priority": 10
 			}
 		},
 		"events": {
