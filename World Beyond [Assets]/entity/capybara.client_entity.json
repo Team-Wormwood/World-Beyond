@@ -1,0 +1,43 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "worldbeyond:capybara",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/capybara"
+            },
+            "geometry": {
+                "default": "geometry.capybara"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.tcos_right_side = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+                    "variable.tcos_left_side = -variable.tcos_right_side;"
+                ],
+                "animate": [
+                    {
+                        "baby_transform": "query.is_baby"
+                    },
+                    "movement_controller"
+                ]
+            },
+            "animations": {
+                // Controllers
+                "movement_controller": "controller.animation.capybara.movement",
+                // Animations
+                "walk": "animation.capybara.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "baby_transform": "animation.capybara.baby_transform"
+            },
+            "render_controllers": [
+                "controller.render.capybara"
+            ],
+            "spawn_egg": {
+                "texture": "capybara_spawn_egg"
+            }
+        }
+    }
+}

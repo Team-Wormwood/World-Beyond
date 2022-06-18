@@ -1,0 +1,282 @@
+{
+	"meta": {
+		"format_version": "4.0",
+		"creation_time": 1652936611,
+		"model_format": "bedrock",
+		"box_uv": false
+	},
+	"name": "glubby.geo",
+	"geometry_name": "glubby",
+	"visible_box": [2, 1.5, 0.25],
+	"variable_placeholders": "",
+	"variable_placeholder_buttons": [],
+	"timeline_setups": [],
+	"resolution": {
+		"width": 32,
+		"height": 32
+	},
+	"elements": [
+		{
+			"name": "cube",
+			"rescale": false,
+			"locked": false,
+			"from": [-3.5, 0, -5],
+			"to": [3.5, 3, 5],
+			"autouv": 0,
+			"color": 7,
+			"origin": [-0.5, 0, 0],
+			"faces": {
+				"north": {
+					"uv": [10, 13, 17, 16],
+					"texture": 0
+				},
+				"east": {
+					"uv": [0, 10, 10, 13],
+					"texture": 0
+				},
+				"south": {
+					"uv": [14, 0, 21, 3],
+					"texture": 0
+				},
+				"west": {
+					"uv": [10, 10, 20, 13],
+					"texture": 0
+				},
+				"up": {
+					"uv": [7, 10, 0, 0],
+					"texture": 0
+				},
+				"down": {
+					"uv": [14, 0, 7, 10],
+					"texture": 0
+				}
+			},
+			"type": "cube",
+			"uuid": "da529c92-8fd4-3d02-c735-d87496650253"
+		},
+		{
+			"name": "cube",
+			"rescale": false,
+			"locked": false,
+			"from": [-2.5, -1.75, -11],
+			"to": [2.5, 1.25, -5],
+			"autouv": 0,
+			"color": 7,
+			"rotation": [20, 0, 0],
+			"origin": [0.5, 0, 0],
+			"faces": {
+				"north": {
+					"uv": [10, 16, 15, 19],
+					"texture": 0
+				},
+				"east": {
+					"uv": [14, 3, 20, 6],
+					"texture": 0
+				},
+				"south": {
+					"uv": [15, 16, 20, 19],
+					"texture": 0
+				},
+				"west": {
+					"uv": [14, 6, 20, 9],
+					"texture": 0
+				},
+				"up": {
+					"uv": [5, 19, 0, 13],
+					"texture": 0
+				},
+				"down": {
+					"uv": [10, 13, 5, 19],
+					"texture": 0
+				}
+			},
+			"type": "cube",
+			"uuid": "1b2c79c5-b103-1349-306b-3089a5122622"
+		}
+	],
+	"outliner": [
+		{
+			"name": "root",
+			"origin": [0, 0, 0],
+			"bedrock_binding": "",
+			"color": 0,
+			"uuid": "e6d70708-b68a-579f-647e-c866748aad70",
+			"export": true,
+			"isOpen": true,
+			"locked": false,
+			"visibility": true,
+			"autouv": 0,
+			"children": [
+				{
+					"name": "glub",
+					"origin": [0, 0, 0],
+					"bedrock_binding": "",
+					"color": 0,
+					"uuid": "c2572e7a-1a75-8bdc-8080-daa759e9e95e",
+					"export": true,
+					"isOpen": true,
+					"locked": false,
+					"visibility": true,
+					"autouv": 0,
+					"children": [
+						"da529c92-8fd4-3d02-c735-d87496650253",
+						{
+							"name": "glubbers",
+							"origin": [0, 2, -4],
+							"bedrock_binding": "",
+							"color": 0,
+							"uuid": "79a47f0b-abe8-9e6a-1269-89e414689799",
+							"export": true,
+							"isOpen": true,
+							"locked": false,
+							"visibility": false,
+							"autouv": 0,
+							"children": ["1b2c79c5-b103-1349-306b-3089a5122622"]
+						}
+					]
+				}
+			]
+		}
+	],
+	"textures": [
+		{
+			"path": "C:\\Users\\yanag\\OneDrive\\Desktop\\yanasakana\\Art\\Models\\Textures\\glubby.png",
+			"name": "glubby.png",
+			"folder": "block",
+			"namespace": "",
+			"id": "0",
+			"particle": false,
+			"render_mode": "default",
+			"visible": true,
+			"mode": "bitmap",
+			"saved": true,
+			"uuid": "7e5793a5-57a3-826f-4a30-0d08622d2c79",
+			"relative_path": "../Textures/glubby.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAgFJREFUWEftVk1PwlAQ3B5ERGL4SgxgNOIN5SJy0qgn/c1608QT6gXFg6CJEYkJXyFBEA+Yeck222dL+kDjpb20fV87Ozs7rVUsbU+IiJKJGGVWk1R5qNNyZIkGH0MMq2f9whzW4xqNPtVarAuHF9XY+dmV9WOTx4AFALy5kN+i8m1VLeVD8RwKLdB4/GXf5TyCShDYd1O+9w/g8GhPMYCrtJun55cmtVpdBSAeW3EE1oEwSzI5JHN5ce0fgGQAJegPhgqAV+Y83u317biyTCbBcYDFDIBKAHh7b9u15WC4cwk4KgMwodtNBtbJ6f4ENUyl4rS5nlYaYDFhHLTrAADGNFMvUSoAmIxGIw4ACK4zIMsiD5RaMGVElYCVDBHqXcDC0zNwYwB6MgaATehpZJzbyCgNcPbcijJD9gjTQJ4l4C5AkOODIlWqdWp3eo71HFQa1K8BQAmk6bAAGQGbDN6l28l5aUym4nQ4IWfOgaTDebkfxrmEpi6ofIC/BWwmurvp3wW3eQaHu2lpFAC5yUvJaNd6rUmxxJLSCrql8dqh7FpiLk/wDQBaqT02aKeQsx3zrvJE6WzCOGupcOUDUjj6Oy+WpdLb05T2mQC4AdVFN7MR+dGAm5H41Y+XCdlfQz8lmHbIPHO+fxzmCTKVgb862O+5AQMBAwEDAQMBA//OwDf/XnswnzlcQQAAAABJRU5ErkJggg=="
+		}
+	],
+	"animations": [
+		{
+			"uuid": "2f4987f9-35b8-f078-8e10-fec2d389e57a",
+			"name": "animation.glubby.move",
+			"loop": "once",
+			"override": false,
+			"length": 0,
+			"snapping": 25,
+			"selected": false,
+			"saved": true,
+			"path": "C:\\Users\\yanag\\OneDrive\\Desktop\\yanasakana\\Art\\Models\\Animations\\glubby.animation.json",
+			"anim_time_update": "query.modified_distance_moved",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "",
+			"animators": {
+				"c2572e7a-1a75-8bdc-8080-daa759e9e95e": {
+					"name": "glub",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "-math.Cos(query.anim_time * 114) * 7",
+									"z": "0"
+								}
+							],
+							"uuid": "f59da9f9-d469-f5a8-5593-1c1bfbfc5737",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear"
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "1",
+									"y": "1",
+									"z": "(math.Cos(query.anim_time * 76) * 0.2) + 1.4"
+								}
+							],
+							"uuid": "3a6ee1e7-3ef4-b104-2ba1-3f896c6b118e",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear"
+						}
+					]
+				},
+				"79a47f0b-abe8-9e6a-1269-89e414689799": {
+					"name": "glubbers",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "-math.Cos(query.anim_time * 76.34) * 25",
+									"y": "0",
+									"z": "0"
+								}
+							],
+							"uuid": "22964002-4b73-6e54-538e-09bf1af5f6b5",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear"
+						}
+					]
+				}
+			}
+		},
+		{
+			"uuid": "34f62fe4-f333-afb6-e5d2-3524a7c5bc8a",
+			"name": "animation.glubby.rotate",
+			"loop": "loop",
+			"override": false,
+			"length": 0,
+			"snapping": 25,
+			"selected": false,
+			"saved": true,
+			"path": "C:\\Users\\yanag\\OneDrive\\Desktop\\yanasakana\\Art\\Models\\Bedrock Animations\\glubby.animation.json",
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "",
+			"animators": {
+				"c2572e7a-1a75-8bdc-8080-daa759e9e95e": {
+					"name": "glub",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "(query.anim_time / 6) * 360",
+									"z": "0"
+								}
+							],
+							"uuid": "c2cab41b-d8a5-9d67-df66-5131669d454b",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear"
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "(math.Cos(query.anim_time * 76.34) * 2.5) + 2.5",
+									"z": "0"
+								}
+							],
+							"uuid": "1e0fffa5-6e1e-ef25-aa3b-07577cb3e3e9",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear"
+						}
+					]
+				}
+			}
+		}
+	]
+}

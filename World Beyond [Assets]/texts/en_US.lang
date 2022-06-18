@@ -1,11 +1,13 @@
 ## World Beyond - 2022
 ## English - United States
 
-## Pack Manifest
+## Pack Manifest ##
 pack.name=§bWorld Beyond§r
 pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) new critters, and explore infinitely in this brand-new and vibrant world!
 
-## Items
+## Items ##
+### --------- ###
+item.spawn_egg.entity.worldbeyond:capybara.name=Spawn Capybara
 item.spawn_egg.entity.worldbeyond:coyote.name=Spawn Coyote
 item.spawn_egg.entity.worldbeyond:cross_fox.name=Spawn Cross Fox
 item.spawn_egg.entity.worldbeyond:grey_wolf.name=Spawn Grey Wolf
@@ -14,6 +16,7 @@ item.spawn_egg.entity.worldbeyond:toucan.name=Spawn Toucan
 item.spawn_egg.entity.worldbeyond:peacock.name=Spawn Peacock
 item.spawn_egg.entity.worldbeyond:jungle_zombie.name=Spawn Verdant
 item.spawn_egg.entity.worldbeyond:frozen_zombie.name=Spawn Frostbitten
+### --------- ###
 item.worldbeyond:boar_tusk=Boar Tusk
 item.worldbeyond:colourful_feather=Colorful Feather
 item.worldbeyond:colourful_adventure_hat=§dColorful Hat of the Adventurer§r
@@ -34,7 +37,7 @@ item.worldbeyond:trans_flag_item=Transgender Flag
 item.worldbeyond:tiger_claw_spear=§6Tiger Claw Spear§r
 item.worldbeyond:wooden_spear=Wooden Spear
 
-## Entities
+## Entities ##
 entity.worldbeyond:coyote.name=Coyote
 entity.worldbeyond:cross_fox.name=Cross Fox
 entity.worldbeyond:grey_wolf.name=Grey Wolf
@@ -45,11 +48,11 @@ entity.worldbeyond:jungle_zombie.name=Verdant
 entity.worldbeyond:frozen_zombie.name=Frostbitten
 entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
 
-## Tile Entities
+## Tile Entities ##
 entity.worldbeyond:enby_flag_entity.name=Non-Binary Flag
 entity.worldbeyond:trans_flag_entity.name=Transgender Flag
 
-## Tiles
+## Tiles ##
 tile.worldbeyond:carved_dark_oak_log.name=Carved Dark Oak Log
 tile.worldbeyond:large_stonebrick.name=Large Stone Bricks
 tile.worldbeyond:large_stonebrick_mossy.name=Mossy Large Stone Bricks
@@ -57,12 +60,12 @@ tile.worldbeyond:large_stonebrick_cracked.name=Cracked Large Stone Bricks
 tile.worldbeyond:enby_flag.name=Non-Binary Flag
 tile.worldbeyond:trans_flag.name=Transgender Flag
 
-## Interactions
+## Interactions ##
 action.interact.bribe=Bribe
 
-## Loading Messages
+## Loading Messages ##
 tips.game.worldbeyond.1=World Beyond . . . Minecraft, with more Mine and Craft!
 tips.game.worldbeyond.2=Braught to you by [NAME UNDECIDED]
 tips.game.worldbeyond.3=More text soon!
 
-## Miscellaneous
+## Miscellaneous ##
