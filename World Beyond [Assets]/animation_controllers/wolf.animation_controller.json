@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.wormwood.wolf.movement": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        "look_at_target",
+                        "idle",
+                        {
+                            "walk": "query.modified_move_speed"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

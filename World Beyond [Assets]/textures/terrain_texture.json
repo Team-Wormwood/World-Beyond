@@ -3,6 +3,9 @@
     "padding": 0,
     "resource_pack_name": "vanilla",
     "texture_data": {
+        "carved_dark_oak_log": {
+            "textures": "textures/blocks/carved_dark_oak_log"
+        },
         "large_stonebrick": {
             "textures": "textures/blocks/large_stone_bricks"
         },

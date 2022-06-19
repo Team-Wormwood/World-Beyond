@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.coyote.movement": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        "look_at_target",
+                        {
+                            "walk": "query.modified_move_speed"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

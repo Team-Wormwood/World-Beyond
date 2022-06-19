@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "worldbeyond:coyote",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/coyote"
+            },
+            "geometry": {
+                "default": "geometry.coyote"
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "baby_transform": "query.is_baby"
+                    },
+                    "movement_controller"
+                ]
+            },
+            "animations": {
+                // Controllers
+                "movement_controller": "controller.animation.coyote.movement",
+                // Animations
+                "walk": "animation.coyote.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "baby_transform": "animation.coyote.baby_transform"
+            },
+            "render_controllers": [
+                "controller.render.coyote"
+            ],
+            "spawn_egg": {
+                "texture": "coyote_spawn_egg"
+            }
+        }
+    }
+}

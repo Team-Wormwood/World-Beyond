@@ -1,0 +1,29 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cross_fox": {
+            "arrays": {
+                "textures": {
+                    "Array.sleeping": [
+                        "Texture.default",
+                        "Texture.sleeping"
+                    ]
+                }
+            },
+            "part_visibility": [
+                {
+                    "leg*": "!query.is_sleeping"
+                }
+            ],
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Array.sleeping[query.is_sleeping]"
+            ]
+        }
+    }
+}

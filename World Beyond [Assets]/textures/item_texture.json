@@ -1,7 +1,9 @@
 {
     "resource_pack_name": "worldbeyond",
     "texture_data": {
+        // ------------------- //
         // Materials
+        // ------------------- //
         "boar_tusk": {
             "textures": "textures/items/boar_tusk"
         },
@@ -20,24 +22,18 @@
         "peacock_feather": {
             "textures": "textures/items/peacock_feather"
         },
+        // ------------------- //
         // Blocks
+        // ------------------- //
         "flag.enby": {
             "textures": "textures/items/enby_flag"
         },
         "flag.trans": {
             "textures": "textures/items/trans_flag"
         },
-        "otherworld_crystal_mount": {
-            "textures": [
-                "textures/items/otherworld_crystal_mount"
-            ]
-        },
-        "otherworld_crystal": {
-            "textures": [
-                "textures/items/otherworld_crystal"
-            ]
-        },
+        // ------------------- //
         // Tools & Weapons
+        // ------------------- //
         "wooden_spear": {
             "textures": "textures/items/wooden_spear"
         },
@@ -50,12 +46,9 @@
         "tiger_claw_spear": {
             "textures": "textures/items/tiger_claw_spear"
         },
-        "solar_medallion": {
-            "textures": [
-                "textures/items/solar_medallion"
-            ]
-        },
+        // ------------------- //
         // UI Exclusive 
+        // ------------------- //
         "crimson_boat": {
             "textures": [
                 "textures/items/boat_crimson"
@@ -66,16 +59,32 @@
                 "textures/items/boat_warped"
             ]
         },
+        // ------------------- //
         // Attachables
+        // ------------------- //
         "adventure_hat": {
             "textures": "textures/items/adventure_hat"
         },
         "colourful_adventure_hat": {
             "textures": "textures/items/colourful_adventure_hat"
         },
-        // Spawn Eggs
+        // ------------------- //
+        // Spawn Eggs //
+        // ------------------- //
+        "capybara_spawn_egg": {
+            "textures": "textures/items/capybara_spawn_egg"
+        },
+        "coyote_spawn_egg": {
+            "textures": "textures/items/coyote_spawn_egg"
+        },
+        "cross_fox_spawn_egg": {
+            "textures": "textures/items/cross_fox_spawn_egg"
+        },
         "tiger_spawn_egg": {
             "textures": "textures/items/tiger_spawn_egg"
+        },
+        "grey_wolf_spawn_egg": {
+            "textures": "textures/items/grey_wolf_spawn_egg"
         },
         "toucan_spawn_egg": {
             "textures": "textures/items/toucan_spawn_egg"

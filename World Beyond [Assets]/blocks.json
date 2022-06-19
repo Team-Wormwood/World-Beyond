@@ -4,6 +4,78 @@
         1,
         0
     ],
+    "worldbeyond:carved_dark_oak_log": {
+        "sound": "wood",
+        "textures": {
+            "down": "stripped_dark_oak_log_top",
+            "up": "stripped_dark_oak_log_top",
+            "side": "carved_dark_oak_log"
+        }
+    },
+    "worldbeyond:carved_oak_log": {
+        "sound": "wood",
+        "textures": {
+            "down": "stripped_dark_oak_log_top",
+            "up": "stripped_dark_oak_log_top",
+            "side": "carved_dark_oak_log"
+        }
+    },
+    "worldbeyond:carved_birch_log": {
+        "sound": "wood",
+        "textures": {
+            "down": "stripped_dark_oak_log_top",
+            "up": "stripped_dark_oak_log_top",
+            "side": "carved_dark_oak_log"
+        }
+    },
+    "worldbeyond:carved_spruce_log": {
+        "sound": "wood",
+        "textures": {
+            "down": "stripped_dark_oak_log_top",
+            "up": "stripped_dark_oak_log_top",
+            "side": "carved_dark_oak_log"
+        }
+    },
+    "worldbeyond:carved_acacia_log": {
+        "sound": "wood",
+        "textures": {
+            "down": "stripped_dark_oak_log_top",
+            "up": "stripped_dark_oak_log_top",
+            "side": "carved_dark_oak_log"
+        }
+    },
+    "worldbeyond:carved_jungle_log": {
+        "sound": "wood",
+        "textures": {
+            "down": "stripped_dark_oak_log_top",
+            "up": "stripped_dark_oak_log_top",
+            "side": "carved_dark_oak_log"
+        }
+    },
+    "worldbeyond:carved_mangrove_log": {
+        "sound": "wood",
+        "textures": {
+            "down": "stripped_dark_oak_log_top",
+            "up": "stripped_dark_oak_log_top",
+            "side": "carved_dark_oak_log"
+        }
+    },
+    "worldbeyond:carved_warped_log": {
+        "sound": "wood",
+        "textures": {
+            "down": "stripped_dark_oak_log_top",
+            "up": "stripped_dark_oak_log_top",
+            "side": "carved_dark_oak_log"
+        }
+    },
+    "worldbeyond:carved_crimson_log": {
+        "sound": "wood",
+        "textures": {
+            "down": "stripped_dark_oak_log_top",
+            "up": "stripped_dark_oak_log_top",
+            "side": "carved_dark_oak_log"
+        }
+    },
     "worldbeyond:large_stonebrick": {
         "textures": "large_stonebrick",
         "sound": "stone"
