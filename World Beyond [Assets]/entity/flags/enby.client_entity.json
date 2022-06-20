@@ -2,7 +2,7 @@
     "format_version": "1.10.0",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "worldbeyond:enby_flag_entity",
+            "identifier": "wormwood:enby_flag_entity",
             "materials": {
                 "default": "entity_alphatest"
             },

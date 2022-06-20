@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "worldbeyond:trans_flag_item",
+            "identifier": "wormwood:trans_flag_item",
             "category": "construction"
         },
         "components": {
@@ -14,7 +14,7 @@
                 "texture": "flag.trans"
             },
             "minecraft:block_placer": {
-                "block": "worldbeyond:trans_flag",
+                "block": "wormwood:trans_flag",
                 "use_on": [
                     "minecraft:amethyst_block",
                     "minecraft:amethyst_cluster",

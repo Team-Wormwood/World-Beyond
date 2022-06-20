@@ -2,27 +2,34 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:trans_flag"
+            "identifier": "wormwood:trans_flag"
         },
         "components": {
-            "tag:wood": {},
-            "minecraft:block_light_emission": 0.0,
-            "minecraft:block_light_absorption": 0,
+            "minecraft:loot": "loot_tables/blocks/flags/trans.json",
             "minecraft:map_color": "#918F87",
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_filter": 0,
+            "minecraft:breathability": "air",
+            "minecraft:unit_cube": {},
             "minecraft:destroy_time": 1.0,
             "minecraft:explosion_resistance": 1.25,
-            "minecraft:loot": "loot_tables/blocks/flags/trans.json",
+            "tag:wood": {},
+            //
+            "minecraft:flammable": {
+                "burn_odds": 33,
+                "flame_odds": 33
+            },
             "minecraft:on_placed": {
                 "event": "flagBlock:block_placed"
+            },
+            "minecraft:on_interact": {
+                "event": "flagBlock:block_rotate"
             },
             "minecraft:material_instances": {
                 "*": {
                     "texture": "invisible",
                     "render_method": "alpha_test"
                 }
-            },
-            "minecraft:on_interact": {
-                "event": "flagBlock:block_rotate"
             },
             "minecraft:pick_collision": {
                 "origin": [
@@ -53,7 +60,7 @@
             "flagBlock:block_placed": {
                 "run_command": {
                     "command": [
-                        "summon worldbeyond:trans_flag_entity ~ ~ ~"
+                        "summon wormwood:trans_flag_entity ~ ~ ~"
                     ]
                 }
             },

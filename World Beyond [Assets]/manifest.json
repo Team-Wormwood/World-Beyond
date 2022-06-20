@@ -11,8 +11,8 @@
         ],
         "min_engine_version": [
             1,
-            18,
-            10
+            19,
+            0
         ]
     },
     "modules": [
@@ -24,18 +24,6 @@
                 0,
                 0
             ]
-        }
-    ],
-    "subpacks": [
-        {
-            "folder_name": "default",
-            "name": "§sDeveloper Skins - Disabled§r",
-            "memory_tier": 1
-        },
-        {
-            "folder_name": "dev_skins",
-            "name": "§cDeveloper Skins - Enabled§r",
-            "memory_tier": 2
         }
     ],
     "metadata": {
@@ -51,4 +39,3 @@
         ]
     }
 }
-// File edited by MADLAD3718

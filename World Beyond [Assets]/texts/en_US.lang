@@ -25,7 +25,7 @@ item.worldbeyond:adventure_hat=§6Hat of the Adventurer§r
 item.worldbeyond_iron:netherite_ingot=Iron Ingot
 item.worldbeyond:iron_spear=Iron Spear
 item.worldbeyond:long_stick=Long Stick
-item.worldbeyond:enby_flag_item=Non-Binary Flag
+item.wormwood:enby_flag_item=Non-Binary Flag
 item.worldbeyond:otherworld_crystal.name=§bOtherworld Crystal§r
 item.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 item.worldbeyond:peacock_feather=Peacock Feather
@@ -33,7 +33,7 @@ item.worldbeyond:ruby=Ruby
 item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
 item.worldbeyond:stone_spear=Stone Spear
 item.worldbeyond:tiger_claws=Tiger Claws
-item.worldbeyond:trans_flag_item=Transgender Flag
+item.wormwood:trans_flag_item=Transgender Flag
 item.worldbeyond:tiger_claw_spear=§6Tiger Claw Spear§r
 item.worldbeyond:wooden_spear=Wooden Spear
 
@@ -49,16 +49,16 @@ entity.worldbeyond:frozen_zombie.name=Frostbitten
 entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
 
 ## Tile Entities ##
-entity.worldbeyond:enby_flag_entity.name=Non-Binary Flag
-entity.worldbeyond:trans_flag_entity.name=Transgender Flag
+entity.wormwood:enby_flag_entity.name=Non-Binary Flag
+entity.wormwood:trans_flag_entity.name=Transgender Flag
 
 ## Tiles ##
 tile.worldbeyond:carved_dark_oak_log.name=Carved Dark Oak Log
 tile.worldbeyond:large_stonebrick.name=Large Stone Bricks
 tile.worldbeyond:large_stonebrick_mossy.name=Mossy Large Stone Bricks
 tile.worldbeyond:large_stonebrick_cracked.name=Cracked Large Stone Bricks
-tile.worldbeyond:enby_flag.name=Non-Binary Flag
-tile.worldbeyond:trans_flag.name=Transgender Flag
+tile.wormwood:enby_flag.name=Non-Binary Flag
+tile.wormwood:trans_flag.name=Transgender Flag
 
 ## Interactions ##
 action.interact.bribe=Bribe

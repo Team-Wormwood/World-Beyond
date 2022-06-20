@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "worldbeyond:enby_flag_item",
+            "identifier": "wormwood:enby_flag_item",
             "category": "construction"
         },
         "components": {
@@ -14,7 +14,7 @@
                 "texture": "flag.enby"
             },
             "minecraft:block_placer": {
-                "block": "worldbeyond:enby_flag",
+                "block": "wormwood:enby_flag",
                 "use_on": [
                     "minecraft:amethyst_block",
                     "minecraft:amethyst_cluster",

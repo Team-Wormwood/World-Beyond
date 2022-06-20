@@ -4,7 +4,13 @@
         1,
         0
     ],
-    "worldbeyond:carved_dark_oak_log": {
+    // "wormwood:trans_flag": {
+    //     "sound": "wood"
+    // },
+    // "wormwood:enby_flag": {
+    //     "sound": "wood"
+    // },
+    "wormwood:carved_dark_oak_log": {
         "sound": "wood",
         "textures": {
             "down": "stripped_dark_oak_log_top",
@@ -12,7 +18,7 @@
             "side": "carved_dark_oak_log"
         }
     },
-    "worldbeyond:carved_oak_log": {
+    "wormwood:carved_oak_log": {
         "sound": "wood",
         "textures": {
             "down": "stripped_dark_oak_log_top",
@@ -20,7 +26,7 @@
             "side": "carved_dark_oak_log"
         }
     },
-    "worldbeyond:carved_birch_log": {
+    "wormwood:carved_birch_log": {
         "sound": "wood",
         "textures": {
             "down": "stripped_dark_oak_log_top",
@@ -28,7 +34,7 @@
             "side": "carved_dark_oak_log"
         }
     },
-    "worldbeyond:carved_spruce_log": {
+    "wormwood:carved_spruce_log": {
         "sound": "wood",
         "textures": {
             "down": "stripped_dark_oak_log_top",
@@ -36,7 +42,7 @@
             "side": "carved_dark_oak_log"
         }
     },
-    "worldbeyond:carved_acacia_log": {
+    "wormwood:carved_acacia_log": {
         "sound": "wood",
         "textures": {
             "down": "stripped_dark_oak_log_top",
@@ -44,7 +50,7 @@
             "side": "carved_dark_oak_log"
         }
     },
-    "worldbeyond:carved_jungle_log": {
+    "wormwood:carved_jungle_log": {
         "sound": "wood",
         "textures": {
             "down": "stripped_dark_oak_log_top",
@@ -52,7 +58,7 @@
             "side": "carved_dark_oak_log"
         }
     },
-    "worldbeyond:carved_mangrove_log": {
+    "wormwood:carved_mangrove_log": {
         "sound": "wood",
         "textures": {
             "down": "stripped_dark_oak_log_top",
@@ -60,7 +66,7 @@
             "side": "carved_dark_oak_log"
         }
     },
-    "worldbeyond:carved_warped_log": {
+    "wormwood:carved_warped_log": {
         "sound": "wood",
         "textures": {
             "down": "stripped_dark_oak_log_top",
@@ -68,7 +74,7 @@
             "side": "carved_dark_oak_log"
         }
     },
-    "worldbeyond:carved_crimson_log": {
+    "wormwood:carved_crimson_log": {
         "sound": "wood",
         "textures": {
             "down": "stripped_dark_oak_log_top",
@@ -76,15 +82,15 @@
             "side": "carved_dark_oak_log"
         }
     },
-    "worldbeyond:large_stonebrick": {
+    "wormwood:large_stonebrick": {
         "textures": "large_stonebrick",
         "sound": "stone"
     },
-    "worldbeyond:large_stonebrick_mossy": {
+    "wormwood:large_stonebrick_mossy": {
         "textures": "large_stonebrick_mossy",
         "sound": "stone"
     },
-    "worldbeyond:large_stonebrick_cracked": {
+    "wormwood:large_stonebrick_cracked": {
         "textures": "large_stonebrick_cracked",
         "sound": "stone"
     }

@@ -3,7 +3,7 @@
     "format_version": "1.17.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "worldbeyond:enby_flag_entity",
+            "identifier": "wormwood:enby_flag_entity",
             "is_spawnable": false,
             "is_summonable": true,
             "is_experimental": false,
@@ -108,7 +108,7 @@
             "minecraft:inside_block_notifier": {
                 "block_list": [
                     {
-                        "block": "worldbeyond:enby_flag",
+                        "block": "wormwood:enby_flag",
                         "exited_block_event": {
                             "event": "flag:despawn"
                         }
