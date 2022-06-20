@@ -68,6 +68,9 @@
         "colourful_adventure_hat": {
             "textures": "textures/items/colourful_adventure_hat"
         },
+        "shulker_shell_worldbeyond" : {
+            "textures" : "textures/items/shulker_shell"
+        },
         // ------------------- //
         // Spawn Eggs //
         // ------------------- //
@@ -91,6 +94,12 @@
         },
         "peacock_spawn_egg": {
             "textures": "textures/items/peacock_spawn_egg"
+        },
+        // ------------------- //
+        // Vanilla //
+        // ------------------- //
+        "shulker_shell" : {
+            "textures" : "textures/items/shell_fragment"
         }
     },
     "texture_name": "atlas.items"
