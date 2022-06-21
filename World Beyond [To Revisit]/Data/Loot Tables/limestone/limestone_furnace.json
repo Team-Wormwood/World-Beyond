@@ -2,10 +2,10 @@
     "format_version": "1.12.0",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "worldbeyond:limestone_furnace"
+            "identifier": "wormwood:limestone_furnace"
         },
-        "input": "worldbeyond:cobbled_limestone",
-        "output": "worldbeyond:limestone",
+        "input": "wormwood:cobbled_limestone",
+        "output": "wormwood:limestone",
         "tags": [
             "furnace"
         ]

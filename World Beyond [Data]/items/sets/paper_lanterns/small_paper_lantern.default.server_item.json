@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "worldbeyond:small_paper_lantern_item",
+            "identifier": "wormwood:small_paper_lantern_item",
             "category": "construction"
         },
         "components": {
@@ -14,7 +14,7 @@
                 "texture": "small_paper_lantern.default"
             },
             "minecraft:block_placer": {
-                "block": "worldbeyond:small_paper_lantern",
+                "block": "wormwood:small_paper_lantern",
                 "use_on": [
                     "minecraft:amethyst_block",
                     "minecraft:amethyst_cluster",

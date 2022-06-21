@@ -2,7 +2,7 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "worldbeyond:pink_terracotta_shingles"
+    "identifier": "wormwood:pink_terracotta_shingles"
     },
     
     "tags": [ "crafting_table" ],
@@ -18,7 +18,7 @@
       }
     },
     "result": {
-      "item": "worldbeyond:pink_terracotta_shingles",
+      "item": "wormwood:pink_terracotta_shingles",
       "count": 4
     }
   }

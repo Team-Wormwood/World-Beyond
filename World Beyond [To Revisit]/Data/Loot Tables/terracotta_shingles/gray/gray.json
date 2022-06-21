@@ -2,7 +2,7 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "worldbeyond:gray_terracotta_shingles"
+    "identifier": "wormwood:gray_terracotta_shingles"
     },
     
     "tags": [ "crafting_table" ],
@@ -18,7 +18,7 @@
       }
     },
     "result": {
-      "item": "worldbeyond:gray_terracotta_shingles",
+      "item": "wormwood:gray_terracotta_shingles",
       "count": 4
     }
   }

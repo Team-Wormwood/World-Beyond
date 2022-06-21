@@ -3,7 +3,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "worldbeyond:orange_bricks"
+			"identifier": "wormwood:orange_bricks"
 		},
 		"tags": [
 			"crafting_table"
@@ -24,7 +24,7 @@
 		},
 		"result": [
 			{
-				"item": "worldbeyond:orange_bricks",
+				"item": "wormwood:orange_bricks",
 				"count": 8
 			}
 		]

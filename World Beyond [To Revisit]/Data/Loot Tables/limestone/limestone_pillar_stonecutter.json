@@ -2,7 +2,7 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "worldbeyond:limestone_pillar_stonecutter"
+            "identifier": "wormwood:limestone_pillar_stonecutter"
         },
         "tags": [
             "stonecutter"
@@ -10,11 +10,11 @@
         "priority": 1,
         "ingredients": [
             {
-                "item": "worldbeyond:cobbled_limestone"
+                "item": "wormwood:cobbled_limestone"
             }
         ],
         "result": {
-            "item": "worldbeyond:limestone_pillar",
+            "item": "wormwood:limestone_pillar",
             "count": 1
         }
     }

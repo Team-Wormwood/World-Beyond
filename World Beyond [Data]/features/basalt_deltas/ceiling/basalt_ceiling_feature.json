@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:vegetation_patch_feature": {
     "description": {
-      "identifier": "worldbeyond:basalt_deltas/ceiling/basalt_ceiling_feature"
+      "identifier": "wormwood:basalt_deltas/ceiling/basalt_ceiling_feature"
     },
     "replaceable_blocks": [
       "minecraft:netherrack",
@@ -11,7 +11,7 @@
       "minecraft:lava"
     ],
     "ground_block": "minecraft:basalt",
-    "vegetation_feature": "worldbeyond:basalt_deltas/ceiling/basalt_ceiling_spike_feature",
+    "vegetation_feature": "wormwood:basalt_deltas/ceiling/basalt_ceiling_spike_feature",
     "surface": "ceiling",
     "depth": {
       "range_min": 2,

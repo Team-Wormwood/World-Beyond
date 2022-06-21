@@ -2,9 +2,9 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "worldbeyond:limestone_pillar",
+			"identifier": "wormwood:limestone_pillar",
 			"properties": {
-				"worldbeyond:facing_direction": [
+				"wormwood:facing_direction": [
 					0,
 					1,
 					2
@@ -47,13 +47,13 @@
 		"events": {
 			"update_facing_direction": {
 				"set_block_property": {
-					"worldbeyond:facing_direction": "math.floor(query.cardinal_block_face_placed_on / 2.0)"
+					"wormwood:facing_direction": "math.floor(query.cardinal_block_face_placed_on / 2.0)"
 				}
 			}
 		},
 		"permutations": [
 			{
-				"condition": "query.block_property('worldbeyond:facing_direction') == 0",
+				"condition": "query.block_property('wormwood:facing_direction') == 0",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -63,7 +63,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('worldbeyond:facing_direction') == 1",
+				"condition": "query.block_property('wormwood:facing_direction') == 1",
 				"components": {
 					"minecraft:rotation": [
 						90,
@@ -73,7 +73,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('worldbeyond:facing_direction') == 2",
+				"condition": "query.block_property('wormwood:facing_direction') == 2",
 				"components": {
 					"minecraft:rotation": [
 						0,

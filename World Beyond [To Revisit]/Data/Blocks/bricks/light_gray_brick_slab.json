@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:block": {
     "description": {
-      "identifier": "worldbeyond:light_gray_brick_slab",
+      "identifier": "wormwood:light_gray_brick_slab",
       "properties": {
         "shingle:slabType": [ "down", "up", "double" ]
       }

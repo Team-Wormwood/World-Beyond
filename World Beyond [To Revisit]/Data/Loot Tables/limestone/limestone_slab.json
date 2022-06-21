@@ -2,11 +2,11 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "worldbeyond:limestone_slab"
+            "identifier": "wormwood:limestone_slab"
         },
         "key": {
             "#": {
-                "item": "worldbeyond:limestone"
+                "item": "wormwood:limestone"
             }
         },
         "pattern": [
@@ -15,7 +15,7 @@
         "priority": 1,
         "result": {
             "count": 6,
-            "item": "worldbeyond:limestone_slab"
+            "item": "wormwood:limestone_slab"
         },
         "tags": [
             "crafting_table"

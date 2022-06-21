@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "worldbeyond:white_bricks"
+			"identifier": "wormwood:white_bricks"
 		},
 		"components": {
 			"tag:stone":{},

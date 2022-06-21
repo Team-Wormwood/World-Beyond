@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:cobbled_bauxite"
+            "identifier": "wormwood:cobbled_bauxite"
         },
         "components": {
             "minecraft:friction": 0.6,

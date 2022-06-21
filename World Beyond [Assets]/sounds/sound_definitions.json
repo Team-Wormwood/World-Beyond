@@ -1,7 +1,7 @@
 {
 	"format_version": "1.14.0",
 	"sound_definitions": {
-		"block.worldbeyond:otherworld_crystal_mount.place_crystal": {
+		"block.wormwood:otherworld_crystal_mount.place_crystal": {
 			"category": "block",
 			"sounds": [
 				{
@@ -11,7 +11,7 @@
 				}
 			]
 		},
-		"block.worldbeyond:otherworld_crystal_mount.break_crystal": {
+		"block.wormwood:otherworld_crystal_mount.break_crystal": {
 			"category": "block",
 			"sounds": [
 				{
@@ -21,7 +21,7 @@
 				}
 			]
 		},
-		"block.worldbeyond:otherworld_crystal_mount.crystal_ambient": {
+		"block.wormwood:otherworld_crystal_mount.crystal_ambient": {
 			"category": "block",
 			"sounds": [
 				{
@@ -31,7 +31,7 @@
 				}
 			]
 		},
-		"block.worldbeyond:otherworld_crystal_mount.hurt_crystal": {
+		"block.wormwood:otherworld_crystal_mount.hurt_crystal": {
 			"category": "block",
 			"sounds": [
 				{

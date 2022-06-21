@@ -3,7 +3,7 @@
 
 	"minecraft:single_block_feature": {
 		"description": {
-			"identifier": "worldbeyond:nether_gold_vein/column/block/options/blackstone"
+			"identifier": "wormwood:nether_gold_vein/column/block/options/blackstone"
 		},
 
 		"places_block": "minecraft:blackstone",

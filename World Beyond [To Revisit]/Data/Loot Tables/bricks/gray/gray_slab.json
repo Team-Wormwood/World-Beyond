@@ -2,7 +2,7 @@
   "format_version": "1.16",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "worldbeyond:gray_bricks_slab"
+    "identifier": "wormwood:gray_bricks_slab"
     },
     "tags": [ 
       "crafting_table" 
@@ -13,11 +13,11 @@
     ],
     "key": {
       "#": {
-        "item": "worldbeyond:gray_bricks"
+        "item": "wormwood:gray_bricks"
       }
     },
     "result": {
-      "item": "worldbeyond:gray_brick_slab",
+      "item": "wormwood:gray_brick_slab",
       "count": 6
     }
   }

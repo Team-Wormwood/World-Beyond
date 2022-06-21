@@ -3,7 +3,7 @@
   "format_version": "1.16.100",
   "minecraft:entity": {
     "description": {
-      "identifier": "worldbeyond:stasis_test",
+      "identifier": "wormwood:stasis_test",
       "runtime_identifier": "minecraft:snowball",
       "is_spawnable": false,
       "is_summonable": true,

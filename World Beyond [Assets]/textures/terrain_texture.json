@@ -15,7 +15,7 @@
         "large_stonebrick_cracked": {
             "textures": "textures/blocks/large_stone_bricks_cracked"
         },
-//Vanilla
+        //Vanilla
         "stone_slab_side": {
             "textures": [
                 "textures/blocks/stone_slab_side",
@@ -134,30 +134,30 @@
         "deepslate_redstone_ore_top": {
             "textures": "textures/blocks/deepslate/deepslate_redstone_ore_top"
         }
-//        "sandstone_bottom" : {
-//            "textures" : [
-//                "textures/blocks/sandstone_bottom",
-//                "textures/blocks/sandstone_smooth_bottom",
-//                "textures/blocks/sandstone_smooth_bottom",
-//                "textures/blocks/sandstone_top"
-//            ]
-//        },
-//        "red_sandstone_bottom" : {
-//            "textures" : [
-//                "textures/blocks/red_sandstone_bottom",
-//                "textures/blocks/red_sandstone_smooth_bottom",
-//                "textures/blocks/red_sandstone_smooth_bottom",
-//                "textures/blocks/red_sandstone_top"
-//            ]
-//        },
-//        "stone_slab_bottom_4" : {
-//            "textures" : [
-//                "textures/blocks/stonebrick_mossy",
-//                "textures/blocks/quartz_block_bottom",
-//                "textures/blocks/stone",
-//                "textures/blocks/sandstone_smooth_bottom",
-//                "textures/blocks/red_sandstone_smooth_bottom"
-//            ]
-//        }
+        //        "sandstone_bottom" : {
+        //            "textures" : [
+        //                "textures/blocks/sandstone_bottom",
+        //                "textures/blocks/sandstone_smooth_bottom",
+        //                "textures/blocks/sandstone_smooth_bottom",
+        //                "textures/blocks/sandstone_top"
+        //            ]
+        //        },
+        //        "red_sandstone_bottom" : {
+        //            "textures" : [
+        //                "textures/blocks/red_sandstone_bottom",
+        //                "textures/blocks/red_sandstone_smooth_bottom",
+        //                "textures/blocks/red_sandstone_smooth_bottom",
+        //                "textures/blocks/red_sandstone_top"
+        //            ]
+        //        },
+        //        "stone_slab_bottom_4" : {
+        //            "textures" : [
+        //                "textures/blocks/stonebrick_mossy",
+        //                "textures/blocks/quartz_block_bottom",
+        //                "textures/blocks/stone",
+        //                "textures/blocks/sandstone_smooth_bottom",
+        //                "textures/blocks/red_sandstone_smooth_bottom"
+        //            ]
+        //        }
     }
 }

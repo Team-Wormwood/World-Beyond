@@ -2,21 +2,21 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "worldbeyond:mossy_limestone_bricks_from_moss"
+            "identifier": "wormwood:mossy_limestone_bricks_from_moss"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "worldbeyond:limestone_bricks"
+                "item": "wormwood:limestone_bricks"
             },
             {
                 "item": "minecraft:moss_block"
             }
         ],
         "result": {
-            "item": "worldbeyond:mossy_limestone_bricks"
+            "item": "wormwood:mossy_limestone_bricks"
         }
     }
 }

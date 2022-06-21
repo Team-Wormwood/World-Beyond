@@ -3,7 +3,7 @@
     "format_version": "1.18.30",
     "minecraft:entity": {
         "description": {
-            "identifier": "worldbeyond:cross_fox",
+            "identifier": "wormwood:cross_fox",
             "is_summonable": true,
             "is_spawnable": true,
             "is_experimental": false
@@ -48,8 +48,8 @@
                         "glow_berries"
                     ],
                     "breeds_with": {
-                        "mate_type": "worldbeyond:cross_fox",
-                        "baby_type": "worldbeyond:cross_fox",
+                        "mate_type": "wormwood:cross_fox",
+                        "baby_type": "wormwood:cross_fox",
                         "breed_event": {
                             "event": "minecraft:entity_born",
                             "target": "baby"

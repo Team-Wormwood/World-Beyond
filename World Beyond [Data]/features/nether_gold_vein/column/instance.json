@@ -3,10 +3,10 @@
 
 	"minecraft:scatter_feature": {
 		"description": {
-			"identifier": "worldbeyond:nether_gold_vein/column/instance"
+			"identifier": "wormwood:nether_gold_vein/column/instance"
 		},
 
-		"places_feature": "worldbeyond:nether_gold_vein/column/block/condition",
+		"places_feature": "wormwood:nether_gold_vein/column/block/condition",
 
 		"iterations": "t.vein_column_height",
 

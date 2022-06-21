@@ -3,7 +3,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "worldbeyond:lime_bricks"
+			"identifier": "wormwood:lime_bricks"
 		},
 		"tags": [
 			"crafting_table"
@@ -24,7 +24,7 @@
 		},
 		"result": [
 			{
-				"item": "worldbeyond:lime_bricks",
+				"item": "wormwood:lime_bricks",
 				"count": 8
 			}
 		]

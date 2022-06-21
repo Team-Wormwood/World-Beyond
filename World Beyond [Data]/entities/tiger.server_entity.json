@@ -3,7 +3,7 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "worldbeyond:tiger",
+            "identifier": "wormwood:tiger",
             "is_summonable": true,
             "is_spawnable": true,
             "is_experimental": false
@@ -185,8 +185,8 @@
                     "require_tame": false,
                     "require_full_health": true,
                     "breeds_with": {
-                        "mate_type": "worldbeyond:tiger",
-                        "baby_type": "worldbeyond:tiger",
+                        "mate_type": "wormwood:tiger",
+                        "baby_type": "wormwood:tiger",
                         "breed_event": {
                             "event": "minecraft:entity_born",
                             "target": "baby"

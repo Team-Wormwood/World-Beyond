@@ -2,17 +2,17 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "worldbeyond:darkstone_tiles_from_polished_darkstone_stonecutting"
+            "identifier": "wormwood:darkstone_tiles_from_polished_darkstone_stonecutting"
         },
         "ingredients": [
             {
-                "item": "worldbeyond:polished_darkstone"
+                "item": "wormwood:polished_darkstone"
             }
         ],
         "priority": 0,
         "result": {
             "count": 1,
-            "item": "worldbeyond:darkstone_tiles"
+            "item": "wormwood:darkstone_tiles"
         },
         "tags": [
             "stonecutter"

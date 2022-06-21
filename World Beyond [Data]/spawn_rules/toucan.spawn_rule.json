@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "worldbeyond:toucan",
+      "identifier": "wormwood:toucan",
       "population_control": "animal"
     }
   }

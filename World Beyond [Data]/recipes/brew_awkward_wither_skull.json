@@ -2,7 +2,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_brewing_mix": {
 		"description": {
-			"identifier": "worldbeyond:brew_awkward_wither_skull"
+			"identifier": "wormwood:brew_awkward_wither_skull"
 		},
 		"tags": [
 			"brewing_stand"

@@ -2,14 +2,14 @@
   "format_version": "1.16.0",
   "minecraft:vegetation_patch_feature": {
     "description": {
-      "identifier": "worldbeyond:crimson_forest/ceiling/crimson_ceiling_feature_second"
+      "identifier": "wormwood:crimson_forest/ceiling/crimson_ceiling_feature_second"
     },
     "replaceable_blocks": [
       "minecraft:nether_wart_block",
       "minecraft:netherrack"
     ],
     "ground_block": "minecraft:nether_wart_block",
-    "vegetation_feature": "worldbeyond:crimson_forest/ceiling/random_cluster_or_vines_feature",
+    "vegetation_feature": "wormwood:crimson_forest/ceiling/random_cluster_or_vines_feature",
     "surface": "ceiling",
     "depth": {
       "range_min": 2,

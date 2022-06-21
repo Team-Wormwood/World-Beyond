@@ -3,7 +3,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "worldbeyond:tiger_claw_spear",
+            "identifier": "wormwood:tiger_claw_spear",
             "category": "equipment"
         },
         "components": {

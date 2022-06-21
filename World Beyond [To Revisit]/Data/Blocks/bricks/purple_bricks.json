@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "worldbeyond:purple_bricks"
+			"identifier": "wormwood:purple_bricks"
 		},
 		"components": {
 			"tag:stone":{},

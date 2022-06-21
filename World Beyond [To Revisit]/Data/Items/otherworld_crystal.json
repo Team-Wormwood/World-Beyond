@@ -3,7 +3,7 @@
 	"format_version": "1.17.40",
 	"minecraft:item": {
 		"description": {
-			"identifier": "worldbeyond:otherworld_crystal",
+			"identifier": "wormwood:otherworld_crystal",
 			"category": "items"
 		},
 		"components": {
@@ -11,7 +11,7 @@
 				"texture": "otherworld_crystal"
 			},
 			"minecraft:display_name": {
-				"value": "item.worldbeyond:otherworld_crystal.name"
+				"value": "item.wormwood:otherworld_crystal.name"
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:foil": true,

@@ -3,10 +3,10 @@
 
 	"minecraft:scatter_feature": {
 		"description": {
-			"identifier": "worldbeyond:nether_gold_vein/column/iterator"
+			"identifier": "wormwood:nether_gold_vein/column/iterator"
 		},
 
-		"places_feature": "worldbeyond:nether_gold_vein/column/offset",
+		"places_feature": "wormwood:nether_gold_vein/column/offset",
 
 		"iterations": "t.vein_noise_offset = 0; return t.vein_iterations;",
 

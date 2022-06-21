@@ -6,20 +6,20 @@
       "loop": false,
       "timeline": {
         "0.1": [
-          "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ summon worldbeyond:stasis_eye ~ ~ ~",
-          "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ summon worldbeyond:stasis_eye_visual ~ ~ ~",
-          "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ tp @e[type=worldbeyond:stasis_eye] ~ ~ ~",
+          "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ summon wormwood:stasis_eye ~ ~ ~",
+          "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ summon wormwood:stasis_eye_visual ~ ~ ~",
+          "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ tp @e[type=wormwood:stasis_eye] ~ ~ ~",
           "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ playsound mob.zombie.unfect @p ~ ~ ~ 1 1.5"
         ],
-        "0.3": "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~ ~-1 ~ ~ ~1 ~ worldbeyond:stasis_on -1 replace worldbeyond:stasis_chamber -1",
-        "0.6": "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~-1 ~-2 ~-1 ~1 ~1 ~1 worldbeyond:powered_purpur -1 replace purpur_block -1",
-        "1.0": "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~-2 ~-2 ~-2 ~2 ~2 ~2 worldbeyond:powered_purpur -1 replace purpur_block -1",
-        "1.4": "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~-3 ~-3 ~-3 ~3 ~3 ~3 worldbeyond:powered_purpur -1 replace purpur_block -1",
-        "2.0": "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~-4 ~-4 ~-4 ~4 ~4 ~4 worldbeyond:powered_purpur -1 replace purpur_block -1",
+        "0.3": "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~ ~-1 ~ ~ ~1 ~ wormwood:stasis_on -1 replace wormwood:stasis_chamber -1",
+        "0.6": "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~-1 ~-2 ~-1 ~1 ~1 ~1 wormwood:powered_purpur -1 replace purpur_block -1",
+        "1.0": "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~-2 ~-2 ~-2 ~2 ~2 ~2 wormwood:powered_purpur -1 replace purpur_block -1",
+        "1.4": "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~-3 ~-3 ~-3 ~3 ~3 ~3 wormwood:powered_purpur -1 replace purpur_block -1",
+        "2.0": "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~-4 ~-4 ~-4 ~4 ~4 ~4 wormwood:powered_purpur -1 replace purpur_block -1",
         "2.8": [
-          "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~-5 ~-5 ~-5 ~5 ~5 ~5 worldbeyond:powered_purpur -1 replace purpur_block -1",
+          "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ fill ~-5 ~-5 ~-5 ~5 ~5 ~5 wormwood:powered_purpur -1 replace purpur_block -1",
           "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ playsound conduit.activate @p ~ ~ ~ 1 0.4",
-          "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ particle worldbeyond:enchantment ~ ~ ~"
+          "/execute @e[tag=one, tag=two, tag=three, tag=four, tag=five, tag=six, tag=seven, tag=eight, tag=nine] ~ ~ ~ particle wormwood:enchantment ~ ~ ~"
         ],
         "2.9": "/event entity @s stasis:despawn"
       },

@@ -2,13 +2,13 @@
   "format_version": "1.16.0",
   "minecraft:vegetation_patch_feature": {
     "description": {
-      "identifier": "worldbeyond:crimson_forest/ceiling/vein_weeping_vines_patch_feature"
+      "identifier": "wormwood:crimson_forest/ceiling/vein_weeping_vines_patch_feature"
     },
     "replaceable_blocks": [
       "minecraft:nether_wart_block"
     ],
     "ground_block": "minecraft:nether_wart_block",
-    "vegetation_feature": "worldbeyond:crimson_forest/ceiling/vein_weeping_vines_feature",
+    "vegetation_feature": "wormwood:crimson_forest/ceiling/vein_weeping_vines_feature",
     "surface": "ceiling",
     "depth": {
       "range_min": 2,

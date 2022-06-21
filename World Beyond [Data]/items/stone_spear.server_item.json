@@ -3,7 +3,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "worldbeyond:stone_spear",
+            "identifier": "wormwood:stone_spear",
             "category": "equipment"
         },
         "components": {

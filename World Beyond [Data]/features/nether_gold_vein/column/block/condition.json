@@ -3,10 +3,10 @@
 
 	"minecraft:scatter_feature": {
 		"description": {
-			"identifier": "worldbeyond:nether_gold_vein/column/block/condition"
+			"identifier": "wormwood:nether_gold_vein/column/block/condition"
 		},
 
-		"places_feature": "worldbeyond:nether_gold_vein/column/block/selection",
+		"places_feature": "wormwood:nether_gold_vein/column/block/selection",
 
 		"iterations": 1,
 		"scatter_chance": 50,

@@ -2,17 +2,17 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "worldbeyond:cracked_darkstone_slab_stonecut"
+            "identifier": "wormwood:cracked_darkstone_slab_stonecut"
         },
         "ingredients": [
             {
-                "item": "worldbeyond:cracked_darkstone"
+                "item": "wormwood:cracked_darkstone"
             }
         ],
         "priority": 0,
         "result": {
             "count": 2,
-            "item": "worldbeyond:cracked_darkstone_slab"
+            "item": "wormwood:cracked_darkstone_slab"
         },
         "tags": [
             "stonecutter"

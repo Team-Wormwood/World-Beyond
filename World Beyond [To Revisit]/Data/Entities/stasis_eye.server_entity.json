@@ -3,7 +3,7 @@
   "format_version": "1.16.100",
   "minecraft:entity": {
     "description": {
-      "identifier": "worldbeyond:stasis_eye",
+      "identifier": "wormwood:stasis_eye",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
@@ -66,8 +66,8 @@
             "run_command": {
               "target": "self",
               "command": [
-                "fill ~5 ~5 ~5 ~-5 ~-5 ~-5 worldbeyond:stasis_chamber -1 replace worldbeyond:stasis_on -1",
-                "fill ~5 ~5 ~5 ~-5 ~-5 ~-5 purpur_block -1 replace worldbeyond:powered_purpur -1",
+                "fill ~5 ~5 ~5 ~-5 ~-5 ~-5 wormwood:stasis_chamber -1 replace wormwood:stasis_on -1",
+                "fill ~5 ~5 ~5 ~-5 ~-5 ~-5 purpur_block -1 replace wormwood:powered_purpur -1",
                 "kill @e[family=dummy, r=12]",
                 "playsound random.glass @p ~ ~ ~ 1 0.75",
                 "playsound mob.zombie.remedy @p ~ ~ ~ 1 2",

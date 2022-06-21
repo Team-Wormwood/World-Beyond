@@ -3,7 +3,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "worldbeyond:frozen_zombie",
+      "identifier": "wormwood:frozen_zombie",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false

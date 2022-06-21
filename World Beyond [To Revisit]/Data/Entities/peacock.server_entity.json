@@ -3,7 +3,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "worldbeyond:peacock",
+      "identifier": "wormwood:peacock",
       // pee cock
       "is_spawnable": true,
       "is_summonable": true,
@@ -61,8 +61,8 @@
         "minecraft:breedable": {
           "require_tame": false,
           "breeds_with": {
-            "mate_type": "worldbeyond:peacock",
-            "baby_type": "worldbeyond:peacock",
+            "mate_type": "wormwood:peacock",
+            "baby_type": "wormwood:peacock",
             "breed_event": {
               "event": "minecraft:entity_born",
               "target": "baby"

@@ -3,14 +3,14 @@
 
 	"minecraft:weighted_random_feature": {
 		"description": {
-			"identifier": "worldbeyond:nether_gold_vein/column/block/selection"
+			"identifier": "wormwood:nether_gold_vein/column/block/selection"
 		},
 
 		"features": [
-			["worldbeyond:nether_gold_vein/column/block/options/blackstone", 105],
-			["worldbeyond:nether_gold_vein/column/block/options/gilded_blackstone", 85],
-			["worldbeyond:nether_gold_vein/column/block/options/raw_gold_block", 7],
-			["worldbeyond:nether_gold_vein/column/block/options/debris", 3]
+			["wormwood:nether_gold_vein/column/block/options/blackstone", 105],
+			["wormwood:nether_gold_vein/column/block/options/gilded_blackstone", 85],
+			["wormwood:nether_gold_vein/column/block/options/raw_gold_block", 7],
+			["wormwood:nether_gold_vein/column/block/options/debris", 3]
 		]
 	}
 }

@@ -2,11 +2,11 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "worldbeyond:bauxite_tiles"
+            "identifier": "wormwood:bauxite_tiles"
         },
         "key": {
             "#": {
-                "item": "worldbeyond:bauxite_bricks"
+                "item": "wormwood:bauxite_bricks"
             }
         },
         "pattern": [
@@ -16,7 +16,7 @@
         "priority": 1,
         "result": {
             "count": 4,
-            "item": "worldbeyond:bauxite_tiles"
+            "item": "wormwood:bauxite_tiles"
         },
         "tags": [
             "crafting_table"

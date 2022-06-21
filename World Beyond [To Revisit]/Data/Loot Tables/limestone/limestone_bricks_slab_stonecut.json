@@ -2,17 +2,17 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "worldbeyond:limestone_bricks_slab_stonecut"
+            "identifier": "wormwood:limestone_bricks_slab_stonecut"
         },
         "ingredients": [
             {
-                "item": "worldbeyond:limestone_bricks"
+                "item": "wormwood:limestone_bricks"
             }
         ],
         "priority": 0,
         "result": {
             "count": 2,
-            "item": "worldbeyond:limestone_bricks_slab"
+            "item": "wormwood:limestone_bricks_slab"
         },
         "tags": [
             "stonecutter"

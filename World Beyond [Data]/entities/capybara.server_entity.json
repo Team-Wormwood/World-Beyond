@@ -2,7 +2,7 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "worldbeyond:capybara",
+            "identifier": "wormwood:capybara",
             "is_spawnable": true,
             "is_summonable": true,
             "is_experimental": false
@@ -38,8 +38,8 @@
                 "minecraft:breedable": {
                     "require_tame": false,
                     "breeds_with": {
-                        "mate_type": "worldbeyond:capybara",
-                        "baby_type": "worldbeyond:capybara"
+                        "mate_type": "wormwood:capybara",
+                        "baby_type": "wormwood:capybara"
                     },
                     "breed_items": "tallgrass"
                 }

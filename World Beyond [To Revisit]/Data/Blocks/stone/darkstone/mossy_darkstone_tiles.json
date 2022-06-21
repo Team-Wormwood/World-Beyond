@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:mossy_darkstone_tiles"
+            "identifier": "wormwood:mossy_darkstone_tiles"
         },
         "components": {
             "minecraft:friction": 0.6,

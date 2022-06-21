@@ -2,7 +2,7 @@
 	"format_version": "1.12.0",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "worldbeyond:stone_spear"
+			"identifier": "wormwood:stone_spear"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,14 +14,14 @@
 		],
 		"key": {
 			"#": {
-				"item": "worldbeyond:long_stick"
+				"item": "wormwood:long_stick"
 			},
 			"X": {
 				"item": "minecraft:stone"
 			}
 		},
 		"result": {
-			"item": "worldbeyond:stone_spear"
+			"item": "wormwood:stone_spear"
 		}
 	}
 }

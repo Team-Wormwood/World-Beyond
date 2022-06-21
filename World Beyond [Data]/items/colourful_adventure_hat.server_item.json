@@ -3,7 +3,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "worldbeyond:colourful_adventure_hat",
+            "identifier": "wormwood:colourful_adventure_hat",
             "category": "equipment"
         },
         "components": {
@@ -31,7 +31,7 @@
             "adventure_hat:equip": {
                 "sequence": [
                     {
-                        "condition": "!query.is_item_name_any('slot.armor.head', 0, 'worldbeyond:adventure_hat', 'worldbeyond:colourful_adventure_hat')",
+                        "condition": "!query.is_item_name_any('slot.armor.head', 0, 'wormwood:adventure_hat', 'wormwood:colourful_adventure_hat')",
                         "run_command": {
                             "command": [
                                 "playsound armor.equip_leather"

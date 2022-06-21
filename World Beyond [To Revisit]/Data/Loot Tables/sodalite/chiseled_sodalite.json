@@ -2,11 +2,11 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "worldbeyond:chiseled_sodalite"
+            "identifier": "wormwood:chiseled_sodalite"
         },
         "key": {
             "#": {
-                "item": "worldbeyond:polished_sodalite_slab"
+                "item": "wormwood:polished_sodalite_slab"
             }
         },
         "pattern": [
@@ -15,7 +15,7 @@
         ],
         "priority": 1,
         "result": {
-            "item": "worldbeyond:chiseled_sodalite"
+            "item": "wormwood:chiseled_sodalite"
         },
         "tags": [
             "crafting_table"

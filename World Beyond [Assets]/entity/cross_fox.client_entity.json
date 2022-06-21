@@ -2,7 +2,7 @@
     "format_version": "1.10.0",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "worldbeyond:cross_fox",
+            "identifier": "wormwood:cross_fox",
             "materials": {
                 "default": "entity_alphatest"
             },
@@ -23,7 +23,7 @@
                 ]
             },
             "particle_effects": {
-                "sleeping": "worldbeyond:sleeping_particles"
+                "sleeping": "wormwood:sleeping_particles"
             },
             "animations": {
                 // Controllers

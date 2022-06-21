@@ -3,7 +3,7 @@
 	"format_version": "1.17.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "worldbeyond:otherworld_crystal_entity",
+			"identifier": "wormwood:otherworld_crystal_entity",
 			"runtime_identifier": {},
 			"is_summonable": true,
 			"is_spawnable": false,
@@ -105,7 +105,7 @@
 			"otherworld_crystal_entity:death": {
 				"run_command": {
 					"command": [
-						"playsound block.worldbeyond:otherworld_crystal_mount.break_crystal @a ~~~",
+						"playsound block.wormwood:otherworld_crystal_mount.break_crystal @a ~~~",
 						"fill ~-50 -64 ~-50 ~50 -64 ~50 minecraft:bedrock"
 					]
 				},

@@ -3,7 +3,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "worldbeyond:blue_terracotta_shinglesfrom_shingles"
+			"identifier": "wormwood:blue_terracotta_shinglesfrom_shingles"
 		},
 		"tags": [
 			"crafting_table"
@@ -15,7 +15,7 @@
 		],
 		"key": {
 			"#": {
-				"item": "worldbeyond:terracotta_shingles"
+				"item": "wormwood:terracotta_shingles"
 			},
 			"x": {
 				"item": "minecraft:dye",
@@ -24,7 +24,7 @@
 		},
 		"result": [
 			{
-				"item": "worldbeyond:blue_terracotta_shingles",
+				"item": "wormwood:blue_terracotta_shingles",
 				"count": 8
 			}
 		]

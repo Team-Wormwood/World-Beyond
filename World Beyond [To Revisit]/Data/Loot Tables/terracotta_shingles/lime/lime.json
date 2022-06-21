@@ -2,7 +2,7 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "worldbeyond:lime_terracotta_shingles"
+    "identifier": "wormwood:lime_terracotta_shingles"
     },
     
     "tags": [ "crafting_table" ],
@@ -18,7 +18,7 @@
       }
     },
     "result": {
-      "item": "worldbeyond:lime_terracotta_shingles",
+      "item": "wormwood:lime_terracotta_shingles",
       "count": 4
     }
   }

@@ -2,21 +2,21 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "worldbeyond:mossy_darkstone_from_moss"
+            "identifier": "wormwood:mossy_darkstone_from_moss"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "worldbeyond:cobbled_darkstone"
+                "item": "wormwood:cobbled_darkstone"
             },
             {
                 "item": "minecraft:moss_block"
             }
         ],
         "result": {
-            "item": "worldbeyond:mossy_cobbled_darkstone"
+            "item": "wormwood:mossy_cobbled_darkstone"
         }
     }
 }

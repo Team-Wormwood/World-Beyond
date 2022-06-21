@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:polished_darkstone"
+            "identifier": "wormwood:polished_darkstone"
         },
         "components": {
             "minecraft:friction": 0.6,

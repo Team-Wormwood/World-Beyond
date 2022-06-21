@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:cracked_limestone"
+            "identifier": "wormwood:cracked_limestone"
         },
         "components": {
             "minecraft:friction": 0.6,

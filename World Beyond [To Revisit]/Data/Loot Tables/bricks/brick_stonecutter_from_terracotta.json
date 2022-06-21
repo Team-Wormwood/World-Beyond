@@ -3,7 +3,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "worldbeyond:stonecutter_bricks_from_terracotta"
+			"identifier": "wormwood:stonecutter_bricks_from_terracotta"
 		},
 		"tags": [
 			"stonecutter"

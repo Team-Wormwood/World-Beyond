@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "worldbeyond:light_gray_brick_slab",
+                    "name": "wormwood:light_gray_brick_slab",
                     "weight": 1,
                     "functions": [
                         {

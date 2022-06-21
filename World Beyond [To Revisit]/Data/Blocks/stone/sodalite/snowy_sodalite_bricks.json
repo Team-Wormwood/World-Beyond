@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:snowy_sodalite_bricks"
+            "identifier": "wormwood:snowy_sodalite_bricks"
         },
         "components": {
             "minecraft:friction": 0.6,

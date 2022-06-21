@@ -3,7 +3,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "worldbeyond:white_bricks"
+			"identifier": "wormwood:white_bricks"
 		},
 		"tags": [
 			"crafting_table"
@@ -24,7 +24,7 @@
 		},
 		"result": [
 			{
-				"item": "worldbeyond:white_bricks",
+				"item": "wormwood:white_bricks",
 				"count": 8
 			}
 		]

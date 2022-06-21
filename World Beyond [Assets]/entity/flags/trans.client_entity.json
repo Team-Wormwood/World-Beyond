@@ -10,7 +10,7 @@
                 "default": "geometry.flags"
             },
             "textures": {
-                "default": "textures/entity/flags/transgender"
+                "default": "textures/blocks/flags/transgender"
             },
             "scripts": {
                 "animate": [

@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:special_table"
+            "identifier": "wormwood:special_table"
         },
         "components": {
             "minecraft:destroy_time": 0.2,

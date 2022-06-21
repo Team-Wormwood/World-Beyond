@@ -2,7 +2,7 @@
   "format_version": "1.16",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "worldbeyond:lime_bricks_slab"
+    "identifier": "wormwood:lime_bricks_slab"
     },
     "tags": [ 
       "crafting_table" 
@@ -13,11 +13,11 @@
     ],
     "key": {
       "#": {
-        "item": "worldbeyond:lime_bricks"
+        "item": "wormwood:lime_bricks"
       }
     },
     "result": {
-      "item": "worldbeyond:lime_brick_slab",
+      "item": "wormwood:lime_brick_slab",
       "count": 6
     }
   }

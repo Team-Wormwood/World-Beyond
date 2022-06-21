@@ -4,7 +4,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "worldbeyond:soul_sconce",
+			"identifier": "wormwood:soul_sconce",
 			"properties": {
 				"sconce:direction": [
 					0,

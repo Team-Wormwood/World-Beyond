@@ -3,7 +3,7 @@
 
 	"minecraft:single_block_feature": {
 		"description": {
-			"identifier": "worldbeyond:nether_gold_vein/column/block/options/debris"
+			"identifier": "wormwood:nether_gold_vein/column/block/options/debris"
 		},
 
 		"places_block": "minecraft:ancient_debris",

@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:small_paper_lantern"
+            "identifier": "wormwood:small_paper_lantern"
         },
         "components": {
             "tag:wood": {},
@@ -53,7 +53,7 @@
             "lanternBlock:block_placed": {
                 "run_command": {
                     "command": [
-                        "summon worldbeyond:default.small_paper_lantern_entity ~ ~ ~"
+                        "summon wormwood:default.small_paper_lantern_entity ~ ~ ~"
                     ]
                 }
             },

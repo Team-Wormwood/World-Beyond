@@ -3,7 +3,7 @@
 	"format_version": "1.17.40",
 	"minecraft:item": {
 		"description": {
-			"identifier": "worldbeyond:otherworld_crystal_mount_item",
+			"identifier": "wormwood:otherworld_crystal_mount_item",
 			"category": "construction"
 		},
 		"components": {
@@ -11,11 +11,11 @@
 				"texture": "otherworld_crystal_mount"
 			},
 			"minecraft:display_name": {
-				"value": "item.worldbeyond:otherworld_crystal_mount.name"
+				"value": "item.wormwood:otherworld_crystal_mount.name"
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:block_placer": {
-				"block": "worldbeyond:otherworld_crystal_mount"
+				"block": "wormwood:otherworld_crystal_mount"
 			}
 		}
 	}

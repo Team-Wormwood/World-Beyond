@@ -3,7 +3,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "worldbeyond:peacock_feather",
+            "identifier": "wormwood:peacock_feather",
             "category": "items"
         },
         "components": {

@@ -2,7 +2,7 @@
   "format_version": "1.13.0",
   "minecraft:geode_feature": {
     "description": {
-      "identifier": "worldbeyond:crimson_forest/ceiling/crimson_tumour_geode_feature"
+      "identifier": "wormwood:crimson_forest/ceiling/crimson_tumour_geode_feature"
     },
     "filler": "minecraft:shroomlight",
     "inner_layer": "minecraft:shroomlight",

@@ -3,9 +3,9 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "worldbeyond:stasis_chamber",
+			"identifier": "wormwood:stasis_chamber",
 			"properties": {
-				"worldbeyond:stasis_charge": [
+				"wormwood:stasis_charge": [
 					0,
 					1
 				]
@@ -37,13 +37,13 @@
 					{
 						"run_command": {
 							"target": "self",
-							"command": "summon worldbeyond:stasis_test ~ ~-1 ~"
+							"command": "summon wormwood:stasis_test ~ ~-1 ~"
 						}
 					},
 					{
 						"run_command": {
 							"target": "self",
-							"command": "tp @e[type=worldbeyond:stasis_test, r=2] ~ ~ ~"
+							"command": "tp @e[type=wormwood:stasis_test, r=2] ~ ~ ~"
 						}
 					},
 					{

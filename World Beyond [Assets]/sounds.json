@@ -2,7 +2,7 @@
 	"entity_sounds": {
 		"defaults": {},
 		"entities": {
-			"worldbeyond:coyote": {
+			"wormwood:coyote": {
 				"events": {
 					"ambient": "mob.wolf.bark",
 					"death": "mob.wolf.death",
@@ -29,7 +29,7 @@
 				],
 				"volume": 1.0
 			},
-			"worldbeyond:cross_fox": {
+			"wormwood:cross_fox": {
 				"events": {
 					"ambient": "mob.fox.ambient",
 					"attack": "mob.fox.bite",
@@ -51,7 +51,7 @@
 				],
 				"volume": 1.0
 			},
-			"worldbeyond:tiger": {
+			"wormwood:tiger": {
 				"events": {
 					"ambient": {
 						"pitch": 0.6,
@@ -76,7 +76,7 @@
 				],
 				"volume": 1.0
 			},
-			"worldbeyond:toucan": {
+			"wormwood:toucan": {
 				"events": {
 					"ambient": {
 						"pitch": 0.75,
@@ -100,7 +100,7 @@
 				],
 				"volume": 1.0
 			},
-			"worldbeyond:jungle_zombie": {
+			"wormwood:jungle_zombie": {
 				"volume": 0.8,
 				"pitch": [
 					0.8,
@@ -117,7 +117,7 @@
 					}
 				}
 			},
-			"worldbeyond:frozen_zombie": {
+			"wormwood:frozen_zombie": {
 				"volume": 1.2,
 				"pitch": [
 					0.8,
@@ -134,14 +134,14 @@
 					}
 				}
 			},
-			"worldbeyond:otherworld_crystal_entity": {
+			"wormwood:otherworld_crystal_entity": {
 				"events": {
 					"ambient": {
-						"sound": "block.worldbeyond:otherworld_crystal_mount.crystal_ambient",
+						"sound": "block.wormwood:otherworld_crystal_mount.crystal_ambient",
 						"volume": 0.75
 					},
 					"hurt": {
-						"sound": "block.worldbeyond:otherworld_crystal_mount.hurt_crystal",
+						"sound": "block.wormwood:otherworld_crystal_mount.hurt_crystal",
 						"pitch": [
 							0.9,
 							1.1

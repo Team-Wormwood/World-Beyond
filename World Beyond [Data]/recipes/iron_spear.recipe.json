@@ -2,7 +2,7 @@
 	"format_version": "1.12.0",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "worldbeyond:iron_spear"
+			"identifier": "wormwood:iron_spear"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,14 +14,14 @@
 		],
 		"key": {
 			"#": {
-				"item": "worldbeyond:long_stick"
+				"item": "wormwood:long_stick"
 			},
 			"X": {
 				"item": "minecraft:iron_ingot"
 			}
 		},
 		"result": {
-			"item": "worldbeyond:iron_spear"
+			"item": "wormwood:iron_spear"
 		}
 	}
 }

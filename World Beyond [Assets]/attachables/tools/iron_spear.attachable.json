@@ -2,7 +2,7 @@
     "format_version": "1.16.0",
     "minecraft:attachable": {
         "description": {
-            "identifier": "worldbeyond:iron_spear",
+            "identifier": "wormwood:iron_spear",
             "materials": {
                 "default": "entity_alphatest",
                 "enchanted": "entity_alphatest_glint"
@@ -13,14 +13,6 @@
             },
             "geometry": {
                 "default": "geometry.spear"
-            },
-            "scripts": {
-                "animate": [
-                    "first_person_weild"
-                ]
-            },
-            "animations": {
-                "first_person_weild": "animation.attachable.spear.first_person_weild"
             },
             "render_controllers": [
                 "controller.render.item_default"

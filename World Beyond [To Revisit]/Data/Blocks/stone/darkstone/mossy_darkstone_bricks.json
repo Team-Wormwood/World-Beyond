@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:mossy_darkstone_bricks"
+            "identifier": "wormwood:mossy_darkstone_bricks"
         },
         "components": {
             "minecraft:friction": 0.6,

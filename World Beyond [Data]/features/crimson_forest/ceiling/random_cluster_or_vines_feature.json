@@ -2,11 +2,11 @@
   "format_version": "1.13.0",
   "minecraft:weighted_random_feature": {
     "description": {
-      "identifier": "worldbeyond:crimson_forest/ceiling/random_cluster_or_vines_feature"
+      "identifier": "wormwood:crimson_forest/ceiling/random_cluster_or_vines_feature"
     },
     "features": [
-      [ "worldbeyond:crimson_forest/ceiling/vein_weeping_vines_patch_feature", 3 ],
-      [ "worldbeyond:crimson_forest/ceiling/crimson_tumour_aggrigate_feature", 1 ]
+      [ "wormwood:crimson_forest/ceiling/vein_weeping_vines_patch_feature", 3 ],
+      [ "wormwood:crimson_forest/ceiling/crimson_tumour_aggrigate_feature", 1 ]
     ]
   }
 }

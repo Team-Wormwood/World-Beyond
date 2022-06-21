@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:block": {
     "description": {
-      "identifier": "worldbeyond:yellow_brick_slab",
+      "identifier": "wormwood:yellow_brick_slab",
       "properties": {
         "shingle:slabType": [ "down", "up", "double" ]
       }

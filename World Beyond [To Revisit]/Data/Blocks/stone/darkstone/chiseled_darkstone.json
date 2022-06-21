@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:chiseled_darkstone"
+            "identifier": "wormwood:chiseled_darkstone"
         },
         "components": {
             "minecraft:friction": 0.6,

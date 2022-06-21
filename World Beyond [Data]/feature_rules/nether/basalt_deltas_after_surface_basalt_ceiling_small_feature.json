@@ -2,8 +2,8 @@
   "format_version": "1.16.0",
   "minecraft:feature_rules": {
     "description": {
-      "identifier": "worldbeyond:basalt_deltas_after_surface_basalt_ceiling_small_feature",
-      "places_feature": "worldbeyond:basalt_deltas/ceiling/basalt_ceiling_snap_to_ceiling_small_feature"
+      "identifier": "wormwood:basalt_deltas_after_surface_basalt_ceiling_small_feature",
+      "places_feature": "wormwood:basalt_deltas/ceiling/basalt_ceiling_snap_to_ceiling_small_feature"
     },
     "conditions": {
       "placement_pass": "after_surface_pass",

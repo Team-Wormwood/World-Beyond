@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:mossy_cobbled_darkstone"
+            "identifier": "wormwood:mossy_cobbled_darkstone"
         },
         "components": {
             "minecraft:destroy_time": 2.0,

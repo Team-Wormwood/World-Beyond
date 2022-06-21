@@ -2,11 +2,11 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "worldbeyond:polished_sodalite"
+            "identifier": "wormwood:polished_sodalite"
         },
         "key": {
             "#": {
-                "item": "worldbeyond:sodalite"
+                "item": "wormwood:sodalite"
             }
         },
         "pattern": [
@@ -16,7 +16,7 @@
         "priority": 1,
         "result": {
             "count": 4,
-            "item": "worldbeyond:polished_sodalite"
+            "item": "wormwood:polished_sodalite"
         },
         "tags": [
             "crafting_table"

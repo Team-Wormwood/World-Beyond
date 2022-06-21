@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "worldbeyond:stasis_eye_visual",
+			"identifier": "wormwood:stasis_eye_visual",
 			"materials": {
 				"default": "eye_of_ender_signal"
 			},

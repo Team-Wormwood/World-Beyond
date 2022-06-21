@@ -2,7 +2,7 @@
   "format_version": "1.12",
   "minecraft:recipe_furnace": {
     "description": {
-    "identifier": "worldbeyond:furnace_netherite_hoe"
+    "identifier": "wormwood:furnace_netherite_hoe"
     },
 
     

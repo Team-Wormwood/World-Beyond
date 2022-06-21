@@ -1,0 +1,49 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:reinforced_bucket",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.items"
+            },
+            "minecraft:icon": {
+                "texture": "reinforced_bucket"
+            },
+            // "minecraft:entity_placer": {
+            //     "entity": "wormwood:sculk_tester",
+            //     "use_on": [
+            //         "minecraft:sculk_vein"
+            //     ],
+            //     "dispense_on": [
+            //         "minecraft:sculk_vein"
+            //     ]
+            // },
+            "minecraft:use_on": {
+                "blocks": [
+                    "minecraft:sculk_vein"
+                ]
+            },
+            "minecraft:on_use_on": {
+                "on_use_on": {
+                    "event": "reinforced_bucket:collect.sculk"
+                }
+            }
+        },
+        "events": {
+            "reinforced_bucket:collect.sculk": {
+                // Perhaps we may devise a more diverse and dynamic system in the future?
+                "sequence": [
+                    {
+                        "swing": {},
+                        "transform_item": {
+                            "transform": "wormwood:sculk_bucket"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

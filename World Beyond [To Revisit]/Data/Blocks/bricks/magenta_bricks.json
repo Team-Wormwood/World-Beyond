@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "worldbeyond:magenta_bricks"
+			"identifier": "wormwood:magenta_bricks"
 		},
 		"components": {
 			"tag:stone":{},

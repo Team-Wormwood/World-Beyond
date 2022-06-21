@@ -3,7 +3,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "worldbeyond:light_blue_bricks"
+			"identifier": "wormwood:light_blue_bricks"
 		},
 		"tags": [
 			"crafting_table"
@@ -24,7 +24,7 @@
 		},
 		"result": [
 			{
-				"item": "worldbeyond:light_blue_bricks",
+				"item": "wormwood:light_blue_bricks",
 				"count": 8
 			}
 		]

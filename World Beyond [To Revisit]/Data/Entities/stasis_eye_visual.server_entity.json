@@ -3,7 +3,7 @@
   "format_version": "1.16.100",
   "minecraft:entity": {
     "description": {
-      "identifier": "worldbeyond:stasis_eye_visual",
+      "identifier": "wormwood:stasis_eye_visual",
       "runtime_identifier": "minecraft:arrow",
       "is_spawnable": false,
       "is_summonable": true,

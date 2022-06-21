@@ -2,9 +2,9 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:cobbled_sodalite_slab",
+            "identifier": "wormwood:cobbled_sodalite_slab",
             "properties": {
-                "worldbeyond:slab_type": [
+                "wormwood:slab_type": [
                     "down",
                     "up",
                     "double"
@@ -40,7 +40,7 @@
                 "sequence": [
                     {
                         "set_block_property": {
-                            "worldbeyond:slab_type": "'double'"
+                            "wormwood:slab_type": "'double'"
                         },
                         "decrement_stack": {}
                     },
@@ -55,18 +55,18 @@
             },
             "down": {
                 "set_block_property": {
-                    "worldbeyond:slab_type": "'down'"
+                    "wormwood:slab_type": "'down'"
                 }
             },
             "up": {
                 "set_block_property": {
-                    "worldbeyond:slab_type": "'up'"
+                    "wormwood:slab_type": "'up'"
                 }
             }
         },
         "permutations": [
             {
-                "condition": "query.block_property('worldbeyond:slab_type') == 'double'",
+                "condition": "query.block_property('wormwood:slab_type') == 'double'",
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/slabs/cobbled_sodalite_slab_two.json",
                     "minecraft:block_light_absorption": 1,
@@ -98,12 +98,12 @@
                 }
             },
             {
-                "condition": "query.block_property('worldbeyond:slab_type') == 'down'",
+                "condition": "query.block_property('wormwood:slab_type') == 'down'",
                 "components": {
                     "minecraft:geometry": "geometry.custom_slab_lower",
                     "minecraft:block_light_absorption": 0,
                     "minecraft:on_interact": {
-                        "condition": "query.get_equipped_item_name =='cobbled_sodalite_slab' && query.block_property('worldbeyond:slab_type') != 'double' && q.block_face == 1",
+                        "condition": "query.get_equipped_item_name =='cobbled_sodalite_slab' && query.block_property('wormwood:slab_type') != 'double' && q.block_face == 1",
                         "event": "double"
                     },
                     "minecraft:entity_collision": {
@@ -133,12 +133,12 @@
                 }
             },
             {
-                "condition": "query.block_property('worldbeyond:slab_type') == 'up'",
+                "condition": "query.block_property('wormwood:slab_type') == 'up'",
                 "components": {
                     "minecraft:geometry": "geometry.custom_slab_upper",
                     "minecraft:block_light_absorption": 0,
                     "minecraft:on_interact": {
-                        "condition": "query.get_equipped_item_name =='cobbled_sodalite_slab' && query.block_property('worldbeyond:slab_type') != 'double' && q.block_face == 0",
+                        "condition": "query.get_equipped_item_name =='cobbled_sodalite_slab' && query.block_property('wormwood:slab_type') != 'double' && q.block_face == 0",
                         "event": "double"
                     },
                     "minecraft:entity_collision": {

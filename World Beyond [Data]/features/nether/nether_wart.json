@@ -2,7 +2,7 @@
 	"format_version": "1.13",
 	"minecraft:single_block_feature": {
 		"description": {
-			"identifier": "worldbeyond:nether/nether_wart"
+			"identifier": "wormwood:nether/nether_wart"
 		},
 		"places_block": "minecraft:nether_wart_block",
 		"enforce_placement_rules": false,

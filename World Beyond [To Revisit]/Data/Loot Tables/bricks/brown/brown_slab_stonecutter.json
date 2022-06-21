@@ -3,7 +3,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "worldbeyond:stonecutter_brown_brick_slab"
+			"identifier": "wormwood:stonecutter_brown_brick_slab"
 		},
 		"tags": [
 			"stonecutter"
@@ -11,11 +11,11 @@
 		"priority": 2,
 		"ingredients": [
 			{
-				"item": "worldbeyond:brown_bricks"
+				"item": "wormwood:brown_bricks"
 			}
 		],
 		"result": {
-			"item": "worldbeyond:brown_brick_slab",
+			"item": "wormwood:brown_brick_slab",
 			"count": 2
 		}
 	}

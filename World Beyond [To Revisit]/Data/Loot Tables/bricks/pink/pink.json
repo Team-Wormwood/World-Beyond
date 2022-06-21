@@ -3,7 +3,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "worldbeyond:pink_bricks"
+			"identifier": "wormwood:pink_bricks"
 		},
 		"tags": [
 			"crafting_table"
@@ -24,7 +24,7 @@
 		},
 		"result": [
 			{
-				"item": "worldbeyond:pink_bricks",
+				"item": "wormwood:pink_bricks",
 				"count": 8
 			}
 		]

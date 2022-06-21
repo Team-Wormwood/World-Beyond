@@ -2,7 +2,7 @@
   "format_version": "1.16",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "worldbeyond:purple_terracotta_shingles_slab"
+    "identifier": "wormwood:purple_terracotta_shingles_slab"
     },
     "tags": [ 
       "crafting_table" 
@@ -13,11 +13,11 @@
     ],
     "key": {
       "#": {
-        "item": "worldbeyond:purple_terracotta_shingles"
+        "item": "wormwood:purple_terracotta_shingles"
       }
     },
     "result": {
-      "item": "worldbeyond:purple_terracotta_shingle_slab",
+      "item": "wormwood:purple_terracotta_shingle_slab",
       "count": 6
     }
   }

@@ -3,7 +3,7 @@
     "format_version": "1.17.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "worldbeyond:small_paper_lantern_entity",
+            "identifier": "wormwood:small_paper_lantern_entity",
             "is_spawnable": false,
             "is_summonable": true,
             "is_experimental": false,
@@ -17,7 +17,7 @@
             }
         },
         "component_groups": {
-            "worldbeyond:instant_despawn": {
+            "wormwood:instant_despawn": {
                 "minecraft:instant_despawn": {}
             }
         },
@@ -50,7 +50,7 @@
             "minecraft:inside_block_notifier": {
                 "block_list": [
                     {
-                        "block": "worldbeyond:small_paper_lantern",
+                        "block": "wormwood:small_paper_lantern",
                         "exited_block_event": {
                             "event": "lantern:despawn"
                         }
@@ -143,12 +143,12 @@
             "lantern:despawn": {
                 "run_command": {
                     "command": [
-                        "particle worldbeyond:custom_block_particle.lantern ~ ~ ~"
+                        "particle wormwood:custom_block_particle.lantern ~ ~ ~"
                     ]
                 },
                 "add": {
                     "component_groups": [
-                        "worldbeyond:instant_despawn"
+                        "wormwood:instant_despawn"
                     ]
                 }
             }

@@ -2,7 +2,7 @@
     "format_version": "1.16.0",
     "minecraft:attachable": {
         "description": {
-            "identifier": "worldbeyond:shulker_shell",
+            "identifier": "wormwood:shulker_shell",
             "materials": {
                 "default": "entity_alphatest",
                 "enchanted": "entity_alphatest_glint"
@@ -13,6 +13,9 @@
             },
             "geometry": {
                 "default": "geometry.shulker_shell"
+            },
+            "scripts": {
+                "scale": "context.is_first_person ? 0.0 : 1.0"
             },
             "render_controllers": [
                 "controller.render.item_default"

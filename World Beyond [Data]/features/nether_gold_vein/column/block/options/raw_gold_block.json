@@ -3,7 +3,7 @@
 
 	"minecraft:single_block_feature": {
 		"description": {
-			"identifier": "worldbeyond:nether_gold_vein/column/block/options/raw_gold_block"
+			"identifier": "wormwood:nether_gold_vein/column/block/options/raw_gold_block"
 		},
 
 		"places_block": "minecraft:raw_gold_block",

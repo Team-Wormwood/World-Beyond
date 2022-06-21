@@ -2,11 +2,11 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "worldbeyond:polished_darkstone"
+            "identifier": "wormwood:polished_darkstone"
         },
         "key": {
             "#": {
-                "item": "worldbeyond:darkstone"
+                "item": "wormwood:darkstone"
             }
         },
         "pattern": [
@@ -16,7 +16,7 @@
         "priority": 1,
         "result": {
             "count": 4,
-            "item": "worldbeyond:polished_darkstone"
+            "item": "wormwood:polished_darkstone"
         },
         "tags": [
             "crafting_table"

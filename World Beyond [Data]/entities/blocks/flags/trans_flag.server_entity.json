@@ -17,20 +17,20 @@
             }
         },
         "component_groups": {
-            "worldbeyond:instant_despawn": {
+            "wormwood:instant_despawn": {
                 "minecraft:instant_despawn": {}
             },
-            "worldbeyond:flag.weatherClear": {
+            "wormwood:flag.weatherClear": {
                 "minecraft:mark_variant": {
                     "value": 0
                 }
             },
-            "worldbeyond:flag.weatherRain": {
+            "wormwood:flag.weatherRain": {
                 "minecraft:mark_variant": {
                     "value": 1
                 }
             },
-            "worldbeyond:flag.weatherThunder": {
+            "wormwood:flag.weatherThunder": {
                 "minecraft:mark_variant": {
                     "value": 2
                 }
@@ -128,7 +128,7 @@
                         },
                         "add": {
                             "component_groups": [
-                                "worldbeyond:flag.weatherClear"
+                                "wormwood:flag.weatherClear"
                             ]
                         }
                     },
@@ -141,7 +141,7 @@
                         },
                         "add": {
                             "component_groups": [
-                                "worldbeyond:flag.weatherRain"
+                                "wormwood:flag.weatherRain"
                             ]
                         }
                     },
@@ -154,7 +154,7 @@
                         },
                         "add": {
                             "component_groups": [
-                                "worldbeyond:flag.weatherThunder"
+                                "wormwood:flag.weatherThunder"
                             ]
                         }
                     },
@@ -244,51 +244,51 @@
             "flag:despawn": {
                 "run_command": {
                     "command": [
-                        "particle worldbeyond:custom_block_particle ~ ~ ~"
+                        "particle wormwood:custom_block_particle ~ ~ ~"
                     ]
                 },
                 "add": {
                     "component_groups": [
-                        "worldbeyond:instant_despawn"
+                        "wormwood:instant_despawn"
                     ]
                 }
             },
             "flag:weather_clear": {
                 "add": {
                     "component_groups": [
-                        "worldbeyond:flag.weatherClear"
+                        "wormwood:flag.weatherClear"
                     ]
                 },
                 "remove": {
                     "component_groups": [
-                        "worldbeyond:flag.weatherRain",
-                        "worldbeyond:flag.weatherThunder"
+                        "wormwood:flag.weatherRain",
+                        "wormwood:flag.weatherThunder"
                     ]
                 }
             },
             "flag:weather_rain": {
                 "add": {
                     "component_groups": [
-                        "worldbeyond:flag.weatherRain"
+                        "wormwood:flag.weatherRain"
                     ]
                 },
                 "remove": {
                     "component_groups": [
-                        "worldbeyond:flag.weatherClear",
-                        "worldbeyond:flag.weatherThunder"
+                        "wormwood:flag.weatherClear",
+                        "wormwood:flag.weatherThunder"
                     ]
                 }
             },
             "flag:weather_thunder": {
                 "add": {
                     "component_groups": [
-                        "worldbeyond:flag.weatherThunder"
+                        "wormwood:flag.weatherThunder"
                     ]
                 },
                 "remove": {
                     "component_groups": [
-                        "worldbeyond:flag.weatherClear",
-                        "worldbeyond:flag.weatherRain"
+                        "wormwood:flag.weatherClear",
+                        "wormwood:flag.weatherRain"
                     ]
                 }
             }

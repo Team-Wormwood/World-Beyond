@@ -2,7 +2,7 @@
   "format_version": "1.16",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "worldbeyond:cyan_bricks_slab"
+    "identifier": "wormwood:cyan_bricks_slab"
     },
     "tags": [ 
       "crafting_table" 
@@ -13,11 +13,11 @@
     ],
     "key": {
       "#": {
-        "item": "worldbeyond:cyan_bricks"
+        "item": "wormwood:cyan_bricks"
       }
     },
     "result": {
-      "item": "worldbeyond:cyan_brick_slab",
+      "item": "wormwood:cyan_brick_slab",
       "count": 6
     }
   }

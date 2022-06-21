@@ -2,10 +2,10 @@
     "format_version": "1.12.0",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "worldbeyond:cracked_sodalite_furnace"
+            "identifier": "wormwood:cracked_sodalite_furnace"
         },
-        "input": "worldbeyond:sodalite_bricks",
-        "output": "worldbeyond:cracked_sodalite",
+        "input": "wormwood:sodalite_bricks",
+        "output": "wormwood:cracked_sodalite",
         "tags": [
             "furnace"
         ]

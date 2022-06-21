@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:chiseled_sodalite"
+            "identifier": "wormwood:chiseled_sodalite"
         },
         "components": {
             "minecraft:friction": 0.6,

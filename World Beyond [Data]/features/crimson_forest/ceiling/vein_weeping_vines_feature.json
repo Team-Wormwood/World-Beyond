@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:growing_plant_feature": {
     "description": {
-      "identifier": "worldbeyond:crimson_forest/ceiling/vein_weeping_vines_feature"
+      "identifier": "wormwood:crimson_forest/ceiling/vein_weeping_vines_feature"
     },
     "height_distribution":  [
       [{"range_min": 1, "range_max": 3}, 4],

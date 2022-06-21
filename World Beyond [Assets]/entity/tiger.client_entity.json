@@ -2,7 +2,7 @@
     "format_version": "1.10.0",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "worldbeyond:tiger",
+            "identifier": "wormwood:tiger",
             "materials": {
                 "default": "entity_alphatest"
             },
@@ -21,7 +21,7 @@
                 ]
             },
             "particle_effects": {
-                "sleeping": "worldbeyond:sleeping_particles"
+                "sleeping": "wormwood:sleeping_particles"
             },
             "animations": {
                 "walk": "animation.tiger.walk",

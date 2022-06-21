@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "worldbeyond:red_bricks"
+			"identifier": "wormwood:red_bricks"
 		},
 		"components": {
 			"tag:stone":{},

@@ -2,17 +2,17 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "worldbeyond:mossy_cobbled_darkstone_slab_stonecut"
+            "identifier": "wormwood:mossy_cobbled_darkstone_slab_stonecut"
         },
         "ingredients": [
             {
-                "item": "worldbeyond:mossy_cobbled_darkstone"
+                "item": "wormwood:mossy_cobbled_darkstone"
             }
         ],
         "priority": 0,
         "result": {
             "count": 2,
-            "item": "worldbeyond:mossy_cobbled_darkstone_slab"
+            "item": "wormwood:mossy_cobbled_darkstone_slab"
         },
         "tags": [
             "stonecutter"

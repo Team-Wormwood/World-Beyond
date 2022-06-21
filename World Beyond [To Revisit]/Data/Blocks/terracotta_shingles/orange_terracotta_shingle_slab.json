@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:block": {
     "description": {
-      "identifier": "worldbeyond:orange_terracotta_shingle_slab",
+      "identifier": "wormwood:orange_terracotta_shingle_slab",
       "properties": {
         "shingle:slabType": [ "down", "up", "double" ]
       }

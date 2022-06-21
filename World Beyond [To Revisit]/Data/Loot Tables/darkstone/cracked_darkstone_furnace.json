@@ -2,10 +2,10 @@
     "format_version": "1.12.0",
     "minecraft:recipe_furnace": {
         "description": {
-            "identifier": "worldbeyond:cracked_darkstone_furnace"
+            "identifier": "wormwood:cracked_darkstone_furnace"
         },
-        "input": "worldbeyond:darkstone_bricks",
-        "output": "worldbeyond:cracked_darkstone",
+        "input": "wormwood:darkstone_bricks",
+        "output": "wormwood:cracked_darkstone",
         "tags": [
             "furnace"
         ]

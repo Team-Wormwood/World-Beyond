@@ -3,7 +3,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "worldbeyond:stonecutter_purple_terracotta_shingle_slab"
+			"identifier": "wormwood:stonecutter_purple_terracotta_shingle_slab"
 		},
 		"tags": [
 			"stonecutter"
@@ -11,11 +11,11 @@
 		"priority": 2,
 		"ingredients": [
 			{
-				"item": "worldbeyond:purple_terracotta_shingles"
+				"item": "wormwood:purple_terracotta_shingles"
 			}
 		],
 		"result": {
-			"item": "worldbeyond:purple_terracotta_shingle_slab",
+			"item": "wormwood:purple_terracotta_shingle_slab",
 			"count": 2
 		}
 	}

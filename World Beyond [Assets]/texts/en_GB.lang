@@ -7,61 +7,61 @@ pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) 
 
 ## Items ##
 ### --------- ###
-item.spawn_egg.entity.worldbeyond:capybara.name=Spawn Capybara
-item.spawn_egg.entity.worldbeyond:coyote.name=Spawn Coyote
-item.spawn_egg.entity.worldbeyond:cross_fox.name=Spawn Cross Fox
-item.spawn_egg.entity.worldbeyond:grey_wolf.name=Spawn Grey Wolf
-item.spawn_egg.entity.worldbeyond:tiger.name=Spawn Tiger
-item.spawn_egg.entity.worldbeyond:toucan.name=Spawn Toucan
-item.spawn_egg.entity.worldbeyond:peacock.name=Spawn Peacock
-item.spawn_egg.entity.worldbeyond:jungle_zombie.name=Spawn Verdant
-item.spawn_egg.entity.worldbeyond:frozen_zombie.name=Spawn Frostbitten
+item.spawn_egg.entity.wormwood:capybara.name=Spawn Capybara
+item.spawn_egg.entity.wormwood:coyote.name=Spawn Coyote
+item.spawn_egg.entity.wormwood:cross_fox.name=Spawn Cross Fox
+item.spawn_egg.entity.wormwood:grey_wolf.name=Spawn Grey Wolf
+item.spawn_egg.entity.wormwood:tiger.name=Spawn Tiger
+item.spawn_egg.entity.wormwood:toucan.name=Spawn Toucan
+item.spawn_egg.entity.wormwood:peacock.name=Spawn Peacock
+item.spawn_egg.entity.wormwood:jungle_zombie.name=Spawn Verdant
+item.spawn_egg.entity.wormwood:frozen_zombie.name=Spawn Frostbitten
 ### --------- ###
-item.worldbeyond:boar_tusk=Boar Tusk
-item.worldbeyond:colourful_feather=Colorful Feather
-item.worldbeyond:colourful_adventure_hat=§dColorful Hat of the Adventurer§r
+item.wormwood:boar_tusk=Boar Tusk
+item.wormwood:colourful_feather=Colorful Feather
+item.wormwood:colourful_adventure_hat=§dColorful Hat of the Adventurer§r
 item.worldbeyond_diamond:netherite_ingot=Diamond
-item.worldbeyond:adventure_hat=§6Hat of the Adventurer§r
+item.wormwood:adventure_hat=§6Hat of the Adventurer§r
 item.worldbeyond_iron:netherite_ingot=Iron Ingot
-item.worldbeyond:iron_spear=Iron Spear
-item.worldbeyond:long_stick=Long Stick
-item.worldbeyond:enby_flag_item=Non-Binary Flag
-item.worldbeyond:otherworld_crystal.name=§bOtherworld Crystal§r
-item.worldbeyond:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
-item.worldbeyond:peacock_feather=Peacock Feather
-item.worldbeyond:ruby=Ruby
-item.worldbeyond:shulker_shell=Shulker Shell
-item.worldbeyond:solar_medallion.name=§gSolar Medallion§r
-item.worldbeyond:stone_spear=Stone Spear
-item.worldbeyond:tiger_claws=Tiger Claws
-item.worldbeyond:trans_flag_item=Transgender Flag
-item.worldbeyond:tiger_claw_spear=§6Tiger Claw Spear§r
-item.worldbeyond:wooden_spear=Wooden Spear
+item.wormwood:iron_spear=Iron Spear
+item.wormwood:long_stick=Long Stick
+item.wormwood:enby_flag_item=Non-Binary Flag
+item.wormwood:otherworld_crystal.name=§bOtherworld Crystal§r
+item.wormwood:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
+item.wormwood:peacock_feather=Peacock Feather
+item.wormwood:ruby=Ruby
+item.wormwood:shulker_shell=Shulker Shell
+item.wormwood:solar_medallion.name=§gSolar Medallion§r
+item.wormwood:stone_spear=Stone Spear
+item.wormwood:tiger_claws=Tiger Claws
+item.wormwood:trans_flag_item=Transgender Flag
+item.wormwood:tiger_claw_spear=§6Tiger Claw Spear§r
+item.wormwood:wooden_spear=Wooden Spear
 ### --------- ###
 item.shulker_shell.name=Shell Fragment
 
 ## Entities ##
-entity.worldbeyond:coyote.name=Coyote
-entity.worldbeyond:cross_fox.name=Cross Fox
-entity.worldbeyond:grey_wolf.name=Grey Wolf
-entity.worldbeyond:tiger.name=Tiger
-entity.worldbeyond:toucan.name=Toucan
-entity.worldbeyond:peacock.name=Peacock
-entity.worldbeyond:jungle_zombie.name=Verdant
-entity.worldbeyond:frozen_zombie.name=Frostbitten
-entity.worldbeyond:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
+entity.wormwood:coyote.name=Coyote
+entity.wormwood:cross_fox.name=Cross Fox
+entity.wormwood:grey_wolf.name=Grey Wolf
+entity.wormwood:tiger.name=Tiger
+entity.wormwood:toucan.name=Toucan
+entity.wormwood:peacock.name=Peacock
+entity.wormwood:jungle_zombie.name=Verdant
+entity.wormwood:frozen_zombie.name=Frostbitten
+entity.wormwood:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
 
 ## Tile Entities ##
-entity.worldbeyond:enby_flag_entity.name=Non-Binary Flag
-entity.worldbeyond:trans_flag_entity.name=Transgender Flag
+entity.wormwood:enby_flag_entity.name=Non-Binary Flag
+entity.wormwood:trans_flag_entity.name=Transgender Flag
 
 ## Tiles ##
-tile.worldbeyond:carved_dark_oak_log.name=Carved Dark Oak Log
-tile.worldbeyond:large_stonebrick.name=Large Stone Bricks
-tile.worldbeyond:large_stonebrick_mossy.name=Mossy Large Stone Bricks
-tile.worldbeyond:large_stonebrick_cracked.name=Cracked Large Stone Bricks
-tile.worldbeyond:enby_flag.name=Non-Binary Flag
-tile.worldbeyond:trans_flag.name=Transgender Flag
+tile.wormwood:carved_dark_oak_log.name=Carved Dark Oak Log
+tile.wormwood:large_stonebrick.name=Large Stone Bricks
+tile.wormwood:large_stonebrick_mossy.name=Mossy Large Stone Bricks
+tile.wormwood:large_stonebrick_cracked.name=Cracked Large Stone Bricks
+tile.wormwood:enby_flag.name=Non-Binary Flag
+tile.wormwood:trans_flag.name=Transgender Flag
 
 ## Interactions ##
 action.interact.bribe=Bribe

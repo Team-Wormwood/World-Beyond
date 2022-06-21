@@ -10,7 +10,7 @@
                 "default": "geometry.flags"
             },
             "textures": {
-                "default": "textures/entity/flags/non_binary"
+                "default": "textures/blocks/flags/non_binary"
             },
             "scripts": {
                 "animate": [

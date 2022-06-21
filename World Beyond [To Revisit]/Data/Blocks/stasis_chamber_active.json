@@ -3,7 +3,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "worldbeyond:stasis_on"
+			"identifier": "wormwood:stasis_on"
 		},
 		"components": {
 			"minecraft:destroy_time": 340282346638528859811704183484516925440.0,
@@ -43,14 +43,14 @@
 						"tickingarea remove_all",
 						"tickingarea add ~ ~ ~ ~ ~ ~",
 						"event entity @e[rm=2] stasis:updateAreas",
-						"tp @e[type=worldbeyond:stasis_eye_visual, r=2] ~ ~ ~"
+						"tp @e[type=wormwood:stasis_eye_visual, r=2] ~ ~ ~"
 					]
 				}
 			},
 			"stasis:charge": {
 				"run_command": {
 					"target": "self",
-					"command": "tp @e[type=worldbeyond:stasis_eye_visual, r=2] ~ ~ ~"
+					"command": "tp @e[type=wormwood:stasis_eye_visual, r=2] ~ ~ ~"
 				}
 			}
 		}

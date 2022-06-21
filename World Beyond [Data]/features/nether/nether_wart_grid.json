@@ -2,9 +2,9 @@
 	"format_version": "1.13.0",
 	"minecraft:scatter_feature": {
 		"description": {
-			"identifier": "worldbeyond:nether/nether_wart_grid"
+			"identifier": "wormwood:nether/nether_wart_grid"
 		},
-		"places_feature": "worldbeyond:nether/nether_wart_scatter",
+		"places_feature": "wormwood:nether/nether_wart_scatter",
 		"iterations": "t.big_noise = q.noise(v.originx/32, v.originz/32); t.small_noise = q.noise(v.originx/90, v.originz/90); return 28;",
 		"x": 0,
 		"z": 0,

@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:large_stonebrick"
+            "identifier": "wormwood:large_stonebrick"
         },
         "components": {
             "tag:stone": {},

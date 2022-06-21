@@ -2,11 +2,11 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "worldbeyond:cracked_darkstone_tiles_slab"
+            "identifier": "wormwood:cracked_darkstone_tiles_slab"
         },
         "key": {
             "#": {
-                "item": "worldbeyond:cracked_darkstone_tiles"
+                "item": "wormwood:cracked_darkstone_tiles"
             }
         },
         "pattern": [
@@ -15,7 +15,7 @@
         "priority": 1,
         "result": {
             "count": 6,
-            "item": "worldbeyond:cracked_darkstone_tiles_slab"
+            "item": "wormwood:cracked_darkstone_tiles_slab"
         },
         "tags": [
             "crafting_table"

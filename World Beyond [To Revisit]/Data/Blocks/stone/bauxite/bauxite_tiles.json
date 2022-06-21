@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:bauxite_tiles"
+            "identifier": "wormwood:bauxite_tiles"
         },
         "components": {
             "minecraft:friction": 0.6,

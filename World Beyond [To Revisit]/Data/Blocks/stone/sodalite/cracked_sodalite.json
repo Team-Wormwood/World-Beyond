@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "worldbeyond:cracked_sodalite"
+            "identifier": "wormwood:cracked_sodalite"
         },
         "components": {
             "minecraft:friction": 69420.0,

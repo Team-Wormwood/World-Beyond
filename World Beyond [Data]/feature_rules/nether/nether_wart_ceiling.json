@@ -3,8 +3,8 @@
 	
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "worldbeyond:nether_wart_ceiling",
-			"places_feature": "worldbeyond:nether/nether_wart_grid"
+			"identifier": "wormwood:nether_wart_ceiling",
+			"places_feature": "wormwood:nether/nether_wart_grid"
 		},
 		"conditions": {
 			"placement_pass": "first_pass",

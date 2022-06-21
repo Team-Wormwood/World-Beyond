@@ -2,17 +2,17 @@
     "format_version": "1.12.0",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "worldbeyond:chiseled_sodalite_from_cobbled_sodalite_stonecutting"
+            "identifier": "wormwood:chiseled_sodalite_from_cobbled_sodalite_stonecutting"
         },
         "ingredients": [
             {
-                "item": "worldbeyond:cobbled_sodalite"
+                "item": "wormwood:cobbled_sodalite"
             }
         ],
         "priority": 0,
         "result": {
             "count": 1,
-            "item": "worldbeyond:chiseled_sodalite"
+            "item": "wormwood:chiseled_sodalite"
         },
         "tags": [
             "stonecutter"

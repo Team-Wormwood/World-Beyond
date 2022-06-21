@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "worldbeyond:lime_terracotta_shingles"
+			"identifier": "wormwood:lime_terracotta_shingles"
 		},
 		"components": {
       "tag:stone":{},
