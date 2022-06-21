@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "worldbeyond:maid_outfit",
+            "identifier": "wormwood:maid_outfit",
             "category": "equipment"
         },
         "components": {
@@ -30,7 +30,7 @@
             "maid_outfit:equip": {
                 "sequence": [
                     {
-                        "condition": "!query.is_item_name_any('slot.armor.chest', 0, 'worldbeyond:maid_outfit')",
+                        "condition": "!query.is_item_name_any('slot.armor.chest', 0, 'wormwood:maid_outfit')",
                         "run_command": {
                             "command": [
                                 "playsound armor.equip_leather"

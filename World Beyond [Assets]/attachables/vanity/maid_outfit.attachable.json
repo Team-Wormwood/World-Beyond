@@ -2,7 +2,7 @@
     "format_version": "1.16.0",
     "minecraft:attachable": {
         "description": {
-            "identifier": "worldbeyond:maid_outfit",
+            "identifier": "wormwood:maid_outfit",
             "materials": {
                 "default": "entity_alphatest",
                 "enchanted": "entity_alphatest_glint"
