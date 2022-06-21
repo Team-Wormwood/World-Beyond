@@ -68,6 +68,9 @@
         "colourful_adventure_hat": {
             "textures": "textures/items/colourful_adventure_hat"
         },
+        "maid_outfit" : {
+            "textures" : "textures/items/maid_outfit"
+        },
         "shulker_shell_worldbeyond" : {
             "textures" : "textures/items/shulker_shell"
         },
