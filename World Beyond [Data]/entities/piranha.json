@@ -1,0 +1,433 @@
+{
+	"format_version": "1.18.10",
+	"minecraft:entity": {
+		"description": {
+			"runtime_identifier": "minecraft:cod",
+			"identifier": "wormwood:piranha",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"wormwood:piranha_dried": {
+				"minecraft:damage_over_time": {
+					"damage_per_hurt": 1,
+					"time_between_hurt": 0
+				}
+			},
+			"wormwood:piranha_swimming_navigation": {
+				"minecraft:behavior.look_at_player": {
+					"priority": 8,
+					"look_distance": 6
+				},
+				"minecraft:navigation.generic": {
+					"is_amphibious": true,
+					"can_path_over_water": false,
+					"can_swim": true,
+					"can_walk": false,
+					"can_breach": true,
+					"can_sink": false
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "on_ground",
+										"operator": "==",
+										"value": true
+									},
+									{
+										"test": "in_water",
+										"operator": "!=",
+										"value": true
+									}
+								]
+							},
+							"event": "piranha:navigation_on_land"
+						}
+					]
+				}
+			},
+			"wormwood:piranha_on_land": {
+				"minecraft:navigation.generic": {
+					"is_amphibious": true,
+					"can_path_over_water": true,
+					"can_swim": true,
+					"can_walk": true,
+					"can_breach": false,
+					"can_jump": false
+				},
+				"minecraft:drying_out_timer": {
+					"total_time": 120,
+					"water_bottle_refill_time": 0,
+					"dried_out_event": {
+						"event": "piranha:dried_out"
+					},
+					"stopped_drying_out_event": {
+						"event": "piranha:stop_dryingout"
+					},
+					"recover_after_dried_out_event": {
+						"event": "piranha:recover_after_dried_out"
+					}
+				}
+			},
+			"wormwood:piranha_on_land_in_rain": {
+				"minecraft:navigation.generic": {
+					"is_amphibious": true,
+					"can_path_over_water": true,
+					"can_swim": true,
+					"can_walk": true,
+					"can_breach": false,
+					"can_jump": false
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"filters": {
+								"test": "in_water",
+								"operator": "==",
+								"value": true
+							},
+							"event": "piranha:navigation_off_land"
+						},
+						{
+							"filters": {
+								"test": "in_water_or_rain",
+								"operator": "!=",
+								"value": true
+							},
+							"event": "piranha:start_dryingout"
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			// General Attribute Components
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:balloonable": {},
+			"minecraft:can_climb": {},
+			"minecraft:physics": {},
+			"minecraft:nameable": {
+				"allow_name_tag_renaming": true,
+				"always_show": true
+			},
+			"minecraft:type_family": {
+				"family": [
+					"piranha",
+					"monster",
+					"mob"
+				]
+			},
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:attack": {
+				"damage": 2
+			},
+			"minecraft:despawn": {
+				"filters": {
+					"any_of": [
+						{
+							"all_of": [
+								{
+									"test": "is_persistent",
+									"value": false
+								},
+								{
+									"test": "distance_to_nearest_player",
+									"operator": ">",
+									"value": 54
+								}
+							]
+						},
+						{
+							"all_of": [
+								{
+									"test": "is_persistent",
+									"value": false
+								},
+								{
+									"test": "inactivity_timer",
+									"subject": "self",
+									"value": 30
+								},
+								{
+									"test": "random_chance",
+									"value": 800
+								},
+								{
+									"test": "distance_to_nearest_player",
+									"operator": ">",
+									"value": 32
+								}
+							]
+						}
+					]
+				}
+			},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/salmon.json"
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4.0,
+				"hard_distance": 6.0,
+				"max_distance": 10.0
+			},
+			"minecraft:follow_range": {
+				"value": 48,
+				"max": 48
+			},
+			"minecraft:collision_box": {
+				"width": 0.4,
+				"height": 0.3
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			// Navigational Components //
+			"minecraft:navigation.generic": {
+				"is_amphibious": false,
+				"can_path_over_water": false,
+				"can_swim": true,
+				"can_walk": false,
+				"can_breach": true,
+				"can_sink": false
+			},
+			"minecraft:movement.sway": {
+				"sway_amplitude": 0.0
+			},
+			"minecraft:movement": {
+				"value": 0.12
+			},
+			"minecraft:underwater_movement": {
+				"value": 0.15
+			},
+			"minecraft:jump.static": {
+				"jump_power": 0.85
+			},
+			// Behavioural Components //
+			"minecraft:flocking": {
+				"in_water": false,
+				"match_variants": false,
+				"use_center_of_mass": false,
+				"low_flock_limit": 8,
+				"high_flock_limit": 33,
+				"goal_weight": 2.0,
+				"loner_chance": 0.0,
+				"influence_radius": 6.0,
+				"breach_influence": 0.0,
+				"separation_weight": 1.75,
+				"separation_threshold": 3.0,
+				"cohesion_weight": 1.85,
+				"cohesion_threshold": 6.5,
+				"innner_cohesion_threshold": 3.5,
+				"min_height": 4.0,
+				"max_height": 4.0,
+				"block_distance": 1.0,
+				"block_weight": 0.0
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 0,
+				"speed_multiplier": 2,
+				"track_target": true
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 0,
+				"within_radius": 32.0,
+				"entity_types": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "piranha"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "creeper"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "inanimate"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "cod"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "salmon"
+								}
+							]
+						},
+						"max_dist": 32
+					}
+				],
+				"must_see": false
+			},
+			"minecraft:behavior.move_to_water": {
+				"priority": 0,
+				"search_range": 15,
+				"search_height": 5
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.random_breach": {
+				"priority": 2,
+				"interval": 15,
+				"cooldown_time": 1.0
+			},
+			"minecraft:behavior.swim_with_entity": {
+				"priority": 4,
+				"success_rate": 0.1,
+				"chance_to_stop": 0.0333,
+				"state_check_interval": 0.5,
+				"catch_up_threshold": 12.0,
+				"match_direction_threshold": 2.0,
+				"catch_up_multiplier": 3.5,
+				"speed_multiplier": 2.5,
+				"search_range": 20.0,
+				"stop_distance": 5.0,
+				"entity_types": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "boat"
+						}
+					}
+				]
+			},
+			"minecraft:behavior.swim_idle": {
+				"priority": 5,
+				"idle_time": 5.0,
+				"success_rate": 0.1
+			},
+			"minecraft:behavior.random_swim": {
+				"priority": 5,
+				"speed_multiplier": 1.0,
+				"xz_dist": 16,
+				"y_dist": 4,
+				"interval": 0
+			},
+			"minecraft:behavior.swim_wander": {
+				"priority": 6,
+				"interval": 0.0166,
+				"look_ahead": 5.0,
+				"speed_multiplier": 0.014,
+				"wander_time": 5.0
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 7
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"wormwood:piranha_swimming_navigation"
+					]
+				}
+			},
+			"piranha:stop_dryingout": {
+				"remove": {
+					"component_groups": [
+						"wormwood:piranha_on_land",
+						"wormwood:piranha_dried"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"wormwood:piranha_on_land_in_rain"
+					]
+				}
+			},
+			"piranha:start_dryingout": {
+				"remove": {
+					"component_groups": [
+						"wormwood:piranha_on_land_in_rain"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"wormwood:piranha_on_land"
+					]
+				}
+			},
+			"piranha:dried_out": {
+				"add": {
+					"component_groups": [
+						"wormwood:piranha_dried"
+					]
+				}
+			},
+			"piranha:recover_after_dried_out": {
+				"remove": {
+					"component_groups": [
+						"wormwood:piranha_dried"
+					]
+				}
+			},
+			"piranha:navigation_on_land": {
+				"add": {
+					"component_groups": [
+						"wormwood:piranha_on_land"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"wormwood:piranha_swimming_navigation"
+					]
+				}
+			},
+			"piranha:navigation_off_land": {
+				"add": {
+					"component_groups": [
+						"wormwood:piranha_swimming_navigation"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"wormwood:piranha_on_land_in_rain",
+						"wormwood:piranha_on_land",
+						"wormwood:piranha_dried"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.piranha.flop": {
+			"loop": true,
+			"bones": {
+				"body_back": {
+					"rotation": [0, "math.cos(variable.animationamountblend * 45.0) * -21.75", 0]
+				},
+				"body_front": {
+					"rotation": [0, "math.cos(variable.animationamountblend * 45.0) * 4.0", "variable.zrot"]
+				},
+				"tailFin": {
+					"rotation": [0, "math.cos(variable.animationamountblend * 45.0) * -40.0", 0]
+				},
+				"body": {
+					"rotation": [0, "math.cos(variable.animationamountblend * 45.0) * 4.0", "variable.zrot"]
+				}
+			}
+		},
+		"animation.piranha.swim": {
+			"anim_time_update": "query.modified_distance_moved", 
+			"loop": true,
+			"bones": {
+				"tailFin": {
+					"rotation": [0, "math.cos(query.anim_time * 76.34) * -21.75", 0]
+				},
+				"body": {
+					"rotation": [0, "math.cos(query.anim_time * 76.34) * 8.0", 0]
+				},
+				"rightFin": {
+					"rotation": [0, 0, "math.cos(query.anim_time * 76.34) * -33"]
+				},
+				"leftFin": {
+					"rotation": [0, 0, "math.cos(query.anim_time * 76.34) * 33"]
+				}
+			}
+		}
+	}
+}

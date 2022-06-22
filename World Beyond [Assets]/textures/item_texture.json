@@ -75,25 +75,28 @@
         // Spawn Eggs //
         // ------------------- //
         "capybara_spawn_egg": {
-            "textures": "textures/items/capybara_spawn_egg"
+            "textures": "textures/items/spawn_eggs/capybara_spawn_egg"
         },
         "coyote_spawn_egg": {
-            "textures": "textures/items/coyote_spawn_egg"
+            "textures": "textures/items/spawn_eggs/coyote_spawn_egg"
         },
         "cross_fox_spawn_egg": {
-            "textures": "textures/items/cross_fox_spawn_egg"
+            "textures": "textures/items/spawn_eggs/cross_fox_spawn_egg"
         },
         "tiger_spawn_egg": {
-            "textures": "textures/items/tiger_spawn_egg"
+            "textures": "textures/items/spawn_eggs/tiger_spawn_egg"
         },
         "grey_wolf_spawn_egg": {
-            "textures": "textures/items/grey_wolf_spawn_egg"
+            "textures": "textures/items/spawn_eggs/grey_wolf_spawn_egg"
+        },
+        "piranha_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/piranha_spawn_egg"
         },
         "toucan_spawn_egg": {
-            "textures": "textures/items/toucan_spawn_egg"
+            "textures": "textures/items/spawn_eggs/toucan_spawn_egg"
         },
         "peacock_spawn_egg": {
-            "textures": "textures/items/peacock_spawn_egg"
+            "textures": "textures/items/spawn_eggs/peacock_spawn_egg"
         },
         // ------------------- //
         // Vanilla //

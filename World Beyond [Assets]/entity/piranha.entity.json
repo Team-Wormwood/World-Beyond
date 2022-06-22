@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "wormwood:piranha",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/fish/piranha"
+			},
+			"geometry": {
+				"default": "geometry.piranha"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.ZRot = !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+					"variable.AnimationAmountBlend = Math.lerp(variable.AnimationAmountPrev, variable.AnimationAmount, query.frame_alpha);"
+				]
+			},
+			"animations": {
+				"flop": "animation.piranha.flop",
+				"swim": "animation.piranha.swim"
+			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.fish.general"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+            "spawn_egg": {
+                "texture": "piranha_spawn_egg"
+            }
+		}
+	}
+}

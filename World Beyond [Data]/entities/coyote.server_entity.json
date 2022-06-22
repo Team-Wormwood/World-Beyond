@@ -250,7 +250,10 @@
 			"minecraft:is_hidden_when_invisible": {},
 			"minecraft:can_climb": {},
 			"minecraft:physics": {},
-			"minecraft:nameable": {},
+			"minecraft:nameable": {
+				"allow_name_tag_renaming": true,
+				"always_show": true
+			},
 			"minecraft:pushable": {},
 			"minecraft:type_family": {
 				"family": [

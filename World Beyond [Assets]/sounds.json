@@ -29,6 +29,79 @@
 				],
 				"volume": 1.0
 			},
+			"wormwood:grey_wolf": {
+				"events": {
+					"ambient": "mob.wolf.bark",
+					"death": "mob.wolf.death",
+					"growl": "mob.wolf.growl",
+					"hurt": "mob.wolf.hurt",
+					"pant": "mob.wolf.panting",
+					"shake": {
+						"pitch": [
+							0.80,
+							1.20
+						],
+						"sound": "mob.wolf.shake"
+					},
+					"step": {
+						"pitch": 1.0,
+						"sound": "mob.wolf.step",
+						"volume": 0.650
+					},
+					"whine": "mob.wolf.whine"
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"wormwood:capybara": {
+				"events": {
+					"ambient": {
+						"pitch": 1.2,
+						"sound": "mob.llama.idle",
+						"volume": 0.24
+					},
+					"death": "mob.llama.death",
+					"hurt": {
+						"pitch": 1.3,
+						"sound": "mob.llama.hurt",
+						"volume": 0.24
+					},
+					"step": {
+						"pitch": 1.0,
+						"sound": "mob.llama.step",
+						"volume": 0.150
+					}
+				},
+				"pitch": [
+					1.1,
+					1.4
+				],
+				"volume": 1.0
+			},
+			"wormwood:piranha": {
+				"events": {
+					"flop": {
+						"pitch": 1.0,
+						"sound": "mob.fish.flop",
+						"volume": 1.0
+					},
+					"hurt": "mob.guardian.flop",
+					"hurt.in.water": "mob.guardian.flop",
+					"step": {
+						"pitch": 1.0,
+						"sound": "mob.fish.step",
+						"volume": 0.150
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
 			"wormwood:cross_fox": {
 				"events": {
 					"ambient": "mob.fox.ambient",
