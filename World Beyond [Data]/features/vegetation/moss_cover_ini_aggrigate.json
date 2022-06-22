@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "wormwood:vegetation/moss_cover_ini_aggrigate"
+    },
+    "features": [
+      "wormwood:vegetation/mud_moss_vegetation_patch",
+      "wormwood:vegetation/grass_moss_vegetation_patch",
+      "wormwood:vegetation/podzol_moss_vegetation_patch"
+    ]
+  }
+}

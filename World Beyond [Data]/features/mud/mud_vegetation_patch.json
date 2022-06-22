@@ -1,0 +1,28 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:vegetation_patch_feature": {
+    "description": {
+      "identifier": "wormwood:mud/mud_vegetation_patch"
+    },
+    "replaceable_blocks": [
+      "minecraft:dirt",
+      "minecraft:podzol",
+      "minecraft:grass",
+      "minecraft:gravel"
+    ],
+    "ground_block": "minecraft:mud",
+    "vegetation_feature": "wormwood:mud/mud_vein",
+    "surface": "floor",
+    "depth": {
+      "range_min": 1,
+      "range_max": 3
+    },
+    "vertical_range": 7,
+    "vegetation_chance": 0.8,
+    "horizontal_radius": {
+      "range_min": 3,
+      "range_max": 7
+    },
+    "extra_edge_column_chance": 0.5
+  }
+}

@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "wormwood:nether/warped_wart_scatter"
 		},
-		"places_feature": "wormwood:nether/warped_wart",
+		"places_feature": "wormwood:warped_forest/ceiling/warped_ceiling_feature_second",
 		"iterations": "(t.big_noise > -0.3 && t.big_noise < 0.15) || (t.small_noise > -0.035 && t.small_noise < 0.035)",
 		"x": 0,
 		"z": 0,
