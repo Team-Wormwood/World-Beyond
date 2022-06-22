@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "wormwood:random_clay_or_mud"
+    },
+    "features": [
+      [ "minecraft:clay_ore_feature", 3 ],
+      [ "wormwood:mud/mud_vein_lush_caves", 2 ]
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "wormwood:basalt_deltas_smooth_basalt_ore_feature",
+      "places_feature": "wormwood:basalt_deltas/ore_blobs/basalt_deltas_smooth_basalt_vein"
+    },
+    "conditions": {
+      "placement_pass": "underground_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag", "operator": "==", "value": "basalt_deltas"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.random(0,15)",
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [ -118, 160 ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      }
+    }
+  }
+}
