@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "wormwood:shulker_shell",
+            "identifier": "wormwood:maid_outfit",
             "category": "equipment"
         },
         "components": {
@@ -11,29 +11,29 @@
                 "parent": "itemGroup.name.equipment"
             },
             "minecraft:icon": {
-                "texture": "shulker_shell_worldbeyond"
+                "texture": "maid_outfit"
             },
             "minecraft:armor": {
-                "protection": 3
+                "protection": 2
             },
             "minecraft:on_use": {
                 "on_use": {
-                    "event": "shulker_shell:equip"
+                    "event": "maid_outfit:equip"
                 }
             },
             "minecraft:wearable": {
                 "dispensable": true,
-                "slot": "slot.armor.head"
+                "slot": "slot.armor.chest"
             }
         },
         "events": {
-            "shulker_shell:equip": {
+            "maid_outfit:equip": {
                 "sequence": [
                     {
-                        "condition": "!query.is_item_name_any('slot.armor.head', 0, 'wormwood:shulker_shell')",
+                        "condition": "!query.is_item_name_any('slot.armor.chest', 0, 'wormwood:maid_outfit')",
                         "run_command": {
                             "command": [
-                                "playsound mob.shulker.close"
+                                "playsound armor.equip_leather"
                             ]
                         }
                     }

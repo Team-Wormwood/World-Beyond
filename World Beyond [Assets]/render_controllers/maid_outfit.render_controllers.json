@@ -1,0 +1,24 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.maid_outfit": {
+            "arrays": {
+                "textures": {
+                    "Array.player_name": [
+                        "Texture.default",
+                        "Texture.trans"
+                    ]
+                }
+            },
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "query.get_name == 'yanasakana' ? Texture.trans : Texture.default"
+            ]
+        }
+    }
+}
