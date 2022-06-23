@@ -1,0 +1,31 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "wormwood:soulsand_valley/ore_blobs/soulsand_valley_calcite_vein"
+    },
+    "count": 128,
+        "replace_rules": [
+            {
+                "places_block": "minecraft:calcite",
+                "may_replace": [
+                    {
+                        "name": "minecraft:netherrack"
+                    },
+                    {
+                        "name": "minecraft:soul_soil"
+                    },
+                    {
+                        "name": "minecraft:soul_sand"
+                    },
+                    {
+                        "name": "minecraft:quartz_ore"
+                    },
+                    {
+                        "name": "minecraft:nether_gold_ore"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "woormwood:jungle_after_surface_mud_feature",
+      "places_feature": "wormwood:mud/mud_vegetation_patch"
+    },
+    "conditions": {
+      "placement_pass": "final_pass",
+      "minecraft:biome_filter": {
+        "any_of": [
+          {
+            "test": "has_biome_tag",
+            "value": "jungle"
+          },
+          {
+            "test": "has_biome_tag",
+            "value": "swamp"
+          },
+          {
+            "test": "has_biome_tag",
+            "value": "roofed"
+          }
+        ]
+      }
+    },
+    "distribution": {
+      "iterations": 3,
+      "scatter_chance": {
+        "numerator": 1,
+        "denominator": 50
+      },
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      },
+      "y": "query.above_top_solid(v.worldx, v.worldz) - 1",
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      }
+    }
+  }
+}

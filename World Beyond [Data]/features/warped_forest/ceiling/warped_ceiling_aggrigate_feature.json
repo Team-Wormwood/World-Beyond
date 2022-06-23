@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:sequence_feature": {
+    "description": {
+      "identifier": "wormwood:warped_forest/ceiling/warped_ceiling_aggrigate_feature"
+    },
+    "features": [
+      "wormwood:warped_forest/ceiling/warped_wart_ceiling_feature",
+      "wormwood:warped_forest/ceiling/warped_ceiling_growth"
+    ]
+  }
+}

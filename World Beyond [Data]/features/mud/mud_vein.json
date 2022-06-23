@@ -1,0 +1,30 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "wormwood:mud/mud_vein"
+    },
+    "count": 16,
+    "replace_rules": [
+      {
+        "places_block": {
+          "name": "minecraft:mud"
+        },
+        "may_replace": [
+          {
+            "name": "minecraft:dirt"
+          },
+          {
+            "name": "minecraft:podzol"
+          },
+          {
+            "name": "minecraft:grass"
+          },
+          {
+            "name": "minecraft:gravel"
+          }
+        ]
+      }
+    ]
+  }
+}

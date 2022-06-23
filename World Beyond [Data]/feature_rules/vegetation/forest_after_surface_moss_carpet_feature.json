@@ -1,0 +1,49 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "woormwood:forest_after_surface_moss_carpet_feature",
+      "places_feature": "wormwood:vegetation/moss_cover_ini_aggrigate"
+    },
+    "conditions": {
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "roofed"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "jungle"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "swamp"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 10,
+      "scatter_chance": {
+        "numerator": 1,
+        "denominator": 50
+      },
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      },
+      "y": "query.above_top_solid(v.worldx, v.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      }
+    }
+  }
+}

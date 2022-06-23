@@ -1,0 +1,46 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "wormwood:water_biome_mud_feature ",
+      "places_feature": "wormwood:mud/mud"
+    },
+    "conditions": {
+      "placement_pass": "final_pass",
+      "minecraft:biome_filter": {
+        "any_of": [
+          {
+            "test": "has_biome_tag",
+            "value": "river"
+          },
+          {
+            "test": "has_biome_tag",
+            "value": "ocean"
+          },
+          {
+            "test": "has_biome_tag",
+            "value": "swamp"
+          }
+        ]
+      }
+    },
+    "distribution": {
+      "iterations": "200",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "query.above_top_solid(v.worldx, v.worldz) - 1",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:ore_feature": {
+        "description": {
+            "identifier": "wormwood:basalt_deltas/ore_blobs/basalt_deltas_smooth_basalt_vein"
+        },
+        "count": 128,
+        "replace_rules": [
+            {
+                "places_block": "minecraft:smooth_basalt",
+                "may_replace": [
+                    {
+                        "name": "minecraft:netherrack"
+                    },
+                    {
+                        "name": "minecraft:quartz_ore"
+                    },
+                    {
+                        "name": "minecraft:nether_gold_ore"
+                    }
+                ]
+            }
+        ]
+    }
+}

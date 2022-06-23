@@ -1,0 +1,21 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:growing_plant_feature": {
+    "description": {
+      "identifier": "wormwood:warped_forest/ceiling/warped_ceiling_growth"
+    },
+    "height_distribution":  [
+      [{"range_min": 2, "range_max": 3}, 2],
+      [{"range_min": 3, "range_max": 5}, 2],
+      [{"range_min": 4, "range_max": 7}, 1]
+    ],
+    "growth_direction": "DOWN",
+    "body_blocks": [
+      ["minecraft:warped_wart_block", 1]
+    ],
+    "head_blocks": [
+      ["minecraft:shroomlight", 9],
+      ["minecraft:warped_wart_block", 1]
+    ]
+  }
+}
