@@ -1,3 +1,5 @@
+//This is a Vanilla Entity file, from the Vanilla Behaviour Pack, but modified to our needs, overwriting the entity
+//All that's been done here is added another entry to the Vanilla Frog's attackable targets
 {
 	"format_version": "1.16.0",
 	"minecraft:entity": {
@@ -209,6 +211,7 @@
 						},
 						"max_dist": 16
 					},
+					//Frogs now eat Damselflies
 					{
 						"filters": {
 							"test": "is_family",

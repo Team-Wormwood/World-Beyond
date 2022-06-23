@@ -1,3 +1,4 @@
+//Large blobs of calcite to generate in SS valleys. More frequent at higher altitudes.
 {
   "format_version": "1.16.0",
   "minecraft:feature_rules": {

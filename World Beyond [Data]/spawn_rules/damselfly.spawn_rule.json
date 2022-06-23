@@ -1,3 +1,5 @@
+//TO-DO
+//Make spawn in groups of same colour
 {
 	"format_version": "1.8.0",
 	"minecraft:spawn_rules": {

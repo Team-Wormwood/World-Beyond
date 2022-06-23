@@ -1,3 +1,4 @@
+//very infrequent lilypad features for . . . quite a few biomes actually. Any rivers boardering these biomes, and bodies of water are affected.
 {
   "format_version": "1.13.0",
   "minecraft:feature_rules": {

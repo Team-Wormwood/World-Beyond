@@ -1,3 +1,6 @@
+//Holy heck another poor name. Small mud blobs for river, ocean and swamp surfaces. Thinking of removing swamps and setting up a separate feature that allows air contact generation
+
+//Decided against single-block features, too noisy, and looked terrible on ceratin terrain
 {
   "format_version": "1.13.0",
   "minecraft:feature_rules": {

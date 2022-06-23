@@ -1,3 +1,5 @@
+//TO-DO
+//on interaction while an empty bottly is equiped, converts the bottle into "Bottled <colour> Damselfly"
 {
   "format_version": "1.18.10",
   "minecraft:entity": {
@@ -8,6 +10,7 @@
       "is_experimental": false
     },
     "component_groups": {
+      //random spawn colour groups
       "damselfly:blue": {
         "minecraft:variant": {
           "value": 0
@@ -23,6 +26,7 @@
           "value": 2
         }
       },
+      //If raining or night. This might not actually do anything, It was difficult to tell
       "damselfly:seek_cover": {
         "minecraft:behavior.find_cover": {
           "priority": 0,
@@ -56,11 +60,14 @@
       }
     },
     "components": {
+      // General Attribute Components //
+      //Tried to keep this as simple as possible. Could make them spawn in much larger groups, and make them generally stay together, but there are performance concerns
       "minecraft:is_hidden_when_invisible": {},
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:nameable": {},
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? Math.Random(1,2) : 0"
       },
-      "minecraft:nameable": {},
       "minecraft:type_family": {
         "family": [
           "damselfly",
@@ -74,6 +81,22 @@
       "minecraft:health": {
         "value": 1,
         "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 5,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -89,24 +112,27 @@
           }
         ]
       },
-      "minecraft:damage_sensor": {
-        "triggers": {
-          "cause": "fall",
-          "deals_damage": false
-        }
-      },
-      "minecraft:breathable": {
-        "total_supply": 5,
-        "suffocate_time": 0,
-        "breathes_air": true,
-        "breathes_water": false
-      },
+      // Navigational Components //
+      "minecraft:movement.hover": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_fly": {},
+      "minecraft:physics": {},
       "minecraft:movement": {
         "value": 0.4
       },
       "minecraft:flying_speed": {
         "value": 0.25
       },
+      "minecraft:navigation.hover": {
+        "can_path_over_water": true,
+        "can_sink": false,
+        "can_pass_doors": false,
+        "can_path_from_air": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true,
+        "avoid_sun": false
+      },
+      // Behavioural Components //
       "minecraft:behavior.random_hover": {
         "priority": 12,
         "xz_dist": 10,
@@ -140,47 +166,6 @@
             "max_dist": 1.5
           }
         ]
-      },
-      "minecraft:environment_sensor": {
-        "triggers": [
-          {
-            "event": "damselfly:seek_cover",
-            "filters": {
-              "all_of": [
-                {
-                  "any_of": [
-                    {
-                      "test": "weather",
-                      "operator": "==",
-                      "value": "precipitation"
-                    },
-                    {
-                      "test": "is_daytime",
-                      "value": false
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "minecraft:navigation.hover": {
-        "can_path_over_water": true,
-        "can_sink": false,
-        "can_pass_doors": false,
-        "can_path_from_air": true,
-        "avoid_water": true,
-        "avoid_damage_blocks": true,
-        "avoid_sun": false
-      },
-      "minecraft:movement.hover": {},
-      "minecraft:jump.static": {},
-      "minecraft:can_fly": {},
-      "minecraft:physics": {},
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
       },
       "minecraft:behavior.float": {
         "priority": 19
@@ -218,12 +203,39 @@
           "minecraft:mangrove_propagule",
           "minecraft:tallgrass",
           "minecraft:fern",
-          "minecraft:lillypad"
+          "minecraft:waterlily",
+          "minecraft:double_plant",
+          "minecraft:deadbush"
         ]
       },
-      "minecraft:conditional_bandwidth_optimization": {}
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "event": "damselfly:seek_cover",
+            //not even sure wether or not the component group added by the event even does anything. Does it work alongside the existing pathing and behaviours?
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "weather",
+                      "operator": "==",
+                      "value": "precipitation"
+                    },
+                    {
+                      "test": "is_daytime",
+                      "value": false
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "events": {
+      // Vanilla Events //
       "minecraft:entity_spawned": {
         "randomize": [
           {
@@ -252,6 +264,7 @@
           }
         ]
       },
+      // Specific Events //
       "damselfly:seek_cover": {
         "add": {
           "component_groups": [

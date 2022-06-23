@@ -1,3 +1,5 @@
+//This is a Vanilla Entity file, from the Vanilla Behaviour Pack, but modified to our needs, overwriting the entity
+//Piglins can now be given various other gold items, to convince them to give btter Bartering Loot
 {
 	"format_version": "1.16.0",
 	"minecraft:entity": {
@@ -229,6 +231,7 @@
 			"interactable_piglin": {
 				"minecraft:interact": {
 					"interactions": [
+						//Vanilla Barter Interaction
 						{
 							"on_interact": {
 								"filters": {
@@ -259,6 +262,7 @@
 							"cooldown_after_being_attacked": 20,
 							"interact_text": "action.interact.barter"
 						},
+						//Bribe Interaction - High chance of leveling up this Piglin's bartering pool
 						{
 							"on_interact": {
 								"filters": {
@@ -307,6 +311,7 @@
 							"cooldown_after_being_attacked": 20,
 							"interact_text": "action.interact.bribe"
 						},
+						//Bribe Interaction - Medium chance of leveling up this Piglin's bartering pool
 						{
 							"on_interact": {
 								"filters": {
@@ -397,6 +402,7 @@
 							"cooldown_after_being_attacked": 20,
 							"interact_text": "action.interact.bribe"
 						},
+						//Bribe Interaction - Low chance of leveling up this Piglin's bartering pool
 						{
 							"on_interact": {
 								"filters": {
@@ -620,7 +626,7 @@
 					"max_failed_attempts": 20
 				}
 			},
-			//WorldBeyond
+			//Bartering Pool Upgrade Groups
 			"piglin:barter_mid": {
 				"minecraft:variant": {
 					"value": 1
@@ -1392,7 +1398,7 @@
 					]
 				}
 			},
-			//WorldBeyond
+			//Bribe Events
 			"piglin:bribe_low": {
 				"randomize": [
 					{
@@ -1515,7 +1521,7 @@
 							{
 								"run_command": {
 									"command": [
-										"particle minecraft:heart_particle ~ ~2 ~"
+										"particle minecraft:heart_particle ~ ~2 ~" //heart UwU
 									]
 								}
 							}
@@ -1567,7 +1573,7 @@
 							{
 								"run_command": {
 									"command": [
-										"particle minecraft:heart_particle ~ ~2 ~"
+										"particle minecraft:heart_particle ~ ~2 ~" //x3
 									]
 								}
 							}
