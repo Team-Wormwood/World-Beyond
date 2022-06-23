@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "wormwood:damselfly",
+      "materials": {
+        "default": "entity_alphatest",
+        "wing": "entity_alphablend"
+      },
+      "textures": {
+        "default": "textures/entity/damselfly/blue",
+        "green": "textures/entity/damselfly/green",
+        "gray": "textures/entity/damselfly/gray"
+      },
+      "geometry": {
+        "default": "geometry.damselfly"
+      },
+      "animations": {
+        "flying": "animation.damselfly.fly"
+      },
+      "particle_effects": {
+        "nectar_dripping": "minecraft:nectar_drip_particle"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "flying": "query.is_moving"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.damselfly"
+      ],
+      "spawn_egg": {
+        "texture": "egg_bee",
+        "texture_index": 0
+      }
+    }
+  }
+}

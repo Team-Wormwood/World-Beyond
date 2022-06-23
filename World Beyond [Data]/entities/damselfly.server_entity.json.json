@@ -1,0 +1,271 @@
+{
+  "format_version": "1.18.10",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "wormwood:damselfly",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "damselfly:blue": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "damselfly:green": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "damselfly:gray": {
+        "minecraft:variant": {
+          "value": 2
+        }
+      },
+      "damselfly:seek_cover": {
+        "minecraft:behavior.find_cover": {
+          "priority": 0,
+          "speed_multiplier": 1,
+          "cooldown_time": 0.0
+        },
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "damselfly:seek_cover_stop",
+              "filters": {
+                "all_of": [
+                  {
+                    "all_of": [
+                      {
+                        "test": "weather",
+                        "operator": "==",
+                        "value": "clear"
+                      },
+                      {
+                        "test": "is_daytime",
+                        "value": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? Math.Random(1,2) : 0"
+      },
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": [
+          "damselfly",
+          "mob"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      },
+      "minecraft:breathable": {
+        "total_supply": 5,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": false
+      },
+      "minecraft:movement": {
+        "value": 0.4
+      },
+      "minecraft:flying_speed": {
+        "value": 0.25
+      },
+      "minecraft:behavior.random_hover": {
+        "priority": 12,
+        "xz_dist": 10,
+        "y_dist": 5,
+        "y_offset": -1,
+        "interval": 1,
+        "hover_height": [
+          2,
+          4
+        ]
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 1,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "damselfly"
+                },
+                {
+                  "test": "is_sneaking",
+                  "subject": "other",
+                  "value": false
+                }
+              ]
+            },
+            "max_dist": 1.5
+          }
+        ]
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "event": "damselfly:seek_cover",
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "weather",
+                      "operator": "==",
+                      "value": "precipitation"
+                    },
+                    {
+                      "test": "is_daytime",
+                      "value": false
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:navigation.hover": {
+        "can_path_over_water": true,
+        "can_sink": false,
+        "can_pass_doors": false,
+        "can_path_from_air": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true,
+        "avoid_sun": false
+      },
+      "minecraft:movement.hover": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_fly": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:behavior.float": {
+        "priority": 19
+      },
+      "minecraft:behavior.move_to_block": {
+        "priority": 10,
+        "tick_interval": 60,
+        "start_chance": 0.3,
+        "search_range": 10,
+        "search_height": 5,
+        "goal_radius": 1.0,
+        "stay_duration": 30.0,
+        "target_selection_method": "random",
+        "target_offset": [
+          0,
+          0.25,
+          0
+        ],
+        "target_block_filters": {
+          "test": "is_waterlogged",
+          "subject": "block",
+          "operator": "==",
+          "value": false
+        },
+        "target_blocks": [
+          "minecraft:red_flower",
+          "minecraft:yellow_flower",
+          "minecraft:wither_rose",
+          "minecraft:double_plant:8",
+          "minecraft:double_plant:9",
+          "minecraft:double_plant:12",
+          "minecraft:double_plant:13",
+          "minecraft:flowering_azalea",
+          "minecraft:azalea_leaves_flowered",
+          "minecraft:mangrove_propagule",
+          "minecraft:tallgrass",
+          "minecraft:fern",
+          "minecraft:lillypad"
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 1,
+            "add": {
+              "component_groups": [
+                "damselfly:blue"
+              ]
+            }
+          },
+          {
+            "weight": 1,
+            "add": {
+              "component_groups": [
+                "damselfly:green"
+              ]
+            }
+          },
+          {
+            "weight": 1,
+            "add": {
+              "component_groups": [
+                "damselfly:gray"
+              ]
+            }
+          }
+        ]
+      },
+      "damselfly:seek_cover": {
+        "add": {
+          "component_groups": [
+            "damselfly:seek_cover"
+          ]
+        }
+      },
+      "damselfly:seek_cover_stop": {
+        "remove": {
+          "component_groups": [
+            "damselfly:seek_cover"
+          ]
+        }
+      }
+    }
+  }
+}

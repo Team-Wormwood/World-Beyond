@@ -45,6 +45,8 @@ item.shulker_shell.name=Shell Fragment
 ## Entities ##
 entity.wormwood:coyote.name=Coyote
 entity.wormwood:cross_fox.name=Cross Fox
+entity.wormwood:damselfly.name=Damselfly
+item.spawn_egg.entity.wormwood:damselfly.name=Spawn Damselfly
 entity.wormwood:grey_wolf.name=Grey Wolf
 entity.wormwood:piranha.name=Piranha
 entity.wormwood:tiger.name=Tiger
