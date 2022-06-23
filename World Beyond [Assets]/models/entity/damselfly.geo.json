@@ -1,0 +1,43 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.damselfly",
+				"texture_width": 8,
+				"texture_height": 8,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-0.5, 0, -2], "size": [1, 0, 6], "uv": [-5, 0]},
+						{"origin": [-1, 0, -3], "size": [2, 0, 1], "uv": [-1, 6]}
+					]
+				},
+				{
+					"name": "wing2",
+					"parent": "root",
+					"pivot": [-0.5, 0, -1.5],
+					"rotation": [0, 0, -22.5],
+					"cubes": [
+						{"origin": [-1, 0, -1.5], "size": [1, 0, 4], "uv": [-2, 0]}
+					]
+				},
+				{
+					"name": "wing1",
+					"parent": "root",
+					"pivot": [0.5, 0, -1.5],
+					"rotation": [0, 0, 22.5],
+					"cubes": [
+						{"origin": [0, 0, -1.5], "size": [1, 0, 4], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

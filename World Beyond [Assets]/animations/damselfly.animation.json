@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.damselfly.fly": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"root": {
+					"rotation": ["q.vertical_speed * (0 - 5)", 0, 0]
+				},
+				"wing2": {
+					"rotation": ["(Math.sin(query.anim_time * 1500) * 70)+30", -90, 0]
+				},
+				"wing1": {
+					"rotation": ["(Math.sin(query.anim_time * 1500) * 70)+30", 90, 0]
+				}
+			}
+		}
+	}
+}

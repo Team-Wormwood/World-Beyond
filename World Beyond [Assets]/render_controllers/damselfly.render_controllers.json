@@ -1,0 +1,31 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.damselfly": {
+            "arrays": {
+                "textures": {
+                    "Array.textures": [
+                        "Texture.default",
+                        "Texture.green",
+                        "Texture.gray"
+                    ]
+                }
+            },
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                },
+                {
+                    "wing1": "Material.wing"
+                },
+                {
+                    "wing2": "Material.wing"
+                }
+            ],
+            "textures": [
+                "Array.textures[query.variant]"
+            ]
+        }
+    }
+}
