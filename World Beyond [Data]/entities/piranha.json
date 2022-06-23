@@ -290,13 +290,20 @@
 									"subject": "other",
 									"operator": "!=",
 									"value": "salmon"
+								},
+								{
+									"test": "in_water",
+									"operator": "==",
+									"subject": "other",
+									"value": true
 								}
 							]
 						},
 						"max_dist": 32
 					}
 				],
-				"must_see": false
+				"must_see": true,
+				"must_see_forget_duration": 1.0
 			},
 			"minecraft:behavior.move_to_water": {
 				"priority": 0,
