@@ -14,16 +14,70 @@
       "damselfly:blue": {
         "minecraft:variant": {
           "value": 0
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "glass_bottle"}
+                  ]
+                }
+              },
+              "use_item": true,
+              "transform_to_item": "wormwood:blue_damselfly_bottle",
+              "play_sounds": "milk",
+              "interact_text": "action.interact.catch"
+            }
+          ]
         }
       },
       "damselfly:green": {
         "minecraft:variant": {
           "value": 1
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "glass_bottle"}
+                  ]
+                }
+              },
+              "use_item": true,
+              "transform_to_item": "wormwood:green_damselfly_bottle",
+              "play_sounds": "milk",
+              "interact_text": "action.interact.catch"
+            }
+          ]
         }
       },
       "damselfly:gray": {
         "minecraft:variant": {
           "value": 2
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "glass_bottle"}
+                  ]
+                }
+              },
+              "use_item": true,
+              "transform_to_item": "wormwood:gray_damselfly_bottle",
+              "play_sounds": "milk",
+              "interact_text": "action.interact.catch"
+            }
+          ]
         }
       },
       //If raining or night. This might not actually do anything, It was difficult to tell
@@ -235,36 +289,27 @@
       }
     },
     "events": {
-      // Vanilla Events //
-      "minecraft:entity_spawned": {
-        "randomize": [
-          {
-            "weight": 1,
-            "add": {
-              "component_groups": [
-                "damselfly:blue"
-              ]
-            }
-          },
-          {
-            "weight": 1,
-            "add": {
-              "component_groups": [
-                "damselfly:green"
-              ]
-            }
-          },
-          {
-            "weight": 1,
-            "add": {
-              "component_groups": [
-                "damselfly:gray"
-              ]
-            }
-          }
-        ]
+      "damselfly:blue": {
+        "add": {
+          "component_groups": [
+            "damselfly:blue"
+          ]
+        }
       },
-      // Specific Events //
+      "damselfly:green": {
+        "add": {
+          "component_groups": [
+            "damselfly:green"
+          ]
+        }
+      },
+      "damselfly:gray": {
+        "add": {
+          "component_groups": [
+            "damselfly:gray"
+          ]
+        }
+      },
       "damselfly:seek_cover": {
         "add": {
           "component_groups": [

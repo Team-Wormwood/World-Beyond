@@ -1,0 +1,19 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wormwood:gray_damselfly_bottle",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "gray_damselfly_bottle"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:entity_placer": {
+				"entity": "wormwood:damselfly<damselfly:gray>"
+			}
+		},
+		"events": {}
+	}
+}

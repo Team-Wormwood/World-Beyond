@@ -68,11 +68,11 @@
         "colourful_adventure_hat": {
             "textures": "textures/items/colourful_adventure_hat"
         },
-        "maid_outfit" : {
-            "textures" : "textures/items/maid_outfit"
+        "maid_outfit": {
+            "textures": "textures/items/maid_outfit"
         },
-        "shulker_shell_worldbeyond" : {
-            "textures" : "textures/items/shulker_shell"
+        "shulker_shell_worldbeyond": {
+            "textures": "textures/items/shulker_shell"
         },
         // ------------------- //
         // Spawn Eggs //
@@ -104,8 +104,20 @@
         // ------------------- //
         // Vanilla //
         // ------------------- //
-        "shulker_shell" : {
-            "textures" : "textures/items/shell_fragment"
+        "shulker_shell": {
+            "textures": "textures/items/shell_fragment"
+        },
+        // ------------------- //
+        // I Don't Fucking Know //
+        // ------------------- //
+        "blue_damselfly_bottle": {
+            "textures": "textures/items/blue_damselfly_bottle"
+        },
+        "green_damselfly_bottle": {
+            "textures": "textures/items/green_damselfly_bottle"
+        },
+        "gray_damselfly_bottle": {
+            "textures": "textures/items/gray_damselfly_bottle"
         }
     },
     "texture_name": "atlas.items"
