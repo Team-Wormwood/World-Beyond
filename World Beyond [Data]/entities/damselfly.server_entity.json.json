@@ -10,7 +10,7 @@
       "is_experimental": false
     },
     "component_groups": {
-      //random spawn colour groups
+      //colour variations
       "damselfly:blue": {
         "minecraft:variant": {
           "value": 0
@@ -21,10 +21,21 @@
               "on_interact": {
                 "filters": {
                   "all_of": [
-                    { "test": "is_family", "subject" : "other", "value" :  "player"},
-                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "glass_bottle"}
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "glass_bottle"
+                    }
                   ]
-                }
+                },
+                "event": "damselfly:bottled",
+                "target": "self"
               },
               "use_item": true,
               "transform_to_item": "wormwood:blue_damselfly_bottle",
@@ -44,10 +55,21 @@
               "on_interact": {
                 "filters": {
                   "all_of": [
-                    { "test": "is_family", "subject" : "other", "value" :  "player"},
-                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "glass_bottle"}
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "glass_bottle"
+                    }
                   ]
-                }
+                },
+                "event": "damselfly:bottled",
+                "target": "self"
               },
               "use_item": true,
               "transform_to_item": "wormwood:green_damselfly_bottle",
@@ -67,10 +89,21 @@
               "on_interact": {
                 "filters": {
                   "all_of": [
-                    { "test": "is_family", "subject" : "other", "value" :  "player"},
-                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "glass_bottle"}
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "glass_bottle"
+                    }
                   ]
-                }
+                },
+                "event": "damselfly:bottled",
+                "target": "self"
               },
               "use_item": true,
               "transform_to_item": "wormwood:gray_damselfly_bottle",
@@ -111,6 +144,9 @@
             }
           ]
         }
+      },
+      "damselfly:despawn": {
+        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -321,6 +357,13 @@
         "remove": {
           "component_groups": [
             "damselfly:seek_cover"
+          ]
+        }
+      },
+      "damselfly:bottled": {
+        "add": {
+          "component_groups": [
+            "damselfly:despawn"
           ]
         }
       }
