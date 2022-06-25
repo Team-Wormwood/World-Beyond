@@ -1,0 +1,54 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:absolution_bottle",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:use_animation": "drink",
+            "minecraft:use_duration": 1.6,
+            "minecraft:max_stack_size": 1,
+            "minecraft:creative_category": {
+                "parent": "items"
+            },
+            "minecraft:foil": true,
+            "minecraft:icon": {
+                "texture": "absolution_bottle"
+            },
+            "minecraft:food": {
+                "nutrition": 0,
+                "saturation_modifier": 0,
+                "can_always_eat": true,
+                "using_converts_to": "minecraft:glass_bottle",
+                "on_consume": {
+                    "event": "absolution_bottle:remove_debuff"
+                }
+            }
+        },
+        "events": {
+            "absolution_bottle:remove_debuff": {
+                "sequence": [
+                    {
+                        "remove_mob_effect": {
+                            "effect": "darkness",
+                            "target": "holder"
+                        }
+                    },
+                    {
+                        "remove_mob_effect": {
+                            "effect": "nausea",
+                            "target": "holder"
+                        }
+                    },
+                    {
+                        "remove_mob_effect": {
+                            "effect": "blindness",
+                            "target": "holder"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

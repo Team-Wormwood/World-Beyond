@@ -1,0 +1,14 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_brewing_mix": {
+		"description": {
+			"identifier": "wormwood:brew_awkward_glow_burries"
+		},
+		"tags": [
+			"brewing_stand"
+		],
+		"input": "minecraft:potion_type:awkward",
+		"reagent": "minecraft:glow_burries",
+		"output": "wormwood:absolution_bottle"
+	}
+}

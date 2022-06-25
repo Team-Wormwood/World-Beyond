@@ -118,7 +118,10 @@
         },
         "gray_damselfly_bottle": {
             "textures": "textures/items/gray_damselfly_bottle"
-        }
+        },
+        "absolution_bottle": {
+            "textures": "textures/items/absolution_bottle"
+        }        
     },
     "texture_name": "atlas.items"
 }

@@ -38,7 +38,7 @@
                 "target": "self"
               },
               "use_item": true,
-              "transform_to_item": "wormwood:blue_damselfly_bottle",
+              "transform_to_item": "wormwood:damselfly_bottle.blue",
               "play_sounds": "milk",
               "interact_text": "action.interact.catch"
             }
@@ -72,7 +72,7 @@
                 "target": "self"
               },
               "use_item": true,
-              "transform_to_item": "wormwood:green_damselfly_bottle",
+              "transform_to_item": "wormwood:damselfly_bottle.green",
               "play_sounds": "milk",
               "interact_text": "action.interact.catch"
             }
@@ -106,41 +106,9 @@
                 "target": "self"
               },
               "use_item": true,
-              "transform_to_item": "wormwood:gray_damselfly_bottle",
+              "transform_to_item": "wormwood:damselfly_bottle.gray",
               "play_sounds": "milk",
               "interact_text": "action.interact.catch"
-            }
-          ]
-        }
-      },
-      //If raining or night. This might not actually do anything, It was difficult to tell
-      "damselfly:seek_cover": {
-        "minecraft:behavior.find_cover": {
-          "priority": 0,
-          "speed_multiplier": 1,
-          "cooldown_time": 0.0
-        },
-        "minecraft:environment_sensor": {
-          "triggers": [
-            {
-              "event": "damselfly:seek_cover_stop",
-              "filters": {
-                "all_of": [
-                  {
-                    "all_of": [
-                      {
-                        "test": "weather",
-                        "operator": "==",
-                        "value": "clear"
-                      },
-                      {
-                        "test": "is_daytime",
-                        "value": true
-                      }
-                    ]
-                  }
-                ]
-              }
             }
           ]
         }
@@ -297,31 +265,6 @@
           "minecraft:double_plant",
           "minecraft:deadbush"
         ]
-      },
-      "minecraft:environment_sensor": {
-        "triggers": [
-          {
-            "event": "damselfly:seek_cover",
-            //not even sure wether or not the component group added by the event even does anything. Does it work alongside the existing pathing and behaviours?
-            "filters": {
-              "all_of": [
-                {
-                  "any_of": [
-                    {
-                      "test": "weather",
-                      "operator": "==",
-                      "value": "precipitation"
-                    },
-                    {
-                      "test": "is_daytime",
-                      "value": false
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        ]
       }
     },
     "events": {
@@ -343,20 +286,6 @@
         "add": {
           "component_groups": [
             "damselfly:gray"
-          ]
-        }
-      },
-      "damselfly:seek_cover": {
-        "add": {
-          "component_groups": [
-            "damselfly:seek_cover"
-          ]
-        }
-      },
-      "damselfly:seek_cover_stop": {
-        "remove": {
-          "component_groups": [
-            "damselfly:seek_cover"
           ]
         }
       },

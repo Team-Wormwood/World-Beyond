@@ -2,33 +2,39 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "wormwood:damselfly_bottle_green",
+			"identifier": "wormwood:damselfly_bottle.green",
 			"category": "items"
 		},
 		"components": {
 			"minecraft:creative_category": {
-                "parent": "itemGroup.name.items"
-            },
+				"parent": "itemGroup.name.items"
+			},
 			"minecraft:icon": {
 				"texture": "green_damselfly_bottle"
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:entity_placer": {
-				"entity": "wormwood:damselfly<damselfly:green>"
-			},
 			"minecraft:on_use": {
 				"on_use": {
-					"event": "damselfly_bottle:empty"
+					"event": "damselfly_bottle:use"
 				}
 			}
 		},
 		"events": {
-			"damselfly_bottle:empty": {
-				"run_command": {
-					"command": [
-						"give @s glass_bottle"
-					]
-				}
+			"damselfly_bottle:use": {
+				"sequence": [
+					{
+						"transform_item": {
+							"transform": "minecraft:glass_bottle"
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"summon wormwood:damselfly<damselfly:green> ^ ^ ^0.1"
+							]
+						}
+					}
+				]
 			}
 		}
 	}
