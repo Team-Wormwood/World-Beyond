@@ -1,5 +1,6 @@
 //TO-DO
 //Make spawn in groups of same colour
+//This may not even work. Environment did not provide sufficient means of testing.
 {
 	"format_version": "1.8.0",
 	"minecraft:spawn_rules": {

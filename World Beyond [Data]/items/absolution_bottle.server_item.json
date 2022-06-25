@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "wormwood:absolution_bottle",
+            "identifier": "wormwood:absolution_bottle", //not sure about the name
             "category": "items"
         },
         "components": {
