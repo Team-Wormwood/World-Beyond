@@ -83,6 +83,9 @@
         "coyote_spawn_egg": {
             "textures": "textures/items/spawn_eggs/coyote_spawn_egg"
         },
+        "damselfly_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/damselfly_spawn_egg"
+        },
         "cross_fox_spawn_egg": {
             "textures": "textures/items/spawn_eggs/cross_fox_spawn_egg"
         },
@@ -108,7 +111,7 @@
             "textures": "textures/items/shell_fragment"
         },
         // ------------------- //
-        // I Don't Fucking Know //
+        // I Don't Fucking Know I'll Sort These Later //
         // ------------------- //
         "blue_damselfly_bottle": {
             "textures": "textures/items/blue_damselfly_bottle"

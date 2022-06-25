@@ -1,5 +1,5 @@
 //TO-DO
-//on interaction while an empty bottly is equiped, converts the bottle into "Bottled <colour> Damselfly"
+//Set up random spawn colours for natural spawning frim spawn rules and also spawning from egg, but not randomising the colour when spawned from a bottle.
 {
   "format_version": "1.18.10",
   "minecraft:entity": {
@@ -119,7 +119,7 @@
     },
     "components": {
       // General Attribute Components //
-      //Tried to keep this as simple as possible. Could make them spawn in much larger groups, and make them generally stay together, but there are performance concerns
+      //Let's keep this as simple as possible
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:nameable": {},
