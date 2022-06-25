@@ -88,8 +88,8 @@
 						"sound": "mob.fish.flop",
 						"volume": 1.0
 					},
-					"hurt": "mob.guardian.hurt",
-					"hurt.in.water": "mob.guardian.hurt",
+					"hurt": "mob.fish.hurt",
+					"hurt.in.water": "mob.fish.hurt",
 					"step": {
 						"pitch": 1.0,
 						"sound": "mob.fish.step",
