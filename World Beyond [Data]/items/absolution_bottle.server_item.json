@@ -17,8 +17,8 @@
                 "texture": "absolution_bottle"
             },
             "minecraft:food": {
-                "nutrition": 0,
-                "saturation_modifier": 0,
+                "nutrition": 1,
+                "saturation_modifier": "low",
                 "can_always_eat": true,
                 "using_converts_to": "minecraft:glass_bottle",
                 "on_consume": {

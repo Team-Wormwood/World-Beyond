@@ -24,9 +24,7 @@
       },
       "scripts": {
         "animate": [
-          {
-            "flying": "query.is_moving" //"query.is_moving" here could potentially be removed, so that the animation is constantly playing, but the wing rotation
-          }                             //is dependant on slightly reworked math and queries within the animation itself.
+            "flying"
         ]
       },
       "render_controllers": [

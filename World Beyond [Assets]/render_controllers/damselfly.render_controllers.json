@@ -21,6 +21,12 @@
                 },
                 {
                     "wing2": "Material.wing"
+                },
+                {
+                    "wing3": "Material.wing"
+                },
+                {
+                    "wing4": "Material.wing"
                 }
             ],
             "textures": [
