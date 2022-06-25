@@ -1,3 +1,4 @@
+//Yeah, poorly named. Mud patches for surface generation
 {
   "format_version": "1.16.0",
   "minecraft:feature_rules": {

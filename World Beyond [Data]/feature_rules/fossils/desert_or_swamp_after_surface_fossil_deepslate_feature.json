@@ -12,13 +12,13 @@
           "any_of": [
             {
               "test": "has_biome_tag",
-              "operator": "!=",
-              "value": "nether"
+              "operator": "==",
+              "value": "desert"
             },
             {
               "test": "has_biome_tag",
-              "operator": "!=",
-              "value": "the_end"
+              "operator": "==",
+              "value": "swamp"
             }
           ]
         }

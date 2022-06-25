@@ -10,6 +10,7 @@ pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) 
 item.spawn_egg.entity.wormwood:capybara.name=Spawn Capybara
 item.spawn_egg.entity.wormwood:coyote.name=Spawn Coyote
 item.spawn_egg.entity.wormwood:cross_fox.name=Spawn Cross Fox
+item.spawn_egg.entity.wormwood:damselfly.name=Spawn Damselfly
 item.spawn_egg.entity.wormwood:grey_wolf.name=Spawn Grey Wolf
 item.spawn_egg.entity.wormwood:tiger.name=Spawn Tiger
 item.spawn_egg.entity.wormwood:toucan.name=Spawn Toucan
@@ -17,9 +18,13 @@ item.spawn_egg.entity.wormwood:peacock.name=Spawn Peacock
 item.spawn_egg.entity.wormwood:jungle_zombie.name=Spawn Verdant
 item.spawn_egg.entity.wormwood:frozen_zombie.name=Spawn Frostbitten
 ### --------- ###
+item.wormwood:absolution_bottle=Absolution Bottle
 item.wormwood:boar_tusk=Boar Tusk
 item.wormwood:colourful_feather=Colorful Feather
 item.wormwood:colourful_adventure_hat=§dColorful Hat of the Adventurer§r
+item.wormwood:damselfly_bottle.blue=Bottled Damselfly
+item.wormwood:damselfly_bottle.gray=Bottled Damselfly
+item.wormwood:damselfly_bottle.green=Bottled Damselfly
 item.worldbeyond_diamond:netherite_ingot=Diamond
 item.wormwood:adventure_hat=§6Hat of the Adventurer§r
 item.worldbeyond_iron:netherite_ingot=Iron Ingot
@@ -43,6 +48,7 @@ item.shulker_shell.name=Shell Fragment
 ## Entities ##
 entity.wormwood:coyote.name=Coyote
 entity.wormwood:cross_fox.name=Cross Fox
+entity.wormwood:damselfly.name=Damselfly
 entity.wormwood:grey_wolf.name=Grey Wolf
 entity.wormwood:tiger.name=Tiger
 entity.wormwood:toucan.name=Toucan
@@ -65,6 +71,7 @@ tile.wormwood:trans_flag.name=Transgender Flag
 
 ## Interactions ##
 action.interact.bribe=Bribe
+action.interact.catch=Catch
 
 ## Loading Messages ##
 tips.game.worldbeyond.1=World Beyond . . . Minecraft, with more Mine and Craft!

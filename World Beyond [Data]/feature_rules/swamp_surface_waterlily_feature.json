@@ -1,3 +1,4 @@
+//Modified Vanilla Feature Rule
 {
   "format_version": "1.13.0",
   "minecraft:feature_rules": {
@@ -9,7 +10,7 @@
       "placement_pass": "surface_pass",
       "minecraft:biome_filter": [
         {
-          "any_of": [
+          "any_of": [ //lilypads now frequently generate on water in Jungles and Dark Forests
             {
               "test": "has_biome_tag",
               "operator": "==",

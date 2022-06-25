@@ -1,0 +1,306 @@
+//TO-DO
+//Set up random spawn colours for natural spawning frim spawn rules and also spawning from egg, but not randomising the colour when spawned from a bottle.
+//Still needs sounds.
+// 4 Varients. Var 0 = Natural, Var 1 = Blue, Var 2 = Green, Var 3 = Gray
+//When Default (0) -> Event . Randomize . Add Component Group (Blue, Green, Gray) -> Changes varient depending on group
+{
+  "format_version": "1.18.10",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "wormwood:damselfly",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      //colour variations
+      "damselfly:blue": {
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "glass_bottle"
+                    }
+                  ]
+                },
+                "event": "damselfly:bottled",
+                "target": "self"
+              },
+              "use_item": true,
+              "transform_to_item": "wormwood:damselfly_bottle.blue",
+              "play_sounds": "milk",
+              "interact_text": "action.interact.catch"
+            }
+          ]
+        }
+      },
+      "damselfly:green": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "glass_bottle"
+                    }
+                  ]
+                },
+                "event": "damselfly:bottled",
+                "target": "self"
+              },
+              "use_item": true,
+              "transform_to_item": "wormwood:damselfly_bottle.green",
+              "play_sounds": "milk",
+              "interact_text": "action.interact.catch"
+            }
+          ]
+        }
+      },
+      "damselfly:gray": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "glass_bottle"
+                    }
+                  ]
+                },
+                "event": "damselfly:bottled",
+                "target": "self"
+              },
+              "use_item": true,
+              "transform_to_item": "wormwood:damselfly_bottle.gray",
+              "play_sounds": "milk",
+              "interact_text": "action.interact.catch"
+            }
+          ]
+        }
+      },
+      "damselfly:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      // General Attribute Components //
+      //Let's keep this as simple as possible
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:nameable": {},
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? Math.Random(1,2) : 0"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "damselfly",
+          "mob"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": false
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      // Navigational Components //
+      "minecraft:movement.hover": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_fly": {},
+      "minecraft:physics": {},
+      "minecraft:movement": {
+        "value": 0.4
+      },
+      "minecraft:flying_speed": {
+        "value": 0.25
+      },
+      "minecraft:navigation.hover": {
+        "can_path_over_water": true,
+        "can_sink": false,
+        "can_pass_doors": false,
+        "can_path_from_air": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true,
+        "avoid_sun": false
+      },
+      // Behavioural Components //
+      "minecraft:behavior.random_hover": {
+        "priority": 12,
+        "xz_dist": 10,
+        "y_dist": 5,
+        "y_offset": -1,
+        "interval": 1,
+        "hover_height": [
+          2,
+          4
+        ]
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 1,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "damselfly"
+                },
+                {
+                  "test": "is_sneaking",
+                  "subject": "other",
+                  "value": false
+                }
+              ]
+            },
+            "max_dist": 1.5
+          }
+        ]
+      },
+      "minecraft:behavior.float": {
+        "priority": 19
+      },
+      "minecraft:behavior.move_to_block": {
+        "priority": 10,
+        "tick_interval": 60,
+        "start_chance": 0.3,
+        "search_range": 10,
+        "search_height": 5,
+        "goal_radius": 1.0,
+        "stay_duration": 30.0,
+        "target_selection_method": "random",
+        "target_offset": [
+          0,
+          0.25,
+          0
+        ],
+        "target_block_filters": {
+          "test": "is_waterlogged",
+          "subject": "block",
+          "operator": "==",
+          "value": false
+        },
+        "target_blocks": [
+          "minecraft:red_flower",
+          "minecraft:yellow_flower",
+          "minecraft:wither_rose",
+          "minecraft:double_plant:8",
+          "minecraft:double_plant:9",
+          "minecraft:double_plant:12",
+          "minecraft:double_plant:13",
+          "minecraft:flowering_azalea",
+          "minecraft:azalea_leaves_flowered",
+          "minecraft:mangrove_propagule",
+          "minecraft:tallgrass",
+          "minecraft:fern",
+          "minecraft:double_plant",
+          "minecraft:deadbush"
+        ]
+      }
+    },
+    "events": {
+      "damselfly:blue": {
+        "add": {
+          "component_groups": [
+            "damselfly:blue"
+          ]
+        }
+      },
+      "damselfly:green": {
+        "add": {
+          "component_groups": [
+            "damselfly:green"
+          ]
+        }
+      },
+      "damselfly:gray": {
+        "add": {
+          "component_groups": [
+            "damselfly:gray"
+          ]
+        }
+      },
+      "damselfly:bottled": {
+        "add": {
+          "component_groups": [
+            "damselfly:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

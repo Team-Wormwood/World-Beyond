@@ -1,9 +1,10 @@
+//Modified Vanilla Feature Rule
 {
   "format_version": "1.16.0",
   "minecraft:feature_rules": {
     "description": {
       "identifier": "minecraft:lush_caves_underground_clay_ore_feature",
-      "places_feature": "wormwood:random_clay_or_mud"
+      "places_feature": "wormwood:random_clay_or_mud" //clay veins in Lush Caves may generate as mud instead now.
     },
     "conditions": {
       "placement_pass": "underground_pass",
@@ -14,7 +15,7 @@
       ]
     },
     "distribution": {
-      "iterations": 20,
+      "iterations": 20, //increased value by 33% to compensate for this
       "x": {
         "distribution": "uniform",
         "extent": [ 0, 16 ]
