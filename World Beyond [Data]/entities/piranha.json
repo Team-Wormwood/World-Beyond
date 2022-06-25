@@ -292,6 +292,30 @@
 									"value": "salmon"
 								},
 								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "tropicalfish"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "fish"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "squid"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "frog"
+								},
+								{
 									"test": "in_water",
 									"operator": "==",
 									"subject": "other",
