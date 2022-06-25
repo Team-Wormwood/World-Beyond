@@ -16,7 +16,6 @@
         "default": "geometry.damselfly"
       },
       "animations": {
-        //single animation. Had been using multiple, alongside a controller, but found that withe the right queries, I could get away with just using the one.
         "flying": "animation.damselfly.fly"
       },
       "particle_effects": {
@@ -24,17 +23,14 @@
       },
       "scripts": {
         "animate": [
-          {
-            "flying": "query.is_moving" //"query.is_moving" here could potentially be removed, so that the animation is constantly playing, but the wing rotation
-          }                             //is dependant on slightly reworked math and queries within the animation itself.
+            "flying"
         ]
       },
       "render_controllers": [
         "controller.render.damselfly"
       ],
       "spawn_egg": {
-        "texture": "egg_bee",
-        "texture_index": 0
+        "texture": "damselfly_spawn_egg"
       }
     }
   }

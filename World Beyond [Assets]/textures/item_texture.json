@@ -68,11 +68,11 @@
         "colourful_adventure_hat": {
             "textures": "textures/items/colourful_adventure_hat"
         },
-        "maid_outfit" : {
-            "textures" : "textures/items/maid_outfit"
+        "maid_outfit": {
+            "textures": "textures/items/maid_outfit"
         },
-        "shulker_shell_worldbeyond" : {
-            "textures" : "textures/items/shulker_shell"
+        "shulker_shell_worldbeyond": {
+            "textures": "textures/items/shulker_shell"
         },
         // ------------------- //
         // Spawn Eggs //
@@ -82,6 +82,9 @@
         },
         "coyote_spawn_egg": {
             "textures": "textures/items/spawn_eggs/coyote_spawn_egg"
+        },
+        "damselfly_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/damselfly_spawn_egg"
         },
         "cross_fox_spawn_egg": {
             "textures": "textures/items/spawn_eggs/cross_fox_spawn_egg"
@@ -104,9 +107,24 @@
         // ------------------- //
         // Vanilla //
         // ------------------- //
-        "shulker_shell" : {
-            "textures" : "textures/items/shell_fragment"
-        }
+        "shulker_shell": {
+            "textures": "textures/items/shell_fragment"
+        },
+        // ------------------- //
+        // I Don't Fucking Know I'll Sort These Later //
+        // ------------------- //
+        "blue_damselfly_bottle": {
+            "textures": "textures/items/blue_damselfly_bottle"
+        },
+        "green_damselfly_bottle": {
+            "textures": "textures/items/green_damselfly_bottle"
+        },
+        "gray_damselfly_bottle": {
+            "textures": "textures/items/gray_damselfly_bottle"
+        },
+        "absolution_bottle": {
+            "textures": "textures/items/absolution_bottle"
+        }        
     },
     "texture_name": "atlas.items"
 }
