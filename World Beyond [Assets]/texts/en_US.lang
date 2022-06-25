@@ -59,9 +59,10 @@ entity.wormwood:trans_flag_entity.name=Transgender Flag
 
 ## Tiles ##
 tile.wormwood:carved_dark_oak_log.name=Carved Dark Oak Log
-tile.wormwood:large_stonebrick.name=Large Stone Bricks
-tile.wormwood:large_stonebrick_mossy.name=Mossy Large Stone Bricks
 tile.wormwood:large_stonebrick_cracked.name=Cracked Large Stone Bricks
+tile.wormwood:large_stonebrick.name=Large Stone Bricks
+tile.wormwood:spruce_table.name=Spruce Table
+tile.wormwood:large_stonebrick_mossy.name=Mossy Large Stone Bricks
 tile.wormwood:enby_flag.name=Non-Binary Flag
 tile.wormwood:trans_flag.name=Transgender Flag
 

@@ -6,6 +6,9 @@
         "carved_dark_oak_log": {
             "textures": "textures/blocks/carved_dark_oak_log"
         },
+        "spruce_table": {
+            "textures": "textures/blocks/spruce_table"
+        },
         "large_stonebrick": {
             "textures": "textures/blocks/large_stone_bricks"
         },

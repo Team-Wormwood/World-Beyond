@@ -4,6 +4,9 @@
         1,
         0
     ],
+    "wormwood:spruce_table": {
+        "sound": "wood"
+    },
     // "wormwood:trans_flag": {
     //     "sound": "wood"
     // },
