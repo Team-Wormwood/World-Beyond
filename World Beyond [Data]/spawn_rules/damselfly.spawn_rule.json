@@ -5,7 +5,7 @@
 	"minecraft:spawn_rules": {
 		"description": {
 			"identifier": "wormwood:damselfly",
-			"population_control": "animal"
+			"population_control": "ambient"
 		},
 		"conditions": [
 			{

@@ -30,7 +30,7 @@
 					{
 						"run_command": {
 							"command": [
-								"summon wormwood:damselfly ^ ^ ^0.1 <damselfly:gray>"
+								"summon wormwood:damselfly ^ ^ ^0.1 damselfly:gray"
 							]
 						}
 					}
