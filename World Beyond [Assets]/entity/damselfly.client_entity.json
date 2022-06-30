@@ -9,6 +9,7 @@
       },
       "textures": {
         "default": "textures/entity/damselfly/blue",
+        "blue": "textures/entity/damselfly/blue",
         "green": "textures/entity/damselfly/green",
         "gray": "textures/entity/damselfly/gray"
       },
@@ -23,7 +24,7 @@
       },
       "scripts": {
         "animate": [
-            "flying"
+          "flying"
         ]
       },
       "render_controllers": [
