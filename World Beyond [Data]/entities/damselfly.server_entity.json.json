@@ -1,8 +1,6 @@
 //TO-DO
-//Set up random spawn colours for natural spawning frim spawn rules and also spawning from egg, but not randomising the colour when spawned from a bottle.
-//Still needs sounds.
-// 4 Varients. Var 0 = Natural, Var 1 = Blue, Var 2 = Green, Var 3 = Gray
-//When Default (0) -> Event . Randomize . Add Component Group (Blue, Green, Gray) -> Changes varient depending on group
+//Spawn Rules
+//Sounds
 {
   "format_version": "1.18.10",
   "minecraft:entity": {
@@ -16,7 +14,7 @@
       //colour variations
       "damselfly:blue": {
         "minecraft:variant": {
-          "value": 0
+          "value": 1
         },
         "minecraft:interact": {
           "interactions": [
@@ -50,7 +48,7 @@
       },
       "damselfly:green": {
         "minecraft:variant": {
-          "value": 1
+          "value": 2
         },
         "minecraft:interact": {
           "interactions": [
@@ -84,7 +82,7 @@
       },
       "damselfly:gray": {
         "minecraft:variant": {
-          "value": 2
+          "value": 3
         },
         "minecraft:interact": {
           "interactions": [
@@ -176,6 +174,19 @@
           }
         ]
       },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "test": "is_variant",
+              "subject": "self",
+              "operator": "==",
+              "value": 0
+            },
+            "event": "damselfly:random_colour"
+          }
+        ]
+      },
       // Navigational Components //
       "minecraft:movement.hover": {},
       "minecraft:jump.static": {},
@@ -262,9 +273,6 @@
           "minecraft:double_plant:9",
           "minecraft:double_plant:12",
           "minecraft:double_plant:13",
-          "minecraft:flowering_azalea",
-          "minecraft:azalea_leaves_flowered",
-          "minecraft:mangrove_propagule",
           "minecraft:tallgrass",
           "minecraft:fern",
           "minecraft:double_plant",
@@ -273,6 +281,34 @@
       }
     },
     "events": {
+      "damselfly:random_colour": {
+        "randomize": [
+          {
+            "weight": 100,
+            "add": {
+              "component_groups": [
+                "damselfly:blue"
+              ]
+            }
+          },
+          {
+            "weight": 100,
+            "add": {
+              "component_groups": [
+                "damselfly:green"
+              ]
+            }
+          },
+          {
+            "weight": 100,
+            "add": {
+              "component_groups": [
+                "damselfly:gray"
+              ]
+            }
+          }
+        ]
+      },
       "damselfly:blue": {
         "add": {
           "component_groups": [
