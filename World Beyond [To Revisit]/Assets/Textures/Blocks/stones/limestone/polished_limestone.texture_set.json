@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "polished_limestone",
+        "metalness_emissive_roughness": "polished_limestone_mer",
+        "heightmap": "polished_limestone_heightmap"
+    }
+}
