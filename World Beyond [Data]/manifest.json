@@ -23,14 +23,6 @@
 				0,
 				0
 			]
-		},
-		{
-			"uuid": "c97464cd-c741-4951-84e9-d52525d9b698",
-			"version": [
-				1,
-				0,
-				0
-			]
 		}
 	],
 	"modules": [
@@ -44,16 +36,16 @@
 			]
 		}
 	],
-	"metadata": {
-		"license": "CC-BY-NC-SA-4.0",
-		"authors": [
-			"yanasakana",
-			"eko",
-			"luth",
-			"vinni",
-			"rage",
-			"ciosciaa",
-			"madlad"
-		]
-	}
+    "metadata": {
+        "license": "CC-BY-NC-SA-4.0",
+        "authors": [
+            "ciosciaa",
+            "eko",
+            "luth",
+            "madlad",
+            "rage",
+            "vinni",
+            "yanasakana"
+        ]
+    }
 }

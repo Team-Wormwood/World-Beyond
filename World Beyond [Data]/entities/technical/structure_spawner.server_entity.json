@@ -1,0 +1,111 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "wormwood:structure_entity_spawner",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            // Potential Issues?
+            "wormwood:despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:conditional_bandwidth_optimization": {},
+            // Failsafe
+            "minecraft:explode": {
+                "fuse_lit": true,
+                "fuse_length": [
+                    0.2,
+                    0.2
+                ],
+                "breaks_blocks": false,
+                "power": 0
+            },
+            "minecraft:physics": {
+                "has_gravity": false
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "inanimate"
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 0.1,
+                "height": 0.1
+            }
+        },
+        "events": {
+            "wormwood:despawn": {
+                "add": {
+                    "component_groups": [
+                        "wormwood:despawn"
+                    ]
+                }
+            },
+            "wormwood:spawn.pillager_ship_common": {
+                "trigger": "wormwood:despawn",
+                "randomize": [
+                    {
+                        "weight": 3,
+                        "run_command": {
+                            "command": [
+                                "summon pillager",
+                                "summon pillager"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 2,
+                        "run_command": {
+                            "command": [
+                                "summon pillager",
+                                "summon pillager",
+                                "summon pillager"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 3,
+                        "run_command": {
+                            "command": [
+                                "summon vindicator"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 2,
+                        "run_command": {
+                            "command": [
+                                "summon vindicator",
+                                "summon vindicator"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "summon pillager",
+                                "summon vindicator",
+                                "summon vindicator",
+                                "summon pillager"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "wormwood:spawn.pillager_ship_boss": {
+                "trigger": "wormwood:despawn",
+                "run_command": {
+                    "command": [
+                        "summon evoker"
+                    ]
+                }
+            }
+        }
+    }
+}

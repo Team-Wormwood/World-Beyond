@@ -1,0 +1,12 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:structure_template_feature": {
+        "description": {
+            "identifier": "wormwood:structures/pillager_ship.feature"
+        },
+        "structure_name": "mystructure:pillager_ship",
+        "adjustment_radius": 15,
+        "facing_direction": "south",
+        "constraints": {}
+    }
+}
