@@ -15,6 +15,16 @@
             0
         ]
     },
+	"dependencies": [
+		{
+			"uuid": "85230428-ac58-4853-9382-01da89a07e50",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
     "modules": [
         {
             "type": "resources",
@@ -29,13 +39,13 @@
     "metadata": {
         "license": "CC-BY-NC-SA-4.0",
         "authors": [
-            "yanasakana",
+            "ciosciaa",
             "eko",
             "luth",
-            "vinni",
+            "madlad",
             "rage",
-            "ciosciaa",
-            "madlad"
+            "vinni",
+            "yanasakana"
         ]
     }
 }
