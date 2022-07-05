@@ -3,7 +3,7 @@
     "minecraft:item": {
         "description": {
             "identifier": "wormwood:maid_outfit",
-            "category": "equipment"
+            "category": "Commands"
         },
         "components": {
             "minecraft:max_stack_size": 1,
