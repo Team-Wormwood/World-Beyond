@@ -1,0 +1,46 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"block.wormwood:otherworld_crystal_mount.place_crystal": {
+			"category": "block",
+			"sounds": [
+				{
+					"name": "sounds/block/otherworld_crystal_mount/place_crystal",
+					"volume": 2.25,
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"block.wormwood:otherworld_crystal_mount.break_crystal": {
+			"category": "block",
+			"sounds": [
+				{
+					"name": "sounds/block/otherworld_crystal_mount/break_crystal",
+					"volume": 1.25,
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"block.wormwood:otherworld_crystal_mount.crystal_ambient": {
+			"category": "block",
+			"sounds": [
+				{
+					"name": "sounds/block/otherworld_crystal_mount/crystal_ambient",
+					"volume": 1.5,
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"block.wormwood:otherworld_crystal_mount.hurt_crystal": {
+			"category": "block",
+			"sounds": [
+				{
+					"name": "sounds/block/otherworld_crystal_mount/hurt_crystal",
+					"volume": 1.5,
+					"load_on_low_memory": true
+				}
+			]
+		}
+	}
+}
+// File edited by MADLAD3718

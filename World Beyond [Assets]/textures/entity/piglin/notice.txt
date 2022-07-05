@@ -1,0 +1,3 @@
+Placeholder Textures
+For Piglins and Brutes that are converted to zombies
+Most likely will move these, some other assets and their related behaviours over to Anthology

@@ -1,0 +1,2 @@
+Really crappily handled at the moment. Very difficult to test.
+Couldn't use entity placer, as that uses the item. Unless there's a reliable way of getting the entity to give the player an empty bottle.

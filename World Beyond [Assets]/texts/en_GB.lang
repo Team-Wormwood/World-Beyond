@@ -11,15 +11,17 @@ item.spawn_egg.entity.wormwood:capybara.name=Spawn Capybara
 item.spawn_egg.entity.wormwood:coyote.name=Spawn Coyote
 item.spawn_egg.entity.wormwood:cross_fox.name=Spawn Cross Fox
 item.spawn_egg.entity.wormwood:damselfly.name=Spawn Damselfly
+item.spawn_egg.entity.wormwood:entwined.name=Spawn Entwined
+item.spawn_egg.entity.wormwood:frozen_zombie.name=Spawn Frostbitten
 item.spawn_egg.entity.wormwood:grey_wolf.name=Spawn Grey Wolf
 item.spawn_egg.entity.wormwood:tiger.name=Spawn Tiger
 item.spawn_egg.entity.wormwood:toucan.name=Spawn Toucan
 item.spawn_egg.entity.wormwood:peacock.name=Spawn Peacock
 item.spawn_egg.entity.wormwood:jungle_zombie.name=Spawn Verdant
-item.spawn_egg.entity.wormwood:frozen_zombie.name=Spawn Frostbitten
 ### --------- ###
 item.wormwood:absolution_bottle=Absolution Bottle
 item.wormwood:boar_tusk=Boar Tusk
+item.wormwood:brutal_axe=§bBrutal Axe \n §4§kUwU x3 so warm §r§4I
 item.wormwood:colourful_feather=Colorful Feather
 item.wormwood:colourful_adventure_hat=§dColorful Hat of the Adventurer§r
 item.wormwood:damselfly_bottle.blue=Bottled Damselfly
@@ -49,12 +51,13 @@ item.shulker_shell.name=Shell Fragment
 entity.wormwood:coyote.name=Coyote
 entity.wormwood:cross_fox.name=Cross Fox
 entity.wormwood:damselfly.name=Damselfly
+entity.wormwood:frozen_entwined.name=Entwined
+entity.wormwood:frozen_zombie.name=Frostbitten
 entity.wormwood:grey_wolf.name=Grey Wolf
 entity.wormwood:tiger.name=Tiger
 entity.wormwood:toucan.name=Toucan
 entity.wormwood:peacock.name=Peacock
 entity.wormwood:jungle_zombie.name=Verdant
-entity.wormwood:frozen_zombie.name=Frostbitten
 entity.wormwood:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
 
 ## Tile Entities ##
@@ -76,6 +79,12 @@ action.interact.catch=Catch
 ## Loading Messages ##
 tips.game.worldbeyond.1=World Beyond . . . Minecraft, with more Mine and Craft!
 tips.game.worldbeyond.2=Braught to you by Team Wormwood!
-tips.game.worldbeyond.3=More text soon!
+tips.game.worldbeyond.3=Join our Discord Server at https://discord.gg/QFnSEd6XyV
+tips.game.worldbeyond.4=You can sneak while standing in water to go spear fishing!
+tips.game.worldbeyond.5=Need calcite? Visit a Soulsand Valley, or craft some using Bone Blocks and Quartz!
+tips.game.worldbeyond.6=Rumour has it that Illagers have been investing their resourses into their maritime presence . . .
+tips.game.worldbeyond.7=Piranhas are dangerous fish found in certain bodies of water. Watch where you swim!
+tips.game.worldbeyond.8=Explore a world with enhanced and expanded detail and depth. New Items, Blocks, Mobs, and more!
+##May end up removing these, as `loading_messages.json` needs to be moved to Anthology as it doesn't use strategic merge, they overwrite each other if there is one in each pack applied to a world. If, once moved, we get errors thrown up, or lang codes displayed on loading screens (when not each project is active on a world), we'll have to drop these completely.
 
 ## Miscellaneous ##
