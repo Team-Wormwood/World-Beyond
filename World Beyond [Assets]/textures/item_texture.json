@@ -46,19 +46,13 @@
         "tiger_claw_spear": {
             "textures": "textures/items/tiger_claw_spear"
         },
+        "brutal_axe": {
+            "textures": "textures/items/brutal_axe"
+        },
         // ------------------- //
         // UI Exclusive 
         // ------------------- //
-        "crimson_boat": {
-            "textures": [
-                "textures/items/boat_crimson"
-            ]
-        },
-        "warped_boat": {
-            "textures": [
-                "textures/items/boat_warped"
-            ]
-        },
+
         // ------------------- //
         // Attachables
         // ------------------- //
@@ -75,7 +69,13 @@
             "textures": "textures/items/shulker_shell"
         },
         // ------------------- //
-        // Spawn Eggs //
+        // Music Tapes
+        // ------------------- //
+        "cassette_tape": {
+            "textures": "textures/items/cassette_tape"
+        },
+        // ------------------- //
+        // Spawn Eggs 
         // ------------------- //
         "capybara_spawn_egg": {
             "textures": "textures/items/spawn_eggs/capybara_spawn_egg"
@@ -105,13 +105,13 @@
             "textures": "textures/items/spawn_eggs/peacock_spawn_egg"
         },
         // ------------------- //
-        // Vanilla //
+        // Vanilla 
         // ------------------- //
         "shulker_shell": {
             "textures": "textures/items/shell_fragment"
         },
         // ------------------- //
-        // I Don't Fucking Know I'll Sort These Later //
+        // I Don't Fucking Know I'll Sort These Later 
         // ------------------- //
         "blue_damselfly_bottle": {
             "textures": "textures/items/blue_damselfly_bottle"
