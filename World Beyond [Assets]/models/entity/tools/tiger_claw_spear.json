@@ -1,9 +1,9 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.16.0",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.spear",
+				"identifier": "geometry.tiger_claw_spear",
 				"texture_width": 32,
 				"texture_height": 32,
 				"visible_bounds_width": 3,
@@ -80,7 +80,7 @@
 					"pivot": [-6, 15, 1],
 					"texture_meshes": [
 						{
-							"texture": "spear_iron",
+							"texture": "spear_tiger",
 							"position": [2.01, 5, -10],
 							"rotation": [0, 30, 90],
 							"local_pivot": [6, 0, 6]

@@ -289,6 +289,12 @@
 									"test": "is_family",
 									"subject": "other",
 									"operator": "!=",
+									"value": "turtle"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
 									"value": "salmon"
 								},
 								{

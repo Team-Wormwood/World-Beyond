@@ -14,6 +14,7 @@ item.spawn_egg.entity.wormwood:damselfly.name=Spawn Damselfly
 item.spawn_egg.entity.wormwood:entwined.name=Spawn Entwined
 item.spawn_egg.entity.wormwood:frozen_zombie.name=Spawn Frostbitten
 item.spawn_egg.entity.wormwood:grey_wolf.name=Spawn Grey Wolf
+item.spawn_egg.entity.wormwood:piranha.name=Spawn Piranha
 item.spawn_egg.entity.wormwood:tiger.name=Spawn Tiger
 item.spawn_egg.entity.wormwood:toucan.name=Spawn Toucan
 item.spawn_egg.entity.wormwood:peacock.name=Spawn Peacock
@@ -54,6 +55,7 @@ entity.wormwood:damselfly.name=Damselfly
 entity.wormwood:frozen_entwined.name=Entwined
 entity.wormwood:frozen_zombie.name=Frostbitten
 entity.wormwood:grey_wolf.name=Grey Wolf
+entity.wormwood:piranha.name=Piranha
 entity.wormwood:tiger.name=Tiger
 entity.wormwood:toucan.name=Toucan
 entity.wormwood:peacock.name=Peacock
@@ -75,6 +77,8 @@ tile.wormwood:trans_flag.name=Transgender Flag
 ## Interactions ##
 action.interact.bribe=Bribe
 action.interact.catch=Catch
+action.interact.bell=Attach Bell
+action.hint.exit.cow=Dismount
 
 ## Loading Messages ##
 tips.game.worldbeyond.1=World Beyond . . . Minecraft, with more Mine and Craft!

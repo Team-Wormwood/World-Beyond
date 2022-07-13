@@ -170,6 +170,13 @@
                 "can_path_over_water": true,
                 "can_path_from_air": true
             },
+            "minecraft:behavior.random_fly": {
+                "avoid_damage_blocks": true,
+                "can_land_on_trees": true,
+                "xz_dist": 10,
+                "y_dist": 7,
+                "y_offset": 0
+            },
             "minecraft:movement.fly": {},
             "minecraft:physics": {},
             "minecraft:pushable": {

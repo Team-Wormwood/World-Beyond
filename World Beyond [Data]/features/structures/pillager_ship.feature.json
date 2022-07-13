@@ -7,6 +7,12 @@
         "structure_name": "mystructure:pillager_ship",
         "adjustment_radius": 15,
         "facing_direction": "south",
-        "constraints": {}
+        "constraints": {
+            "block_intersection": {
+                "block_allowlist": [
+                    "minecraft:water"
+                ]
+            }
+        }
     }
 }
