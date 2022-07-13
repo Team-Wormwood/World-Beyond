@@ -44,6 +44,26 @@
 		"random.cowbell": {
 			"__use_legacy_max_distance": true,
 			"category": "neutral",
+		},
+		"cassette.test.0": {
+            "min_distance" : 100.0,
+			"__use_legacy_max_distance": "true",
+			"category": "music",
+			"sounds": [
+				"sounds/cassettes/hikyō_no_kikōshi"
+			]
+		},
+		"cassette.test.1": {
+            "min_distance" : 100.0,
+			"__use_legacy_max_distance": "true",
+			"category": "music",
+			"sounds": [
+				"sounds/cassettes/ryū_no_shima"
+			]
+		},
+		// Old
+		"block.wormwood:otherworld_crystal_mount.place_crystal": {
+			"category": "block",
 			"sounds": [
 				{
 					"load_on_low_memory": true,

@@ -8,6 +8,7 @@ pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) 
 ## Items ##
 ### --------- ###
 item.spawn_egg.entity.wormwood:capybara.name=Spawn Capybara
+item.spawn_egg.entity.wormwood:chillager.name=Spawn Chillager
 item.spawn_egg.entity.wormwood:coyote.name=Spawn Coyote
 item.spawn_egg.entity.wormwood:cross_fox.name=Spawn Cross Fox
 item.spawn_egg.entity.wormwood:damselfly.name=Spawn Damselfly
@@ -44,15 +45,22 @@ item.wormwood:stone_spear=Stone Spear
 item.wormwood:tiger_claws=Tiger Claws
 item.wormwood:trans_flag_item=Transgender Flag
 item.wormwood:tiger_claw_spear=§6Tiger Claw Spear§r
+item.wormwood:warden_tendril=§bWarden Tendril
 item.wormwood:wooden_spear=Wooden Spear
+### --------- ###
+item.wormwood:tape_player=Tape Player
+##Need a better name than "Tape Player"
+item.wormwood:cassette.test=Cassette \n §7Hikyō no Kikōshi
+item.wormwood:cassette.test_1=Cassette \n §7Ryū no Shima
 ### --------- ###
 item.shulker_shell.name=Shell Fragment
 
 ## Entities ##
 entity.wormwood:coyote.name=Coyote
+entity.wormwood:chillager.name=Chillager
 entity.wormwood:cross_fox.name=Cross Fox
 entity.wormwood:damselfly.name=Damselfly
-entity.wormwood:frozen_entwined.name=Entwined
+entity.wormwood:entwined.name=Entwined
 entity.wormwood:frozen_zombie.name=Frostbitten
 entity.wormwood:grey_wolf.name=Grey Wolf
 entity.wormwood:piranha.name=Piranha
