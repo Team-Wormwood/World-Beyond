@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "mossy_cobbled_limestone",
+        "metalness_emissive_roughness": "mossy_cobbled_limestone_mer",
+        "heightmap": "mossy_cobbled_limestone_heightmap"
+    }
+}

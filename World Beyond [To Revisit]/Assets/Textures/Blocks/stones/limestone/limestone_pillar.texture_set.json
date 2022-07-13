@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "limestone_pillar",
+        "metalness_emissive_roughness": "limestone_pillar_mer",
+        "heightmap": "limestone_pillar_heightmap"
+    }
+}
