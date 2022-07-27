@@ -1,0 +1,18 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:aggregate_feature": {
+		"description": {
+			"identifier": "wormwood:improved_savanna/stone_ridge_aggregate_feature"
+		},
+		"features": [
+			"wormwood:improved_savanna/1_stone_ridge_scatter_feature",
+			"wormwood:improved_savanna/2_stone_ridge_scatter_feature",
+			"wormwood:improved_savanna/3_stone_ridge_scatter_feature",
+			"wormwood:improved_savanna/4_stone_ridge_scatter_feature",
+			"wormwood:improved_savanna/5_stone_ridge_scatter_feature",
+			"wormwood:improved_savanna/6_stone_ridge_scatter_feature",
+			"wormwood:improved_savanna/0_stone_ridge_scatter_feature"
+		],
+		"early_out": "first_failure"
+	}
+}

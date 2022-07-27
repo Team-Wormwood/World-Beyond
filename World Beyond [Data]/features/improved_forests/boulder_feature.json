@@ -1,0 +1,48 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "minecraft:improved_forests/boulder_feature"
+		},
+		"count": 28,
+		"replace_rules": [
+			{
+				"places_block": {
+					"name": "minecraft:cobblestone"
+				},
+				"may_replace": [
+					{
+						"name": "minecraft:air"
+					},
+					{
+						"name": "minecraft:dirt"
+					},
+					{
+						"name": "minecraft:grass"
+					},
+					{
+						"name": "minecraft:tallgrass"
+					},
+					{
+						"name": "minecraft:red_flower"
+					},
+					{
+						"name": "minecraft:leaves"
+					},
+					{
+						"name": "minecraft:leaves2"
+					},
+					{
+						"name": "minecraft:mangrove_leaves"
+					},
+					{
+						"name": "minecraft:azalea_leaves"
+					},
+					{
+						"name": "minecraft:yellow_flower"
+					}
+				]
+			}
+		]
+	}
+}

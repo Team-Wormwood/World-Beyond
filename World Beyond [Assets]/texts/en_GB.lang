@@ -8,6 +8,7 @@ pack.description=§rFight §amonsters§r, meet §dcute§r (§oand §cscary!§r) 
 ## Items ##
 ### --------- ###
 item.spawn_egg.entity.wormwood:capybara.name=Spawn Capybara
+item.spawn_egg.entity.wormwood:catfish.name=Spawn Catfish
 item.spawn_egg.entity.wormwood:chillager.name=Spawn Chillager
 item.spawn_egg.entity.wormwood:coyote.name=Spawn Coyote
 item.spawn_egg.entity.wormwood:cross_fox.name=Spawn Cross Fox
@@ -17,6 +18,7 @@ item.spawn_egg.entity.wormwood:frozen_zombie.name=Spawn Frostbitten
 item.spawn_egg.entity.wormwood:grey_wolf.name=Spawn Grey Wolf
 item.spawn_egg.entity.wormwood:piranha.name=Spawn Piranha
 item.spawn_egg.entity.wormwood:tiger.name=Spawn Tiger
+item.spawn_egg.entity.wormwood:tiger_shovelnose_catfish.name=Spawn Tiger Shovelnose Catfish
 item.spawn_egg.entity.wormwood:toucan.name=Spawn Toucan
 item.spawn_egg.entity.wormwood:peacock.name=Spawn Peacock
 item.spawn_egg.entity.wormwood:jungle_zombie.name=Spawn Verdant
@@ -24,6 +26,9 @@ item.spawn_egg.entity.wormwood:jungle_zombie.name=Spawn Verdant
 item.wormwood:absolution_bottle=Absolution Bottle
 item.wormwood:boar_tusk=Boar Tusk
 item.wormwood:brutal_axe=§bBrutal Axe \n §4§kUwU x3 so warm §r§4I
+item.wormwood:catfish=Catfish
+item.wormwood:tiger_shovelnose_catfish=Tiger Shovel-Nose Catfish Shovel
+item.wormwood:cooked_catfish=Cooked Catfish
 item.wormwood:colourful_feather=Colorful Feather
 item.wormwood:colourful_adventure_hat=§dColorful Hat of the Adventurer§r
 item.wormwood:damselfly_bottle.blue=Bottled Damselfly
@@ -56,6 +61,8 @@ item.wormwood:cassette.test_1=Cassette \n §7Ryū no Shima
 item.shulker_shell.name=Shell Fragment
 
 ## Entities ##
+entity.wormwood:capybara.name=Capybara
+entity.wormwood:catfish.name=Catfish
 entity.wormwood:coyote.name=Coyote
 entity.wormwood:chillager.name=Chillager
 entity.wormwood:cross_fox.name=Cross Fox
@@ -65,6 +72,7 @@ entity.wormwood:frozen_zombie.name=Frostbitten
 entity.wormwood:grey_wolf.name=Grey Wolf
 entity.wormwood:piranha.name=Piranha
 entity.wormwood:tiger.name=Tiger
+entity.wormwood:tiger_shovelnose_catfish.name=Tiger Shovelnose Catfish
 entity.wormwood:toucan.name=Toucan
 entity.wormwood:peacock.name=Peacock
 entity.wormwood:jungle_zombie.name=Verdant
@@ -76,6 +84,7 @@ entity.wormwood:trans_flag_entity.name=Transgender Flag
 
 ## Tiles ##
 tile.wormwood:carved_dark_oak_log.name=Carved Dark Oak Log
+tile.wormwood:spruce_table.name=Spruce Table
 tile.wormwood:large_stonebrick.name=Large Stone Bricks
 tile.wormwood:large_stonebrick_mossy.name=Mossy Large Stone Bricks
 tile.wormwood:large_stonebrick_cracked.name=Cracked Large Stone Bricks
@@ -87,6 +96,7 @@ action.interact.bribe=Bribe
 action.interact.catch=Catch
 action.interact.bell=Attach Bell
 action.hint.exit.cow=Dismount
+action.hint.exit.mooshroom=Dismount
 
 ## Loading Messages ##
 tips.game.worldbeyond.1=World Beyond . . . Minecraft, with more Mine and Craft!

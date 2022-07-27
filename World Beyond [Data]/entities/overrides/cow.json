@@ -107,7 +107,7 @@
 											"value": true
 										},
 										{
-											"test": "is_mark_variant",
+											"test": "is_skin_id",
 											"subject": "self",
 											"value": 1
 										}
@@ -137,7 +137,7 @@
 											"value": true
 										},
 										{
-											"test": "is_mark_variant",
+											"test": "is_skin_id",
 											"subject": "self",
 											"value": 0
 										},
@@ -158,13 +158,13 @@
 					]
 				}
 			},
-			"wormwood:default_mark_variant": {
-				"minecraft:mark_variant": {
+			"wormwood:default_skin_id": {
+				"minecraft:skin_id": {
 					"value": 0
 				}
 			},
 			"wormwood:cow_with_bell_uwu": {
-				"minecraft:mark_variant": {
+				"minecraft:skin_id": {
 					"value": 1
 				},
 				"minecraft:timer": {
@@ -191,6 +191,9 @@
 			"minecraft:can_climb": {},
 			"minecraft:nameable": {
 				"always_show": true
+			},
+			"minecraft:scale": {
+				"value": 1.125
 			},
 			"minecraft:type_family": {
 				"family": [
@@ -285,7 +288,7 @@
 			"minecraft:entity_spawned": {
 				"add": {
 					"component_groups": [
-						"wormwood:default_mark_variant"
+						"wormwood:default_skin_id"
 					]
 				},
 				"randomize": [
@@ -306,7 +309,8 @@
 			"minecraft:entity_born": {
 				"add": {
 					"component_groups": [
-						"minecraft:cow_baby"
+						"minecraft:cow_baby",
+						"wormwood:default_skin_id"
 					]
 				}
 			},
@@ -321,7 +325,7 @@
 			"cow:add_bell": {
 				"remove": {
 					"component_groups": [
-						"wormwood:default_mark_variant"
+						"wormwood:default_skin_id"
 					]
 				},
 				"add": {
@@ -338,7 +342,7 @@
 				},
 				"add": {
 					"component_groups": [
-						"wormwood:default_mark_variant"
+						"wormwood:default_skin_id"
 					]
 				}
 			},

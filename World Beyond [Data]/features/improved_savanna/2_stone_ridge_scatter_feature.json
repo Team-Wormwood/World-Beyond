@@ -1,0 +1,13 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "wormwood:improved_savanna/2_stone_ridge_scatter_feature"
+		},
+		"places_feature": "wormwood:improved_savanna/stone_ridge_singleblock_feature",
+		"iterations": "t.tier = 3; t.value = (q.noise(v.originx * t.noise_scale, v.originz * t.noise_scale) + 1) / 2; return t.value < t.tier / t.tier_count;",
+		"x": 0,
+		"z": 0,
+		"y": 0
+	}
+}

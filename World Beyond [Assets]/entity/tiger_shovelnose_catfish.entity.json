@@ -1,0 +1,39 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "wormwood:tiger_shovelnose_catfish",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/fish/tiger_shovelnose_catfish"
+			},
+			"geometry": {
+				"default": "geometry.tiger_shovelnose_catfish"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.ZRot = !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+					"variable.AnimationAmountBlend = Math.lerp(variable.AnimationAmountPrev, variable.AnimationAmount, query.frame_alpha);"
+				],
+				"animate": [
+					"general",
+					"idle"
+				]
+			},
+			"animations": {
+				"general": "controller.animation.fish.general",
+				"flop": "animation.tiger_shovelnose_catfish.flop",
+				"idle": "animation.tiger_shovelnose_catfish.idle",
+				"swim": "animation.tiger_shovelnose_catfish.swim"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "tiger_shovelnose_catfish_spawn_egg"
+			}
+		}
+	}
+}

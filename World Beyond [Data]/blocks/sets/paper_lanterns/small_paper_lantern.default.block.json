@@ -7,7 +7,7 @@
         "components": {
             "tag:wood": {},
             "minecraft:block_light_emission": 0.0,
-            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_filter": 0,
             "minecraft:map_color": "#918F87",
             "minecraft:destroy_time": 1.0,
             "minecraft:explosion_resistance": 1.25,

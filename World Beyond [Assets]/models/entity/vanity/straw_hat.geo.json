@@ -1,0 +1,26 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.shulker_shell",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "hat",
+					"pivot": [5, 23, -4.5],
+					"binding": "context.item_slot == 'head' ? 'head' : query.item_slot_to_bone_name(context.item_slot)",
+					"cubes": [
+						{"origin": [-4, 26, -4], "size": [8, 6, 8], "inflate": 0.85, "uv": [0, 0]},
+						{"origin": [-4.5, 22.5, -4.5], "size": [9, 7, 9], "inflate": 0.2, "uv": [0, 14]}
+					]
+				}
+			]
+		}
+	]
+}

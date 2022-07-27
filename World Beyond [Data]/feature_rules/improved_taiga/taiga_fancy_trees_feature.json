@@ -1,0 +1,34 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "wormwood:taiga_fancy_trees_feature",
+			"places_feature": "wormwood:improved_taiga/fancy_spruce_tree_feature"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": {
+				"test": "has_biome_tag",
+				"value": "dumbass_fucking_taiga"
+			}
+		},
+		"distribution": {
+			"iterations": "math.Random(6, 8)",
+			"y": "query.heightmap(variable.worldx, variable.worldz)",
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			}
+		}
+	}
+}

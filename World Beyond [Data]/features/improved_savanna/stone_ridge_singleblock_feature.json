@@ -1,0 +1,26 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "wormwood:improved_savanna/stone_ridge_singleblock_feature"
+		},
+		"places_block": {
+			"name": "minecraft:dirt"
+		},
+		// "may_attach_to": {
+		// 	"top": [
+		// 		"minecraft:air",
+		// 		"minecraft:grass",
+		// 		"minecraft:stone",
+		// 		"minecraft:dirt"
+		// 	],
+		// 	"bottom": [
+		// 		"minecraft:grass",
+		// 		"minecraft:stone",
+		// 		"minecraft:dirt"
+		// 	]
+		// },
+		"enforce_placement_rules": true,
+		"enforce_survivability_rules": true
+	}
+}

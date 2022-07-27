@@ -25,25 +25,25 @@
             "cassette:play": {
                 "sequence": [
                     {
-              		  "swing": {},
-             		   "run_command": {
-               		     "command": [
-                    		    "function cassettes.return"
-              		      ]
-             		   }
+                        "swing": {},
+                        "run_command": {
+                            "command": [
+                                "function cassettes.return"
+                            ]
+                        }
                     },
                     {
-              		  "run_command": {
-               		     "command": [
-                    		    "scoreboard players set @s cassette.num 0",
-                   		     "tag @s add cassette.playing",
-                    		    "playsound cassette.test.0"
-                  		  ]
-             		   },
-             		   "transform_item": {
-              		      "transform": "minecraft:air"
-             		   }
-							}
+                        "run_command": {
+                            "command": [
+                                "scoreboard players set @s cassette.num 0",
+                                "tag @s add cassette.playing",
+                                "playsound cassette.test.0"
+                            ]
+                        },
+                        "transform_item": {
+                            "transform": "minecraft:air"
+                        }
+                    }
                 ]
             }
         }

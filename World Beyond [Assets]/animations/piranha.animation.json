@@ -22,6 +22,13 @@
 			"anim_time_update": "query.modified_distance_moved", 
 			"loop": true,
 			"bones": {
+				"root": {
+					"rotation": [
+						"query.target_x_rotation",
+						"query.target_y_rotation",
+						0.0
+					]
+				},
 				"tailFin": {
 					"rotation": [0, "math.cos(query.anim_time * 76.34) * -21.75", 0]
 				},

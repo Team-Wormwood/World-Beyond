@@ -14,10 +14,6 @@
             },
             "minecraft:icon": {
                 "texture": "iron_ingot"
-            },
-            "minecraft:wearable": {
-                "dispensable": true,
-                "slot": "slot.offhand"
             }
         }
     }

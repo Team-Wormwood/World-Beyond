@@ -1,0 +1,20 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:ore_feature": {
+        "description": {
+            "identifier": "minecraft:improved_taiga/taiga_boulder_feature"
+        },
+        "count": 9,
+        "replace_rules": [
+            {
+                "places_block": "minecraft:cobblestone",
+                "may_replace": [
+                    "minecraft:dirt",
+                    "minecraft:grass",
+                    "minecraft:podzol",
+                    "minecraft:air"
+                ]
+            }
+        ]
+    }
+}

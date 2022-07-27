@@ -1,0 +1,23 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wormwood:catfish",
+			"category": "Nature"
+		},
+		"components": {
+			"minecraft:use_duration": 1.75,
+			"minecraft:use_animation": "eat",
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.rawFood"
+			},
+			"minecraft:icon": {
+				"texture": "catfish"
+			},
+			"minecraft:food": {
+				"nutrition": 4,
+				"saturation_modifier": "normal"
+			}
+		}
+	}
+}
