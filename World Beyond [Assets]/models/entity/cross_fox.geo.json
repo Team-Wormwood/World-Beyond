@@ -13,7 +13,7 @@
 			"bones": [
 				{
 					"name": "world",
-					"pivot": [0, 0, 0]
+					"pivot": [0, 8, 0]
 				},
 				{
 					"name": "root",
@@ -23,7 +23,7 @@
 				{
 					"name": "body",
 					"parent": "root",
-					"pivot": [0, 8, 0],
+					"pivot": [0, 8, 2],
 					"cubes": [
 						{"origin": [-3, 0, -3], "size": [6, 11, 6], "pivot": [0, 8, 0], "rotation": [90, 0, 0], "uv": [30, 15]}
 					]
@@ -40,6 +40,7 @@
 					],
 					"locators": {
 						"held_item": [-2, 5, -10],
+						"head": [0, 10, -6],
 						"lead": [0, 4, -4]
 					}
 				},

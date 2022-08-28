@@ -82,6 +82,12 @@
         "shulker_shell_worldbeyond": {
             "textures": "textures/items/shulker_shell"
         },
+        "trans_pirate_hat": {
+            "textures": "textures/items/trans_pirate_hat"
+        },
+        "pirate_hat": {
+            "textures": "textures/items/pirate_hat"
+        },
         // ------------------- //
         // Music Tapes
         // ------------------- //
@@ -96,6 +102,9 @@
         },
         "catfish_spawn_egg": {
             "textures": "textures/items/spawn_eggs/catfish_spawn_egg"
+        },
+        "catfish_bucket": {
+            "textures": "textures/items/catfish_bucket"
         },
         "coyote_spawn_egg": {
             "textures": "textures/items/spawn_eggs/coyote_spawn_egg"

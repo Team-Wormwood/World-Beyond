@@ -9,7 +9,7 @@
         },
         "component_groups": {
             // Potential Issues?
-            "wormwood:despawn": {
+            "wormwood:entity_despawn": {
                 "minecraft:instant_despawn": {}
             }
         },
@@ -39,15 +39,15 @@
             }
         },
         "events": {
-            "wormwood:despawn": {
+            "wormwood:entity_despawn": {
                 "add": {
                     "component_groups": [
-                        "wormwood:despawn"
+                        "wormwood:entity_despawn"
                     ]
                 }
             },
             "wormwood:spawn.pillager_ship_common": {
-                "trigger": "wormwood:despawn",
+                "trigger": "wormwood:entity_despawn",
                 "randomize": [
                     {
                         "weight": 3,
@@ -99,7 +99,7 @@
                 ]
             },
             "wormwood:spawn.pillager_ship_boss": {
-                "trigger": "wormwood:despawn",
+                "trigger": "wormwood:entity_despawn",
                 "run_command": {
                     "command": [
                         "summon evoker"

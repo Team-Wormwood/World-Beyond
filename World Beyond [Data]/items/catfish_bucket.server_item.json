@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wormwood:catfish_bucket",
+			"category": "Nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "catfish_bucket"
+			}
+		}
+	}
+}

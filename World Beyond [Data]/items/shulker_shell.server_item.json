@@ -6,6 +6,7 @@
             "category": "equipment"
         },
         "components": {
+            "tag:wormwood:head_item": {},
             "minecraft:max_stack_size": 1,
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.equipment"
@@ -30,7 +31,7 @@
             "shulker_shell:equip": {
                 "sequence": [
                     {
-                        "condition": "!query.is_item_name_any('slot.armor.head', 0, 'wormwood:shulker_shell')",
+                        "condition": "!query.equipped_item_any_tag('slot.armor.head', 'wormwood:headItem')",
                         "run_command": {
                             "command": [
                                 "playsound mob.shulker.close"

@@ -14,10 +14,12 @@
             },
             "scripts": {
                 "animate": [
-                    "default"
+                    "weather"
                 ]
             },
             "animations": {
+                "weather": "controller.animation.flag.weather_sway",
+                //
                 "default": "animation.flag_sway.default",
                 "rain": "animation.flag_sway.rain",
                 "thunder": "animation.flag_sway.thunder"

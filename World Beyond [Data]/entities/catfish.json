@@ -9,6 +9,9 @@
 			"is_experimental": false
 		},
 		"component_groups": {
+			"wormwood:entity_despawned": {
+				"minecraft:instant_despawn": {}
+			},
 			"wormwood:scale_small": {
 				"minecraft:scale": {
 					"value": 0.75
@@ -90,13 +93,28 @@
 			"minecraft:movement.sway": {
 				"sway_amplitude": 0.0
 			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"filters": {
+								"test": "has_equipment",
+								"value": "water_bucket",
+								"domain": "hand",
+								"subject": "other"
+							},
+							"target": "self",
+							"event": "wormwood:itemUseCancellation"
+						}
+					}
+				]
+			},
 			"minecraft:despawn": {
 				"despawn_from_distance": {
 					"min_distance": 32,
 					"max_distance": 40
 				}
 			},
-			
 			"minecraft:behavior.melee_attack": {
 				"priority": 0,
 				"speed_multiplier": 2,
@@ -219,6 +237,14 @@
 						}
 					}
 				]
+			},
+			"wormwood:itemUseCancellation": {},
+			"wormwood:entity_despawn": {
+				"add": {
+					"component_groups": [
+						"wormwood:entity_despawned"
+					]
+				}
 			}
 		}
 	}

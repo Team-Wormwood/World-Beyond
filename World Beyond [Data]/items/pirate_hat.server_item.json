@@ -1,0 +1,28 @@
+// File created by Sumi
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:pirate_hat",
+            "category": "equipment"
+        },
+        "components": {
+            "tag:wormwood:head_item": {},
+            "minecraft:max_stack_size": 1,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:icon": {
+                "texture": "pirate_hat"
+            },
+            "minecraft:armor": {
+                "protection": 2
+            },
+            "minecraft:wearable": {
+                "dispensable": true,
+                "slot": "slot.armor.head"
+            }
+        },
+        "events": {}
+    }
+}

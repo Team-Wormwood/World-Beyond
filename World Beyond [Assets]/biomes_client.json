@@ -120,6 +120,30 @@
 			"inherit_from_prior_fog": false,
 			"water_surface_color": "#0D96DB"
 		},
+		"deep_dark": {
+			"fog_identifier": "wormwood:fog_deep_dark",
+			"fog_ids_to_merge": [
+				"wormwood:fog_deep_dark"
+			],
+			"inherit_from_prior_fog": false,
+			"water_surface_color": "#1b1f1f"
+		},
+		"lush_caves": {
+			"fog_identifier": "wormwood:fog_lush_caves",
+			"fog_ids_to_merge": [
+				"wormwood:fog_lush_caves"
+			],
+			"inherit_from_prior_fog": false,
+			"water_surface_color": "#80f1b7"
+		},
+		"caves": {
+			"fog_identifier": "wormwood:fog_caves",
+			"fog_ids_to_merge": [
+				"wormwood:fog_caves"
+			],
+			"inherit_from_prior_fog": false,
+			"water_surface_color": "#1b1f1f"
+		},
 		"deep_ocean": {
 			"fog_identifier": "minecraft:fog_deep_ocean",
 			"fog_ids_to_merge": [

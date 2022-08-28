@@ -5,10 +5,56 @@
 			"loop": true,
 			"bones": {
 				"flag": {
-					"rotation": ["math.Sin(query.anim_time * 66) * 3.33", "math.Cos(query.anim_time * 33) * 30", 0]
+					"rotation": [
+						"math.Sin(query.anim_time * 66) * 3.33",
+						"math.Cos(query.anim_time * 33) * 30",
+						0
+					]
 				},
 				"flag_bend": {
-					"rotation": [0, "math.Sin(query.anim_time * 33) * 10", 0]
+					"rotation": [
+						0,
+						"math.Sin(query.anim_time * 33) * 10",
+						0
+					]
+				}
+			}
+		},
+		"animation.flag_sway.rain": {
+			"loop": true,
+			"bones": {
+				"flag": {
+					"rotation": [
+						"math.Sin(query.anim_time * 132) * 3.33",
+						"math.Cos(query.anim_time * 66) * 30",
+						0
+					]
+				},
+				"flag_bend": {
+					"rotation": [
+						0,
+						"math.Sin(query.anim_time * 66) * 10",
+						0
+					]
+				}
+			}
+		},
+		"animation.flag_sway.thunder": {
+			"loop": true,
+			"bones": {
+				"flag": {
+					"rotation": [
+						"math.Sin(query.anim_time * 132) * 6.66",
+						"math.Cos(query.anim_time * 66) * 60",
+						0
+					]
+				},
+				"flag_bend": {
+					"rotation": [
+						0,
+						"math.Sin(query.anim_time * 66) * 20",
+						0
+					]
 				}
 			}
 		}

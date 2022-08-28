@@ -22,7 +22,7 @@
                 }
             ],
             "textures": [
-                "Array.sleeping[query.is_sleeping]"
+                "Array.sleeping[query.is_sleeping || query.variant == 1]"
             ]
         }
     }
