@@ -6,5 +6,5 @@ playsound random.bow
 playsound mob.axolotl.splash
 
 
-## // TODO: Custom Swing Particle, Splah Particle, Swing Animation
+## // TODO: Custom Swing Particle, Splash Particle, Swing Animation
 particle minecraft:splash

@@ -9,7 +9,7 @@
 			"placement_pass": "after_surface_pass",
 			"minecraft:biome_filter": [
 				{
-					"any_of": [
+					"all_of": [
 						{
 							"test": "has_biome_tag",
 							"operator": "==",
@@ -19,6 +19,11 @@
 							"test": "has_biome_tag",
 							"operator": "!=",
 							"value": "frozen"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "!=",
+							"value": "beach"
 						}
 					]
 				}

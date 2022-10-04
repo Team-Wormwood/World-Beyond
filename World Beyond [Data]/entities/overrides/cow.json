@@ -1,0 +1,378 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:cow",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"minecraft:cow_baby": {
+				"minecraft:is_baby": {},
+				"minecraft:scale": {
+					"value": 0.5
+				},
+				"minecraft:ageable": {
+					"duration": 1200,
+					"feed_items": "wheat",
+					"grow_up": {
+						"event": "minecraft:ageable_grow_up",
+						"target": "self"
+					}
+				},
+				"minecraft:behavior.follow_parent": {
+					"priority": 6,
+					"speed_multiplier": 1.1
+				}
+			},
+			"minecraft:cow_adult": {
+				"minecraft:experience_reward": {
+					"on_bred": "Math.Random(1,7)",
+					"on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+				},
+				"minecraft:loot": {
+					"table": "loot_tables/entities/cow.json"
+				},
+				"minecraft:behavior.breed": {
+					"priority": 3,
+					"speed_multiplier": 1.0
+				},
+				"minecraft:breedable": {
+					"require_tame": false,
+					"breed_items": "wheat",
+					"breeds_with": {
+						"mate_type": "minecraft:cow",
+						"baby_type": "minecraft:cow",
+						"breed_event": {
+							"event": "minecraft:entity_born",
+							"target": "baby"
+						}
+					}
+				},
+				"minecraft:rideable": {
+					"interact_text": "action.interact.mount",
+					"seat_count": 1,
+					"family_types": [
+						"zombie",
+						"player"
+					],
+					"seats": {
+						"position": [
+							0,
+							1.15,
+							0.18
+						]
+					}
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "bucket:0"
+										}
+									]
+								}
+							},
+							"use_item": true,
+							"transform_to_item": "bucket:1",
+							"play_sounds": "milk",
+							"interact_text": "action.interact.milk"
+						},
+						{
+							"on_interact": {
+								"event": "cow:remove_bell",
+								"target": "self",
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "is_sneaking",
+											"subject": "other",
+											"value": true
+										},
+										{
+											"test": "is_skin_id",
+											"subject": "self",
+											"value": 1
+										}
+									]
+								}
+							},
+							"swing": true,
+							"add_items": {
+								"table": "loot_tables/entities/cowbell.json"
+							},
+							"play_sounds": "equip"
+						},
+						{
+							"on_interact": {
+								"event": "cow:add_bell",
+								"target": "self",
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "is_sneaking",
+											"subject": "other",
+											"value": true
+										},
+										{
+											"test": "is_skin_id",
+											"subject": "self",
+											"value": 0
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "bell"
+										}
+									]
+								}
+							},
+							"swing": true,
+							"use_item": true,
+							"play_sounds": "equip",
+							"interact_text": "action.interact.bell"
+						}
+					]
+				}
+			},
+			"wormwood:default_skin_id": {
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"wormwood:cow_with_bell_uwu": {
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						0,
+						9
+					],
+					"time_down_event": {
+						"event": "minecraft:cow_server_sound_event",
+						"target": "self"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:movement.basic": {},
+			"minecraft:balloonable": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:nameable": {
+				"always_show": true
+			},
+			"minecraft:scale": {
+				"value": 1.125
+			},
+			"minecraft:type_family": {
+				"family": [
+					"cow",
+					"mob"
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:collision_box": {
+				"width": 0.9,
+				"height": 1.3
+			},
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:movement": {
+				"value": 0.25
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.panic": {
+				"priority": 1,
+				"speed_multiplier": 1.25
+			},
+			"minecraft:behavior.mount_pathing": {
+				"priority": 2,
+				"speed_multiplier": 1.5,
+				"target_dist": 0.0,
+				"track_target": true
+			},
+			"minecraft:behavior.breed": {
+				"priority": 3,
+				"speed_multiplier": 1.0
+			},
+			"minecraft:behavior.tempt": {
+				"priority": 4,
+				"speed_multiplier": 1.25,
+				"items": [
+					"wheat"
+				]
+			},
+			"minecraft:behavior.follow_parent": {
+				"priority": 5,
+				"speed_multiplier": 1.1
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 0.8
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 6.0,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 9
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4.0,
+				"hard_distance": 6.0,
+				"max_distance": 10.0
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"wormwood:default_skin_id"
+					]
+				},
+				"randomize": [
+					{
+						"weight": 95,
+						"trigger": "minecraft:spawn_adult"
+					},
+					{
+						"weight": 5,
+						"add": {
+							"component_groups": [
+								"minecraft:cow_baby"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:entity_born": {
+				"add": {
+					"component_groups": [
+						"minecraft:cow_baby",
+						"wormwood:default_skin_id"
+					]
+				}
+			},
+			"minecraft:cow_server_sound_event": {
+				"run_command": {
+					"command": [
+						"playsound random.cowbell @a ~ ~ ~ 1 1 0",
+						"playanimation @s animation.cow.bell_swing"
+					]
+				}
+			},
+			"cow:add_bell": {
+				"remove": {
+					"component_groups": [
+						"wormwood:default_skin_id"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"wormwood:cow_with_bell_uwu"
+					]
+				}
+			},
+			"cow:remove_bell": {
+				"remove": {
+					"component_groups": [
+						"wormwood:cow_with_bell_uwu"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"wormwood:default_skin_id"
+					]
+				}
+			},
+			"minecraft:entity_transformed": {
+				"remove": {},
+				"add": {
+					"component_groups": [
+						"minecraft:cow_adult"
+					]
+				}
+			},
+			"minecraft:ageable_grow_up": {
+				"remove": {
+					"component_groups": [
+						"minecraft:cow_baby"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:cow_adult"
+					]
+				}
+			},
+			"minecraft:spawn_adult": {
+				"add": {
+					"component_groups": [
+						"minecraft:cow_adult"
+					]
+				}
+			}
+		}
+	}
+}

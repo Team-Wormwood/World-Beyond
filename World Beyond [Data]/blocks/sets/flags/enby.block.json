@@ -67,7 +67,8 @@
             "flagBlock:block_rotate": {
                 "run_command": {
                     "command": [
-                        "event entity @e[family=flag, r=0.1] flag:rotate"
+                        "event entity @e[family=flag, r=0.1] flag:rotate",
+                        "playsound block.barrel.open @a[r=10] ~ ~ ~ 1 1.3 0"
                     ]
                 }
             }

@@ -4,15 +4,27 @@
     "description": {
       "identifier": "wormwood:vegetation/moss_cover_small"
     },
-    "height_distribution":  [
-      [{"range_min": 1, "range_max": 1}, 1]
+    "height_distribution": [
+      [
+        {
+          "range_min": 1,
+          "range_max": 1
+        },
+        1
+      ]
     ],
     "growth_direction": "UP",
     "body_blocks": [
-      ["minecraft:moss_block", 1]
+      [
+        "minecraft:moss_block",
+        1
+      ]
     ],
     "head_blocks": [
-      ["minecraft:moss_carpet", 1]
+      [
+        "minecraft:moss_carpet",
+        1
+      ]
     ]
   }
 }

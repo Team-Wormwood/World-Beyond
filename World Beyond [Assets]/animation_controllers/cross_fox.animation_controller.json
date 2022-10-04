@@ -11,7 +11,7 @@
                             "walk": "query.modified_move_speed"
                         }
                     ],
-                    "blend_transition": 0.1,
+                    "blend_transition": 0.125,
                     "transitions": [
                         {
                             "crouch": "query.is_stalking"
@@ -24,6 +24,9 @@
                         },
                         {
                             "sit": "query.is_sitting"
+                        },
+                        {
+                            "petting": "query.variant == 1"
                         }
                     ]
                 },
@@ -120,6 +123,24 @@
                         },
                         {
                             "pounce": "!query.is_on_ground"
+                        }
+                    ]
+                },
+                "petting": {
+                    "blend_transition": 0.125,
+                    "animations": [
+                        "sit",
+                        "petting"
+                    ],
+                    "particle_effects": [
+                        {
+                            "effect": "loving",
+                            "locator": "head"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant == 0"
                         }
                     ]
                 }

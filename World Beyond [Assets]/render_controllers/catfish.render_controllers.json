@@ -1,0 +1,24 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.catfish": {
+            "geometry": "Geometry.default",
+            "arrays": {
+                "textures": {
+                    "array.mouth": [
+                        "texture.mouth_close",
+                        "texture.mouth_open"
+                    ]
+                }
+            },
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Array.mouth[(variable.attack_time > 0.0)]"
+            ]
+        }
+    }
+}

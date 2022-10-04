@@ -7,6 +7,7 @@
             "category": "equipment"
         },
         "components": {
+            "tag:wormwood:head_item": {},
             "minecraft:max_stack_size": 1,
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.equipment"
@@ -31,7 +32,7 @@
             "adventure_hat:equip": {
                 "sequence": [
                     {
-                        "condition": "!query.is_item_name_any('slot.armor.head', 0, 'wormwood:adventure_hat', 'wormwood:colourful_adventure_hat')",
+                        "condition": "!query.equipped_item_any_tag('slot.armor.head', 'wormwood:headItem')",
                         "run_command": {
                             "command": [
                                 "playsound armor.equip_leather"

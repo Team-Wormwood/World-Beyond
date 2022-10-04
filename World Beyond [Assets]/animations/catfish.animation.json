@@ -1,0 +1,46 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.catfish.flop": {
+			"loop": true,
+			"bones": {
+				"body_back": {
+					"rotation": [0, "math.cos(variable.animationamountblend * 45.0) * -21.75", 0]
+				},
+				"head": {
+					"rotation": [0, "math.cos(variable.animationamountblend * 45.0) * 4.0", "variable.zrot"]
+				},
+				"tailFin": {
+					"rotation": [0, "math.cos(variable.animationamountblend * 45.0) * -40.0", 0]
+				},
+				"body": {
+					"rotation": [0, "math.cos(variable.animationamountblend * 45.0) * 4.0", "variable.zrot"]
+				}
+			}
+		},
+		"animation.catfish.swim": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						"query.target_x_rotation - 2.865 + (-2.865 * math.Cos(query.anim_time * 343.8))",
+						"query.target_y_rotation",
+						0.0
+					]
+				},
+				"head": {
+					"rotation": [0, "math.Sin(query.anim_time * 343.8) * 5.0", 0]
+				},
+				"body_back": {
+					"rotation": [0, "math.Sin(query.anim_time * 343.8) * 16.0", 0]
+				},
+				"tailfin": {
+					"rotation": [0, "math.Sin(query.anim_time * 343.8) * 24.0", 0]
+				},
+				"body": {
+					"rotation": [0, "math.Cos(query.anim_time * 343.8) * 8.0", 0]
+				}
+			}
+		}
+	}
+}

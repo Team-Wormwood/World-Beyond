@@ -1,0 +1,23 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wormwood:piranha",
+			"category": "Nature"
+		},
+		"components": {
+			"minecraft:use_duration": 0.66,
+			"minecraft:use_animation": "eat",
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.rawFood"
+			},
+			"minecraft:icon": {
+				"texture": "piranha"
+			},
+			"minecraft:food": {
+				"nutrition": 2,
+				"saturation_modifier": "low"
+			}
+		}
+	}
+}

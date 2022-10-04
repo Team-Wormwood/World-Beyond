@@ -3,7 +3,7 @@
     "minecraft:item": {
         "description": {
             "identifier": "wormwood:sculk_bucket",
-            "category": "items"
+            "category": "Commands"
         },
         "components": {
             "minecraft:creative_category": {

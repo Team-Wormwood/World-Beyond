@@ -99,6 +99,9 @@
                     }
                 ]
             },
+            "minecraft:on_death": {
+                "event": "flag:failsafe_despawn"
+            },
             "minecraft:damage_sensor": {
                 "triggers": {
                     "cause": "all",
@@ -244,6 +247,19 @@
             "flag:despawn": {
                 "run_command": {
                     "command": [
+                        "particle wormwood:custom_block_particle ~ ~ ~"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "wormwood:instant_despawn"
+                    ]
+                }
+            },
+            "flag:failsafe_despawn": {
+                "run_command": {
+                    "command": [
+                        "setblock ~ ~ ~ air 0 destroy",
                         "particle wormwood:custom_block_particle ~ ~ ~"
                     ]
                 },

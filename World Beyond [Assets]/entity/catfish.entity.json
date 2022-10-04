@@ -1,0 +1,39 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "wormwood:catfish",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/fish/catfish",
+				"mouth_close": "textures/entity/fish/catfish",
+				"mouth_open": "textures/entity/fish/catfish_nom_nom"
+			},
+			"geometry": {
+				"default": "geometry.catfish"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.ZRot = !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+					"variable.AnimationAmountBlend = Math.lerp(variable.AnimationAmountPrev, variable.AnimationAmount, query.frame_alpha);"
+				],
+				"animate": [
+					"general"
+				]
+			},
+			"animations": {
+				"general": "controller.animation.fish.general",
+				"flop": "animation.catfish.flop",
+				"swim": "animation.catfish.swim"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "catfish_spawn_egg"
+			}
+		}
+	}
+}

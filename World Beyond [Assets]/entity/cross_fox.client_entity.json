@@ -23,7 +23,8 @@
                 ]
             },
             "particle_effects": {
-                "sleeping": "wormwood:sleeping_particles"
+                "sleeping": "wormwood:sleeping_particles",
+                "loving": "wormwood:loving_particles"
             },
             "animations": {
                 // Controllers
@@ -33,6 +34,7 @@
                 "look_at_target": "animation.common.look_at_target",
                 "baby_transform": "animation.cross_fox.baby_transform",
                 "crouch": "animation.cross_fox.crouch",
+                "petting": "animation.cross_fox.petting",
                 "sleep": "animation.cross_fox.sleep",
                 "setup": "animation.cross_fox.setup",
                 "sit": "animation.cross_fox.sit",

@@ -8,7 +8,7 @@
       "minecraft:grass"
     ],
     "ground_block": "minecraft:grass",
-    "vegetation_feature": "wormwood:vegetation/moss_cover",
+    "vegetation_feature": "wormwood:vegetation/moss_cover_small",
     "surface": "floor",
     "depth": {
       "range_min": 1,

@@ -1,0 +1,13 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "wormwood:improved_savanna/stone_ridge_post_catylyst_singleblock_feature"
+		},
+		"places_block": {
+			"name": "minecraft:dirt"
+		},
+		"enforce_placement_rules": false,
+		"enforce_survivability_rules": false
+	}
+}

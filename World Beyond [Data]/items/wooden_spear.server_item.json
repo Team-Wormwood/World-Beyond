@@ -8,6 +8,7 @@
         },
         "components": {
             "minecraft:can_destroy_in_creative": false,
+            "tag:wormwood:attachable_weapon": {},
             "tag:wormwood:spear_weapon": {},
             "minecraft:hand_equipped": true,
             "minecraft:max_stack_size": 1,

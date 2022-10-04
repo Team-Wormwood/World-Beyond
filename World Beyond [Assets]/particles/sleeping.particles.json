@@ -20,7 +20,7 @@
 			"minecraft:emitter_shape_point": {
 				"direction": [
 					"math.Random(-0.125, 0.125)",
-					-1,
+					1,
 					"math.Random(-0.125, 0.125)"
 				]
 			},

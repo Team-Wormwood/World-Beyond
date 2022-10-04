@@ -8,7 +8,7 @@
       "minecraft:mud"
     ],
     "ground_block": "minecraft:mud",
-    "vegetation_feature": "wormwood:vegetation/moss_cover",
+    "vegetation_feature": "wormwood:vegetation/moss_cover_small",
     "surface": "floor",
     "depth": {
       "range_min": 1,

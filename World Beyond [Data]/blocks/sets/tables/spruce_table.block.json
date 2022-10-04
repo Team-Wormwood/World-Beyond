@@ -6,7 +6,7 @@
         },
         "components": {
             "minecraft:block_light_emission": 0.0,
-            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_filter": 0,
             "minecraft:map_color": "#30271a",
             "minecraft:breathability": "air",
             "minecraft:geometry": "geometry.table",
@@ -14,7 +14,7 @@
             "minecraft:explosion_resistance": 2.5,
             "tag:wood": {},
             "minecraft:creative_category": {
-                "category": "Construction"
+                "category": "Commands"
             },
             "minecraft:material_instances": {
                 "*": {

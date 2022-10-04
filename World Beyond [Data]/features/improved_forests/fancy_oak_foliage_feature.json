@@ -1,0 +1,18 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "minecraft:improved_forests/fancy_oak_foliage_feature"
+		},
+		"features": [
+			[
+				"minecraft:tall_grass_feature",
+				3
+			],
+			[
+				"minecraft:legacy:flower_forest_flower_feature",
+				2
+			]
+		]
+	}
+}

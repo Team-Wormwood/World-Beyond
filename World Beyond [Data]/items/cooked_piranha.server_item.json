@@ -1,0 +1,23 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wormwood:cooked_piranha",
+			"category": "Equipment"
+		},
+		"components": {
+			"minecraft:use_duration": 1.75,
+			"minecraft:use_animation": "eat",
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.cookedFood"
+			},
+			"minecraft:icon": {
+				"texture": "cooked_piranha"
+			},
+			"minecraft:food": {
+				"nutrition": 5,
+				"saturation_modifier": "good"
+			}
+		}
+	}
+}

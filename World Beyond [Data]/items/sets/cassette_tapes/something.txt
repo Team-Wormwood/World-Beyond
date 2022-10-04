@@ -1,0 +1,9 @@
+TODO:
+Attatchable for the Tape Player. Open/Empty state, playing state for each tape. Each with textures. TEXTURE MESH! UV anim
+.lang
+Finish my damn music. Some of it.
+Item templace and how-to implement new Cassette text file. It's simple, but It's be beneficial in future to have it around, possibly.
+Oh, and more Cassette textures.
+
+-NOTICE-
+Creative catagories are . . . well, random really, and they are not set to commands only at the moment for accesibility reasons on my end. Once 

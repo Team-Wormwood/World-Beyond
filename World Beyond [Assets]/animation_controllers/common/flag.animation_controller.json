@@ -1,0 +1,55 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.flag.weather_sway": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "blend_via_shortest_path": true,
+                    "blend_transition": 1.25,
+                    "animations": [
+                        "default"
+                    ],
+                    "transitions": [
+                        {
+                            "rain": "query.mark_variant == 1"
+                        },
+                        {
+                            "thunder": "query.mark_variant == 2"
+                        }
+                    ]
+                },
+                "rain": {
+                    "blend_via_shortest_path": true,
+                    "blend_transition": 1.25,
+                    "animations": [
+                        "rain"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant == 0"
+                        },
+                        {
+                            "thunder": "query.mark_variant == 2"
+                        }
+                    ]
+                },
+                "thunder": {
+                    "blend_via_shortest_path": true,
+                    "blend_transition": 1.25,
+                    "animations": [
+                        "thunder"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant == 0"
+                        },
+                        {
+                            "rain": "query.mark_variant == 1"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

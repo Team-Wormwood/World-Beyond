@@ -1,0 +1,23 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wormwood:cooked_catfish",
+			"category": "Equipment"
+		},
+		"components": {
+			"minecraft:use_duration": 0.75,
+			"minecraft:use_animation": "eat",
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.cookedFood"
+			},
+			"minecraft:icon": {
+				"texture": "cooked_catfish"
+			},
+			"minecraft:food": {
+				"nutrition": 12,
+				"saturation_modifier": "supernatural"
+			}
+		}
+	}
+}

@@ -129,6 +129,150 @@
                     ]
                 }
             },
+            "wormwood:default": {
+                "minecraft:interact": {
+                    "interactions": [
+                        {
+                            "swing": true,
+                            "interact_text": "action.interact.pet",
+                            "health_amount": 1,
+                            "on_interact": {
+                                "filters": {
+                                    "all_of": [
+                                        {
+                                            "test": "is_family",
+                                            "subject": "other",
+                                            "value": "player"
+                                        },
+                                        {
+                                            "test": "is_sneaking",
+                                            "subject": "other",
+                                            "operator": "==",
+                                            "value": true
+                                        }
+                                    ]
+                                },
+                                "target": "self",
+                                "event": "cross_fox:pet_the_foxy"
+                            }
+                        }
+                    ]
+                },
+                "minecraft:behavior.avoid_mob_type": {
+                    "priority": 5,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "any_of": [
+                                    {
+                                        "all_of": [
+                                            {
+                                                "test": "is_family",
+                                                "subject": "other",
+                                                "value": "player"
+                                            },
+                                            {
+                                                "test": "trusts",
+                                                "subject": "other",
+                                                "operator": "!=",
+                                                "value": true
+                                            },
+                                            {
+                                                "test": "is_sneaking",
+                                                "subject": "other",
+                                                "operator": "!=",
+                                                "value": true
+                                            },
+                                            {
+                                                "test": "is_variant",
+                                                "subject": "self",
+                                                "operator": "==",
+                                                "value": 0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "polarbear"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "wolf"
+                                    }
+                                ]
+                            },
+                            "max_dist": 10,
+                            "walk_speed_multiplier": 1.0,
+                            "sprint_speed_multiplier": 1.5
+                        }
+                    ]
+                },
+                "minecraft:behavior.random_stroll": {
+                    "priority": 13,
+                    "speed_multiplier": 0.8
+                },
+                "minecraft:behavior.hurt_by_target": {},
+                "minecraft:behavior.random_look_around_and_sit": {
+                    "priority": 12,
+                    "min_look_count": 2,
+                    "max_look_count": 5,
+                    "min_look_time": 80,
+                    "max_look_time": 100,
+                    "probability": 0.001
+                },
+                "minecraft:behavior.tempt": {
+                    "priority": 3,
+                    "speed_multiplier": 0.5,
+                    "within_radius": 16,
+                    "can_get_scared": true,
+                    "items": [
+                        "sweet_berries",
+                        "glow_berries"
+                    ]
+                },
+                "minecraft:behavior.stalk_and_pounce_on_target": {
+                    "priority": 7,
+                    "stalk_speed": 1.2,
+                    "max_stalk_dist": 12.0,
+                    "leap_height": 0.9,
+                    "leap_dist": 0.8,
+                    "pounce_max_dist": 5.0,
+                    "interest_time": 2.0,
+                    "stuck_time": 2.0,
+                    "strike_dist": 2.0,
+                    "stuck_blocks": {
+                        "test": "is_block",
+                        "subject": "block",
+                        "operator": "==",
+                        "value": "snow_layer"
+                    }
+                },
+                "minecraft:behavior.random_look_around": {
+                    "priority": 15
+                },
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "wormwood:pet_the_foxy": {
+                "minecraft:variant": {
+                    "value": 1
+                },
+                "minecraft:behavior.random_stroll": {
+                    "priority": 0,
+                    "speed_multiplier": 0.0
+                },
+                "minecraft:timer": {
+                    "looping": true,
+                    "time": 3,
+                    "time_down_event": {
+                        "event": "cross_fox:end_petting",
+                        "target": "self"
+                    }
+                }
+            },
             "wormwood:cross_fox_item_equipped": {
                 "minecraft:equipment": {
                     "table": "loot_tables/entities/cross_fox_equipment.json",
@@ -720,84 +864,11 @@
                 ]
             },
             // Behavioural Components
-            "minecraft:behavior.hurt_by_target": {},
             "minecraft:behavior.float": {
                 "priority": 0
             },
             "minecraft:behavior.equip_item": {
                 "priority": 2
-            },
-            "minecraft:behavior.avoid_mob_type": {
-                "priority": 5,
-                "entity_types": [
-                    {
-                        "filters": {
-                            "any_of": [
-                                {
-                                    "all_of": [
-                                        {
-                                            "test": "is_family",
-                                            "subject": "other",
-                                            "value": "player"
-                                        },
-                                        {
-                                            "test": "trusts",
-                                            "subject": "other",
-                                            "operator": "!=",
-                                            "value": true
-                                        },
-                                        {
-                                            "test": "is_sneaking",
-                                            "subject": "other",
-                                            "operator": "!=",
-                                            "value": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "test": "is_family",
-                                    "subject": "other",
-                                    "value": "polarbear"
-                                },
-                                {
-                                    "test": "is_family",
-                                    "subject": "other",
-                                    "value": "wolf"
-                                }
-                            ]
-                        },
-                        "max_dist": 10,
-                        "walk_speed_multiplier": 1.0,
-                        "sprint_speed_multiplier": 1.5
-                    }
-                ]
-            },
-            "minecraft:behavior.tempt": {
-                "priority": 3,
-                "speed_multiplier": 0.5,
-                "within_radius": 16,
-                "can_get_scared": true,
-                "items": [
-                    "sweet_berries",
-                    "glow_berries"
-                ]
-            },
-            "minecraft:behavior.stalk_and_pounce_on_target": {
-                "priority": 7,
-                "stalk_speed": 1.2,
-                "max_stalk_dist": 12.0,
-                "leap_height": 0.9,
-                "leap_dist": 0.8,
-                "pounce_max_dist": 5.0,
-                "interest_time": 2.0,
-                "stuck_time": 2.0,
-                "strike_dist": 2.0,
-                "stuck_blocks": {
-                    "test": "is_block",
-                    "subject": "block",
-                    "operator": "==",
-                    "value": "snow_layer"
-                }
             },
             "minecraft:behavior.pickup_items": {
                 "priority": 11,
@@ -808,14 +879,6 @@
             "minecraft:behavior.eat_carried_item": {
                 "priority": 12,
                 "delay_before_eating": 28
-            },
-            "minecraft:behavior.random_look_around_and_sit": {
-                "priority": 12,
-                "min_look_count": 2,
-                "max_look_count": 5,
-                "min_look_time": 80,
-                "max_look_time": 100,
-                "probability": 0.001
             },
             "minecraft:behavior.raid_garden": {
                 "priority": 12,
@@ -831,26 +894,19 @@
                 "max_to_eat": 0,
                 "initial_eat_delay": 2
             },
-            "minecraft:behavior.random_stroll": {
-                "priority": 13,
-                "speed_multiplier": 0.8
-            },
             "minecraft:behavior.look_at_player": {
                 "priority": 14,
                 "look_distance": 6.0,
                 "probability": 0.02
             },
-            "minecraft:behavior.random_look_around": {
-                "priority": 15
-            },
-            // Navigational Components
+            // Navigational Components 
             "minecraft:movement.basic": {},
-            "minecraft:jump.static": {},
             "minecraft:navigation.walk": {
                 "can_path_over_water": true,
                 "avoid_water": true,
                 "avoid_damage_blocks": true
-            }
+            },
+            "minecraft:jump.static": {}
         },
         "events": {
             "minecraft:entity_spawned": {
@@ -861,8 +917,9 @@
                                 "weight": 95,
                                 "add": {
                                     "component_groups": [
-                                        "wormwood:cross_fox_adult",
                                         "wormwood:cross_fox_item_equipped",
+                                        "wormwood:cross_fox_adult",
+                                        "wormwood:default",
                                         "wormwood:cross_fox_docile"
                                     ]
                                 }
@@ -872,6 +929,7 @@
                                 "add": {
                                     "component_groups": [
                                         "wormwood:cross_fox_baby",
+                                        "wormwood:default",
                                         "wormwood:cross_fox_docile"
                                     ]
                                 }
@@ -937,6 +995,35 @@
                 "add": {
                     "component_groups": [
                         "wormwood:cross_fox_night"
+                    ]
+                }
+            },
+            "cross_fox:pet_the_foxy": {
+                "add": {
+                    "component_groups": [
+                        "wormwood:pet_the_foxy"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wormwood:default"
+                    ]
+                },
+                "run_command": {
+                    "command": [
+                        "execute @s[tag=!advancement.cross_fox] ~ ~ ~ function advancements/cross_fox"
+                    ]
+                }
+            },
+            "cross_fox:end_petting": {
+                "add": {
+                    "component_groups": [
+                        "wormwood:default"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wormwood:pet_the_foxy"
                     ]
                 }
             },

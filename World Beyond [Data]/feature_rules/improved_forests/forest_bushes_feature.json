@@ -1,0 +1,67 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "minecraft:forest_bushes_feature",
+			"places_feature": "minecraft:improved_forests/oak_bush_feature"
+		},
+		"conditions": {
+			"placement_pass": "after_underground_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "forest"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "forest_generation"
+						}
+					]
+				},
+				//
+				{
+					"test": "has_biome_tag",
+					"operator": "!=",
+					"value": "birch"
+				},
+				{
+					"test": "has_biome_tag",
+					"operator": "!=",
+					"value": "roofed"
+				},
+				{
+					"test": "has_biome_tag",
+					"operator": "!=",
+					"value": "extreme_hills"
+				},
+				{
+					"test": "has_biome_tag",
+					"operator": "!=",
+					"value": "taiga"
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 13,
+			"y": "query.heightmap(variable.worldx, variable.worldz)",
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			}
+		}
+	}
+}

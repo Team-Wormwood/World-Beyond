@@ -1,0 +1,24 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "wormwood:jungle_house.feature_rules",
+			"places_feature": "wormwood:structures/jungle_house.feature"
+		},
+		"conditions": {
+			"placement_pass": "after_surface_pass",
+			"minecraft:biome_filter": {
+				"test": "has_biome_tag",
+				"operator": "==",
+				"value": "jungle"
+			}
+		},
+		"distribution": {
+			"iterations": 1,
+			"scatter_chance": 0.1805,
+			"x": 0,
+			"z": 0,
+			"y": "(query.heightmap(variable.worldx, variable.worldz)) - 3"
+		}
+	}
+}

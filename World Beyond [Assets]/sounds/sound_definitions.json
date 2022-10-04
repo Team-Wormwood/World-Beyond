@@ -41,112 +41,66 @@
 				}
 			]
 		},
-		// Old
-		"block.wormwood:otherworld_crystal_mount.place_crystal": {
-			"category": "block",
+		"random.cowbell": {
+			"__use_legacy_max_distance": true,
+			"category": "neutral",
 			"sounds": [
 				{
-					"name": "sounds/block/otherworld_crystal_mount/place_crystal",
-					"volume": 2.25,
-					"load_on_low_memory": true
-				}
-			]
-		},
-		"block.wormwood:otherworld_crystal_mount.break_crystal": {
-			"category": "block",
-			"sounds": [
-				{
-					"name": "sounds/block/otherworld_crystal_mount/break_crystal",
+					"load_on_low_memory": true,
+					"name": "sounds/note/cow_bell",
+					"is_3D": true,
+					"stream": true,
 					"volume": 1.25,
-					"load_on_low_memory": true
-				}
-			]
-		},
-		"block.wormwood:otherworld_crystal_mount.crystal_ambient": {
-			"category": "block",
-			"sounds": [
+					"pitch": 0.8
+				},
 				{
-					"name": "sounds/block/otherworld_crystal_mount/crystal_ambient",
-					"volume": 1.5,
-					"load_on_low_memory": true
-				}
-			]
-		},
-		"block.wormwood:otherworld_crystal_mount.hurt_crystal": {
-			"category": "block",
-			"sounds": [
+					"load_on_low_memory": true,
+					"name": "sounds/note/cow_bell",
+					"is_3D": true,
+					"stream": true,
+					"volume": 1.25,
+					"pitch": 0.9
+				},
 				{
-					"name": "sounds/block/otherworld_crystal_mount/hurt_crystal",
-					"volume": 1.5,
-					"load_on_low_memory": true
+					"load_on_low_memory": true,
+					"name": "sounds/note/cow_bell",
+					"is_3D": true,
+					"stream": true,
+					"volume": 1.25,
+					"pitch": 1.0
+				},
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/note/cow_bell",
+					"is_3D": true,
+					"stream": true,
+					"volume": 1.25,
+					"pitch": 1.1
+				},
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/note/cow_bell",
+					"is_3D": true,
+					"stream": true,
+					"volume": 1.25,
+					"pitch": 1.2
 				}
 			]
 		},
-		"mob.jungle_zombie.death": {
+		"cassette.test.0": {
+			"min_distance": 100.0,
 			"__use_legacy_max_distance": "true",
-			"category": "hostile",
+			"category": "music",
 			"sounds": [
-				"sounds/mob/jungle_zombie/death1",
-				"sounds/mob/jungle_zombie/death2",
-				"sounds/mob/jungle_zombie/death3"
+				"sounds/cassettes/hikyō_no_kikōshi"
 			]
 		},
-		"mob.jungle_zombie.hurt": {
+		"cassette.test.1": {
+			"min_distance": 100.0,
 			"__use_legacy_max_distance": "true",
-			"category": "hostile",
+			"category": "music",
 			"sounds": [
-				"sounds/mob/jungle_zombie/hurt1",
-				"sounds/mob/jungle_zombie/hurt2",
-				"sounds/mob/jungle_zombie/hurt3",
-				"sounds/mob/jungle_zombie/hurt4"
-			]
-		},
-		"mob.jungle_zombie.say": {
-			"__use_legacy_max_distance": "true",
-			"category": "hostile",
-			"sounds": [
-				"sounds/mob/jungle_zombie/say1",
-				"sounds/mob/jungle_zombie/say2",
-				"sounds/mob/jungle_zombie/say3"
-			]
-		},
-		"mob.jungle_zombie.step": {
-			"__use_legacy_max_distance": "true",
-			"category": "hostile",
-			"sounds": [
-				"sounds/mob/jungle_zombie/step1",
-				"sounds/mob/jungle_zombie/step2",
-				"sounds/mob/jungle_zombie/step3",
-				"sounds/mob/jungle_zombie/step4",
-				"sounds/mob/jungle_zombie/step5"
-			]
-		},
-		"mob.frozen_zombie.death": {
-			"__use_legacy_max_distance": "true",
-			"category": "hostile",
-			"sounds": [
-				"sounds/mob/frozen_zombie/death1",
-				"sounds/mob/frozen_zombie/death2",
-				"sounds/mob/frozen_zombie/death3",
-				"sounds/mob/frozen_zombie/death4"
-			]
-		},
-		"mob.frozen_zombie.hurt": {
-			"__use_legacy_max_distance": "true",
-			"category": "hostile",
-			"sounds": [
-				"sounds/mob/frozen_zombie/hurt1",
-				"sounds/mob/frozen_zombie/hurt2",
-				"sounds/mob/frozen_zombie/hurt3"
-			]
-		},
-		"mob.frozen_zombie.say": {
-			"__use_legacy_max_distance": "true",
-			"category": "hostile",
-			"sounds": [
-				"sounds/mob/frozen_zombie/say1",
-				"sounds/mob/frozen_zombie/say2",
-				"sounds/mob/frozen_zombie/say3"
+				"sounds/cassettes/ryū_no_shima"
 			]
 		}
 	}
