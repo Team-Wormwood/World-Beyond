@@ -1,0 +1,53 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.allay": {
+			"arrays": {
+                "textures": {
+                    "Array.textures": [
+                        "Texture.default",
+                        "Texture.purple",
+                        "Texture.black",
+                        "Texture.blue",
+                        "Texture.brown",
+                        "Texture.cyan",
+                        "Texture.gray",
+                        "Texture.green",
+                        "Texture.light_blue",
+                        "Texture.lime",
+                        "Texture.magenta",
+                        "Texture.orange",
+                        "Texture.pink",
+                        "Texture.red",
+                        "Texture.silver",
+                        "Texture.white",
+                        "Texture.yellow"
+                    ],
+                    "Array.maid_textures": [
+                        "Texture.maid",
+                        "Texture.maid_purple",
+                        "Texture.maid_black",
+                        "Texture.maid_blue",
+                        "Texture.maid_brown",
+                        "Texture.maid_cyan",
+                        "Texture.maid_gray",
+                        "Texture.maid_green",
+                        "Texture.maid_light_blue",
+                        "Texture.maid_lime",
+                        "Texture.maid_magenta",
+                        "Texture.maid_orange",
+                        "Texture.maid_pink",
+                        "Texture.maid_red",
+                        "Texture.maid_silver",
+                        "Texture.maid_white",
+                        "Texture.maid_yellow"
+                    ]
+                }
+            },
+			"geometry": "Geometry.default",
+			"materials": [ { "*": "Material.default" } ],
+			"textures": [ "query.skin_id == 0 ? Array.textures[query.variant] : Array.maid_textures[query.variant]" ],
+			"ignore_lighting": true
+		}
+	}
+}
