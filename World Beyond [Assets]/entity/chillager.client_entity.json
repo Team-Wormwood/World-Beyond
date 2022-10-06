@@ -1,0 +1,49 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "wormwood:chillager",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "evoker"
+      },
+      "textures": {
+        "default": "textures/entity/illager/chillager"
+      },
+      "geometry": {
+        "default": "geometry.chillager"
+      },
+      "scripts": {
+        "scale": "0.9375",
+        "animate": [
+          {
+            "casting": "query.is_casting"
+          },
+          "controller_general",
+          "controller_move"
+        ]
+      },
+      "animations": {
+        "general": "animation.evoker.general",
+        "casting": "animation.chillager.casting",
+        "castingInitialise": "animation.chillager.castingInitialise",
+        "castingHold": "animation.chillager.castingHold",
+        "castingComplete": "animation.chillager.castingComplete",
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.villager.move",
+        "controller_general": "controller.animation.chillager.general",
+        "controller_move": "controller.animation.villager.move"
+      },
+      "particle_effects": {
+        "spell": "minecraft:evoker_spell"
+      },
+      "render_controllers": [
+        "controller.render.chillager"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 40
+      }
+    }
+  }
+}

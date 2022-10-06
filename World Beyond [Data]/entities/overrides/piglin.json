@@ -46,7 +46,7 @@
 			},
 			"become_zombie": {
 				"minecraft:transformation": {
-					"into": "minecraft:zombie_pigman",
+					"into": "minecraft:zombie_pigman<modified_zombie_pigman:from_convert>",
 					"transformation_sound": "converted_to_zombified",
 					"keep_level": true,
 					"drop_inventory": true,

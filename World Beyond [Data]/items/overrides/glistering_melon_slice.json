@@ -1,0 +1,25 @@
+//Now edible!
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "minecraft:glistering_melon_slice"
+    },
+    "components": {
+      "minecraft:use_duration": 32,  
+      "minecraft:food": {
+        "nutrition": 3,
+        "saturation_modifier": "supernatural",
+        "can_always_eat": true,
+        "effects": [
+          {
+            "name": "regeneration",
+            "chance": 1.0,
+            "duration": 8,
+            "amplifier": 0
+          }
+        ]
+      }
+    }
+  }
+}

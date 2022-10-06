@@ -1,30 +1,21 @@
+//Nerfed slightly, to keep in line with new items
 {
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
       "identifier": "minecraft:golden_apple"
     },
-
     "components": {
-      "minecraft:stacked_by_data": true,
-      "minecraft:use_duration": 32,
-      "minecraft:foil": false,
-  
+      "minecraft:use_duration": 32,  
       "minecraft:food": {
-        "nutrition": 4,
+        "nutrition": 6,
         "saturation_modifier": "supernatural",
         "can_always_eat": true,
         "effects": [
           {
-            "name": "regeneration",
-            "chance": 1.0,
-            "duration": 5,
-            "amplifier": 1
-          },
-          {
             "name": "absorption",
             "chance": 1.0,
-            "duration": 120, // 2 * 60
+            "duration": 120,
             "amplifier": 0
           }
         ]

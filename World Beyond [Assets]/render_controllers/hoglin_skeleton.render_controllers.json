@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.hoglin_skeleton": {
+			"arrays": {
+				"textures": {
+					"Array.cracks": [
+						"Texture.invisible",
+						"Texture.cracks",
+						"Texture.cracks1",
+						"Texture.cracks2"
+					],
+					"Array.ribs": [
+						"Texture.ribs",
+						"Texture.ribs1",
+						"Texture.ribs2"
+					],
+					"Array.cosmetics": [
+						"Texture.invisible",
+						"Texture.cosmetics",
+						"Texture.cosmetics1",
+						"Texture.cosmetics2"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.default",
+				"Array.cracks[query.skin_id]",
+				"Array.ribs[query.mark_variant]",
+				"Array.cosmetics[query.variant]"
+			]
+		}
+	}
+}

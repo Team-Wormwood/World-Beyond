@@ -1,0 +1,29 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.skeletin_helmet",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "hat",
+					"pivot": [5, 23, -4.5],
+					"binding": "context.item_slot == 'head' ? 'head' : query.item_slot_to_bone_name(context.item_slot)",
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 1, "uv": [0, 0], "mirror": true},
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 1.25, "uv": [32, 0], "mirror": true},
+						{"origin": [5.1, 24.25, -10.25], "size": [0, 1, 6], "pivot": [4.6, 24.75, -3.75], "rotation": [-32.5, 0, 0], "uv": [24, -5], "mirror": true},
+						{"origin": [-5.1, 24.25, -10.25], "size": [0, 1, 6], "pivot": [-4.6, 24.75, -3.75], "rotation": [-32.5, 0, 0], "uv": [24, -4], "mirror": true},
+						{"origin": [0, 33, -4], "size": [0, 5, 8], "uv": [24, -5], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

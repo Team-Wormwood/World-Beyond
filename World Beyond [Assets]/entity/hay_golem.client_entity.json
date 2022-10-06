@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "wormwood:hay_golem",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/hay_golem/hay_golem",
+        "lit": "textures/entity/hay_golem/hay_golem_lit",
+        "soul": "textures/entity/hay_golem/hay_golem_soul"
+      },
+      "geometry": {
+        "default": "geometry.hay_golem"
+      },
+      "scripts": {
+        "animate": [
+          "look_at_target",
+          {
+            "move": "query.is_moving"
+          }
+        ],
+        "pre_animation": [
+          "variable.tcos1 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed) * 57.3;",
+          "variable.tcos2 = (math.cos(query.modified_distance_moved * 38) * query.modified_move_speed) * 57;"
+        ]
+      },
+      "animations": {
+        "look_at_target": "animation.humanoid.look_at_target.default",
+        "move": "animation.hay_golem.move"
+      },
+      "render_controllers": [
+        "controller.render.hay_golem"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 10
+      }
+    }
+  }
+}

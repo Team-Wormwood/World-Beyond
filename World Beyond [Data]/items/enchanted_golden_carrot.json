@@ -1,0 +1,66 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:enchanted_golden_carrot",
+            "category": "nature"
+        },
+        "components": {
+            "minecraft:use_animation": "eat",
+            "minecraft:use_duration": 1.75,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.crop"
+			},
+            "minecraft:foil": true,
+            "minecraft:icon": {
+                "texture": "carrot_golden"
+            },
+            "minecraft:food": {
+                "nutrition": 5,
+                "saturation_modifier": "supernatural",
+                "can_always_eat": true,
+                "on_consume": {
+                    "event": "enchanted_golden_carrot:on_consume_effects"
+                }
+            }
+        },
+        "events": {
+            "enchanted_golden_carrot:on_consume_effects": {
+                "sequence": [
+                    {
+                        "add_mob_effect": {
+                            "effect": "night_vision",
+                            "target": "holder",
+                            "duration": 20,
+                            "amplifier": 0
+                        }
+                    },
+                    {
+                        "add_mob_effect": {
+                            "effect": "haste",
+                            "target": "holder",
+                            "duration": 20,
+                            "amplifier": 2
+                        }
+                    },
+                    {
+                        "add_mob_effect": {
+                            "effect": "speed",
+                            "target": "holder",
+                            "duration": 12,
+                            "amplifier": 1
+                        }
+                    },
+                    {
+                        "add_mob_effect": {
+                            "effect": "jump_boost",
+                            "target": "holder",
+                            "duration": 8,
+                            "amplifier": 1
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -4,35 +4,35 @@
 {
   "format_version": "1.16.0",
   "minecraft:entity": {
-	"description": {
+    "description": {
       "identifier": "minecraft:allay",
-	  "is_spawnable": true,
-	  "is_summonable": true,
-	  "is_experimental": false
-	},
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
     "component_groups": {
       // World Beyond Component Groups
       //"modified_allay:chested": {
-        //"minecraft:is_chested": {},
-        //"minecraft:inventory": {
-		  //"inventory_size": 6,
-		  //"container_type": "horse"
-	    //},
-	    //"minecraft:collision_box": {
-          //"width": 0.35,
-          //"height": 0.85
-        //}
+      //"minecraft:is_chested": {},
+      //"minecraft:inventory": {
+      //"inventory_size": 6,
+      //"container_type": "horse"
+      //},
+      //"minecraft:collision_box": {
+      //"width": 0.35,
+      //"height": 0.85
+      //}
       //},
       "modified_allay:is_maid": {
         "minecraft:skin_id": {
           "value": 1
         },
         "minecraft:movement": {
-		  "value": 0.13
-	    },
+          "value": 0.13
+        },
         "minecraft:flying_speed": {
-		  "value": 0.13
-	    }
+          "value": 0.13
+        }
       },
       "modified_allay:maid_pickup_item_delay": {
         "minecraft:timer": {
@@ -48,11 +48,11 @@
           "value": 0
         },
         "minecraft:movement": {
-		  "value": 0.1
-	    },
+          "value": 0.1
+        },
         "minecraft:flying_speed": {
-		  "value": 0.1
-	    }
+          "value": 0.1
+        }
       },
       "modified_allay:undyed": {
         "minecraft:variant": {
@@ -166,7 +166,10 @@
     "components": {
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:type_family": {
-        "family": [ "allay", "mob" ]
+        "family": [
+          "allay",
+          "mob"
+        ]
       },
       "minecraft:collision_box": {
         "width": 0.35,
@@ -202,37 +205,37 @@
           }
         ]
       },
-	  "minecraft:damage_sensor": {
-	    "triggers": [
-		  {
-			"on_damage": {
-			  "filters": {
-				"all_of": [
-				  {
-					"test": "is_family",
-					"subject": "other",
-					"value": "player"
-			      },
-				  {
-					"test": "is_owner",
-					"subject": "other",
-					"value": true
-				  }
-				]
-			  }
-			},
-			"deals_damage": false
-		  }
-	    ]
-	  },
-	  "minecraft:navigation.hover": {
-		"can_path_over_water": true,
-		"can_sink": false,
-		"can_pass_doors": false,
-		"can_path_from_air": true,
-		"avoid_water": true,
-		"avoid_damage_blocks": true,
-		"avoid_sun": false
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "value": true
+                  }
+                ]
+              }
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:navigation.hover": {
+        "can_path_over_water": true,
+        "can_sink": false,
+        "can_pass_doors": false,
+        "can_path_from_air": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true,
+        "avoid_sun": false
       },
       "minecraft:movement.hover": {},
       "minecraft:follow_range": {
@@ -254,238 +257,238 @@
         ]
       },
       "minecraft:jump.static": {},
-	  "minecraft:can_fly": {},
-	  "minecraft:physics": {
-		"has_gravity": false
-	  },
-	  "minecraft:pushable": {
-		"is_pushable": true,
-		"is_pushable_by_piston": true
-	  },
-	  "minecraft:vibration_listener": {},
-	  "minecraft:conditional_bandwidth_optimization": {},
-	  "minecraft:game_event_movement_tracking": {
+      "minecraft:can_fly": {},
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:vibration_listener": {},
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:game_event_movement_tracking": {
         "emit_flap": true
       },
-	  "minecraft:inventory": {
-		"inventory_size": 1
-	  },
-	  "minecraft:interact": {
-	    "interactions": [
-	      // Modified Vanilla Interaction
-		  {
-			"on_interact": {
-			  "filters": {
-				"all_of": [
-				  {
-					"test": "is_family",
-					"subject": "other",
-					"value": "player"
-				  },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": false
-				  }
-				]
-			  }
-			},
-			"give_item": true,
-			"take_item": true,
-			"interact_text": "action.interact.allay"
-		  },
-		  // World Beyond Interactions
-		  //{
-			//"on_interact": {
-			  //"filters": {
-				//"all_of": [
-				  //{
-					//"test": "is_family",
-					//"subject": "other",
-					//"value": "player"
-				  //},
-				  //{
-					//"test": "has_equipment",
-					//"domain": "hand",
-					//"subject": "other",
-					//"value": "chest"
-				  //},
-				  //{
-					//"test": "has_component",
-					//"subject": "self",
-					//"operator": "!=",
-					//"value": "minecraft:is_chested"
-				  //},
-				  //{
-					//"test": "is_sneaking",
-					//"subject": "other",
-					//"value": true
-				  //}
-				//]
-			  //},
-			  //"event": "modified_allay:become_chested",
-			  //"target": "self"
-			//},
-			//"use_item": true,
-			//"interact_text": "action.interact.allay.chest"
-		  //},
-		  {
-			"on_interact": {
-			  "filters": {
-				"all_of": [
-				  {
-					"test": "is_family",
-					"subject": "other",
-					"value": "player"
-				  },
-				  {
-					"test": "has_equipment",
-					"domain": "hand",
-					"subject": "other",
-					"value": "wormwood:maid_outfit"
-				  },
-				  {
-					"test": "is_skin_id",
-					"subject": "self",
-					"operator": "!=",
-					"value": "1"
-				  },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  }
-				]
-			  },
-			  "event": "modified_allay:become_maid",
-			  "target": "self"
-			},
-			"use_item": true,
-			"interact_text": "action.interact.allay.maid"
-		  },
-		  {
+      "minecraft:inventory": {
+        "inventory_size": 1
+      },
+      "minecraft:interact": {
+        "interactions": [
+          // Modified Vanilla Interaction
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": false
+                  }
+                ]
+              }
+            },
+            "give_item": true,
+            "take_item": true,
+            "interact_text": "action.interact.allay"
+          },
+          // World Beyond Interactions
+          //{
+          //"on_interact": {
+          //"filters": {
+          //"all_of": [
+          //{
+          //"test": "is_family",
+          //"subject": "other",
+          //"value": "player"
+          //},
+          //{
+          //"test": "has_equipment",
+          //"domain": "hand",
+          //"subject": "other",
+          //"value": "chest"
+          //},
+          //{
+          //"test": "has_component",
+          //"subject": "self",
+          //"operator": "!=",
+          //"value": "minecraft:is_chested"
+          //},
+          //{
+          //"test": "is_sneaking",
+          //"subject": "other",
+          //"value": true
+          //}
+          //]
+          //},
+          //"event": "modified_allay:become_chested",
+          //"target": "self"
+          //},
+          //"use_item": true,
+          //"interact_text": "action.interact.allay.chest"
+          //},
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "wormwood:maid_outfit"
+                  },
+                  {
+                    "test": "is_skin_id",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 1
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  }
+                ]
+              },
+              "event": "modified_allay:become_maid",
+              "target": "self"
+            },
+            "use_item": true,
+            "interact_text": "action.interact.allay.maid"
+          },
+          {
             "on_interact": {
               "filters": {
                 "all_of": [
                   {
                     "any_of": [
                       {
-				        "test": "has_equipment",
-					    "subject": "other",
-					    "domain": "hand",
-					    "value": "dye:0"
-					  },
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:0"
+                      },
                       {
-					    "test": "has_equipment",
-					    "subject": "other",
-					    "domain": "hand",
-						"value": "dye:16"
-					  }
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:16"
+                      }
                     ]
                   },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "2"
-				  }
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 2
+                  }
                 ]
               },
               "event": "modified_allay:turn_black"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
                 "all_of": [
-                  { 
-					"test": "has_equipment",
-					"subject": "other",
-					"domain": "hand",
-					"value": "dye:8"
-				  },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:8"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "6"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 6
+                  }
                 ]
               },
               "event": "modified_allay:turn_gray"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
                 "all_of": [
-                  { 
-					"test": "has_equipment",
-					"subject": "other",
-					"domain": "hand",
-					"value": "dye:7"
-				  },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:7"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "14"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 14
+                  }
                 ]
               },
               "event": "modified_allay:turn_silver"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
@@ -494,160 +497,160 @@
                   {
                     "any_of": [
                       {
-				        "test": "has_equipment",
-					    "subject": "other",
-					    "domain": "hand",
-					    "value": "dye:15"
-					  },
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:15"
+                      },
                       {
-					    "test": "has_equipment",
-					    "subject": "other",
-					    "domain": "hand",
-						"value": "dye:19"
-					  }
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:19"
+                      }
                     ]
                   },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "15"
-				  }
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 15
+                  }
                 ]
               },
               "event": "modified_allay:turn_white"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
                 "all_of": [
-                  { 
-					"test": "has_equipment",
-					"subject": "other",
-					"domain": "hand",
-					"value": "dye:12"
-				  },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:12"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "8"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 8
+                  }
                 ]
               },
               "event": "modified_allay:turn_light_blue"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
                 "all_of": [
-                  { 
-					"test": "has_equipment",
-					"subject": "other",
-					"domain": "hand",
-					"value": "dye:14"
-				  },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:14"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "11"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 11
+                  }
                 ]
               },
               "event": "modified_allay:turn_orange"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
                 "all_of": [
-                  { 
-					"test": "has_equipment",
-					"subject": "other",
-					"domain": "hand",
-					"value": "dye:1"
-				  },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:1"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "13"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 13
+                  }
                 ]
               },
               "event": "modified_allay:turn_red"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
@@ -656,160 +659,160 @@
                   {
                     "any_of": [
                       {
-				        "test": "has_equipment",
-					    "subject": "other",
-					    "domain": "hand",
-					    "value": "dye:4"
-					  },
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:4"
+                      },
                       {
-					    "test": "has_equipment",
-					    "subject": "other",
-					    "domain": "hand",
-						"value": "dye:18"
-					  }
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:18"
+                      }
                     ]
                   },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "3"
-				  }
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 3
+                  }
                 ]
               },
               "event": "modified_allayturn_blue"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
                 "all_of": [
-                  { 
-					"test": "has_equipment",
-					"subject": "other",
-					"domain": "hand",
-					"value": "dye:5"
-				  },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:5"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "1"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 1
+                  }
                 ]
               },
               "event": "modified_allay:turn_purple"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
                 "all_of": [
-                  { 
-					"test": "has_equipment",
-					"subject": "other",
-					"domain": "hand",
-					"value": "dye:13"
-				  },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:13"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "10"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 10
+                  }
                 ]
               },
               "event": "modified_allay:turn_magenta"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
                 "all_of": [
-                  { 
-					"test": "has_equipment",
-					"subject": "other",
-					"domain": "hand",
-					"value": "dye:9"
-				  },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:9"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "12"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 12
+                  }
                 ]
               },
               "event": "modified_allay:turn_pink"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
@@ -818,244 +821,244 @@
                   {
                     "any_of": [
                       {
-				        "test": "has_equipment",
-					    "subject": "other",
-					    "domain": "hand",
-					    "value": "dye:7"
-					  },
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:7"
+                      },
                       {
-					    "test": "has_equipment",
-					    "subject": "other",
-					    "domain": "hand",
-						"value": "dye:13"
-					  }
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:13"
+                      }
                     ]
                   },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "4"
-				  }
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 4
+                  }
                 ]
               },
               "event": "modified_allay:turn_brown"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
                 "all_of": [
-                  { 
-					"test": "has_equipment",
-					"subject": "other",
-					"domain": "hand",
-					"value": "dye:11"
-				  },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:11"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "16"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 16
+                  }
                 ]
               },
               "event": "modified_allay:turn_yellow"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
                 "all_of": [
-                  { 
-					"test": "has_equipment",
-					"subject": "other",
-					"domain": "hand",
-					"value": "dye:10"
-				  },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:10"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "9"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 9
+                  }
                 ]
               },
               "event": "modified_allay:turn_lime"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
-                  "all_of": [
-                  { 
-					"test": "has_equipment",
-					"subject": "other",
-					"domain": "hand",
-					"value": "dye:2"
-				  },
+                "all_of": [
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:2"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "7"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 7
+                  }
                 ]
               },
               "event": "modified_allay:turn_green"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
                 "all_of": [
-                  { 
-					"test": "has_equipment",
-					"subject": "other",
-					"domain": "hand",
-					"value": "dye:6"
-				  },
                   {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:6"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "5"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 5
+                  }
                 ]
               },
               "event": "modified_allay:turn_cyan"
             },
             "use_item": true,
-			"interact_text": "action.interact.allay.dye"
+            "interact_text": "action.interact.allay.dye"
           },
           {
             "on_interact": {
               "filters": {
                 "all_of": [
                   {
-				    "test": "has_equipment",
-			        "subject": "other",
-				    "domain": "hand",
-				    "value": "water_bucket"
-				  },
-                  {
-					"test" :  "is_family",
-					"subject" : "other",
-					"value" :  "player"
-			      },
-                  {
-				    "test" :  "has_ability",
-					"subject" : "other",
-				    "value" :  "instabuild"
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "water_bucket"
                   },
-				  {
-					"test": "is_sneaking",
-					"subject": "other",
-					"value": true
-				  },
-				  {
-					"test": "is_variant",
-					"subject": "self",
-					"operator": "!=",
-					"value": "0"
-				  }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": 0
+                  }
                 ]
               },
               "event": "modified_allay:turn_undyed"
             },
             "use_item": true,
             "transform_to_item": "bucket",
-			"interact_text": "action.interact.allay.undye"
+            "interact_text": "action.interact.allay.undye"
           }
-		]
-	  },
-	  "minecraft:behavior.panic": {
-		"priority": 1,
-		"speed_multiplier": 2.0
-	  },
+        ]
+      },
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 2.0
+      },
       "minecraft:behavior.go_and_give_items_to_noteblock": {
         "priority": 3,
         "run_speed": 8,
@@ -1092,26 +1095,29 @@
         "can_teleport": false,
         "ignore_vibration": false
       },
-	  "minecraft:behavior.float": {
-		"priority": 7
-	  },
-	  "minecraft:behavior.look_at_player": {
-		"priority": 8,
-		"target_distance": 6.0,
-		"probability": 0.02
-	  },
+      "minecraft:behavior.float": {
+        "priority": 7
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
       "minecraft:behavior.random_look_around": {
         "priority": 8
       },
       "minecraft:behavior.random_hover": {
-		"priority": 9,
-		"xz_dist": 8,
-		"y_dist": 8,
-		"y_offset": -1,
-		"interval": 1,
-		"hover_height": [ 1, 4 ]
-	  }
-	},
+        "priority": 9,
+        "xz_dist": 8,
+        "y_dist": 8,
+        "y_offset": -1,
+        "interval": 1,
+        "hover_height": [
+          1,
+          4
+        ]
+      }
+    },
     "events": {
       // Vanilla Events
       "pickup_item_delay_complete": {
@@ -1140,48 +1146,48 @@
         "sequence": [
           {
             "filters": {
-          	"test": "is_skin_id",
-			  "subject": "self",
-			  "operator": "!=",
-			  "value": "1"
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "!=",
+              "value": "1"
             },
             "remove": {
-       	   "component_groups": [
-     	       "pickup_item"
-   	       ]
-   	     },
-    	    "add": {
-   	       "component_groups": [
-  	          "pickup_item_delay"
- 	         ]
- 	       }
+              "component_groups": [
+                "pickup_item"
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "pickup_item_delay"
+              ]
+            }
           },
           {
             "filters": {
-          	"test": "is_skin_id",
-			  "subject": "self",
-			  "value": "1"
+              "test": "is_skin_id",
+              "subject": "self",
+              "value": "1"
             },
             "remove": {
-       	   "component_groups": [
-     	       "pickup_item"
-   	       ]
-   	     },
-    	    "add": {
-   	       "component_groups": [
-  	          "modified_allay:maid_pickup_item_delay"
- 	         ]
- 	       }
-  		}
-    	]
+              "component_groups": [
+                "pickup_item"
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "modified_allay:maid_pickup_item_delay"
+              ]
+            }
+          }
+        ]
       },
       // World Beyond Events
       //"modified_allay:become_chested": {
-        //"add": {
-          //"component_groups": [
-            //"modified_allay:is_chested"
-          //]
-        //}
+      //"add": {
+      //"component_groups": [
+      //"modified_allay:is_chested"
+      //]
+      //}
       //},
       "modified_allay:become_maid": {
         "add": {

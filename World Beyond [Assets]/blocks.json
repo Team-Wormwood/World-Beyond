@@ -96,5 +96,13 @@
     "wormwood:large_stonebrick_cracked": {
         "textures": "large_stonebrick_cracked",
         "sound": "stone"
+    },
+    "wormwood:nether_wart_carpet": {
+        "textures": "nether_wart_block",
+        "sound": "nether_wart"
+    },
+    "wormwood:warped_wart_carpet": {
+        "textures": "warped_wart_block",
+        "sound": "nether_wart"
     }
 }
