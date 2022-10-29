@@ -125,11 +125,11 @@
 			},
 			"wormwood:catfish": {
 				"events": {
-					"flop" : {
-						"pitch" : 1.0,
-						"sound" : "mob.guardian.flop",
-						"volume" : 1.0
-					 },
+					"flop": {
+						"pitch": 1.0,
+						"sound": "mob.guardian.flop",
+						"volume": 1.0
+					},
 					"hurt": "mob.fish.hurt",
 					"hurt.in.water": "mob.fish.hurt",
 					"step": {
@@ -265,6 +265,98 @@
 					}
 				},
 				"pitch": 1.0,
+				"volume": 1.0
+			},
+			"wormwood:skeletin": {
+				"events": {
+					"ambient": "mob.skeleton.say",
+					"death": "mob.skeleton.death",
+					"hurt": {
+						"sound": "mob.skeleton.hurt",
+						"volume": 0.70
+					},
+					"step": {
+						"pitch": 1.0,
+						"sound": "mob.skeleton.step",
+						"volume": 1.0
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"wormwood:skoglin": {
+				"events": {
+					"ambient": "mob.horse.skeleton.idle",
+					"death": "mob.horse.skeleton.death",
+					"hurt": "mob.horse.skeleton.hit",
+					"step": {
+						"pitch": 1.0,
+						"sound": "mob.hoglin.step",
+						"volume": 1.0
+					},
+					"attack": "mob.hoglin.attack",
+					"angry": "mob.horse.skeleton.idle"
+				},
+				"pitch": [
+					0.60,
+					0.70
+				],
+				"volume": 1
+			},
+			"wormwood:chillager": {
+				"events": {
+					"ambient": "mob.evocation_illager.ambient",
+					"cast.spell": "mob.evocation_illager.cast_spell",
+					"death": "mob.evocation_illager.death",
+					"hurt": "mob.evocation_illager.hurt",
+					"prepare.attack": "mob.evocation_illager.prepare_attack",
+					"prepare.summon": "mob.evocation_illager.prepare_summon"
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"wormwood:illager_snow_golem": {
+				"events": {
+					"death": "mob.snowgolem.death",
+					"hurt": "mob.snowgolem.hurt",
+					"shoot": "mob.snowgolem.shoot"
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"wormwood:hay_golem": {
+				"events": {
+					"ambient": "step.grass",
+					"death": {
+						"pitch": [
+							0.7,
+							0.9
+						],
+						"sound": "dig.wood"
+					},
+					"add.torch": "use.wood",
+					"hurt": "dig.wood",
+					"step": {
+						"pitch": [
+							1.1,
+							1.3
+						],
+						"sound": "step.wood"
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
 				"volume": 1.0
 			}
 		}

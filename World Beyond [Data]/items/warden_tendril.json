@@ -1,0 +1,17 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:warden_tendril",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.items"
+            },
+            "minecraft:icon": {
+                "texture": "warden_tendril"
+            }
+        }
+    }
+}

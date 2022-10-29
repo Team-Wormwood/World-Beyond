@@ -4,8 +4,56 @@
         // ------------------- //
         // Materials
         // ------------------- //
+        "ash": {
+            "textures": "textures/items/ash"
+        },
         "boar_tusk": {
             "textures": "textures/items/boar_tusk"
+        },
+        "colourful_feather": {
+            "textures": "textures/items/colourful_feather"
+        },
+        "copper_nugget": {
+            "textures": "textures/items/copper_nugget"
+        },
+        "glow_ink_worldbeyond": {
+            "textures": "textures/items/dye_powder_glow"
+        },
+        "long_stick": {
+            "textures": "textures/items/long_stick"
+        },
+        "ruby": {
+            "textures": "textures/items/ruby"
+        },
+        "hoglin_tusk": {
+            "textures": "textures/items/hoglin_tusk"
+        },
+        "soul_steel_ingot": {
+            "textures": "textures/items/soul_steel_ingot"
+        },
+        "soul_steel_nugget": {
+            "textures": "textures/items/soul_steel_nugget"
+        },
+        "tiger_claws": {
+            "textures": "textures/items/tiger_claws"
+        },
+        "tiger_shovelnose_catfish": {
+            "textures": "textures/items/tiger_shovelnose_catfish"
+        },
+        "peacock_feather": {
+            "textures": "textures/items/peacock_feather"
+        },
+        "warden_tendril": {
+            "textures": "textures/items/warden_tendril"
+        },
+        // ------------------- //
+        // Consumables
+        // ------------------- //
+        "absolution_bottle": {
+            "textures": "textures/items/absolution_bottle"
+        },
+        "beetroot_golden": {
+            "textures": "textures/items/beetroot_golden"
         },
         "catfish": {
             "textures": "textures/items/catfish"
@@ -16,26 +64,17 @@
         "cooked_piranha": {
             "textures": "textures/items/cooked_piranha"
         },
-        "colourful_feather": {
-            "textures": "textures/items/colourful_feather"
-        },
-        "long_stick": {
-            "textures": "textures/items/long_stick"
-        },
         "piranha": {
             "textures": "textures/items/piranha"
         },
-        "ruby": {
-            "textures": "textures/items/ruby"
+        "glow_berries_golden": {
+            "textures": "textures/items/glow_berries_golden"
         },
-        "tiger_claws": {
-            "textures": "textures/items/tiger_claws"
+        "potato_golden": {
+            "textures": "textures/items/potato_golden"
         },
-        "tiger_shovelnose_catfish": {
-            "textures": "textures/items/tiger_shovelnose_catfish"
-        },
-        "peacock_feather": {
-            "textures": "textures/items/peacock_feather"
+        "sweet_berries_golden": {
+            "textures": "textures/items/sweet_berries_golden"
         },
         // ------------------- //
         // Blocks
@@ -88,6 +127,9 @@
         "pirate_hat": {
             "textures": "textures/items/pirate_hat"
         },
+        "primal_helmet": {
+            "textures": "textures/items/primal_helmet"
+        },
         // ------------------- //
         // Music Tapes
         // ------------------- //
@@ -136,6 +178,31 @@
         // ------------------- //
         // Vanilla 
         // ------------------- //
+        "dye_powder": {
+            "textures": [
+                "textures/items/dye_powder_black",
+                "textures/items/dye_powder_red",
+                "textures/items/dye_powder_green",
+                "textures/items/dye_powder_brown",
+                "textures/items/dye_powder_blue",
+                "textures/items/dye_powder_purple",
+                "textures/items/dye_powder_cyan",
+                "textures/items/dye_powder_silver",
+                "textures/items/dye_powder_gray",
+                "textures/items/dye_powder_pink",
+                "textures/items/dye_powder_lime",
+                "textures/items/dye_powder_yellow",
+                "textures/items/dye_powder_light_blue",
+                "textures/items/dye_powder_magenta",
+                "textures/items/dye_powder_orange",
+                "textures/items/dye_powder_white",
+                "textures/items/dye_powder_black_new",
+                "textures/items/dye_powder_brown_new",
+                "textures/items/dye_powder_blue_new",
+                "textures/items/dye_powder_white_new",
+                "textures/items/glow_paste"
+            ]
+        },
         "shulker_shell": {
             "textures": "textures/items/shell_fragment"
         },
@@ -150,9 +217,6 @@
         },
         "gray_damselfly_bottle": {
             "textures": "textures/items/gray_damselfly_bottle"
-        },
-        "absolution_bottle": {
-            "textures": "textures/items/absolution_bottle"
         }
     },
     "texture_name": "atlas.items"

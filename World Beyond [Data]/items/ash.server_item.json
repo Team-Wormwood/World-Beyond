@@ -1,0 +1,20 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:ash",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.items"
+            },
+            "minecraft:icon": {
+                "texture": "ash"
+            },
+        	"minecraft:fertilizer": {
+				"type": "bonemeal"
+			}
+        }
+    }
+}

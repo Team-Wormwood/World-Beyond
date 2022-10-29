@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.zombie_pigman": {
+      "arrays": {
+        "textures": {
+          "Array.textures": [ "Texture.default", "Texture.clothed", "Texture.brute", "Texture.pig" ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.textures[query.variant]" ],
+      "part_visibility": [
+        { "*": true },
+        { "head": "query.variant != 3" },
+        { "leftear": "query.variant != 3" },
+        { "rightear": "query.variant != 3" }
+      ]
+    },
+    "controller.render.zombie_pigman_head": {
+      "geometry": "Geometry.pig",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.pig" ],
+      "part_visibility": [
+        { "headpigman": "query.variant == 3" },
+        { "hat": "query.variant == 3" }
+      ]
+    }
+  }
+}

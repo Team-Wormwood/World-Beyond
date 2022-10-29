@@ -1,0 +1,18 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:hoglin_tusk",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.items"
+            },
+            "minecraft:icon": {
+                "texture": "hoglin_tusk"
+            },
+            "minecraft:hand_equipped": true
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:glow_ink_sac",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.items"
+            },
+            "minecraft:icon": {
+                "texture": "glow_ink_worldbeyond"
+            }
+        }
+    }
+}

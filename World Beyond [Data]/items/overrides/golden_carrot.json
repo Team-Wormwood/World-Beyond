@@ -1,3 +1,4 @@
+//Carrot with benefits
 {
   "format_version": "1.10",
   "minecraft:item": {
@@ -9,8 +10,17 @@
       "minecraft:use_duration": 32,
 
       "minecraft:food": {
-        "nutrition": 6,
-        "saturation_modifier": "supernatural"
+        "nutrition": 5,
+        "saturation_modifier": "supernatural",
+        "can_always_eat": true,
+        "effects": [
+          {
+            "name": "night_vision",
+            "chance": 1.0,
+            "duration": 3,
+            "amplifier": 0
+          }
+        ]
       }
     }
   }

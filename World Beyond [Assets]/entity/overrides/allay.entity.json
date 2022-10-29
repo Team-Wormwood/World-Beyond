@@ -1,0 +1,73 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "minecraft:allay",
+			"materials": {
+				"default": "allay"
+			},
+			"textures": {
+				"default": "textures/entity/allay/allay",
+				"yellow": "textures/entity/allay/allay_yellow",
+				"pink": "textures/entity/allay/allay_pink",
+				"red": "textures/entity/allay/allay_red",
+				"blue": "textures/entity/allay/allay_blue",
+				"light_blue": "textures/entity/allay/allay_lightblue",
+				"purple": "textures/entity/allay/allay_purple",
+				"orange": "textures/entity/allay/allay_orange",
+				"magenta": "textures/entity/allay/allay_magenta",
+				"cyan": "textures/entity/allay/allay_cyan",
+				"black": "textures/entity/allay/allay_black",
+				"white": "textures/entity/allay/allay_white",
+				"gray": "textures/entity/allay/allay_gray",
+				"silver": "textures/entity/allay/allay_silver",
+				"brown": "textures/entity/allay/allay_brown",
+				"green": "textures/entity/allay/allay_green",
+				"lime": "textures/entity/allay/allay_lime",
+				"maid": "textures/entity/allay/allay_maid",
+				"maid_yellow": "textures/entity/allay/allay_yellow_maid",
+				"maid_pink": "textures/entity/allay/allay_pink_maid",
+				"maid_red": "textures/entity/allay/allay_red_maid",
+				"maid_blue": "textures/entity/allay/allay_blue_maid",
+				"maid_light_blue": "textures/entity/allay/allay_lightblue_maid",
+				"maid_purple": "textures/entity/allay/allay_purple_maid",
+				"maid_orange": "textures/entity/allay/allay_orange_maid",
+				"maid_magenta": "textures/entity/allay/allay_magenta_maid",
+				"maid_cyan": "textures/entity/allay/allay_cyan_maid",
+				"maid_black": "textures/entity/allay/allay_black_maid",
+				"maid_white": "textures/entity/allay/allay_white_maid",
+				"maid_gray": "textures/entity/allay/allay_gray_maid",
+				"maid_silver": "textures/entity/allay/allay_silver_maid",
+				"maid_brown": "textures/entity/allay/allay_brown_maid",
+				"maid_green": "textures/entity/allay/allay_green_maid",
+				"maid_lime": "textures/entity/allay/allay_lime_maid"
+			},
+			"geometry": {
+				"default": "geometry.allay"
+			},
+  	      "spawn_egg": {
+    		    "base_color": "#00daff",
+    		    "overlay_color": "#00adff"
+  	      },
+    	    "scripts": {
+    		    "pre_animation": [
+      		      "variable.holding_trident = query.is_item_name_any('slot.weapon.mainhand', 'minecraft:trident');"
+     		   ]
+   	     },
+			"animations": {
+				"idle": "animation.allay.idle",
+				"fly": "animation.allay.fly",
+				"hold_item": "animation.allay.hold_item",
+				"dance": "animation.allay.dance"
+			},
+			"animation_controllers": [
+				{ "general": "controller.animation.allay.general" },
+				{ "holding": "controller.animation.allay.holding" },
+				{ "dancing": "controller.animation.allay.dancing" }
+			],
+     	   "render_controllers": [ "controller.render.allay" ],
+    	    "enable_attachables":  true,
+  	      "held_item_ignores_lighting": true
+  	  }
+	}
+}

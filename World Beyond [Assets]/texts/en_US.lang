@@ -16,58 +16,74 @@ item.spawn_egg.entity.wormwood:damselfly.name=Spawn Damselfly
 item.spawn_egg.entity.wormwood:entwined.name=Spawn Entwined
 item.spawn_egg.entity.wormwood:frozen_zombie.name=Spawn Frostbitten
 item.spawn_egg.entity.wormwood:grey_wolf.name=Spawn Grey Wolf
+item.spawn_egg.entity.wormwood:glowfly.name=Spawn Glowfly
 item.spawn_egg.entity.wormwood:piranha.name=Spawn Piranha
+item.spawn_egg.entity.wormwood:skeletin.name=Spawn Skeletin
+item.spawn_egg.entity.wormwood:skoglin.name=Spawn Skoglin
+item.spawn_egg.entity.wormwood:soul_eater.name=Spawn Soul Eater
 item.spawn_egg.entity.wormwood:tiger.name=Spawn Tiger
 item.spawn_egg.entity.wormwood:tiger_shovelnose_catfish.name=Spawn Tiger Shovelnose Catfish
 item.spawn_egg.entity.wormwood:toucan.name=Spawn Toucan
 item.spawn_egg.entity.wormwood:peacock.name=Spawn Peacock
 item.spawn_egg.entity.wormwood:jungle_zombie.name=Spawn Verdant
-
 ### --------- ###
 item.wormwood:absolution_bottle=Absolution Bottle
+item.wormwood:ash=Ash
 item.wormwood:boar_tusk=Boar Tusk
 item.wormwood:brutal_axe=§bBrutal Axe \n §4§kUwU x3 so warm §r§4I
-item.wormwood:catfish_bucket=Bucket of Catfish
 item.wormwood:catfish=Catfish
+item.wormwood:copper_nugget=Copper Nugget
+item.wormwood:tiger_shovelnose_catfish=Tiger Shovel-Nose Catfish Shovel
 item.wormwood:cooked_catfish=Cooked Catfish
-item.wormwood:cooked_piranha=Cooked Piranha
 item.wormwood:colourful_feather=Colorful Feather
-item.wormwood:colourful_adventure_hat=§dColorful Hat of the Adventurer§r
+item.wormwood:colourful_adventure_hat=§dColorful Hat of the Adventurer§r
 item.wormwood:damselfly_bottle.blue=Bottled Damselfly
 item.wormwood:damselfly_bottle.gray=Bottled Damselfly
 item.wormwood:damselfly_bottle.green=Bottled Damselfly
+item.wormwood:enchanted_glistering_melon_slice=§dEnchanted Glistering Melon§r
+item.wormwood:enchanted_golden_beetroot=§dEnchanted Golden Beetroot§r
+item.wormwood:enchanted_golden_carrot=§dEnchanted Golden Carrot§r
+item.wormwood:enchanted_golden_glow_berries=§dEnchanted Golden Glow Berries§r
+item.wormwood:enchanted_golden_potato=§dEnchanted Golden Potato§r
+item.wormwood:enchanted_golden_sweet_berries=§dEnchanted Golden Sweet Berries§r
+item.wormwood:glow_ink_sac=Glow Ink Sac
+item.wormwood:golden_beetroot=§bGolden Beetroot§r
+item.wormwood:golden_glow_berries=§bGolden Glow Berries§r
+item.wormwood:golden_potato=§bGolden Potato§r
+item.wormwood:golden_sweet_berries=§bGolden Sweet Berries§r
 item.worldbeyond_diamond:netherite_ingot=Diamond
-item.wormwood:adventure_hat=§6Hat of the Adventurer§r
+item.wormwood:adventure_hat=§6Hat of the Adventurer§r
+item.wormwood:hoglin_tusk=Hoglin Tusk
+item.wormwood:iluminum=Iluminum
 item.worldbeyond_iron:netherite_ingot=Iron Ingot
 item.wormwood:iron_spear=Iron Spear
 item.wormwood:long_stick=Long Stick
 item.wormwood:maid_outfit=Maid Outfit
-item.wormwood:piranha=Piranha
-item.wormwood:pirate_hat=§dPirate Hat§r
-item.wormwood:trans_pirate_hat=§dTrans Pirate Hat§r
 item.wormwood:enby_flag_item=Non-Binary Flag
 item.wormwood:otherworld_crystal.name=§bOtherworld Crystal§r
 item.wormwood:otherworld_crystal_mount.name=§bOtherworld Crystal Mount§r
 item.wormwood:peacock_feather=Peacock Feather
+item.wormwood:primal_helmet=Primal Helmet
 item.wormwood:ruby=Ruby
 item.wormwood:shulker_shell=Shulker Shell
+item.wormwood:soul_boots=§dUhm§r
 item.wormwood:stone_spear=Stone Spear
 item.wormwood:tiger_claws=Tiger Claws
-item.wormwood:tiger_shovelnose_catfish=Tiger Shovel-Nose Catfish Shovel
 item.wormwood:trans_flag_item=Transgender Flag
 item.wormwood:tiger_claw_spear=§6Tiger Claw Spear§r
 item.wormwood:warden_tendril=§bWarden Tendril
 item.wormwood:wooden_spear=Wooden Spear
-
 ### --------- ###
 item.wormwood:tape_player=Tape Player
 ##Need a better name than "Tape Player"
 item.wormwood:cassette.test=Cassette \n §7Hikyō no Kikōshi
 item.wormwood:cassette.test_1=Cassette \n §7Ryū no Shima
-
 ### --------- ###
+item.appleEnchanted.name=§dEnchanted Golden Apple§r
+item.glow_ink_sac.name=Glow Paste
+item.golden_carrot.name=§bGolden Carrot§r
+item.speckled_melon.name=§bGlistering Melon§r
 item.shulker_shell.name=Shell Fragment
-
 
 ## Entities ##
 entity.wormwood:capybara.name=Capybara
@@ -78,8 +94,14 @@ entity.wormwood:cross_fox.name=Cross Fox
 entity.wormwood:damselfly.name=Damselfly
 entity.wormwood:entwined.name=Entwined
 entity.wormwood:frozen_zombie.name=Frostbitten
+entity.wormwood:glowfly.name=Glowfly
 entity.wormwood:grey_wolf.name=Grey Wolf
+entity.wormwood:hay_golem.name=Hay Golem
+entity.wormwood:illager_snow_golem.name=Snow Golem
 entity.wormwood:piranha.name=Piranha
+entity.wormwood:skeletin.name=Skeletin
+entity.wormwood:skoglin.name=Skoglin
+entity.wormwood:soul_eater.name=Soul Eater
 entity.wormwood:tiger.name=Tiger
 entity.wormwood:tiger_shovelnose_catfish.name=Tiger Shovelnose Catfish
 entity.wormwood:toucan.name=Toucan
@@ -87,9 +109,17 @@ entity.wormwood:peacock.name=Peacock
 entity.wormwood:jungle_zombie.name=Verdant
 entity.wormwood:otherworld_crystal_entity.name=Otherworld Crystal Hitbox
 
+## Non-Mob Entities ##
+entity.wormwood:snowstorm.name=Snowstorm
+entity.wormwood:grapple.name=Hookshot Hook
+entity.wormwood:smoke_bomb.name=Smoke Bomb
+entity.wormwood:glowfly_jar.name=Glowfly Jar
+
 ## Tile Entities ##
 entity.wormwood:enby_flag_entity.name=Non-Binary Flag
 entity.wormwood:trans_flag_entity.name=Transgender Flag
+entity.wormwood:stasis_bridge.name=Stasis Bridge
+entity.wormwood:stasis_chamber.name=Stasis Chamber
 
 ## Tiles ##
 tile.wormwood:carved_dark_oak_log.name=Carved Dark Oak Log
@@ -99,14 +129,37 @@ tile.wormwood:large_stonebrick_mossy.name=Mossy Large Stone Bricks
 tile.wormwood:large_stonebrick_cracked.name=Cracked Large Stone Bricks
 tile.wormwood:enby_flag.name=Non-Binary Flag
 tile.wormwood:trans_flag.name=Transgender Flag
+tile.wormwood:tape_deck.name=Tape Deck
+tile.wormwood:stasis_bridge.name=Stasis Bridge
+tile.wormwood:stasis_chamber.name=Stasis Chamber
+tile.wormwood:ash_layer.name=Ash Layer
+tile.wormwood:soul_catalyst.name=Soul Catalyst
+tile.wormwood:sculky_soul_catalyst.name=Soul Catalyst
+
+## Containers ##
+
+## Trade Tiers ##
+trade.level.1=Novice
+trade.level.2=Apprentice
+trade.level.3=Journeyman
+trade.level.4=Expert
+trade.level.5=Master
+trade.level.6=Hooo
+trade.level.7=yeah it works
+trade.level.8=owo
+##Okay, It actually does work. Now propper names and Trade Tables are needed.
 
 ## Interactions ##
 action.interact.bribe=Bribe
 action.interact.catch=Catch
 action.interact.bell=Attach Bell
-action.interact.pet=Pet the Foxy
+action.interact.allay.maid=Give
+action.interact.allay.chest=Attach Chest
+action.interact.allay.dye=Dye
+action.interact.allay.undye=Undye
 action.hint.exit.cow=Dismount
 action.hint.exit.mooshroom=Dismount
+action.interact.hay_golem.torch=Add Torch
 
 ## Loading Messages ##
 tips.game.worldbeyond.1=World Beyond . . . Minecraft, with more Mine and Craft!
