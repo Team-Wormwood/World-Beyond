@@ -1,0 +1,63 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:shulker_shell_purple",
+            "category": "commands"
+        },
+        "components": {
+            //Good timing Mojang, with introduction of item and block tag compatability in recipes
+            //All of these tags are needed. The first one for Item detection in the player client entity, and each of the others for recipes. The reason for there being so many is to prevent the player from dying a shell with the colour that it already is and whasting the dye. Yes, I could just use a singular tag for recipes and let players dye their Yellow Shulker Shells yellow if they wish . . . but I'd rather do it this way
+            "tag:wormwood:shulker_shell": {},
+            "tag:wormwood:shulker_shell_not_black": {},
+            "tag:wormwood:shulker_shell_not_blue": {},
+            "tag:wormwood:shulker_shell_not_brown": {},
+            "tag:wormwood:shulker_shell_not_cyan": {},
+            "tag:wormwood:shulker_shell_not_gray": {},
+            "tag:wormwood:shulker_shell_not_green": {},
+            "tag:wormwood:shulker_shell_not_lightblue": {},
+            "tag:wormwood:shulker_shell_not_lime": {},
+            "tag:wormwood:shulker_shell_not_magenta": {},
+            "tag:wormwood:shulker_shell_not_orange": {},
+            "tag:wormwood:shulker_shell_not_pink": {},
+            "tag:wormwood:shulker_shell_not_red": {},
+            "tag:wormwood:shulker_shell_not_silver": {},
+            "tag:wormwood:shulker_shell_not_undyed": {},
+            "tag:wormwood:shulker_shell_not_white": {},
+            "tag:wormwood:shulker_shell_not_yellow": {},
+            "minecraft:max_stack_size": 1,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:icon": {
+                "texture": "shulker_shell_purple"
+            },
+            "minecraft:armor": {
+                "protection": 3
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "shulker_shell:equip"
+                }
+            },
+            "minecraft:wearable": {
+                "dispensable": true,
+                "slot": "slot.armor.head"
+            }
+        },
+        "events": {
+            "shulker_shell:equip": {
+                "sequence": [
+                    {
+                        "condition": "!query.is_item_name_any('slot.armor.head', 0, 'wormwood:shulker_shell_purple')",
+                        "run_command": {
+                            "command": [
+                                "playsound mob.shulker.close"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

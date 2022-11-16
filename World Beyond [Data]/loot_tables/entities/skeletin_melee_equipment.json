@@ -15,13 +15,6 @@
           "weight": 1,
           "functions": [
             {
-              "function": "looting_enchant",
-              "count": {
-                "min": 0,
-                "max": 1
-              }
-            },
-            {
               "function": "enchant_random_gear",
               "chance": 0.35
             }
@@ -44,10 +37,85 @@
           "weight": 1,
           "functions": [
             {
-              "function": "looting_enchant",
-              "count": {
-                "min": 0,
-                "max": 1
+              "function": "set_damage",
+              "damage": {
+                "min": 0.01,
+                "max": 0.3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_regional_difficulty_chance",
+          "max_chance": 0.5
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "wormwood:primal_helmet",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.01,
+                "max": 0.3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_regional_difficulty_chance",
+          "max_chance": 0.5
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "wormwood:primal_helmet",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.01,
+                "max": 0.3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_regional_difficulty_chance",
+          "max_chance": 0.5
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "wormwood:primal_boots",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.01,
+                "max": 0.3
               }
             }
           ]

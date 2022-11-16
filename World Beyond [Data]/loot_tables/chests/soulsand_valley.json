@@ -2,13 +2,27 @@
   "pools": [
     {
       "rolls": {
-        "min": 5,
-        "max": 10
+        "min": 6,
+        "max": 13
       },
-      "entries": [    
+      "entries": [
         {
           "type": "item",
           "name": "minecraft:obsidian",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:crying_obsidian",
           "functions": [
             {
               "function": "set_count",
@@ -18,7 +32,7 @@
               }
             }
           ],
-          "weight": 40
+          "weight": 50
         },
         {
           "type": "item",
@@ -28,7 +42,7 @@
               "function": "set_count",
               "count": {
                 "min": 1,
-                "max": 4
+                "max": 7
               }
             }
           ],
@@ -36,7 +50,7 @@
         },
         {
           "type": "item",
-          "name": "minecraft:iron_nugget",
+          "name": "wormwood:soul_steel_nugget",
           "functions": [
             {
               "function": "set_count",
@@ -44,18 +58,19 @@
                 "min": 9,
                 "max": 18
               }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "§r§cCursed§r"
+              ]
             }
           ],
           "weight": 40
         },
         {
           "type": "item",
-          "name": "minecraft:flint_and_steel",       
-          "weight": 40
-        },
-        {
-          "type": "item",
-          "name": "minecraft:fireball",         
+          "name": "minecraft:flint_and_steel",
           "weight": 40
         },
         {
@@ -169,12 +184,7 @@
         },
         {
           "type": "item",
-          "name": "minecraft:heavy_weighted_pressure_plate",
-          "weight": 5
-        },
-        {
-          "type": "item",
-          "name": "minecraft:iron_ingot",
+          "name": "wormwood:soul_steel_ingot",
           "functions": [
             {
               "function": "set_count",
@@ -182,14 +192,15 @@
                 "min": 2,
                 "max": 8
               }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "§r§cCursed§r"
+              ]
             }
           ],
-          "weight": 5
-        },
-        {
-          "type": "item",
-          "name": "minecraft:bell", 
-          "weight": 1
+          "weight": 40
         },
         {
           "type": "item",
@@ -203,7 +214,7 @@
               }
             }
           ],
-          "weight": 1
+          "weight": 10
         }
       ]
     }

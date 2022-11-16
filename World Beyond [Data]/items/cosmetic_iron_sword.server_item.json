@@ -1,0 +1,30 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:cosmetic_iron_sword",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:icon": {
+                "texture": "iron_sword"
+            },
+            "minecraft:armor": {
+                "protection": 0
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "shulker_shell:equip"
+                }
+            },
+            "minecraft:wearable": {
+                "dispensable": true,
+                "slot": "slot.armor.head"
+            }
+        }
+    }
+}

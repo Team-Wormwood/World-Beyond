@@ -9,14 +9,13 @@
             },
             "textures": {
                 "default": "textures/attachables/maid_outfit",
-                "trans": "textures/attachables/maid_outfit_trans",
                 "enchanted": "textures/misc/enchanted_item_glint"
             },
             "geometry": {
                 "default": "geometry.maid_outfit"
             },
             "render_controllers": [
-                "controller.render.maid_outfit"
+                "controller.render.item_default"
             ]
         }
     }

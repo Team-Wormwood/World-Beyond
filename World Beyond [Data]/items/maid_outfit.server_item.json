@@ -14,7 +14,7 @@
                 "texture": "maid_outfit"
             },
             "minecraft:armor": {
-                "protection": 2
+                "protection": 0
             },
             "minecraft:on_use": {
                 "on_use": {

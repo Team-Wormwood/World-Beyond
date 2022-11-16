@@ -1,0 +1,45 @@
+// Durability? Knockback Resistance? 
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:primal_leggings",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:icon": {
+                "texture": "primal_leggings"
+            },
+            "minecraft:armor": {
+                "protection": 2
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "primal_armour:equip"
+                }
+            },
+            "minecraft:wearable": {
+                "dispensable": true,
+                "slot": "slot.armor.legs"
+            }
+        },
+        "events": {
+            "primal_armour:equip": {
+                "sequence": [
+                    {
+                        "condition": "!query.is_item_name_any('slot.armor.legs', 0, 'wormwood:primal_leggings')",
+                        "run_command": {
+                            "command": [
+                                "playsound armor.equip_leather"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

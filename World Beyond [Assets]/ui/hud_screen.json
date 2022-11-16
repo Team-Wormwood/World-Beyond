@@ -5,7 +5,7 @@
 	//---------------------------------------------------------------------------
 	// Hud Screen
 	//---------------------------------------------------------------------------
-	//implement otherworld crystal bar
+	//implement custom boss bar
 	"boss_health_panel": {
 		"type": "panel",
 		"size": [
@@ -35,6 +35,15 @@
 					],
 					"layer": 2
 				}
+			},
+			{
+				"soul_eater_health@soul_eater_health": {
+					"offset": [
+						0,
+						"5px"
+					],
+					"layer": 2
+				}
 			}
 		],
 		"bindings": [
@@ -46,12 +55,16 @@
 			}
 		]
 	},
-	//define empty otherworld crystal bar
+	//define empty custom boss bar
 	"empty_otherworld_crystal_health": {
 		"type": "image",
 		"texture": "textures/ui/otherworld_crystal_bossbar_empty"
 	},
-	//define filled otherworld crystal bar
+	"empty_soul_eater_health": {
+		"type": "image",
+		"texture": "textures/ui/soul_eater_bossbar_empty"
+	},
+	//define filled custom boss bar
 	"filled_otherworld_crystal_health": {
 		"type": "image",
 		"texture": "textures/ui/otherworld_crystal_bossbar_filled",
@@ -67,7 +80,22 @@
 			}
 		]
 	},
-	//add bindings to otherworld crystal bar
+	"filled_soul_eater_health": {
+		"type": "image",
+		"texture": "textures/ui/soul_eater_bossbar_filled",
+		"offset": [
+			0,
+			0
+		],
+		"clip_direction": "left",
+		"bindings": [
+			{
+				"binding_name": "#progress_percentage",
+				"binding_name_override": "#clip_ratio"
+			}
+		]
+	},
+	//add bindings to custom boss bar
 	"otherworld_crystal@filled_otherworld_crystal_health": {
 		"clip_pixelperfect": false,
 		"bindings": [
@@ -79,7 +107,18 @@
 			}
 		]
 	},
-	//define otherworld crystal bar
+	"soul_eater@filled_soul_eater_health": {
+		"clip_pixelperfect": false,
+		"bindings": [
+			{
+				"binding_name": "#progress_percentage",
+				"binding_name_override": "#clip_ratio",
+				"binding_type": "collection",
+				"binding_collection_name": "$progress_bar_collection"
+			}
+		]
+	},
+	//define custom boss bar
 	"otherworld_crystal_health": {
 		"type": "panel",
 		"anchor_from": "top_middle",
@@ -110,13 +149,51 @@
 		],
 		"bindings": [
 			{
-				"binding_name": "(#bossName = '§bOtherworld Crystal§r')",
+				"binding_name": "(#bossName = '§botherworld crystal§r')",
 				"binding_type": "collection",
 				"binding_collection_name": "boss_bars",
 				"binding_name_override": "#visible"
 			}
 		]
 	},
+	"soul_eater_health": {
+		"type": "panel",
+		"anchor_from": "top_middle",
+		"anchor_to": "top_middle",
+		"offset": [
+			0,
+			0
+		],
+		"size": [
+			200,
+			15
+		],
+		"controls": [
+			{
+				"empty_soul_eater_health@empty_soul_eater_health": {
+					"layer": 3
+				}
+			},
+			{
+				"soul_eater@soul_eater": {
+					"layer": 4,
+					"size": [
+						182,
+						15
+					]
+				}
+			}
+		],
+		"bindings": [
+			{
+				"binding_name": "(#bossName = 'Soul Eater')",
+				"binding_type": "collection",
+				"binding_collection_name": "boss_bars",
+				"binding_name_override": "#visible"
+			}
+		]
+	},
+	//
 	"root_panel": {
 		"modifications": [
 			{

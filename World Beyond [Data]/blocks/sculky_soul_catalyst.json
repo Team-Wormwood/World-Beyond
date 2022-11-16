@@ -1,0 +1,50 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "wormwood:sculky_soul_catalyst"
+        },
+        "components": {
+            "minecraft:destroy_time": 0.7,
+            "minecraft:block_light_absorption": 1.0,
+            "minecraft:block_light_emission": 0.6,
+            "minecraft:breathability": "air",
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "itemGroup.name.items"
+            },
+            "minecraft:crafting_table": {
+                "custom_description": "container.sculky_soul_catalyst",
+                "grid_size": 3,
+                "crafting_tags": [
+                    "souls",
+                    "sculk"
+                ]
+            },
+            "minecraft:geometry": "geometry.soul_workbench",
+            "minecraft:entity_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    13,
+                    16
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "soul_catalyst",
+                    "render_method": "alpha_test",
+                    "face_dimming": true,
+                    "ambient_occlusion": true
+                },
+                "inside": {
+                    "texture": "soul_catalyst_inside"
+                }
+            }
+        }
+    }
+}

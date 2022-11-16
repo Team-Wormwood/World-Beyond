@@ -1,0 +1,26 @@
+//This and the rest of the set is rushed. Wanted to make a commit today, but these three where not meant to be attachables but then they where because of texture layering problems. If these are broken, I'll fix them some time soon, maybe.
+{
+    "format_version": "1.16.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "wormwood:primal_leggings",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "textures": {
+                "default": "textures/attachables/skeletin_leggings",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "default": "piglin_skeleton"
+            },
+            "scripts": {
+                "scale": "context.is_first_person ? 0.0 : 1.0"
+            },
+            "render_controllers": [
+                "controller.render.item_default"
+            ]
+        }
+    }
+}
