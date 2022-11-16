@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "wormwood:furnace_netherite_pickaxe"
+    },
+
+    
+    "tags": ["furnace", "blast_furnace"],
+    "input": "minecraft:netherite_pickaxe",
+    "output": "minecraft:netherite_scrap"
+  }
+  
+}

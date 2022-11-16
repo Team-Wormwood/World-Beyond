@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wormwood:stone_spear"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"X",
+			"#",
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "wormwood:long_stick"
+			},
+			"X": {
+				"item": "minecraft:stone"
+			}
+		},
+		"result": {
+			"item": "wormwood:stone_spear"
+		}
+	}
+}

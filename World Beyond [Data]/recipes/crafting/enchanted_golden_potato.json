@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "wormwood:enchanted_golden_potato"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:gold_ingot"
+      },
+      "X": {
+        "item": "minecraft:potato"
+      }
+    },
+    "result": {
+      "item": "wormwood:enchanted_golden_potato"
+    }
+  }
+}

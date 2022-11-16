@@ -1,0 +1,14 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_brewing_mix": {
+		"description": {
+			"identifier": "wormwood:brew_awkward_wither_skull"
+		},
+		"tags": [
+			"brewing_stand"
+		],
+		"input": "minecraft:potion_type:awkward",
+		"reagent": "minecraft:skull:1",
+		"output": "minecraft:potion_type:wither"
+	}
+}

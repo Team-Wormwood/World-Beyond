@@ -1,0 +1,31 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "wormwood:sculk_shrieker"
+        },
+        "tags": [
+            "sculk"
+        ],
+        "pattern": [
+            "#U"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:sculk_shrieker"
+            },
+            "U": {
+                "item": "wormwood:soul_jar"
+            }
+        },
+        "result": [
+            {
+                "item": "minecraft:sculk_shrieker",
+                "count": 2
+            },
+            {
+                "item": "wormwood:glass_jar"
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wormwood:iron_spear"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"X",
+			"#",
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "wormwood:long_stick"
+			},
+			"X": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": {
+			"item": "wormwood:iron_spear"
+		}
+	}
+}

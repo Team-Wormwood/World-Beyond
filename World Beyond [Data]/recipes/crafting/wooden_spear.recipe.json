@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wormwood:wooden_spear"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"X",
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "wormwood:long_stick"
+			},
+			"X": {
+				"item": "minecraft:planks"
+			}
+		},
+		"result": {
+			"item": "wormwood:wooden_spear"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "wormwood:enchanted_glistering_melon_slice"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:gold_ingot"
+      },
+      "X": {
+        "item": "minecraft:melon_slice"
+      }
+    },
+    "result": {
+      "item": "wormwood:enchanted_glistering_melon_slice"
+    }
+  }
+}

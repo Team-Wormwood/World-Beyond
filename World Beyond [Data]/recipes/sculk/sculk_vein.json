@@ -1,0 +1,31 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "wormwood:sculk_vein"
+        },
+        "tags": [
+            "sculk"
+        ],
+        "pattern": [
+            "#U"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:sculk_vein"
+            },
+            "U": {
+                "item": "wormwood:soul_jar"
+            }
+        },
+        "result": [
+            {
+                "item": "minecraft:sculk_vein",
+                "count": 12
+            },
+            {
+                "item": "wormwood:glass_jar"
+            }
+        ]
+    }
+}
