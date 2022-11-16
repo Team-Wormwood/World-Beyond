@@ -1,0 +1,24 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "wormwood:mud/mud_single_block"
+		},
+		"places_block": {
+			"name": "minecraft:mud"
+		},
+		"enforce_placement_rules": false,
+		"enforce_survivability_rules": false,
+        "may_replace": [
+            {
+                "name": "minecraft:gravel"
+            },
+            {
+                "name": "minecraft:grass"
+            },
+            {
+                "name": "minecraft:dirt"
+            }
+        ]
+	}
+}

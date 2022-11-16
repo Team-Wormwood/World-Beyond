@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:aggregate_feature": {
+		"description": {
+			"identifier": "wormwood:mud/surface_cover_aggregate_feature"
+		},
+		"features": [
+			"wormwood:mud/surface_cover_first_scatter_feature",
+			"wormwood:mud/surface_cover_second_scatter_feature",
+			"wormwood:mud/surface_cover_third_scatter_feature",
+			"wormwood:mud/surface_cover_fourth_scatter_feature"
+		]
+	}
+}

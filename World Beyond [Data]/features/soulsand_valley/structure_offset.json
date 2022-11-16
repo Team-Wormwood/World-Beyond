@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "wormwood:soulsand_valley/structure_offset"
+    },
+    "places_feature": "wormwood:structures/soulsand_valley_structure",
+    "iterations": 1,
+    "x": 0,
+    "y": -2,
+    "z": 0
+  }
+}
