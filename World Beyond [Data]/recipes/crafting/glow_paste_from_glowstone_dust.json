@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "wormwood:glow_paste_from_glow_glowstone_dust"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:glowstone_dust"
+            }
+        },
+        "result": {
+            "item": "minecraft:glow_ink_sac",
+            "count": 1
+        }
+    }
+}

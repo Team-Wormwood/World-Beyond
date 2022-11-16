@@ -28,13 +28,13 @@
             "minecraft:sound_volume": 0,
             "minecraft:persistent": {},
             "minecraft:conditional_bandwidth_optimization": {},
-		    "minecraft:damage_sensor": {
-	    		"triggers": [
-		  		  {
-						"deals_damage": false
-		  		  }
-	   		 ]
-	  	  }
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false
+                    }
+                ]
+            }
         },
         "events": {
             "minecraft:entity_spawned": {

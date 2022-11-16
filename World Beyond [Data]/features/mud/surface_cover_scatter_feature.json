@@ -1,0 +1,16 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "wormwood:mud/surface_cover_scatter_feature"
+		},
+		"places_feature": "wormwood:mud/mud_single_block",
+		"iterations": "t.noise_biome_mud > 0.6 ? t.mud_depth : 0",
+		"x": 0,
+		"y": {
+        "distribution": "fixed_grid",
+        "extent": [ "0 - t.mud_depth", 0 ]
+        },
+		"z": 0
+	}
+}

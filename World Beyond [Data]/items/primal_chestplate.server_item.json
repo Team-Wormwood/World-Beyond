@@ -1,0 +1,45 @@
+// Durability? Knockback Resistance? 
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:primal_chestplate",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:icon": {
+                "texture": "primal_chestplate"
+            },
+            "minecraft:armor": {
+                "protection": 5
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "primal_armour:equip"
+                }
+            },
+            "minecraft:wearable": {
+                "dispensable": true,
+                "slot": "slot.armor.chest"
+            }
+        },
+        "events": {
+            "primal_armour:equip": {
+                "sequence": [
+                    {
+                        "condition": "!query.is_item_name_any('slot.armorchest', 0, 'wormwood:primal_chestplate')",
+                        "run_command": {
+                            "command": [
+                                "playsound armor.equip_leather"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

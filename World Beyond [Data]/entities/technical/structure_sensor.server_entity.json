@@ -1,186 +1,190 @@
 //I doubt this will be something that will be used anywhere apart from the one structure that this has initially been made for, but hey, it gets a non-spesific identifier and component group driven behaviours that get added through spawn events.
 {
-    "format_version": "1.19.21",
-    "minecraft:entity": {
-        "description": {
-            "identifier": "wormwood:structure_spawner_sensor",
-            "is_spawnable": false,
-            "is_summonable": true,
-            "is_experimental": false
-        },
-        "component_groups": {
-        	"wormwood:despawn_timer": {
-            	"minecraft:timer": {
-            	    "looping": false,
-            		"time": 1,
-            		"time_down_event": {
-            			"event": "wormwood:despawn"
-            		}
-            	}
-            },
-            "wormwood:despawn": {
-                "minecraft:instant_despawn": {}
-            },
-            "wormwood:sensor.soulsand_valley": {
-                "minecraft:block_sensor": {
-         		   "sensor_radius": 16,
-        		    "on_break": [
-         			   {
-            			    "block_list": [
-                				"minecraft:soul_sand",
-                				"minecraft:soul_soil",
-                				"minecraft:chest",
-                				"minecraft:basalt",
-                				"minecraft:polished_basalt",
-                				"minecraft:blackstone",
-                				"minecraft:blackstone_bricks",
-                				"minecraft:polished_blackstone_stairs",
-                				"minecraft:calcite"
-              			  ],
-              			  "on_block_broken": "wormwood:trigger.soulsand_valley"
-            			}
-          		  ]
-          	  },
-          	  "minecraft:entity_sensor": {
-          	      "event": "wormwood:trigger.soulsand_valley",
-          		  "event_filters": {
-          			  "all_of": [
-          				  {
-          				      "test": "has_container_open",
-                   			 "subject": "other",
-                   			 "operator": "==",
-                 			   "value": true
-                 		   }
-                 	   ]
-                    },
-          		  "sensor_range": 7
-          	  }
-            },
-            "wormwood:spawn.soulsand_valley": {
-            	"minecraft:behavior.summon_entity": {
-       			 "priority": 0,
-        			"summon_choices": [
-          			  {
-            				"weight": 7,
-            				"cooldown_time": 999,
-           				 "cast_duration": 0,
-           				 "sequence": [
-              				  {
-                					"shape": "circle",
-                					"target": "self",
-                					"base_delay": 0,
-                					"num_entities_spawned": 2,
-               					 "entity_type": "wormwood:group_distributor<wormwood:distribute.persistent_skeletin>",
-               					 "size": 2.0
-              				  }
-           				 ]
-         			   },
-         			   {
-            				"weight": 3,
-            				"cooldown_time": 999,
-           				 "cast_duration": 0,
-           				 "sequence": [
-              				  {
-                					"shape": "circle",
-                					"target": "self",
-                					"base_delay": 0,
-                					"num_entities_spawned": 3,
-               					 "entity_type": "wormwood:group_distributor<wormwood:distribute.persistent_skeletin>",
-               					 "size": 2.0
-              				  }
-           				 ]
-         			   }
-        			]
-     		   }
-            }
-        },
-        "components": {
-            "minecraft:type_family": {
-                "family": [
-                    "inanimate"
-                ]
-            },
-            "minecraft:collision_box": {
-                "width": 0,
-                "height": 0
-            },
-            "minecraft:physics": {
-                "has_gravity": false
-            },
-            "minecraft:sound_volume": 0,
-            "minecraft:persistent": {},
-            "minecraft:conditional_bandwidth_optimization": {},
-		    "minecraft:damage_sensor": {
-	    		"triggers": [
-		  		  {
-						"deals_damage": false
-		  		  }
-	   		 ]
-	  	  },
-            "minecraft:behavior.nearest_attackable_target": {
-      		  "priority": 2,
-     		   "entity_types": [
-         		   {
-            			"filters": {
-             		  	 "all_of": [
-        			        	{ "test": "is_family", "subject": "other", "value": "player" }
-        		       	 ]
-       		     	},
-          	      	"max_dist": 32
-      	      	}
-     	   	]
-        	}
-        },
-        "events": {
-        	"minecraft:entity_spawned": {
-        		"add": {
-                    "component_groups": [
-                        "wormwood:despawn_timer"
-                    ]
-                }
+	"format_version": "1.19.21",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "wormwood:structure_spawner_sensor",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"wormwood:despawn_timer": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 1,
+					"time_down_event": {
+						"event": "wormwood:despawn"
+					}
+				}
 			},
-        	"wormwood:despawn": {
-                "add": {
-                    "component_groups": [
-                        "wormwood:despawn"
-                    ]
-                },
-                "run_command": {
-               	 "command": [
-                        "say §1Despawned Sensor!"
-                    ]
-                }
-            },
-        	"wormwood:setup.soulsand_valley": {
-        		"add": {
-                    "component_groups": [
-                        "wormwood:sensor.soulsand_valley"
-                    ]
-                },
-                "run_command": {
-               	 "command": [
-                   	 "say §1owo"
-                    ]
-                }
-        	},
-            "wormwood:trigger.soulsand_valley": {
-                "add": {
-                    "component_groups": [
-                        "wormwood:spawn.soulsand_valley",
-                        "wormwood:despawn_timer"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "wormwood:sensor.soulsand_valley"
-                    ]
-                },
-                "run_command": {
-               	 "command": [
-                   	 "say §1!!!!"
-                    ]
-                }
-            }
-        }
-    }
+			"wormwood:despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"wormwood:sensor.soulsand_valley": {
+				"minecraft:block_sensor": {
+					"sensor_radius": 16,
+					"on_break": [
+						{
+							"block_list": [
+								"minecraft:soul_sand",
+								"minecraft:soul_soil",
+								"minecraft:chest",
+								"minecraft:basalt",
+								"minecraft:polished_basalt",
+								"minecraft:blackstone",
+								"minecraft:blackstone_bricks",
+								"minecraft:polished_blackstone_stairs",
+								"minecraft:calcite"
+							],
+							"on_block_broken": "wormwood:trigger.soulsand_valley"
+						}
+					]
+				},
+				"minecraft:entity_sensor": {
+					"event": "wormwood:trigger.soulsand_valley",
+					"event_filters": {
+						"all_of": [
+							{
+								"test": "has_container_open",
+								"subject": "other",
+								"operator": "==",
+								"value": true
+							}
+						]
+					},
+					"sensor_range": 7
+				}
+			},
+			"wormwood:spawn.soulsand_valley": {
+				"minecraft:behavior.summon_entity": {
+					"priority": 0,
+					"summon_choices": [
+						{
+							"weight": 7,
+							"cooldown_time": 999,
+							"cast_duration": 0,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0,
+									"num_entities_spawned": 2,
+									"entity_type": "wormwood:group_distributor<wormwood:distribute.persistent_skeletin>",
+									"size": 2.0
+								}
+							]
+						},
+						{
+							"weight": 3,
+							"cooldown_time": 999,
+							"cast_duration": 0,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0,
+									"num_entities_spawned": 3,
+									"entity_type": "wormwood:group_distributor<wormwood:distribute.persistent_skeletin>",
+									"size": 2.0
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"inanimate"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:physics": {
+				"has_gravity": false
+			},
+			"minecraft:sound_volume": 0,
+			"minecraft:persistent": {},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"entity_types": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								}
+							]
+						},
+						"max_dist": 32
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"wormwood:despawn_timer"
+					]
+				}
+			},
+			"wormwood:despawn": {
+				"add": {
+					"component_groups": [
+						"wormwood:despawn"
+					]
+				}
+				//"run_command": {
+				//    "command": [
+				//        "say §1Despawned Sensor!"
+				//    ]
+				//}
+			},
+			"wormwood:setup.soulsand_valley": {
+				"add": {
+					"component_groups": [
+						"wormwood:sensor.soulsand_valley"
+					]
+				}
+				//"run_command": {
+				//    "command": [
+				//   	 "say §1owo"
+				//    ]
+				//}
+			},
+			"wormwood:trigger.soulsand_valley": {
+				"add": {
+					"component_groups": [
+						"wormwood:spawn.soulsand_valley",
+						"wormwood:despawn_timer"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"wormwood:sensor.soulsand_valley"
+					]
+				}
+				//"run_command": {
+				//    "command": [
+				//   	 "say §1!!!!"
+				//    ]
+				//}
+			}
+		}
+	}
 }

@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "wormwood:shulker_box_lime"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "-",
+            "#",
+            "-"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:chest"
+            },
+            "-": {
+                "item": "wormwood:shulker_shell_lime"
+            }
+        },
+        "result": {
+            "item": "minecraft:shulker_box",
+            "data": 5
+        }
+    }
+}

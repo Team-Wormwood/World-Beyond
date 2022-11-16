@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "minecraft:tuff"
+        },
+        "pattern": [
+            "##",
+            "##"
+        ],
+        "key": {
+            "#": {
+                "item": "wormwood:ash"
+            }
+        },
+        "priority": 1,
+        "result": {
+            "count": 2,
+            "item": "minecraft:tuff"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

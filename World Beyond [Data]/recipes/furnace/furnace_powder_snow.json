@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "wormwood:furnace_powder_snow"
+    },
+
+    
+    "tags": ["furnace"],
+    "input": "minecraft:powder_snow_bucket",
+    "output": "minecraft:water_bucket"
+  }
+  
+}

@@ -1,138 +1,142 @@
 {
-    "format_version": "1.19.21",
-    "minecraft:entity": {
-        "description": {
-            "identifier": "wormwood:group_distributor",
-            "is_spawnable": false,
-            "is_summonable": true,
-            "is_experimental": false
-        },
-        "component_groups": {
-            "wormwood:despawn": {
-                "minecraft:instant_despawn": {}
-            },
-            "wormwood:spawn.persistent_skeletin": {
-            	"minecraft:behavior.summon_entity": {
-       			 "priority": 0,
-        			"summon_choices": [
-          			  {
-            				"weight": 2,
-            				"cooldown_time": 999,
-           				 "cast_duration": 0,
-           				 "sequence": [
-              				  {
-                					"shape": "circle",
-                					"target": "self",
-                					"base_delay": 0,
-                					"num_entities_spawned": 1,
-               					 "entity_type": "wormwood:conditional_summon<wormwood:spawn.persistent_skeletin>",
-               					 "size": 2.0
-              				  }
-           				 ]
-         			   },
-         			   {
-            				"weight": 7,
-            				"cooldown_time": 999,
-           				 "cast_duration": 0,
-           				 "sequence": [
-              				  {
-                					"shape": "circle",
-                					"target": "self",
-                					"base_delay": 0,
-                					"num_entities_spawned": 2,
-               					 "entity_type": "wormwood:conditional_summon<wormwood:spawn.persistent_skeletin>",
-               					 "size": 2.0
-              				  }
-           				 ]
-         			   },
-         			   {
-            				"weight": 1,
-            				"cooldown_time": 999,
-           				 "cast_duration": 0,
-           				 "sequence": [
-              				  {
-                					"shape": "circle",
-                					"target": "self",
-                					"base_delay": 0,
-                					"num_entities_spawned": 3,
-               					 "entity_type": "wormwood:conditional_summon<wormwood:spawn.persistent_skeletin>",
-               					 "size": 2.0
-              				  }
-           				 ]
-         			   }
-        			]
-     		   }
-            }
-        },
-        "components": {
-            "minecraft:type_family": {
-                "family": [
-                    "inanimate"
-                ]
-            },
-            "minecraft:collision_box": {
-                "width": 0,
-                "height": 0
-            },
-            "minecraft:physics": {
-                "has_gravity": false
-            },
-            "minecraft:sound_volume": 0,
-            "minecraft:persistent": {},
-            "minecraft:conditional_bandwidth_optimization": {},
-		    "minecraft:damage_sensor": {
-	    		"triggers": [
-		  		  {
+	"format_version": "1.19.21",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "wormwood:group_distributor",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"wormwood:despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"wormwood:spawn.persistent_skeletin": {
+				"minecraft:behavior.summon_entity": {
+					"priority": 0,
+					"summon_choices": [
+						{
+							"weight": 2,
+							"cooldown_time": 999,
+							"cast_duration": 0,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0,
+									"num_entities_spawned": 1,
+									"entity_type": "wormwood:conditional_summon<wormwood:spawn.persistent_skeletin>",
+									"size": 2.0
+								}
+							]
+						},
+						{
+							"weight": 7,
+							"cooldown_time": 999,
+							"cast_duration": 0,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0,
+									"num_entities_spawned": 2,
+									"entity_type": "wormwood:conditional_summon<wormwood:spawn.persistent_skeletin>",
+									"size": 2.0
+								}
+							]
+						},
+						{
+							"weight": 1,
+							"cooldown_time": 999,
+							"cast_duration": 0,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0,
+									"num_entities_spawned": 3,
+									"entity_type": "wormwood:conditional_summon<wormwood:spawn.persistent_skeletin>",
+									"size": 2.0
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"inanimate"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:physics": {
+				"has_gravity": false
+			},
+			"minecraft:sound_volume": 0,
+			"minecraft:persistent": {},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
 						"deals_damage": false
-		  		  }
-	   		 ]
-	  	  },
+					}
+				]
+			},
 			"minecraft:timer": {
-            	"looping": false,
-            	"time": 1,
-            	"time_down_event": {
-            		"event": "wormwood:despawn"
-            	}
-            },
-            "minecraft:behavior.nearest_attackable_target": {
-      		  "priority": 2,
-     		   "entity_types": [
-         		   {
-            			"filters": {
-             		  	 "all_of": [
-        			        	{ "test": "is_family", "subject": "other", "value": "player" }
-        		       	 ]
-       		     	},
-          	      	"max_dist": 32
-      	      	}
-     	   	]
-        	}
-        },
-        "events": {
-        	"wormwood:despawn": {
-                "add": {
-                    "component_groups": [
-                        "wormwood:despawn"
-                    ]
-                },
-                "run_command": {
-               	 "command": [
-                        "say §1Despawned Distributor!"
-                    ]
-                }
-            },
-        	"wormwood:distribute.persistent_skeletin": {
-        		"add": {
-                    "component_groups": [
-                        "wormwood:spawn.persistent_skeletin"
-                    ]
-                },
-                "run_command": {
-               	 "command": [
-                   	 "say §1Spawned Distrubutor!"
-                    ]
-                }
-        	}
-        }
-    }
+				"looping": false,
+				"time": 1,
+				"time_down_event": {
+					"event": "wormwood:despawn"
+				}
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"entity_types": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								}
+							]
+						},
+						"max_dist": 32
+					}
+				]
+			}
+		},
+		"events": {
+			"wormwood:despawn": {
+				"add": {
+					"component_groups": [
+						"wormwood:despawn"
+					]
+				},
+				"run_command": {
+					"command": [
+						"say §1Despawned Distributor!"
+					]
+				}
+			},
+			"wormwood:distribute.persistent_skeletin": {
+				"add": {
+					"component_groups": [
+						"wormwood:spawn.persistent_skeletin"
+					]
+				},
+				"run_command": {
+					"command": [
+						"say §1Spawned Distrubutor!"
+					]
+				}
+			}
+		}
+	}
 }

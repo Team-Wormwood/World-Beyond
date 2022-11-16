@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wormwood:snowballs_from_powder_snow_bucket"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:powder_snow_bucket"
+      }
+    },
+    "result": [
+      {
+        "item": "minecraft:bucket"
+      },
+      {
+        "item": "minecraft:snowball",
+        "count": 8
+      }
+    ]
+  }
+}

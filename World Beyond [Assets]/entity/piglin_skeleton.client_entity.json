@@ -5,20 +5,10 @@
     "description": {
       "identifier": "wormwood:skeletin",
       "materials": {
-        "default": "entity_multitexture_alpha_test"
+        "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/skeleton/skeletin/base/base",
-        "cracks": "textures/entity/skeleton/skeletin/cracks/cracks",
-        "cracks1": "textures/entity/skeleton/skeletin/cracks/cracks",
-        "cracks2": "textures/entity/skeleton/skeletin/cracks/cracks",
-        "ribs": "textures/entity/skeleton/skeletin/ribs/ribs",
-        "ribs1": "textures/entity/skeleton/skeletin/ribs/ribs",
-        "ribs2": "textures/entity/skeleton/skeletin/ribs/ribs",
-        "cosmetics": "textures/entity/skeleton/skeletin/cosmetics/cosmetics",
-        "cosmetics1": "textures/entity/skeleton/skeletin/cosmetics/cosmetics",
-        "cosmetics2": "textures/entity/skeleton/skeletin/cosmetics/cosmetics",
-        "invisible": "textures/invisible"
+        "default": "textures/entity/skeleton/skeletin"
       },
       "geometry": {
         "default": "geometry.piglin_skeleton"

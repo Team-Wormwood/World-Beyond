@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "wormwood:shulker_shell_orange"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "tag": "wormwood:shulker_shell_not_orange",
+                "count": 1
+            },
+            {
+                "item": "minecraft:dye",
+                "count": 1,
+                "data": 14
+            }
+        ],
+        "result": {
+            "item": "wormwood:shulker_shell_orange",
+            "count": 1
+        }
+    }
+}

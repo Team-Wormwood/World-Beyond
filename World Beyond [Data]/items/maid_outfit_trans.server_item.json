@@ -1,0 +1,44 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "wormwood:maid_outfit_trans",
+            "category": "Commands"
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:icon": {
+                "texture": "maid_outfit"
+            },
+            "minecraft:armor": {
+                "protection": 0
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "maid_outfit:equip"
+                }
+            },
+            "minecraft:wearable": {
+                "dispensable": true,
+                "slot": "slot.armor.chest"
+            }
+        },
+        "events": {
+            "maid_outfit:equip": {
+                "sequence": [
+                    {
+                        "condition": "!query.is_item_name_any('slot.armor.chest', 0, 'wormwood:maid_outfit_trans')",
+                        "run_command": {
+                            "command": [
+                                "playsound armor.equip_leather"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

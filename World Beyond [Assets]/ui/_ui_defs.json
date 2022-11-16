@@ -1,0 +1,7 @@
+{
+  "ui_defs": [
+    "ui/tape_deck.json",
+    "ui/soul_catalyst.json",
+    "ui/sculky_soul_catalyst.json"
+  ]
+}

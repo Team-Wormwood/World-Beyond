@@ -1,0 +1,13 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "wormwood:furnace_glow_berries"
+        },
+        "tags": [
+            "furnace"
+        ],
+        "input": "minecraft:glow_berries",
+        "output": "minecraft:glow_ink_sac"
+    }
+}
