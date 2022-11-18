@@ -17,6 +17,15 @@
         },
         "large_stonebrick_cracked": {
             "textures": "textures/blocks/large_stone_bricks_cracked"
+        },
+        "soul_catalyst": {
+            "textures": "textures/blocks/soul_catalyst"
+        },
+        "soul_catalyst_inside": {
+            "textures": "textures/blocks/soul_catalyst_inside"
+        },
+        "soul_catalyst_inside_sculk": {
+            "textures": "textures/blocks/soul_catalyst_inside_sculk"
         }
     }
 }

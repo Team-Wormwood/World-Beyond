@@ -34,6 +34,12 @@
         "soul_steel_nugget": {
             "textures": "textures/items/soul_steel_nugget"
         },
+        "soul_jar": {
+            "textures": "textures/items/soul_jar"
+        },
+        "soul_vial": {
+            "textures": "textures/items/soul_vial"
+        },
         "tiger_claws": {
             "textures": "textures/items/tiger_claws"
         },
@@ -121,6 +127,57 @@
         "shulker_shell_worldbeyond": {
             "textures": "textures/items/shulker_shell"
         },
+        "shulker_shell_black": {
+            "textures": "textures/items/shulker_shells/shulker_shell_black"
+        },
+        "shulker_shell_blue": {
+            "textures": "textures/items/shulker_shells/shulker_shell_blue"
+        },
+        "shulker_shell_red": {
+            "textures": "textures/items/shulker_shells/shulker_shell_red"
+        },
+        "shulker_shell_green": {
+            "textures": "textures/items/shulker_shells/shulker_shell_green"
+        },
+        "shulker_shell_yellow": {
+            "textures": "textures/items/shulker_shells/shulker_shell_yellow"
+        },
+        "shulker_shell_orange": {
+            "textures": "textures/items/shulker_shells/shulker_shell_orange"
+        },
+        "shulker_shell_white": {
+            "textures": "textures/items/shulker_shells/shulker_shell_white"
+        },
+        "shulker_shell_gray": {
+            "textures": "textures/items/shulker_shells/shulker_shell_gray"
+        },
+        "shulker_shell_silver": {
+            "textures": "textures/items/shulker_shells/shulker_shell_silver"
+        },
+        "shulker_shell_purple": {
+            "textures": "textures/items/shulker_shells/shulker_shell_purple"
+        },
+        "shulker_shell_cyan": {
+            "textures": "textures/items/shulker_shells/shulker_shell_cyan"
+        },
+        "shulker_shell_magenta": {
+            "textures": "textures/items/shulker_shells/shulker_shell_magenta"
+        },
+        "shulker_shell_brown": {
+            "textures": "textures/items/shulker_shells/shulker_shell_brown"
+        },
+        "shulker_shell_pink": {
+            "textures": "textures/items/shulker_shells/shulker_shell_pink"
+        },
+        "shulker_shell_lightblue": {
+            "textures": "textures/items/shulker_shells/shulker_shell_lightblue"
+        },
+        "shulker_shell_lime": {
+            "textures": "textures/items/shulker_shells/shulker_shell_lime"
+        },
+        "soul_boots": {
+            "textures": "textures/items/soul_boots"
+        },
         "trans_pirate_hat": {
             "textures": "textures/items/trans_pirate_hat"
         },
@@ -129,6 +186,30 @@
         },
         "primal_helmet": {
             "textures": "textures/items/primal_helmet"
+        },
+        "wooden_sword": {
+            "textures": "textures/items/wooden_sword"
+        },
+        "stone_sword": {
+            "textures": "textures/items/stone_sword"
+        },
+        "golden_sword": {
+            "textures": "textures/items/golden_sword"
+        },
+        "iron_sword": {
+            "textures": "textures/items/iron_sword"
+        },
+        "diamond_sword": {
+            "textures": "textures/items/diamond_sword"
+        },
+        "netherite_sword": {
+            "textures": "textures/items/netherite_sword"
+        },
+        "lil_shark": {
+            "textures": "textures/items/lil_shark"
+        },
+        "safety_goggles": {
+            "textures": "textures/items/safety_goggles"
         },
         // ------------------- //
         // Music Tapes
@@ -145,32 +226,50 @@
         "catfish_spawn_egg": {
             "textures": "textures/items/spawn_eggs/catfish_spawn_egg"
         },
-        "catfish_bucket": {
-            "textures": "textures/items/catfish_bucket"
+        "chillager_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/chillager_spawn_egg"
         },
         "coyote_spawn_egg": {
             "textures": "textures/items/spawn_eggs/coyote_spawn_egg"
         },
-        "damselfly_spawn_egg": {
-            "textures": "textures/items/spawn_eggs/damselfly_spawn_egg"
-        },
         "cross_fox_spawn_egg": {
             "textures": "textures/items/spawn_eggs/cross_fox_spawn_egg"
         },
-        "tiger_spawn_egg": {
-            "textures": "textures/items/spawn_eggs/tiger_spawn_egg"
+        "damselfly_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/damselfly_spawn_egg"
+        },
+        "entwined_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/entwined_spawn_egg"
         },
         "grey_wolf_spawn_egg": {
             "textures": "textures/items/spawn_eggs/grey_wolf_spawn_egg"
         },
+        "jungle_zombie_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/jungle_zombie_spawn_egg"
+        },
         "piranha_spawn_egg": {
             "textures": "textures/items/spawn_eggs/piranha_spawn_egg"
+        },
+        "skeletin_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/skeletin_spawn_egg"
+        },
+        "skoglin_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/skoglin_spawn_egg"
+        },
+        "soul_eater_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/soul_eater_spawn_egg"
+        },
+        "tiger_shovelnose_catfish_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/tiger_shovelnose_catfish_spawn_egg"
+        },
+        "tiger_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/tiger_spawn_egg"
         },
         "toucan_spawn_egg": {
             "textures": "textures/items/spawn_eggs/toucan_spawn_egg"
         },
-        "tiger_shovelnose_catfish_spawn_egg": {
-            "textures": "textures/items/spawn_eggs/tiger_shovelnose_catfish_spawn_egg"
+        "tundra_zombie_spawn_egg": {
+            "textures": "textures/items/spawn_eggs/tundra_zombie_spawn_egg"
         },
         "peacock_spawn_egg": {
             "textures": "textures/items/spawn_eggs/peacock_spawn_egg"
