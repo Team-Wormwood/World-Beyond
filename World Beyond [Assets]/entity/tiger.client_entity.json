@@ -7,7 +7,7 @@
                 "default": "entity_alphatest"
             },
             "textures": {
-                "default": "textures/entity/tiger/tiger"
+                "default": "textures/entity/end_portal"
             },
             "geometry": {
                 "default": "geometry.tiger"

@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "wormwood:shulker_shell_black",
+            "identifier": "wormwood:shulker_shell.black",
             "category": "commands"
         },
         "components": {

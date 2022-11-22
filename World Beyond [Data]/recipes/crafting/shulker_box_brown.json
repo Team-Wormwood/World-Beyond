@@ -17,7 +17,7 @@
                 "item": "minecraft:chest"
             },
             "-": {
-                "item": "wormwood:shulker_shell_brown"
+                "item": "wormwood:shulker_shell.brown"
             }
         },
         "result": {

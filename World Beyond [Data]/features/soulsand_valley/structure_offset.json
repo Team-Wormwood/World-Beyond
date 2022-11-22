@@ -4,7 +4,7 @@
     "description": {
       "identifier": "wormwood:soulsand_valley/structure_offset"
     },
-    "places_feature": "wormwood:structures/soulsand_valley_structure",
+    "places_feature": "wormwood:structures/soulsand_valley_structure.feature",
     "iterations": 1,
     "x": 0,
     "y": -2,

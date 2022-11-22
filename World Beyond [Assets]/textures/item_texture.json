@@ -184,8 +184,17 @@
         "pirate_hat": {
             "textures": "textures/items/pirate_hat"
         },
+        "primal_boots": {
+            "textures": "textures/items/primal_boots"
+        },
+        "primal_chestplate": {
+            "textures": "textures/items/primal_chestplate"
+        },
         "primal_helmet": {
             "textures": "textures/items/primal_helmet"
+        },
+        "primal_leggings": {
+            "textures": "textures/items/primal_leggings"
         },
         "wooden_sword": {
             "textures": "textures/items/wooden_sword"
