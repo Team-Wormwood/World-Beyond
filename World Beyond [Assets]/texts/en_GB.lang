@@ -30,7 +30,7 @@ item.spawn_egg.entity.wormwood:jungle_zombie.name=Spawn Verdant
 item.wormwood:absolution_bottle=Absolution Bottle
 item.wormwood:ash=Ash
 item.wormwood:boar_tusk=Boar Tusk
-item.wormwood:brutal_axe=§bBrutal Axe \n §4§kUwU x3 so warm §r§4I
+item.wormwood:brutal_axe=§bBrutal Axe
 item.wormwood:catfish=Catfish
 item.wormwood:copper_nugget=Copper Nugget
 item.wormwood:tiger_shovelnose_catfish=Tiger Shovel-Nose Catfish Shovel
@@ -99,8 +99,8 @@ item.wormwood:wooden_spear=Wooden Spear
 ### --------- ###
 item.wormwood:tape_player=Tape Player
 ##Need a better name than "Tape Player"
-item.wormwood:cassette.test=Cassette \n §7Hikyō no Kikōshi
-item.wormwood:cassette.test_1=Cassette \n §7Ryū no Shima
+item.wormwood:cassette.test=§7Hikyō no Kikōshi
+item.wormwood:cassette.test_1=§7Ryū no Shima
 ### --------- ###
 item.appleEnchanted.name=§dEnchanted Golden Apple§r
 item.glow_ink_sac.name=Glow Paste

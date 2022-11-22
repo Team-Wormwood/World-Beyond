@@ -24,7 +24,7 @@
             },
             "minecraft:wearable": {
                 "dispensable": true,
-                "slot": "slot.armorfeet"
+                "slot": "slot.armor.feet"
             }
         },
         "events": {

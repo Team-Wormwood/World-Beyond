@@ -13,7 +13,7 @@
                 "enchanted": "textures/misc/enchanted_item_glint"
             },
             "geometry": {
-                "default": "piglin_skeleton"
+                "default": "geometry.armour_generic"
             },
             "scripts": {
                 "scale": "context.is_first_person ? 0.0 : 1.0"
