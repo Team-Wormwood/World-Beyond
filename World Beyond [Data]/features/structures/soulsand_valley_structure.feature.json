@@ -1,0 +1,23 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:structure_template_feature": {
+        "description": {
+            "identifier": "wormwood:structures/soulsand_valley_structure.feature"
+        },
+        "structure_name": "mystructure:soulsand_valley",
+        "adjustment_radius": 2,
+        "facing_direction": "random",
+        "constraints": {
+            "block_intersection": {
+                "block_allowlist": [
+                    "minecraft:air",
+                    "minecraft:soul_soil",
+                    "minecraft:soul_sand"
+                ]
+            }
+            //"unburied": {},
+            //"grounded": {}
+            // I'm not sure how there two work exactly. I'll leave them out for now and come back to it later
+        }
+    }
+}

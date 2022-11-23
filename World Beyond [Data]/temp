@@ -1,6 +1,0 @@
-query.is_item_name_any ('slot.weapon.mainhand', 'wormwood:wooden_spear') 
-                ? 0 : query.is_item_name_any('slot.weapon.mainhand', 'wormwood:stone_spear')
-                                ? 1 : query.is_item_name_any('slot.weapon.mainhand', 'wormwood:iron_spear')
-                                                ? 2 : query.is_item_name_any('slot.weapon.mainhand', 'wormwood:tiger_claw_spear')
-                                                                ? 3 : 0
-                    

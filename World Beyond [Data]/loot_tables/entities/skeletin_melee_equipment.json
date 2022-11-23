@@ -58,7 +58,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "wormwood:primal_helmet",
+          "name": "wormwood:primal_leggings",
           "weight": 1,
           "functions": [
             {
@@ -83,7 +83,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "wormwood:primal_helmet",
+          "name": "wormwood:primal_chestplate",
           "weight": 1,
           "functions": [
             {

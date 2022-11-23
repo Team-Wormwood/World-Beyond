@@ -5,13 +5,13 @@
             "identifier": "wormwood:nether_wart_carpet"
         },
         "components": {
-            "minecraft:destroy_time": 0.1,
-            "minecraft:map_color": "#ff2e47",
+            "minecraft:destructible_by_mining": 0.1,
+            "minecraft:map_color": "#993333",
             "minecraft:creative_category": {
                 "category": "nature",
                 "group": "itemGroup.name.nature"
             },
-            "minecraft:block_light_absorption": 0,
+            "minecraft:light_dampening": 0,
             "minecraft:breathability": "air",
             "minecraft:geometry": "geometry.layerblock",
             "minecraft:material_instances": {
@@ -19,7 +19,7 @@
                     "texture": "nether_wart_block"
                 }
             },
-            "minecraft:pick_collision": {
+            "minecraft:selection_box": {
                 "origin": [
                     -8,
                     0,
@@ -31,7 +31,7 @@
                     16
                 ]
             },
-            "minecraft:entity_collision": {
+            "minecraft:collision_box": {
                 "origin": [
                     -8,
                     0,
