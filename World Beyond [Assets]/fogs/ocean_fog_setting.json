@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:fog_settings": {
     "description": {
-      "identifier": "minecraft:fog_ocean"
+      "identifier": "wormwood:fog_ocean"
     },
     "distance": {
       "water": {

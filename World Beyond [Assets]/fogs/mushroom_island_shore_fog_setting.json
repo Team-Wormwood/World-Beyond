@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:fog_settings": {
     "description": {
-      "identifier": "minecraft:fog_mushroom_island_shore"
+      "identifier": "wormwood:fog_mushroom_island_shore"
     },
     "distance": {
       "water": {

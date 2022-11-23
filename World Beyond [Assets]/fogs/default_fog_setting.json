@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:fog_settings": {
     "description": {
-      "identifier": "minecraft:fog_default"
+      "identifier": "wormwood:fog_default"
     },
     "distance": {
       "air": {

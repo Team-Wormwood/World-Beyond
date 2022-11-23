@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:fog_settings": {
     "description": {
-      "identifier": "minecraft:fog_roofed_forest"
+      "identifier": "wormwood:fog_roofed_forest"
     },
     "distance": {
       "water": {

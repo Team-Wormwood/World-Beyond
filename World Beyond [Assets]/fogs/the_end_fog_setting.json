@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:fog_settings": {
     "description": {
-      "identifier": "minecraft:fog_the_end"
+      "identifier": "wormwood:fog_the_end"
     },
     "distance": {
       "air": {

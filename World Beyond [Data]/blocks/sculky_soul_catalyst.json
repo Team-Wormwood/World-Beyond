@@ -5,10 +5,11 @@
             "identifier": "wormwood:sculky_soul_catalyst"
         },
         "components": {
-            "minecraft:destroy_time": 0.7,
+            "minecraft:geometry": "geometry.soul_workbench",
             "minecraft:block_light_absorption": 1.0,
             "minecraft:block_light_emission": 0.6,
             "minecraft:breathability": "air",
+            "minecraft:destroy_time": 0.7,
             "minecraft:creative_category": {
                 "category": "items",
                 "group": "itemGroup.name.items"
@@ -21,7 +22,6 @@
                     "sculk"
                 ]
             },
-            "minecraft:geometry": "geometry.soul_workbench",
             "minecraft:entity_collision": {
                 "origin": [
                     -8,

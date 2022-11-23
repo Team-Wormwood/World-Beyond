@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:fog_settings": {
     "description": {
-      "identifier": "minecraft:fog_soulsand_valley"
+      "identifier": "wormwood:fog_soulsand_valley"
     },
     "distance": {
       "air": {

@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:fog_settings": {
     "description": {
-      "identifier": "minecraft:fog_cold_beach"
+      "identifier": "wormwood:fog_cold_beach"
     },
     "distance": {
       "water": {

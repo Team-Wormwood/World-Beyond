@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:fog_settings": {
     "description": {
-      "identifier": "minecraft:fog_mesa_plateau_stone"
+      "identifier": "wormwood:fog_mesa_plateau_stone"
     },
     "distance": {
       "water": {

@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:fog_settings": {
     "description": {
-      "identifier": "minecraft:fog_extreme_hills_plus_trees"
+      "identifier": "wormwood:fog_extreme_hills_plus_trees"
     },
     "distance": {
       "water": {
