@@ -82,6 +82,15 @@
         "sweet_berries_golden": {
             "textures": "textures/items/sweet_berries_golden"
         },
+        "apple_pie": {
+            "textures": "textures/items/apple_pie"
+        },
+        "golden_apple_pie": {
+            "textures": "textures/items/golden_apple_pie"
+        },
+        "sweet_berry_pie": {
+            "textures": "textures/items/sweet_berry_pie"
+        },
         // ------------------- //
         // Blocks
         // ------------------- //
