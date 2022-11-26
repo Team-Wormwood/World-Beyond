@@ -1,26 +1,28 @@
+// TODO: Potentially doesn't fit? Will revisit
 {
-  "format_version": "1.12",
-  "minecraft:recipe_shaped": {
-    "description": {
-    "identifier": "wormwood:powder_snow_bucket"
-    },
-
-    "tags": [ "crafting_table" ],
-    "pattern": [
-      "###",
-      "###",
-      "#X#"
-    ],
-    "key": {
-      "#": {
-        "item": "minecraft:snowball"
-      },
-      "X": {
-        "item": "minecraft:bucket"
-      }
-    },
-    "result": {
-      "item": "minecraft:powder_snow_bucket"
-    }
-  }
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wormwood:powder_snow_bucket"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"###",
+			"#X#"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:snowball"
+			},
+			"X": {
+				"item": "minecraft:bucket"
+			}
+		},
+		"result": {
+			"item": "minecraft:powder_snow_bucket"
+		}
+	}
 }

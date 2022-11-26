@@ -3,7 +3,7 @@
     "minecraft:item": {
         "description": {
             "identifier": "wormwood:enchanted_golden_carrot",
-            "category": "nature"
+            "category": "none"
         },
         "components": {
             "minecraft:use_animation": "eat",
